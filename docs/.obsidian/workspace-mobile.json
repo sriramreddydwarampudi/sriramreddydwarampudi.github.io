@@ -1,0 +1,601 @@
+{
+  "main": {
+    "id": "5fe85b8fc168ab4e",
+    "type": "split",
+    "children": [
+      {
+        "id": "9cc488a98d659c80",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fe90318a6fa575cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily/2024-09-12.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4ba344f6199023e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "relationships/Intro.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "95c6bc76abf7a767",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "relationships/Intro.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bb5dbb6d21912162",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily/2024-09-13.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2cf47c8918e65835",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "relationships/Intro.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0b15e76c40432080",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Marriage.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1933f72dedc27f8d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Love or hate.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "407f8060ff3ee92b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "News.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "81ea2e5749138067",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Value.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "903b1114be4508db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Social norms.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6000d7bfa71c86a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "News.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "43260f848c2f01d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rage.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f38726ab849fc73e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Focus states.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b93383917efdc5d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Time.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a8d8d6a1f1c2a0a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ADHD.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "df47261dcdfcba5c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ADHD.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d52e157a68c36dcc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "relationships/Intro.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a8031a040170cb93",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Managing relationship.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cb307fe7a61df3d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Living.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "75e0dd32366776d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Treat.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1796f62c49f2abf8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interpersonal problems.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "15d706a13dd54636",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Marriage.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1efda9a7deeebdbc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "What not to do.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5a185f25ac1b1247",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Obisidian.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "104ca37f04c55df0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interpersonal problems.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ee8968a0537244a4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Focus states.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7c613803333a6488",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Time table.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bccffdb35a47ffa4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Note taking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1d1542056f525c5b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "551d5a17928408df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ADHD.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "19dc867cfa7c0bb0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily/Dashboard.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2fccc06f7b4fbf02",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily/2024-09-13.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "666a6a80e697a74e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "bdae208249e6cbaa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily/2024-09-13.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a94f36b37e93cdba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily/2024-09-14.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9e3e2bd17ba00ffd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily/2024-09-15.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 35
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0535ea6371818209",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "c47d8e69d3e1eab5",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "5de3a6e53de4e620",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": true,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "a6bd54d1d24c0568",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "ea16e241b08a4024",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "0ff47d7e7d0a46a0",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "9e5fad140fe05f46",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Daily/2024-09-15.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "96fbac253fe5b208",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Daily/2024-09-15.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "af552989d2bdc44c",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Daily/2024-09-15.md"
+          }
+        }
+      },
+      {
+        "id": "d618fcfbacc3e486",
+        "type": "leaf",
+        "state": {
+          "type": "map-of-content",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false,
+      "map-of-content:Update Map of Content": false
+    }
+  },
+  "active": "9e3e2bd17ba00ffd",
+  "lastOpenFiles": [
+    "Daily/2024-09-14.md",
+    "Daily/2024-09-15.md",
+    "Publishing.md",
+    "Daily/2024-09-13.md",
+    "Contacts.md",
+    "Daily/Daily.md",
+    "second brain.md",
+    "dentascript/Central Note.md",
+    "Focus states.md",
+    "Daily/Tasks.md",
+    "Daily/2024-09-11.md",
+    "Daily/Dashboard.md",
+    "Obisidian.md",
+    "Root.md",
+    "ADHD.md",
+    "Untitled.md",
+    "dentascript/Untitled.md",
+    "Note taking.md",
+    "assets/images",
+    "assets/templates/Topic.md",
+    "assets/templates",
+    "assets/templater/Date.md",
+    "assets/templater",
+    "dentascript/readme.md",
+    "templater/Definitions.md",
+    "Trail heading.md",
+    "Collected_Definition_Headings.md",
+    "templater/Collection headings.md",
+    "templater/Date.md",
+    "templater",
+    "assets",
+    "templates",
+    "Personality",
+    "Cognitive",
+    "Daily",
+    "Fleeting notes",
+    "cornell/images/home.jpg",
+    "cornell/images/YouTubeFromSergio.png",
+    "cornell/images/Spicy popcorn.jpeg",
+    "cornell/images/Smores.jpeg",
+    "cornell/images/Kitchen.jpeg"
+  ]
+}
