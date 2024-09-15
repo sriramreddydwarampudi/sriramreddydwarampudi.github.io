@@ -1,5 +1,4 @@
 mkdocs
 mkdocs-material
-mkdocs-roamlinks
 pillow
 cairosvg
