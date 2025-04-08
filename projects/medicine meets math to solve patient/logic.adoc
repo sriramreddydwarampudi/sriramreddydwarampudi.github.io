@@ -1,0 +1,2338 @@
+:toc:
+
+
+And  = x
+Or = + ≥1
+A = Ā
+
+And+NOT =NAND
+
+Xor = = 1.        >1 odd
+
+Xnor = ↔ even
+
+Logical operations are fundamental in computing and mathematics. Here’s a list of all basic logical operations:
+
+Basic Logical Operations
+
+1. AND (Conjunction) → A ∧ B (True if both A and B are true)
+
+
+2. OR (Disjunction) → A ∨ B (True if at least one of A or B is true)
+
+
+3. NOT (Negation) → ¬A (True if A is false, and vice versa)
+
+
+4. XOR (Exclusive OR) → A ⊕ B (True if A and B are different)
+
+
+5. XNOR (Exclusive NOR, Logical Equivalence) → A ≡ B (True if A and B are the same)
+
+
+
+Derived and Compound Logical Operations
+
+1. NAND (Not AND) → A ↑ B or ¬(A ∧ B) (True if at least one is false)
+
+
+2. NOR (Not OR) → A ↓ B or ¬(A ∨ B) (True if both are false)
+
+
+3. IMPLICATION (If-Then) → A → B (False only if A is true and B is false)
+
+
+4. BICONDITIONAL (Logical Equivalence) → A ↔ B (Same as XNOR, true if A and B are equal)
+
+Would you like truth tables for these?
+
+
+
+Bannana,bannana,bannana
+
+
+three bannanas
+
+How many bannanas
+T +T + T
+
+1 + 1+ 1=3
+
+A bannana and a apple
+
+
+
+
+
+
+Billy was faster than Alex
+b > a
+
+
+Formula
+Directly proportional to
+Function 
+
+== argument structure 
+
+ram likes sita
+
+Logic is the study of arguments. An argument is a sequence of statements of which one is intended 
+as a conclusion and the others, the premises, are intended to prove or at least provide some evidence 
+for the conclusion. Here are two simple examples:
+
+  
+All humans are mortal. Socrates is human. Therefore, Socrates is mortal. 
+
+
+Albert was not at the party, so he cannot have stolen your bag. 
+In the first argument, the first two statements are premises intended to prove the conclusion that 
+Socrates is mortal. In the second argument, the premise that Albert was not at the party is offered as 
+evidence for the conclusion that he cannot have stolen the bag. 
+
+
+
+
+Deductive and inductive reasoning are two fundamental approaches to logical thinking and problem-solving.
+
+Deductive Reasoning
+
+Moves from general to specific.
+If the premises are true, the conclusion must be true.
+Uses a top-down approach.
+
+Example:
+1. All humans are mortal. (General premise)
+2. Socrates is a human. (Specific case)
+3. Therefore, Socrates is mortal. (Conclusion)
+
+Common uses: Mathematics, formal logic, law, and scientific theories.
+
+
+Inductive Reasoning
+
+Moves from specific to general.
+The conclusion is probable but not guaranteed.
+Uses a bottom-up approach.
+
+Example:
+1. Every swan I have seen is white. (Observation)
+2. Therefore, all swans are white. (Generalization)
+
+Common uses: Scientific research, pattern recognition, and everyday decision-making.
+Would you like examples related to a specific field, like AI, medicine, or music?
+
+
+Some arguments proceed in stages. First a conclusion is drawn from a set of premises; then that 
+conclusion (perhaps in conjunction with some other statements) is used as a premise to draw a further 
+conclusion, which may in turn function as a premise for yet another conclusion, and so on. Such a 
+structure is called a complex argument
+
+Those premises which are intended as conclusions from 
+previous premises are called nonbasic premises or intermediate conclusions
+Those which are not conclusions from 
+previous premises are called basic premises or assumptions. For example, the following argument is 
+complex: 
+All rational numbers are expressible as a ratio of integers. But pi is not expressible as a ratio of integers. 
+Therefore pi is not a rational number. Yet clearly pi is a number. Thus there exists at least one 
+nonrational number. 
+The conclusion is that there exists at least one nonrational number (namely, pi). This is supported 
+directly by the premises 'pi is not a rational number' and 'pi is a number'. But the first of these premises 
+is in turn an intermediate conclusion from the premises 'all rational numbers are expressible as a ratio 
+of integers' and 'pi is not expressible as a ratio of integers'. These further premises, together with the 
+statement 'pi is a number', are the basic premises (assumptions) of the argument. Thus the standard 
+form of the argument above is: 
+All rational numbers are expressible as a ratio of integers. 
+Pi is not expressible as a ratio of integers. 
+:. Pi is not a rational number. 
+Pi is a number. 
+. There exists at least one nonrational number. 
+Each of the simple steps of reasoning which are linked together to form a complex argument is an 
+argument in its own right. The complex argument above consists of two such steps. The first three 
+statements make up the first, and the second three make up the second. The third statement is a 
+component of both steps, functioning as the conclusion of the first and a premise of the second. With 
+respect to the complex argument as a whole, however, it counts as a (nonbasic) premise.
+
+
+
+The premises and conclusion of an argument are always statements or propositions,' as opposed to 
+questions, commands, or exclamations. A statement is an assertion that is either true or false (as the 
+case may be) and is typically expressed by a declarative sentence. Here are some more examples: 
+Dogs do not fly. 
+Robert Musil wrote The Man Without Qualities. 
+Brussels is either in Belgium or in Holland. 
+Snow is red. 
+My brother is an entomologist. 
+The first three sentences express statements that are in fact true. The fourth sentence expresses a false 
+statement. And the last sentence can be used to express different statements in different contexts, and 
+will be true or false depending on whether or not the brother of the speaker is in fact an entomologist. 
+By contrast, the following sentences do not express any statements: 
+Who is the author of The Man Without Qualities? 
+Please do not call after I lpm. 
+Come on! 
+Nonstatements, such as questions, commands, or exclamation:;, are neither true nor false. They may 
+sometimes suggest premises or conclusions, but they are never themselves premises or conclusions.
+
+
+
+
+Though the premises of an argument must be intended to prove or provide evidence for the 
+conclusion, they need not actually do so. There are bad arguments as well as good ones. Argument 
+l.l(c), for example, may be none too convincing; yet still it qualifies as an argument. The purpose of 
+logic is precisely to develop methods and techniques to tell good arguments from bad ones
+
+
+. IDENTIFYING ARGUMENTS
+
+Argument occurs only when someone intends a set of premises to support or prove a conclusion. 
+This intention is often expressed by the use of inference indicators. 
+
+
+
+They are of two kinds: conclusion indicators, which 
+signal that the sentence which contains them or to which they are prefixed is a conclusion from 
+previously stated premises, and premise indicators, which signal that the sentence to which they are 
+prefixed is a premise. Here are some typical examples of each (these lists are by no means 
+exhaustive): 
+Conclusion Indicators 
+
+Therefore 
+Thus 
+Hence 
+So 
+For this reason 
+Accordingly 
+Consequently 
+This being so 
+It follows that 
+The moral is 
+Which proves that 
+Which means that 
+From which we can infer that 
+As a result 
+In conclusion 
+
+
+
+Premise Indicators 
+
+For 
+Since 
+Because 
+Assuming that 
+Seeing that 
+Granted that 
+This is true because 
+The reason is that 
+For the reason that 
+In view of the fact that 
+It is a fact that 
+As shown by the fact that 
+Given that 
+Inasmuch as 
+One cannot doubt that
+
+
+
+Premise and conclusion indicators are the main clues in identifying arguments and analyzing their 
+structure
+
+
+
+
+
+
+
+SOLVED PROBLEMS 
+
+Solution 
+Premise: He was born in the first week of August. 
+Conclusion: He's a Leo. 
+Technically this is not an argument, because the first sentence is a question; but the 
+question is merely rhetorical, suggesting the following argument: 
+Premise: The trade deficit is rising every day. 
+Conclusion: The economy cannot be improving. 
+Premise: The movie's not over yet. 
+Conclusion: I can't go to bed. 
+Not an argument; there is no attempt here to provide evidence for a conclusion. 
+Not an argument; 'Go to college!' expresses a command, not a statement. Yet the 
+following argument is suggested: 
+Premise: Everyone who is as talented as you are should receive a higher education. 
+Conclusion: You should go to college. 
+Premise: We were vastly outnumbered and outgunned by the enemy. 
+Premise: Their troops were constantly being reinforced while our forces were dwindling. 
+Conclusion: A direct frontal assault would have been suicidal. 
+Though grammatically this is a single sentence, it makes two distinct statements, which 
+together constitute the following argument: 
+Premise: He was breathing. 
+Conclusion: He was alive. 
+Not an argument. 
+Not an argument. 
+Premise: Triangle ABC is equiangular. 
+Conclusion: Each of its interior angles measures 60 degrees.
+
+
+1.6 Rewrite the argument below in standard form. 
+[YOU needn't worry about subzero temperatures in June even on the highest peaks.] 
+[1t never has gotten that cold in the summer months,] and [it probably never 
+will.] 
+Solution 
+'So' is a conclusion indicator, signaling that statement 3 follows from statement
+ 2. But the 
+ultimate conclusion is statement 1. Hence this is a complex argument with the following 
+structure: 
+It never has gotten below zero even on the highest peaks in the summer months. 
+:. It probably never will. 
+:. You needn't worry about subzero temperatures in June even on the highest peaks. 
+1.7 Rewrite the argument below in standard form: 
+@[~rthur said he will go to the pa~ty,] Ghich means tha3 @[~udith will go too.] a 
+@[she won't be able to go to the movie with us.]
+Solution 
+'Which means that' and 'so' are both conclusion indicators: the former signals a preliminary 
+conclusion (statement 2) from which the ultimate conclusion (statement 3) is inferred. The 
+argument has the following standard form: 
+Arthur said he will go to the party. 
+:. Judith will go to the party too. 
+:. She won't be able to go to the movie with us.
+
+
+
+
+
+Supplementary Problems 
+I Some of the following are arguments; some are not. For those which are, circle all inference indicators, 
+bracket and number statements, add implicit premises or conclusions where necessary, and diagram the 
+argument. 
+(1) You should do well, since you have talent and you are a hard worker. 
+(2) She promised to marry him, and so that's just what she sh.ould do. So if she backs out, she's definitely 
+in the wrong. 
+(3) We need more morphine. We've got 32 casualties and only 12 doses of morphine left. 
+(4) I can't help you if I don't know what's wrong-and I just don't know what's wrong. 
+(5) If wishes were horses, then beggars would ride. 
+(6) If there had been a speed trap back there, it would have shown up on this radar detector, but 
+none did
+
+The earth is approximately 93 million miles from the sun. The moon is about 250,000 miles from the 
+earth. Therefore, the moon is about 250,000 miles closer to the sun than the earth is. 
+She bolted from the room and then suddenly we heard a terrifying scream. 
+I followed the recipe on the box, but the dessert tasted awful. Some of the ingredients must have 
+been contaminated. 
+Hitler rose to power because the Allies had crushed the German economy after World War I. 
+Therefore if the Allies had helped to rebuild the German economy instead of crushing it, they would 
+never have had to deal with Hitler. 
+[The apostle Paul's] father was a Pharisee. . . . He [Paul] did not receive a classical education, for no 
+Pharisee would have permitted such outright Hellenism in his son, and no man with Greek training 
+would have written the bad Greek of the Epistles. (Will Durant, The Story of Civilization) 
+The contestants will be judged in accordance with four criteria: beauty, poise, intelligence, and 
+artistic creativity. The winner will receive $50,000 and a scholarship to attend the college of her 
+choice. 
+Capital punishment is not a deterrent to crime. In those states which have abolished the death 
+penalty, the rate of incidence for serious crimes is lower than in those which have retained it. 
+Besides, capital punishment is a barbaric practice, one which has no place in any society which calls 
+itself "civilized." 
+Even if he were mediocre, there are a lot of mediocre judges and people and lawyers. They are 
+entitled to a little representation, aren't they, and a little chance? We can't have all Brandeises and 
+Frankfurters and Cardozos and stuff like that there. (Senator Roman Hruska of Nebraska, 
+defending President Richard Nixon's attempt to appoint G. Harrold Carswell to the Supreme Court 
+in 1 970) 
+Neither the butler nor the maid did it. That leaves the chauffeur or the cook. But the chauffeur was 
+at the airport when the murder took place. The cook is the only one without an alibi for his 
+whereabouts. Moreover, the heiress was poisoned. It's logical to conclude that the cook did it. 
+The series of integers (whole numbers) is infinite. If it weren't infinite, then there would be a last (or 
+highest) integer. But by the laws of arithmetic, you can perform the operation of addition on any 
+arbitrarily large number, call it n, to obtain n + 1. Since n + 1 always exceeds n, there is no last (or 
+highest) integer. Hence the series of integers is infinite. 
+The Richter scale measures the intensity of an earthquake in increments which correspond to 
+powers of 10. A quake which registers 6.0 is 10 times more severe than one which measures 5.0; 
+correspondingly, one which measures 7.0 releases 10 times more energy than a 6.0, or 100 times 
+more than a 5.0. So a famous one such as the quake in San Francisco in 1906 (8.6) or Alaska in 1964 
+(8.3) is actually over a thousand times more devastating than a quake with a modest 5.0 reading on 
+the scale. 
+Can it be that there simply is no evil? If so, why do we fear and guard against something which is 
+not there? If our fear is unfounded, it is itself an evil, because it stabs and wrings our hearts for 
+nothing. In fact, the evil is all the greater if we are afraid when there is nothing to fear. Therefore, 
+either there is evil and we fear it, or the fear itself is evil. (St. Augustine, Confessions) 
+The square of any number n is evenly divisible by n. Hence the square of any even number is even, 
+since by the principle just mentioned it must be divisible by an even number, and any number 
+divisible by an even number is even. 
+The count is 3 and 2 on the hitter. A beautiful day for baseball here in Beantown. Capacity crowd 
+of over 33,000 people in attendance. There's the pitch, the hitter swings and misses, strike three. 
+That's the tenth strikeout Roger Clemens has notched in this game. He has the hitters off stride and 
+is pitching masterfully. He should be a candidate for the Cy Young award. 
+Parents who were abused as children are themselves more often violent with their own children than 
+parents who were not abused. This proves that being abused as a child leads to further abuse of the 
+next generation. Therefore the only way to stop the cycle of child abuse is to provide treatment for 
+abused children before they themselves become parents and perpetuate this sad and dangerous 
+problem.
+
+(22) Assume a perfectly square billiard table and suppose a billiard ball is shot from the middle of one 
+side on a straight trajectory at an angle of 45 degrees to that side. Then the ball will hit the middle 
+of an adjoining side at an angle of 45 degrees. Now the ball will always rebound at an angle equal 
+to but in the opposite direction from the angle of its approach. Hence it will be reflected at an angle 
+of 45 degrees and hit the middle of the side opposite from where it started. Thus by the same 
+principle it will hit the middle of the next side at an angle 04 45 degrees, and hence again it will return 
+to the point from which it started. 
+I1 Supply quotation marks in the following sentences in such a way as to make them true. 
+(1) The capital form of x is X. 
+(2) The term man may designate either all human beings or only those who are adult and male. 
+(3) Love is a four-letter word. 
+(4) Rome is known by the name the Eternal City. The Vatican is in Rome. Therefore, the Vatican is in 
+the Eternal City. 
+(5) Chapter 1 of this book concerns argument structure. 
+(6) In formal logic, the letters P and Q are often used to designate propositions. 
+(7) If we use the letter P to designate the statement It is snowing and Q to designate It is cold outside, 
+then the argument It is snowing; therefore it is cold outside is symbolized as P; therefore Q.
+
+
+
+
+
+
+
+
+Logic may be studied from two points of view, the formal and the informal. Formal logic is the study 
+of argument forms, abstract patterns common to many different arguments. An argument form is 
+something more than just the structure exhibited by an argument diagram, for it encodes something 
+about the internal composition of the premises and conclusion
+
+
+
+
+If P, then (2 
+P 
+:. Q 
+This is a form of a single step of reasoning with two premises and a conclusion. The letters 'P' and 'Q' 
+are variables which stand for propositions (statements). These two variables may be replaced by any 
+pair of declarative sentences to produce a specific argument.
+
+
+
+Informal logic is the study of particular arguments in natural language and the contexts in which 
+they occur. Whereas formal logic emphasizes generality and theory, informal logic concentrates on 
+practical argument analysis. The two approaches are not opposed, but rather complement one another. 
+In this book, the approach of Chapters 1, 2, 7, and 8 is predom:inantly informal. Chapters 3, 4, 5, 6, 9, 
+and 10 exemplify a predominantly formal point of view.
+
+
+
+
+
+= Argument evaluation 
+Though an argument may have many objectives, its chief purpose is usually to demonstrate that a 
+conclusion is true or at least likely to be true
+
+
+
+
+
+Typically, then, arguments may be judged better or worse 
+to the extent that they accomplish or fail to accomplish this purpose. In this chapter we examine four 
+criteria for making such judgments: 
+(1) Truth Of Premises:: whether all the premise;^ are true;  
+(2) Validity And Inductive Probability:: whether the conclusion is at least probable, given the truth of the premises; 
+(3)Relevance:: whether the premises are relevant to the conclusion; and 
+(4') The Requirement Of Total Evidence:: whether the conclusion is vulnerable to new evidence.
+
+
+
+Criterion 1 is not by itself adequate for argument evaluation, but it provides a good start: no 
+matter how good an argument is, it cannot establish the truth of its conclusion if any of its premises 
+are false. 
+
+
+SOLVED PROBLEM 
+2.1 Evaluate the following argument with respect to criterion 1: 
+Since all Americans today are isolationists, history will record that at the end of the 
+twentieth century the United States failed as a defender of world democracy. 
+Solution 
+The premise 'All Americans today are isolationists' is certainly false; hence the argument 
+does not establish that the United States will fail as a defender of world democracy. This does 
+not mean, of course, that the conclusion is false, but only that the argument is of no use in 
+determining its truth or falsity. (One way to produce a better argument would be to make a 
+cilreful study of the major forces currently shaping American foreign policy and to draw 
+informed conclusions from that.) 
+
+
+Often the truth or falsity of one or more premises is unknown, so that the argument fails to 
+establish its conclusion so far as we know. In such cases we lack sufficient information to apply criterion 
+1 reliably, and it may be necessary to suspend judgment until further information is acquired
+
+
+
+
+
+
+Criterion 2 evaluates arguments with respect to the probability of the conclusion given the truth of
+the premises. In this respect, arguments may be classified into two categories: deductive and inductive.
+A deductive argument is an argument whose conclusion follows necessarily from its basic premises.
+More precisely, an argument is deductive if it is impossible for its conclusion to be false while its basic
+premises are all true. An inductive argument, by contrast, is one whose conclusion is not necessary
+relative to the premises: there is a certain probability that the conclusion is true if the premises are, but
+there is also a probability that it is false.1
+
+
+
+
+
+
+
+
+
+Supplementary Problems
+I Apply criterion 2 to the following arguments; i.e., for each, determine whether its reasoning is deductive
+or inductive and, if it is inductive, whether it is strong or weak (i.e., whether its inductive probability is high
+or low).
+(1) All Arcturians are good kissers.
+Some Arcturians have several mouths.
+ Some things with several mouths are good kissers.
+(2) All smokers contract emphysema.
+All those who contract emphysema suffer painful deaths.
+ All smokers suffer painful deaths.
+(3) Nobody told me that the meeting was today.
+ I had no way of knowing that it was today.
+(4) All Americans like hamburgers.
+Joe is American.
+ Joe likes hamburgers.
+(5) Almost all Americans like hamburgers.
+Joe is American.
+ Joe likes hamburgers.
+(6) Most Americans like hamburgers.
+Joe is American.
+ Joe likes hamburgers.
+(7) Many Americans like hamburgers.
+Joe is American.
+ Joe likes hamburgers.
+(8) Some Americans like hamburgers.
+Joe is American.
+ Joe likes hamburgers.
+(9) No Americans like hamburgers.
+Joe is American.
+ Joe likes hamburgers.
+(10) Most people have two legs.
+Most people have two arms.
+ Some people have two arms and two legs.
+(11) If either Nation A or Nation B launches a nuclear attack, it will lead to massive destruction.
+Neither side wants this destruction.
+ Neither side will launch a nuclear attack.
+(12) Numbers are not physical objects.
+Numbers exist.
+ It is not true that all existing things are physical objects.
+(13) All arguments are either inductive or deductive.
+What you are now reading is an argument.
+This argument is not inductive.
+ This argument is deductive.
+(14) We don’t know that machines can think like humans.
+ We know that machines can’t think like humans.
+(15) After sniffing pepper, I always sneeze.
+Yesterday I sniffed pepper.
+ Yesterday I sneezed.
+(16) We saw an eagle in the park.
+There are only two species of eagles in the park, bald and golden.
+The golden eagle is commonly seen in the park.
+The bald eagle is rarely seen in the park.
+ The eagle we saw in the park was a golden eagle.
+(17) Conservatives are always strong proponents of law and order.
+Adams is a strong proponent of law and order.
+ Adams is conservative.
+(18) You’re not convinced that I’m innocent.
+ You must think that I’m guilty.
+(19) The fortune-teller said that Anne would be murdered, but not by a man or boy.
+ Anne will be murdered by a woman or girl.
+(20) Aspirin does not cure arthritis.
+Drug X is just aspirin.
+ Drug X does not cure arthritis.
+(21) All life forms observed thus far on earth are DNA-based.
+ All earthly life forms are DNA-based.
+(22) All life forms observed thus far on earth are DNA-based.
+ All life forms in the universe are DNA-based.
+(23) Joe was the only person near the victim at the time of the murder.
+ Joe is the murderer.
+(24) All human creations will eventually perish.
+Whatever perishes is ultimately meaningless.
+ All human creations are ultimately meaningless.
+(25) There are more people in the world than hairs on any one person’s head.
+ At least two people’s heads have an equal number of hairs.
+(26) There are more people in the world than hairs on any one person’s head.
+No one is bald.
+ At least two people’s heads have an equal number of hairs.
+(27) God made the universe.
+God is perfectly good.
+Whatever is made by a perfectly good being is perfectly good.
+Whatever is perfectly good contains no evil.
+ The universe contains no evil.
+(28) If there were more than one null set (set with no members), then there would be more than one set
+with exactly the same members.
+No two sets have exactly the same members.
+ There is at most one null set.
+(29) Jody has a high fever, purple splotches on her tongue, and severe headaches, but no other
+symptoms.
+Jeff has the same set of symptoms, and no others.
+ Jody and Jeff have the same disease.
+(30) We priced bicycle helmets at a number of retail outlets.
+We found none for under $25 that passed the safety tests.
+ If you buy a new bicycle helmet that passes the safety tests from a retail outlet, you’ll have to pay
+at least $25.
+
+II For each of the following arguments, circle inference indicators, bracket and number each statement, and
+diagram the argument. Place a ‘D’ or an ‘I’ next to each arrow of the diagram to indicate whether the
+corresponding step of reasoning is deductive or inductive. If it is inductive, indicate its strength. If the
+argument is complex, place a ‘D’ or an ‘I’ in a box next to the diagram to indicate whether the argument
+as a whole is deductive or inductive. Again if it is inductive, indicate its strength.
+(1) There is no greatest prime number. But of all the prime numbers we shall have ever thought of, there
+certainly is a greatest. Hence there are primes greater than any we shall have ever thought of.
+(Bertrand Russell, ‘‘On the Nature of Acquaintance’’)
+(2) Since you said you would meet me at the drive-in and you weren’t there, you’re a liar. So I can’t
+believe anything you say. So I can’t possibly feel comfortable with you.
+(3) Argument 2 is unsound, for two reasons: (i) I was at the drive-in, but you must have missed me, and
+so one of your premises is false, and (ii) your reasoning is invalid.
+(4) The square of any integer n is evenly divisible by n. Hence the square of any even number is even,
+since by the principle just mentioned it must be divisible by that even number, and any number
+divisible by an even number is even.
+(5) When he was 40, De Chirico abandoned his pittura metafisica; he turned back to traditional modes,
+but his work lost depth. Here is certain proof that there is no ‘‘back to where you came from’’ for
+the creative mind whose unconscious has been involved in the fundamental dilemma of modern
+existence. (Aniela Jaffe, ‘‘Symbolism in the Visual Arts’’)
+(6) Since habitual overeating contributes to several debilitating diseases, it can contribute to the
+destruction of your health. But your health is the most important thing you have. So you should not
+habitually overeat.
+(7) The forecast calls for rain, the sky looks very threatening, and the barometer is falling rapidly, all of
+which are phenomena strongly correlated with rain. Therefore it’s going to rain. But if it rains, we’ll
+have to cancel the picnic. So it looks as if the picnic will be canceled.
+(8) There is no way to tell whether awareness continues after death, so we can only conclude that it does
+not. But we are nothing more than awareness, since without awareness we experience nothing, not
+even blackness. Thus we do not survive death. Any moral system based on the certainty of reward
+or punishment in the hereafter is therefore fundamentally mistaken.
+(9) All citizens of voting age have the right to vote unless they are mentally disabled or have been
+convicted of a crime. Jim is a citizen of voting age, and yet he has said he did not have the right to
+vote. He’s not mentally disabled. So either what he said is false, or he’s been convicted of a crime.
+But he also told me he’d never been arrested, and it’s impossible to be convicted of a crime if you’ve
+never been arrested. Thus at least one of the things he said is false.
+(10) Just as without heat there would be no cold, without darkness there would be no light, and without
+pain there would be no pleasure, so too without death there would be no life. Thus it is clear that our
+individual deaths are absolutely necessary for the life of the universe as a whole. Death should
+therefore be a happy end toward which we go voluntarily, rather than an odious horror which we
+selfishly and futilely fend off with our last desperate ounce of energy.
+III Provide a rough estimate of the inductive probability and degree of relevance of each of the following
+arguments.
+(1) Roses are red.
+Violets are blue.
+ The next rose I see will not have exactly 47 petals.
+(2) All my friends say that snorting a little nutmeg now and then is good for you.
+ Snorting a little nutmeg now and then is good for you.
+(3) All my friends say that snorting a little nutmeg now and then is good for you.
+My friends are never wrong.
+ Snorting a little nutmeg now and then is good for you.
+(4) Mr. Plotz owns a summer home in New Hampshire.
+He also owns his family residence in Washington, D.C.
+ He owns at least two homes.
+(5) I looked cross-eyed at a toad once, and that very same day I broke my toe.
+ Looking cross-eyed at a toad is bad luck.
+(6) Sue is an intellectual.
+Sara is not an intellectual.
+ No one both is and is not an intellectual.
+(7) Albert wears ridiculous-looking clothes.
+Albert is always bumping into things.
+ Albert is stupid.
+(8) I both love you and do not love you.
+ I love you.
+(9) 2  2 -
+ 4
+4 -
+ 22
+2  2 -
+ 22 
+(10) 2  3 -
+ 5
+3  7 -
+ 10
+2  2 -
+ 22 
+IV Evaluate each of the following arguments with respect to the four criteria discussed in this chapter by
+answering the following questions:
+(1) Are the premises known to be true?
+(2) How high is the argument’s inductive probability?
+(3) How relevant are the premises to the conclusion?
+(4) If the argument is inductive, is any evidence suppressed?
+On the basis of your answers to questions 1 to 4, assess the degree to which the argument accomplishes the
+goal of demonstrating the truth of its conclusion.
+(1) Very few presidents of the United States have been Hollywood actors.
+Ronald Reagan was a president of the United States.
+ Ronald Reagan was not a Hollywood actor.
+(2) If Topeka is in the United States, then it is either in the continental United States, in Alaska, or in
+Hawaii.
+Topeka is not in Alaska.
+Topeka is not in Hawaii.
+Topeka is in the United States.
+ Topeka is in the continental United States.
+(3) Human beings are vastly superior, both intellectually and culturally, to modern apes.
+ Human beings and modern apes did not evolve from common ancestors.
+(4) The enemies have possessed nuclear weapons for many years.
+They have never used nuclear weapons in battle.
+ The enemies will use their nuclear weapons in battle soon.
+(5) Of all the known planets, only one, Earth, is inhabited.
+At least nine planets are known.
+ The proportion of inhabited planets in the universe at large is not high.
+(6) For any integer n, the number of positive integers smaller than n is finite.
+For any integer n, the number of positive integers larger than n is infinite.
+Any infinite quantity is larger than any finite quantity.
+For any integer n, there are more positive integers larger than n than there are positive integers
+smaller than n.
+
+
+(7) Without exception, all matter thus far observed has mass.
+There is matter in galaxies beyond the reach of our observation.
+ The matter in these unobserved galaxies has mass.
+(8) No promise is ever broken.
+John F. Kennedy promised that the United States would put a man on the moon by 1970.
+ The United States did put a man on the moon by 1970.
+(9) No human being has ever reached the age of 100 years.
+ No one now alive will reach the age of 100 years.
+(10) Many people find the idea of ghosts and poltergeists fascinating.
+ Ghosts and poltergeists exist.
+Answers to Selected Supplementary Problems
+I (5) Inductive (strong).
+(10) Deductive. Since most means ‘‘more than half,’’ the two groups mentioned in the premises cannot
+fail to overlap if the premises are true. Therefore, given the premises, there must be some people
+(i.e., at least one person) with two arms and two legs.
+(15) Inductive. The premises do not say that the sneezing occurs immediately; hence it may be that the
+sniffing occurred shortly before midnight yesterday though a sneeze did not result until shortly after
+midnight. The strength of this inference is difficult to estimate, since the argument itself provides no
+guidelines to how long a delay we might imagine. (Could one have sniffed pepper yesterday and not
+sneeze until a week hence? This is at least logically possible.) But if for practical purposes we
+discount such wild possibilities, then the reasoning is fairly strong.
+(20) The word ‘just’ means ‘‘nothing more than’’; hence the argument is deductive.
+(25) Inductive. Suppose, for example, that there were only two people left in the world, one totally bald
+and one with just a single hair. Then the premise would be true and the conclusion false, so that the
+argument is not deductive. The argument is, however, fairly strong, since under most conceivable
+circumstances which make the premise true the conclusion would be true as well.
+(30) Inductive (moderately strong).
+II (5)  [When he was 40, De Chirico abandoned his pittura metafisica; he turned back to traditional
+modes, but his work lost depth.] Here is certain proof that -
+ [there is no ‘‘back to where you
+came from’’ for the creative mind whose unconscious has been involved in the fundamental dilemma
+of modern existence.]
+1
+↓
+2
+I (Weak)
+Comment: The example of a single artist hardly suffices to establish so general a thesis as statement
+2 with any substantial degree of probability. Premise 1 could be broken up into two or three separate
+statements or kept as a single unit as we have done here; this is a matter of indifference.
+(10) Just as  [without heat there would be no cold,] -
+ [without darkness there would be no light,] and
+ [without pain there would be no pleasure,] so too  [without death there would be no life.]
+Thus it is clear that  [our individual deaths are absolutely necessary for the life of the universe
+as a whole.]  [Death should therefore be a happy end toward which we go voluntarily, rather
+
+than an odious horror which we selfishly and futilely fend off with our last desperate ounce of
+energy.]
+1  2  3
+↓ I
+4 I (Weak)
+↓ I
+5
+↓ I
+6
+Comment: All three steps in this argument suffer from vagueness, so that it is difficult to evaluate any
+of them accurately. The first is not strong, because it establishes no clear and significant parallel
+between the pairs of opposites mentioned in the premises (statements 1, 2, and 3) and the pair
+mentioned in the conclusion (statement 4). (That conclusion may well be true, but it is not extremely
+likely, given just the information contained in the premises.) The second step is also not as strong as
+it may at first appear. It may be true in general that without death there would be no life, but this
+does not by itself imply that all living things must die or that we in particular must die. Likewise, the
+third inference is hardly airtight. It seems to require the additional assumption that we should
+happily and voluntarily accept what is necessary for the life of the universe as a whole, but the truth
+of this assumption is far from obvious. With the addition of this assumption, the final inference
+would be deductive, though based on at least one dubious premise. Taken just as it stands it is not
+deductive, and its inductive strength is not clearly determinable.
+III (5) Low inductive probability, low relevance.
+(10) Since the conclusion is logically necessary, the argument is deductive and has maximal inductive
+probability. But (in contrast to the previous problem) the premises are not directly relevant to the
+conclusion.
+IV (5) The premises are true and relevant to the conclusion. The argument is at best moderately inductive,
+since the nine known planets constitute a very small (and nonrandom) sample upon which to base
+the extensive generalization of the conclusion. We know of no suppressed contrary evidence. Thus
+the argument provides some evidence for its conclusion, though this evidence is far from
+conclusive.
+(10) The premise is true, but it lacks relevance, and the inductive probability of the argument is low. This
+is a very bad argument.
+
+
+
+
+= Argument forms
+
+
+Formal logic is the study of argument forms,
+abstract patterns of reasoning shared by many different arguments. The study of argument forms
+facilitates broad and illuminating generalizations about validity and related topics. We shall initially
+focus on the notion of deductive validity, leaving inductive arguments to a later treatment (Chapters 8
+to 10)
+
+
+
+
+
+
+(1) Today is either Monday or Tuesday.
+Today is not Monday.
+ Today is Tuesday.
+(2) Either Rembrandt painted the Mona Lisa or Michelangelo did.
+Rembrandt didn’t do it.
+ Michelangelo did.
+(3) Either he’s at least 18 or he’s a juvenile.
+He’s not at least 18.
+ He’s a juvenile.
+It is easy to see that these three arguments are all deductively valid. Their common form is known by
+logicians as disjunctive syllogism, and can be represented as follows:
+Either P or Q.
+It is not the case that P.
+ Q.
+
+
+== Variables 
+
+(a) If today is Monday, then I have to go to the dentist.
+Today is Monday.
+ I have to go to the dentist.
+(b) If you have good grades, you are eligible for a scholarship.
+You have good grades.
+ You are eligible for a scholarship.
+(c) I passed the test, if you did.
+You passed the test.
+ I passed the test.
+Solution
+The three arguments have the following form (known by logicians as modus ponens, or
+‘‘assertive mode’’):
+If P, then Q.
+P.
+ Q.
+
+
+https://en.m.wikipedia.org/wiki/Propositional_calculus
+
+
+LOGICAL OPERATORS
+
+
+hose forms consisting of sentence letters
+combined with one or more of the following five expressions: ‘it is not the case that’, ‘and’, ‘either . . .
+or’, ‘if . . . then’, and ‘if and only if’. 
+The operator ‘it is not the case that’ prefixes a sentence to form a new sentence, which is called the
+negation of the first. Thus the sentence ‘It is not the case that he is a smoker’ is the negation of the
+sentence ‘He is a smoker’. There are many grammatical variations of negation in English. For example,
+the sentences ‘He is a nonsmoker’, ‘He is not a smoker’, and ‘He is no smoker’ are all ways of
+expressing the negation of ‘He is a smoker’. The particles ‘un-’, ‘ir-’, ‘in-’, ‘im-’, and ‘a-’, used as prefixes
+to words, may also express negation,These expressions are called logical operators or connectives.
+
+
+The other four operators each join two statements into a compound statement. We shall call them
+binary operators.
+A compound consisting of two sentences joined by ‘and’ (or ‘both . . . and’) is called a conjunction,
+and its two component sentences are called conjuncts. Conjunction may also be expressed in English
+by such words as ‘but’, ‘yet’, ‘although’, ‘nevertheless’, ‘whereas’, and ‘moreover’, which share with
+‘and’ the characteristic of affirming both the statements they join—though they differ in expressing
+various shades of attitude toward the statements thus asserted.
+A compound statement consisting of two statements joined by ‘either . . . or’ is called a disjunction
+(hence the name ‘disjunctive syllogism’ for the argument form discussed above). The two statements
+are called disjuncts. Thus the first premise of argument 1, ‘Today is either Monday or Tuesday’—which
+for logical purposes is the same as ‘Either today is Monday or today is Tuesday’—is a disjunction whose
+disjuncts are ‘Today is Monday’ and ‘Today is Tuesday’. The term ‘either’ is often omitted. The same
+proposition can thus be expressed even more simply as ‘Today is Monday or Tuesday’.
+Statements formed by ‘if . . . then’ are called conditionals. The statement following ‘if’ is called the
+antecedent; the other statement is the consequent. In the sentence ‘If you touch me, then I’ll scream’,
+‘You touch me’ is the antecedent and ‘I’ll scream’ is the consequent. The word ‘then’ may be omitted
+Conditionals can also be expressed in reverse order; e.g., ‘I’ll scream if you touch me’. This is a mere
+grammatical variant of the previous sentence, and its antecedent and consequent are the same.
+Lastly, statements formed by ‘if and only if’ are called biconditionals. There is no special name for
+their components, except for left-hand side and right-hand side of the biconditional. A biconditional
+may be regarded as a conjunction of two conditionals. To see this, consider the sentence:
+It is a triangle if and only if it is a three-sided polygon.
+This is obviously just a variant of
+It is a triangle if it is a three-sided polygon, and it is a triangle only if it is a three-sided polygon.
+which in turn is a variant of
+If it is a three-sided polygon, then it is a triangle; and it is a triangle only if it is a three-sided polygon.
+
+
+3.3 Classify the following compound sentences in terms of the logical operators used
+to construct them; in each case, name the component sentence(s) to which the
+operator is applied.
+(a) Today is Monday only if yesterday was Sunday.
+(b) Today is Monday if yesterday was Sunday.
+(c) If today is Monday, yesterday was Sunday.
+(d) She lied, if today is Monday.
+(e) It’s her birthday if and only if it’s Monday.
+(f) It is either Monday or Monday.
+(g) John and Mary are competent.
+(h) He is incompetent.
+(i) He is not very competent.
+(j) He is competent but too old.
+(k) He is either competent or corrupt.
+(l) If he is competent, she is a liar.
+(m) Either he or she is very corrupt.
+(n) Only if she is a liar is he competent.
+(o) Although he is very competent, she avoids him.
+
+
+Solution
+(a) Conditional; antecedent: ‘Today is Monday’; consequent: ‘Yesterday was Sunday’.
+(b) Conditional; antecedent: ‘Yesterday was Sunday’; consequent: ‘Today is Monday’.
+(c) Conditional; antecedent: ‘Today is Monday’; consequent: ‘Yesterday was Sunday’.
+(d) Conditional; antecedent: ‘Today is Monday’; consequent: ‘She lied’.
+(e) Biconditional; left-hand side: ‘It’s her birthday’; right-hand side: ‘It’s Monday’.
+(f) Disjunction; first disjunct: ‘It is Monday’; second disjunct: ‘It is Monday’.
+(g) Conjunction; first conjunct: ‘John is competent’; second disjunct: ‘Mary is competent’.
+(h) Negation; negated sentence: ‘He is competent’.
+(i) Negation; negated sentence: ‘He is very competent’.
+(j) Conjunction; first conjunct: ‘He is competent’; second conjunct: ‘He is too old’.
+(k) Disjunction; first disjunct: ‘He is competent’; second disjunct: ‘He is corrupt’.
+(l) Conditional; antecedent: ‘He is competent’; consequent: ‘She is a liar’.
+(m) Disjunction; first disjunct: ‘He is very corrupt’; second disjunct: ‘She is very corrupt’.
+(n) Conditional; antecedent: ‘He is competent’; consequent: ‘She is a liar’.
+(o) Conjunction; first conjunct: ‘He is very competent’; second conjunct: ‘She avoids him’.
+
+
+
+Logical Operator
+
+
+It is not the case that
+And
+Either . . . or
+If . . . then
+If and only if
+Symbol
+
+&
+-
+
+→
+↔
+
+Logical Operator
+It is not the case that
+And
+Either . . . or
+If . . . then
+If and only if
+Alternative Symbol(s)
+ or ¬
+· or 
+none
+
+
+# form alization
+
+To make english statements into form is called formalization
+The language consisting of the symbolic notation introduced in the previous section is called the
+language of propositional logic. We shall now examine the syntax of this language first by showing how
+the forms of various English sentences may be expressed as symbolic formulas (i.e., how these
+sentences may be formalized), and then by stating explicit grammatical rules (formation rules) for the
+language itself.
+The process of formalization converts an English sentence or argument into a sentence form or
+argument form, a structure composed of sentence letters and logical operators. The sentence letters
+have no meaning in themselves; but in the context of a particular problem, they may be interpreted as
+expressing definite propositions or statements. This interpretation, however, is inessential to the form.
+
+
+
+
+
+3.5 Interpreting the sentence letter ‘R’ as ‘It is raining’ and the letter ‘S’ as ‘It is
+snowing’, express the form of each of the following English sentences in the language
+of propositional logic:
+(a) It is raining.
+(b) It is not raining.
+(c) It is either raining or snowing.
+(d) It is both raining and snowing.
+(e) It is raining, but it is not snowing.
+(f) It is not both raining and snowing.
+(g) If it is not raining, then it is snowing.
+(h) It is not the case that if it is raining then it is snowing.
+(i) It is not the case that if it is snowing then it is raining.
+(j) It is raining if and only if it is not snowing.
+(k) It is neither raining nor snowing.
+(l) If it is both snowing and raining, then it is snowing.
+(m) If it’s not raining, then it’s not both snowing and raining.
+(n) Either it’s raining, or it’s both snowing and raining.
+(o) Either it’s both raining and snowing or it’s snowing but not raining.
+
+
+Solution
+(a) R
+(b) R
+(c) R - S
+(d) R & S
+(e) R & S
+(f) (R & S)
+(g) R → S
+(h) (R → S)
+(i) (S → R)
+(j) R ↔ S
+(k) (R - S)
+(l) (S & R) → S
+(m) R → (S & R)
+(n) R - (S & R)
+(o) (R & S) - (S & R)
+
+
+Observe that these formulas are all constructed from the following three sets of symbols:
+
+
+
+3.7 Formalize the following arguments in a horizontal format, using the sentence
+letters indicated. Use premise and conclusion indicators to distinguish premises from
+conclusions (see Section 1.2). Omit outer brackets, according to our ‘‘unofficial’’
+convention, stated above.
+(a) If God exists, then life is meaningful. God exists. Therefore life is meaningful.
+(L, G)
+(b) God does not exist. For if God exists, life is meaningful. But life is not
+meaningful. (G, L)
+(c) If the plane had not crashed, we would have had radio contact with it. We had no
+radio contact with it. Therefore, it crashed. (C, R)
+(d) Since today is not Thursday, it must be Friday. For it is either Thursday or Friday.
+(T, F)
+(e) If today is Thursday, then tomorrow is Friday. If tomorrow is Friday, then the day
+after tomorrow is Saturday. Consequently, if today is Thursday, then the day after
+tomorrow is Saturday. (T, F, S)
+(f) It is on a weekend if and only if it is on either a Saturday or Sunday. Therefore,
+it is on a weekend, since it is on a Sunday. (W, S1, S2)
+(g) It is on a weekend if it is on either a Saturday or a Sunday. But it is not on a
+weekend. So it is not on a Saturday and it is not on a Sunday. (W, S1, S2)
+(h) It is on a weekend only if it is on either a Saturday or a Sunday. It is not on a
+Saturday. It is not on a Sunday. Therefore, it is not on a weekend. (W, S1, S2)
+(i) The grant proposal is in the mail. If the referees receive it by Friday, they’ll give
+it due consideration. Therefore, they’ll give it due consideration, since if the
+proposal is in the mail, they will receive it by Friday. (M, F, C)
+(j) She’s either not at home or not answering the phone. But if she’s not at home,
+then she’s been kidnapped. And if she’s not answering the phone, she is in some
+other danger. Therefore, either she has been kidnapped or she’s in some other
+danger. (H, A, K, D)
+
+
+Solution
+(a) G → L, G -L
+(b) G → L, L -
+ G
+(c) C → R, R -
+ C
+(d) T -
+ F, T -
+ F
+(e) T → F, F → S -
+ T → S
+(f) W ↔ (S1 -
+ S2), S2 -
+ W
+(g) (S1 -
+ S2) → W, W -
+ S1 & S2
+(h) W → (S1 -
+ S2), S1, S2 -
+ W
+(i) M, F → C, M → F -
+ C
+(j) H -
+ A, H → K, A → D -
+ K -
+ D
+ 
+
+
+
+
+## semnatics
+
+
+At this point we give a rigorous formulation of the intended interpretation (semantics) of the five
+logical operators. The semantics of an expression is its contribution to the truth or falsity of sentences
+in which it occurs (more precisely, to the truth or falsity of the statements expressed by those
+sentences. The truth or falsity of a statement is also called the truth value of the statement. So, in
+particular, the semantics of a logical operator is given by a rule for determining the truth value of any
+compound statement involving that operator on the basis of the truth values of the components.
+Note that in describing these semantic rules we shall assume the principle of bivalence, to the effect
+that true and false are the only truth values and that in every possible situation each statement has one
+and only one of them
+
+
+I am lying’) may have truth values other than true and false, or no truth value at all,
+and hence are not bivalent
+
+
+
+
+Let us then assume the principle of bivalence. The semantic rule for negation is simple. The
+negation of a statement  is true if  is false and false if  is true
+
+
+The truth table for conjunction is equally straightforward. A conjunction is true if both of its
+conjuncts are true, and false otherwise. Thus the table is:
+
+,==
+P
+T
+T
+F
+F
+,==
+
+Q
+T
+F
+T
+F
+
+& 
+T
+F
+F
+F
+
+
+
+. The
+conditional expressed by our symbol ‘→’ is called the material conditional. What is asserted by ‘P → Q’
+is precisely this: It is not the case that P and not Q. Thus if someone says, ‘‘If Paul goes, then Quinton
+will go too,’’ using ‘If . . . then’ in the material sense, then that person is saying that it is not the case thatPaul will go and Quinton won’t. This statement has the form ‘ (P & Q)’, and since it has the same
+meaning as ‘P → Q’, it is true under precisely the same circumstances. We can therefore obtain the
+truth table for ‘P → Q’ by finding the truth table for ‘(P & Q)’. We can do this by using the tables
+for ‘’ and ‘&
+
+
+P
+T
+T
+F
+F
+
+Q
+T
+F
+T
+F
+(P &  Q)
+T
+T
+F
+F
+T
+F
+T
+F
+
+
+
+
+s of these letters in the formula:
+P
+T
+T
+F
+F
+Q
+T
+F
+T
+F
+(P → Q)&(Q → P)
+T
+T
+F
+F
+T
+F
+T
+F
+T
+F
+T
+F
+T
+T
+F
+F
+
+Wff
+
+
+REFUTATION TREES
+Truth tables provide a rigorous and complete test for the validity or invalidity of propositional logic
+argument forms, as well as a test for tautologousness, truth-functional contingency, and inconsistency
+of wffs. Indeed, they constitute an algorithms 
+
+
+Rules
+
+
+we present a different method for establishing deductive validity, which makes no
+explicit reference to the notion of a truth value. It is based on the idea that if an argument is deductively
+valid, one should be able to infer or derive the conclusion from the premises, that is, to show how the
+conclusion actually **follows from the premise**
+
+
+
+Without knowing value of each we calculate from starting to conclusions if T or F is called propostional caluclus 
+
+The key to proving validity by means of step-by-step deductions lies in mastering the principles
+which can be appealed to in making the successive steps. These principles are called rules of inference.
+ can be extended to cover other patterns of reasoning (see
+Chapters 7 and 11). Overall we shall formulate ten such rules: two—an introduction and an elimination
+rule—for each of the five logical operators. The elimination rule for an operator is used to reason from
+premises in which that operator is the main operator. The introduction rule for an operator is used to
+derive conclusions in which it is the main operator. These rules form a system called the propositional
+calculus. (The term means simply ‘‘system for performing calculations with propositions’’; it indicates
+no close relationship with the differential or integral calculus of advanced mathematics.) A deduction
+in the propositional calculus is thus a series of formulas in the language of propositional logic, each of
+which is either used as a premise or obtained by applying a rule of introduction or a rule of elimination.
+A deduction is also called a derivation or proof; we shall use these terms synonymously.
+
+
+
+
+NONHYPOTHETICAL INFERENCE RULES
+
+
+Hypothetical inference rules
+https://en.m.wikipedia.org/wiki/List_of_rules_of_inference
+
+
+
+
+# categorical arguments
+
+The propositional logic of Chapters 3 and 4 concerns only logical relations generated by
+truth-functional operators, expressions like ‘not’, ‘and’, ‘or’, ‘if . . . then’, and ‘if and only if’. These
+relations are fundamental, but they are still only a small part of the subject matter of logic. This chapter
+takes a preliminary look at another part, the logical relations generated by such expressions as ‘all’,
+‘some’, and ‘no’.
+
+Some four-legged creatures are gnus.
+All gnus are herbivores.
+Some four-legged creatures are herbivores.
+
+
+
+5.1 Represent the following argument in schematic form:
+All logicians are philosophers.
+Some logicians are mathematicians.
+ Some mathematicians are philosophers.
+
+Solution
+Using ‘L’ for ‘logicians’, ‘P’ for ‘philosophers’, and ‘M’ for ‘mathematicians’, the form of
+the argument can be represented thus:
+All L are P.
+Some L are M.
+ Some M are P.
+
+
+
+Represent the following argument in schematic form:
+All cups on the coffee table have been hand-painted by my art teacher.
+All things that have been hand-painted by my art teacher are beautiful.
+ All cups on the coffee table are beautiful.
+Solution
+This argument is of the form:
+All C are H.
+All H are B.
+ All C are B.
+where ‘C’ is replaced by the noun phrase ‘cups on the coffee table’, ‘H’ by the noun phrase
+‘things that have been hand-painted by my art teacher’ (obtained by converting the verb phrase
+‘have been painted by my art teacher’ into standard form), and ‘B’ by the noun phrase ‘beautiful
+things’ (obtained by converting the adjective ‘beautiful’ into standard form).
+
+
+
+In statements, class terms are often related to one another by the expressions ‘all’ and ‘some’,
+which are called quantifiers. Quantifiers, like truth-functional operators, are logical operators; but
+instead of indicating relationships among sentences, they express relationships among the sets
+designated by class terms. Statements of the form ‘All A are B’, for example, assert that the set A is a
+subset of the set B; that is, all the members of A are also members of B. And, by a convention
+universally employed in logic, statements of the form ‘Some A are B’ assert that the set A shares at least
+one member with the set B
+
+
+In addition to the quantifiers ‘all’ and ‘some’, we shall also consider the negative quantifier ‘no’.
+Statements of the form ‘No A are B’ assert that the sets A and B are disjoint, i.e., share no members.
+The only other expression occurring in the three arguments considered so far is ‘are’. This word
+(together with its grammatical variants ‘is’, ‘am’, ‘was’, ‘were’, etc.) is called the copula, because it
+couples or joins subject and predicate. Each statement in the three arguments is therefore made up of
+a quantifier followed by a class term, a copula, and, finally, another class term. Statements so
+constructed are called categorical statements. 
+
+
+
+
+
+
+Form
+All S are P.
+No S are P.
+Some S are P.
+Some S are not P.
+
+
+ The result is
+a new class term ‘not oaks’ (or, more perspicuously, ‘non-oaks’) except set oaks
+
+
+# Venn diagrams 
+CATEGORICAL SYLLOGISMS
+
+
+
+
+QUANTIFIERS AND VARIABLES
+Chapter 5 introduced the logical concept of a quantifier (‘all’, ‘some’, ‘no’) in the narrow context
+of the logic of categorical statements. In this chapter we combine the quantifiers with the operators of
+propositional logic
+
+
+symbols  A E
+
+
+
+6.3 Interpreting the letters ‘F’ and ‘G’ as the predicates ‘is a frog’ and ‘is green’,
+respectively, formalize each of the following sentences:
+(a) If something is a frog, then it is green.
+(b) If anything at all is a frog, then something is green.
+(c) Anything that is a frog is green.
+(d) If anything is green, then frogs are green.
+(e) If everything is green, then frogs are green.
+(f) Invariably, frogs are green.
+(g) Occasionally, frogs are green.
+(h) A frog is green.
+(i) A frog is always green.
+(j) Only frogs are green.
+Solution
+(a) x(Fx → Gx)
+(b) -
+xFx → -
+xGx. The antecedent features the word ‘anything’; this is typically a sign of
+universal quantification, but in the present context it clearly expresses an existential
+condition. (The condition could be reformulated as ‘If there are any frogs at all’.)
+(c) x(Fx → Gx)
+(d) -
+xGx → x(Fx → Gx). This case is similar to (b), except that the consequent is a general
+claim about the color of frogs and is therefore formalized as an A-form statement.
+(e) xGx → x(Fx → Gx)
+(f) x(Fx → Gx). Here the adverb ‘Invariably’ reinforces the reading of the plural ‘frogs’ as
+expressing universal quantification. (Compare Problem 6.1(a).)
+(g) -
+x(Fx & Gx). In this case, the adverb ‘Occasionally’ weakens the reading of the plural,
+leaving room for frogs that are not green. In fact, the adverb suggests that only a few frogs
+are green, a connotation that is lost in the formalization. To capture this connotation, the
+sentence can be rendered as a conjunction -
+x(Fx & Gx) & -
+x(Fx & Gx).
+(h) This sentence is ambiguous. It may be interpreted as a general statement about frogs (as
+in (a) and (c)), or as an existential statement of the form -
+x(Fx & Gx).
+(i) x(Fx → Gx). In this case the ambiguity is resolved by the adverb ‘always’.
+(j) x(Gx → Fx)
+
+
+
+Not all statements contain quantifiers. 
+
+
+There are, for example, simple **subject-predicate statements**
+which attribute a property to an individual person or thing. 
+
+
+
+Jones is a thief.
+may be formalized as
+Tj
+where ‘j’ is interpreted as the proper name ‘Jones’ and ‘T’ as the predicate ‘is a thief’.
+j = T
+ 
+// art of
+
+So far we have considered only predicates that are class terms, i.e., nouns, adjectives, or verbs which
+designate classes of objects. (See Section 5.1.) The result of combining such a predicate with a proper
+name is always a sentence, and the sentence will be true or false depending on whether or not the object
+designated by the name is a member of the class designated by the predicate. (For instance, the sentence
+‘Jones is a thief’ will be true if Jones is indeed a thief, and false otherwise.) There are, however, many
+predicates that must be combined with two or more proper names to make a sentence. In English, for
+
+
+
+Bob loves Cathy. is formalized asLbc
+Cathy loves Bob is formalized as Lcb
+
+//Prolog
+
+
+
+Transitive verbs are just one subclass of the broader class of relational predicates, predicates which
+designate relations between two or more objects (rather than classes of objects) and which combine two
+or more proper names to make a sentence. Here are some other examples of relational predicates that
+take two names to make a sentence: ‘=is next to’, ‘thumbs his nose at’, ‘is taller than’, ‘is less than’, ‘is
+a subset of’. The expressions ‘gave . . . to’ and ‘is between . . . and’ are examples of predicates that take
+three names. And ‘is closer to . . . than . . . is to’ takes four.
+A predicate which takes only one name (a class term) is called a nonrelational or one-place
+predicate. A relational predicate which takes two names is called a two-place predicate; one which takes
+three names a three-place predicate; and so on. 
+
+
+
+
+6.4 Formalize the following statements, interpreting the letters ‘a’, ‘b’, and ‘c’ as the
+proper names ‘Alex’, ‘Bob’, and ‘Cathy’; ‘M’ and ‘N’ as the one-place predicates ‘is a
+mechanic’ and ‘is a nurse’; ‘L’ and ‘T’ as the two-place predicates ‘likes’ and ‘is taller
+than’; and ‘I’ as the three-place predicate ‘introduced . . . to’.
+(a) Cathy is a mechanic.
+(b) Bob is a mechanic.
+(c) Cathy and Bob are mechanics.
+(d) Either Cathy or Bob is a mechanic.
+(e) Cathy is either a mechanic or a nurse (or both).
+(f) If Cathy is a mechanic, then she isn’t a nurse.
+(g) Cathy is taller than Bob.
+(h) Bob likes Cathy.
+(i) Bob likes himself.
+(j) Cathy likes either Bob or Alex.
+(k) Alex introduced Cathy to Bob.
+(l) Cathy introduced herself to Bob but not to Alex.
+
+Solution
+(a) Mc
+(b) Mb
+(c) Mc & Mb
+(d) Mc - Mb
+(e) Mc - Nc
+(f) Mc → Nc
+(g) Tcb
+(h) Lbc
+(i) Lbb
+(j) Lcb - Lca
+(k) Iacb
+(l) Iccb & Icca
+
+
+
+For anything x, John likes x.
+Accordingly, the sentence is formalized as
+xLjx.
+Sentences involving more than one quantifier are treated in a similar fashion. For instance, the
+sentence
+Something likes everything.
+involves two quantifiers, as is clear from the following reformulation:
+There exists an x such that, for all y, x likes y.
+In our notation, this becomes
+-
+xyLxy.
+
+
+
+Logical Symbols
+Logical operators: ‘’, ‘&’, ‘-
+’, ‘→’, ‘↔’
+Quantifiers:2 ‘’, ‘-
+’
+Variables: lowercase letters from ‘u’ through ‘z’
+Brackets: ‘(‘, ’)’
+
+
+
+
+# Fallacies 
+
+# induction (probability)
+# Mill's method
+
+
+
+Further Developments in Formal Logic
+A function symbol is a symbol which, when
+attached to one or more names or other denoting terms, produces an expression which denotes a single
+object and functions grammatically as a new name. Thus function symbols differ from predicates, which
+when applied to one or more names produce sentences. One English expression which may be treated
+as a function symbol (if the subject under discussion is people) is ‘the father of’ (understood in the
+biological sense). Applying this English phrase to a name produces a new English phrase which denotes
+a single new individual. Thus, applying ‘the father of’ to the name ‘Isaac ’, we get the phrase ‘the father
+of Isaac’, which designates the individual Abraham (assuming that the biblical Isaac is intended). This
+new phrase, which we shall call a functional expression, acts grammatically as a name; that is, it may
+occur in any grammatical context in which a name is appropriate. We may, for example, attach it to a
+one-place predicate to create a sentence, as in ‘The father of Isaac was a prophet’.
+We now consider how this sentence might be expressed in an extension of the predicate calculus.
+We shall use the lowercase letters ‘f ’, ‘g’, and ‘h’ for function symbols. The names or other functional
+expressions to which they are applied are written after them and enclosed in brackets. Thus, using ‘P’
+for ‘was a prophet’, ‘i’ for ‘Isaac’, and ‘f ’ for ‘the father of’, we may write ‘the father of Isaac’ as ‘f(i)’
+and ‘The father of Isaac was a prophet’ as ‘Pf(i)’.
+Function symbols may be applied repeatedly. For example, to say that Isaac’s paternal grandfather
+(the father of Isaac’s father) was a prophet, we can write ‘Pf(f(i))’. Moreover, the names contained in
+function symbols (as well as the functional expressions themselves) are accessible to quantification.
+Thus we may write ‘Someone’s paternal grandfather was a prophet’ as ‘xP(f(f(x)))’.
+An expression may be treated as a functional symbol only if each expression formed by applying
+it to a name denotes a unique individual. Thus ‘the son of’ may not be treated as a function symbol,
+since when applied to the name of anyone who has more than one son, it denotes not one individual,
+but several, and it denotes nobody when applied to the name of anyone who has no sons. By contrast,
+‘the father of’ denotes a unique individual when applied to the name of any person, since each person
+has one and only one (biological) father.
+Notice, however, that if ‘a’ is the name of an inanimate object, then also the expression ‘the father
+of a’ denotes nothing. That is why we were careful to restrict our comments above to discussions of
+people. When using function symbols it is important to specify the domain, i.e., the set of individuals
+to which the function symbol applies. ‘The father of’ may not be treated as a function symbol for
+domains which include fatherless objects.4
+Semantically, function symbols may be thought of as denoting operations called functions. An
+n-place function is an operation which assigns a unique object to each n-tuple (i.e., linear ordering, orlist, of n objects) of members of the domain. The father-of function, for example, is a one-place
+(monadic) function which assigns to each person a single individual who is that person’s father. The
+addition function of arithmetic is a two-place (binary) function which assigns to each 2-tuple (ordered
+pair) of numbers a third number which is their sum. A member of an n-tuple to which the function is
+applied is called an argument of the function. (Be careful not to confuse this meaning of ‘argument’
+with the idea of a set of premises and their conclusion.) The object assigned by an n-place function to
+a given n-tuple of arguments is called the value of the function for that n-tuple. For example, the value
+of the father-of function for the argument Isaac is Abraham. The set of all values for a given domain
+is the range of the function.
+SOLVED PROBLEM
+11.11 Using ‘f’ for ‘the father of’, ‘m’ for ‘the mother of’, ‘a’ for ‘Abel’, ‘c’ for ‘Cain’,
+and ‘S’ for ‘is a sinner’, formalize each of the following English sentences in the
+language of the predicate calculus with identity and function symbols. (Assume a
+domain of people.)
+(a) Cain’s father is a sinner.
+(b) If a person’s father is a sinner, then that person is a sinner.
+(c) If a person’s paternal grandfather is a sinner, then that person is a sinner.
+(d) Abel’s mother and father are sinners.
+(e) Abel’s father is also Cain’s father.
+(f) Abel’s father is someone else’s father.
+Solution
+(a) Sf(c)
+(b) -
+x(Sf(x) → Sx)
+(c) -
+x(Sf(f(x)) → Sx)
+(d) Sm(a) & Sf(a)
+(e) f(a)  f(c)
+(f) y(f(a)  f(y) & y  a)
+As parts (e) and (f) of Problem 11.11 suggest, two different individuals may have the same father.
+Thus a function may take the same value for two distinct arguments. The father of Abel is the same
+person as the father of Cain—namely, Adam. Still, for a given argument, the father-of function has one
+and only one value
+
+SOLVED PROBLEM
+11.12 Using ‘P’ for ‘is a point’ and ‘m’ for ‘the midpoint between’, formalize the
+following statements:
+(a) The midpoint between a point and itself is that point.
+
+
+
+# Formal Arithmetics
+
+# FORMAL DEFINITIONS
+
+# DEFINITE DESCRIPTIONS
+
+
+
+
+
+Here's a single cohesive example that progresses from Numbers to Algorithms, covering each topic:
+
+
+---
+
+Scenario: Finding the Shortest Path in a City with Traffic Lights
+
+A city has 5 intersections (A, B, C, D, E) connected by roads with different travel times. We need to find the fastest route from A to E considering traffic signals.
+
+
+---
+
+1. Numbers (Graph Representation)
+
+We represent intersections as nodes and roads as edges with weights (travel time in minutes).
+
+Graph Representation:
+
+A → B (4 min)
+
+A → C (2 min)
+
+B → D (5 min)
+
+C → D (1 min)
+
+C → E (8 min)
+
+D → E (3 min)
+
+
+
+
+---
+
+2. Set Theory (Possible Paths as a Set)
+
+Define the set of all possible paths from A to E:
+P = {A → B → D → E, A → C → D → E, A → C → E}
+
+
+---
+
+3. Logic (Traffic Light Constraint Check)
+
+If a route has too many red lights, it's slower. Suppose:
+
+Road B → D has 2 red lights.
+
+Road C → D has 1 red light.
+
+Road C → E has no red lights.
+
+A logical rule: "Avoid paths with >2 red lights"
+
+
+
+---
+
+4. Relations (Graph as an Adjacency List)
+
+Express graph as a relation (Adjacency List):
+R = {(A, B, 4), (A, C, 2), (B, D, 5), (C, D, 1), (C, E, 8), (D, E, 3)}
+
+
+---
+
+5. Counting and Combinatorics (Counting Paths)
+
+Number of unique paths from A to E:
+
+A → C → D → E
+
+A → C → E
+
+A → B → D → E
+= 3 possible paths
+
+
+
+---
+
+6. Recursion (Defining Paths Recursively)
+
+A recursive relation for shortest path:
+
+D(E) = min(D(D) + time(D→E), D(C) + time(C→E))
+
+Base case: D(A) = 0
+
+
+
+---
+
+7. Probability (Traffic Light Delays)
+
+Each red light causes a 50% chance of a 1-minute delay.
+Probability of getting delayed on A → B → D → E:
+
+P(delay) = 1 - P(no delay) = 1 - (0.5 × 0.5) = 0.75 (75%)
+
+
+
+---
+
+8. Graph Theory (Finding the Shortest Path)
+
+Using Dijkstra’s Algorithm:
+
+1. Start at A (distance = 0).
+
+
+2. Update neighbors (B = 4, C = 2).
+
+
+3. Pick lowest cost node (C = 2).
+
+
+4. Update neighbors (D = 2+1=3, E = 2+8=10).
+
+
+5. Pick D (cost 3), update E (3+3=6).
+
+
+6. Final Shortest Path: A → C → D → E (6 minutes).
+
+
+
+
+---
+
+9. Trees (Optimal Path as a Spanning Tree)
+
+If we expand the graph to include more intersections, we can construct a Minimum Spanning Tree (MST) for an efficient traffic network.
+
+
+
+---
+
+10. Boolean Algebra (Traffic Rules as Boolean Expressions)
+
+R = "If rush hour → Add 2 minutes"
+
+S = "If rainy → Add 3 minutes"
+
+Total time = (Dijkstra time) + (R ∧ S ? 5 : 0)
+
+
+
+---
+
+11. Formal Languages (Path Encoding as a String)
+
+Paths can be encoded as a language:
+
+Alphabet: {A, B, C, D, E}
+
+Strings: {"ACDE", "ABCDE", "ACE"}
+
+A finite automaton can be designed to validate paths.
+
+
+
+---
+
+12. Algorithm (Dijkstra's Shortest Path Algorithm)
+
+1. Initialize: Start at A with distance 0.
+
+
+2. Relax Edges: Update shortest known distances.
+
+
+3. Pick Minimum Distance Node: Expand from it.
+
+
+4. Repeat Until All Nodes Processed.
+
+
+5. Output Path: A → C → D → E (6 min).
+
+
+
+
+---
+
+Final Answer: The fastest route is A → C → D → E in 6 minutes.
+
+This example covers all fundamental topics in a logical sequence while solving a real-world problem. Let me know if you want refinements!
+
+
+
+
+Here’s another example in a statement-based format, covering each topic step by step.
+
+
+---
+
+Scenario: Employee Salary Calculation in a Company
+
+A company wants to calculate the salaries of employees based on working hours, bonuses, and deductions.
+
+
+---
+
+1. Numbers
+
+Each employee works a certain number of hours per month.
+
+The base salary is calculated as:
+Salary = Hourly Rate × Hours Worked
+
+
+
+---
+
+2. Set Theory
+
+The set of all employees is:
+E = {Alice, Bob, Charlie, David}
+
+The set of full-time employees:
+F = {Alice, Bob}
+
+The set of part-time employees:
+P = {Charlie, David}
+
+F ⊆ E and P ⊆ E
+
+
+
+---
+
+3. Logic
+
+If an employee works >160 hours, they get a bonus.
+
+If they take >3 leaves, a deduction applies.
+
+Rule:
+Bonus = (Hours Worked > 160) ? 10% of Salary : 0
+Deduction = (Leaves > 3) ? 5% of Salary : 0
+
+
+
+---
+
+4. Relations
+
+A relation between employees and salaries:
+(Alice, 5000), (Bob, 4800), (Charlie, 2500), (David, 2200)
+
+
+
+---
+
+5. Counting & Combinatorics
+
+If there are 4 full-time employees and 3 bonus categories, the number of possible salary structures is:
+4 × 3 = 12 combinations
+
+
+
+---
+
+6. Recursion
+
+The total salary after bonuses and deductions can be computed recursively:
+Salary(n) = Salary(n-1) + Bonus(n) - Deduction(n)
+
+
+
+---
+
+7. Probability
+
+Probability that an employee gets a bonus if 60% of employees work overtime:
+P(Bonus) = 0.6
+
+
+
+---
+
+8. Graph Theory
+
+Employees are connected in a hierarchical graph:
+
+CEO → Manager → Employee
+
+Alice and Bob report to the Manager
+
+Manager reports to the CEO
+
+
+
+
+---
+
+9. Trees
+
+The organization structure follows a tree hierarchy:
+
+CEO  
+      |  
+    Manager  
+   /       \  
+Alice       Bob
+
+
+
+---
+
+10. Boolean Algebra
+
+Conditions for bonus and deduction in Boolean logic:
+
+B = HoursWorked > 160
+
+D = Leaves > 3
+
+Final Salary = BaseSalary + (B × Bonus) - (D × Deduction)
+
+
+
+
+---
+
+11. Formal Languages
+
+Salary slips follow a structured format like:
+
+Employee: Alice  
+Salary: $5000  
+Bonus: $500  
+Deduction: $100  
+Net Pay: $5400
+
+This follows a context-free grammar (CFG).
+
+
+
+---
+
+12. Algorithm (Salary Calculation Algorithm)
+
+1. Input employee details (hours worked, leaves taken).
+
+
+2. Compute Base Salary = Hourly Rate × Hours Worked.
+
+
+3. Check Bonus Condition (if hours > 160, add 10% bonus).
+
+
+4. Check Deduction Condition (if leaves > 3, deduct 5%).
+
+
+5. Compute Final Salary = Base Salary + Bonus - Deduction.
+
+
+6. Output final salary.
+
+
+
+
+---
+
+Final Output:
+
+Alice: $5400
+
+Bob: $4800
+
+Charlie: $2500
+
+David: $2200
+
+
+This format keeps it structured and statement-based while covering all the key topics. Let me know if you want another variation!
+
+
+
+
+
+
+
+
+Scenario: Patient Diagnosis and Treatment Planning
+
+A hospital wants to diagnose patients based on symptoms, tests, and medical conditions and then determine the best treatment plan.
+
+
+---
+
+1. Numbers
+
+A patient's blood pressure is 120/80 mmHg.
+
+The heart rate is 75 beats per minute.
+
+The glucose level is 110 mg/dL.
+
+
+
+---
+
+2. Set Theory
+
+Set of diseases: D = {Diabetes, Hypertension, Flu, COVID-19}
+
+Set of symptoms: S = {Fever, Cough, Fatigue, High BP}
+
+A relation exists between diseases and symptoms:
+
+Hypertension → {High BP, Headache}
+
+Flu → {Fever, Cough, Body Pain}
+
+
+
+
+---
+
+3. Logic
+
+If a patient has a fever and cough, they might have the flu.
+
+If a patient has high BP and headaches, they might have hypertension.
+
+Rule:
+
+Has Fever AND Cough → Flu
+
+Has High BP AND Headache → Hypertension
+
+
+
+
+---
+
+4. Relations
+
+A relation between patients and diseases:
+
+(Patient A, Hypertension)
+
+(Patient B, Flu)
+
+(Patient C, Diabetes)
+
+
+
+
+---
+
+5. Counting & Combinatorics
+
+If a doctor can prescribe 5 different medicines for 3 diseases, the number of possible treatment combinations is:
+5 × 3 = 15 treatment plans
+
+
+
+---
+
+6. Recursion
+
+A recursive function to adjust medication dosage:
+
+Dose(n) = Dose(n-1) + Adjustment(n)
+
+If a patient's blood sugar remains high, increase insulin dosage step by step.
+
+
+
+---
+
+7. Probability
+
+Probability of COVID-19 if a patient has fever, cough, and loss of smell:
+P(COVID | Symptoms) = 0.85 (85%)
+
+
+
+---
+
+8. Graph Theory
+
+Hospital referral system:
+
+Patient → General Physician → Specialist → Treatment
+
+A directed graph can represent patient movement in the healthcare system.
+
+
+
+
+---
+
+9. Trees
+
+Decision tree for diagnosis:
+
+Fever?  
+     /    \  
+  Yes      No  
+ Cough?   High BP?  
+ /   \     /     \  
+Flu  COVID Hypertension Diabetes
+
+
+
+---
+
+10. Boolean Algebra
+
+F = Fever, C = Cough, H = High BP, D = Diabetes
+
+Flu = (F AND C)
+
+Hypertension = (H AND NOT C)
+
+Treatment = (Disease) AND (Correct Medication)
+
+
+
+
+---
+
+11. Formal Languages
+
+Electronic Medical Records (EMR) Format (structured patient data):
+
+Patient: John Doe  
+Symptoms: Fever, Cough  
+Diagnosis: Flu  
+Prescription: Paracetamol, Cough Syrup
+
+This follows a structured format similar to XML/JSON.
+
+
+
+---
+
+12. Algorithm (Diagnosis Algorithm)
+
+1. Input: Symptoms, test results.
+
+
+2. Check Symptoms: Fever? Cough? High BP?
+
+
+3. Match with Disease:
+
+If (Fever AND Cough) → Flu
+
+If (High BP AND Headache) → Hypertension
+
+
+
+4. Determine Treatment:
+
+Flu → Paracetamol, rest
+
+Hypertension → BP medication
+
+
+
+5. Output: Diagnosis and prescription.
+
+
+
+
+---
+
+Final Output:
+
+Patient A: Flu, prescribed Paracetamol.
+
+Patient B: Hypertension, prescribed BP medication.
+
+Patient C: Diabetes, prescribed Insulin.
+
+
+
+---
+
+This format follows a medical approach while covering all the concepts. Let me know if you need another variation!
+
+
+
+
+Scenario: Dental Diagnosis and Treatment Planning
+
+A dental clinic wants to diagnose patients based on oral conditions, categorize them, and suggest treatments.
+
+
+---
+
+1. Numbers
+
+Tooth number: 16 (Upper right first molar)
+
+Cavity depth: 2 mm
+
+Plaque index score: 3 (on a scale of 0-5)
+
+Bone loss percentage: 25%
+
+
+
+---
+
+2. Set Theory
+
+Set of dental conditions: D = {Caries, Gingivitis, Periodontitis, Stains}
+
+Set of treatments: T = {Filling, Scaling, RCT, Extraction}
+
+Relation:
+
+Caries → {Filling, RCT}
+
+Gingivitis → {Scaling}
+
+Periodontitis → {Deep Cleaning, Surgery}
+
+
+
+
+---
+
+3. Logic
+
+If a patient has plaque and gum bleeding, they might have gingivitis.
+
+If a cavity is deep, it requires an RCT instead of a filling.
+
+Rules:
+
+(Plaque AND Bleeding) → Gingivitis
+
+(Deep Cavity AND Pain) → Root Canal Treatment (RCT)
+
+
+
+
+---
+
+4. Relations
+
+Relation between teeth and conditions:
+
+(Tooth 16, Caries)
+
+(Tooth 24, Stains)
+
+(Tooth 36, Periodontitis)
+
+
+
+
+---
+
+5. Counting & Combinatorics
+
+If a dentist has 3 treatment options for 4 different conditions, the total possible treatment combinations are:
+3 × 4 = 12 possible treatments
+
+
+
+---
+
+6. Recursion
+
+Gum health improvement over time:
+
+Health(n) = Health(n-1) + Daily Care(n)
+
+If a patient follows oral hygiene daily, gum health improves gradually.
+
+
+
+---
+
+7. Probability
+
+Probability of needing a filling if the patient has a cavity:
+P(Filling | Cavity) = 0.9 (90%)
+
+
+
+---
+
+8. Graph Theory
+
+Referral network:
+
+Patient → General Dentist → Endodontist (RCT)
+
+Patient → Orthodontist → Braces
+
+Patient → Periodontist → Gum Surgery
+
+This can be represented as a directed graph.
+
+
+
+
+---
+
+9. Trees
+
+Decision tree for treatment:
+
+Cavity?  
+     /     \  
+  Yes       No  
+ Deep?      Stains?  
+ /    \     /     \  
+RCT   Filling Whitening Scaling
+
+
+
+---
+
+10. Boolean Algebra
+
+C = Cavity, P = Pain, G = Gum Bleeding, S = Stains
+
+Filling = (C AND NOT Deep)
+
+RCT = (C AND Deep AND P)
+
+Scaling = (G AND Plaque)
+
+Whitening = (S AND NO Cavity)
+
+
+
+
+---
+
+11. Formal Languages
+
+Structured patient record (similar to XML/JSON):
+
+Patient: Ram Kumar  
+Tooth: 16  
+Condition: Caries  
+Treatment: Filling
+
+This follows a structured format for dental records.
+
+
+
+---
+
+12. Algorithm (Dental Diagnosis Algorithm)
+
+1. Input: Symptoms, X-ray results.
+
+
+2. Check Symptoms: Cavity? Gum Bleeding? Sensitivity?
+
+
+3. Match with Condition:
+
+If (Cavity AND NOT Deep) → Filling
+
+If (Deep Cavity AND Pain) → RCT
+
+If (Plaque AND Bleeding) → Scaling
+
+
+
+4. Determine Treatment:
+
+Filling → Composite Restoration
+
+RCT → Root Canal Therapy
+
+Scaling → Ultrasonic Scaling
+
+
+
+5. Output: Diagnosis and treatment plan.
+
+
+
+
+---
+
+Final Output:
+
+Patient A: Cavity in Tooth 16, prescribed Filling.
+
+Patient B: Gingivitis, prescribed Scaling.
+
+Patient C: Deep cavity in Tooth 36, prescribed RCT.
+
+
+
+---
+
+This covers dental conditions while following a logical progression. Let me know if you need modifications!
+
+
+
+
+

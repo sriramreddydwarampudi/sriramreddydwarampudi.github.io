@@ -1,0 +1,6 @@
+
+= Master Document  
+:toc:
+
+include::tasks.adoc[]
+include::memories.adoc[]

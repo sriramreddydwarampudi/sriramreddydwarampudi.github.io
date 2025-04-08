@@ -1,0 +1,125 @@
+Here are the clinical signs for each condition:
+
+1. Abfraction (Caused by occlusal stress and flexural forces)
+
+
+
+
+Wedge-shaped lesions at the cervical third of the tooth
+
+Sharply defined margins
+
+Common on buccal/labial surfaces of premolars and canines
+
+No signs of bacterial involvement (unlike caries)
+
+
+2. Abrasion (Caused by external mechanical forces like brushing)
+
+V-shaped or notched wear on cervical areas of teeth
+
+Smooth and shiny lesion surfaces
+
+Associated with aggressive tooth brushing or using a hard-bristled brush
+
+Often found on buccal/labial surfaces
+
+
+3. Caries (Bacterial demineralization of enamel and dentin)
+
+Chalky white spots (early demineralization)
+
+Brown or black cavitations
+
+Soft, sticky texture inside the lesion
+
+May cause pain or sensitivity to sweet, hot, or cold stimuli
+
+
+4. Attrition (Tooth wear due to tooth-to-tooth contact)
+
+Flattened occlusal or incisal surfaces
+
+Loss of enamel and exposure of dentin
+
+Matching wear facets on opposing teeth
+
+Possible dentin hypersensitivity
+
+
+5. Hypersensitivity (Exposed dentin leading to pain)
+
+Sharp, transient pain triggered by cold, sweet, or acidic foods
+
+No visible cavitation or decay
+
+Common in cases of gingival recession, abfraction, or erosion
+
+Pain disappears when the stimulus is removed
+
+
+6. Fracture (Breakage due to trauma or excessive force)
+
+Visible crack or break in enamel, dentin, or pulp
+
+May cause sharp pain during chewing
+
+Sensitivity to temperature changes
+
+Can range from craze lines to complete tooth splitting
+
+
+Would you like to differentiate these further or need help diagnosing a case?
+
+
+images
+= Dental Diagnosis Guide
+
+== Abfraction
+include::abfraction.adoc[tags=clinical_features]
+
+== Abrasion
+include::abrasion.adoc[tags=clinical_features]
+
+== Caries
+include::caries.adoc[tags=clinical_features]
+
+== Attrition
+include::attrition.adoc[tags=clinical_features]
+
+== Fracture
+include::fracture.adoc[tags=clinical_features]
+
+== Hypersensitivity
+include::hypersensitivity.adoc[tags=clinical_features]
+
+= signs
+
+
+== differential diagnosis
+abfraction vs abrasion vs erosion
+
+fracture vs attrition vs habit biting
+
+[options="header"]
+|===
+| Featur  | Abfraction | Abrasion | Attrition | Enamel Fracture
+| Cause         | Occlusal stress (bruxism, malocclusion) | Mechanical wear (brushing, habits) | Tooth-to-tooth contact (grinding, chewing) | Sudden trauma (injury, biting hard objects)
+| Mechanism     | Flexural stress causes enamel microfractures | Frictional wear removes enamel/dentin | Chronic wear from repeated contact | High-impact force breaks enamel
+| Appearance    | Wedge-shaped cervical lesion | Smooth, U- or V-shaped wear | Flat, shiny worn surfaces | Visible cracks, chips, or complete enamel breakage
+| Common Sites  | Cervical areas of premolars, molars | Cervical areas of exposed teeth | Incisal/occlusal surfaces of anterior and posterior teeth often generalized | Any tooth, often anterior teeth often localised
+| Symptoms      | Sensitivity, pain | Sensitivity to brushing | May be asymptomatic, sensitivity if dentin exposed | Sharp edges, pain, pulp exposure if deep
+| Risk Factors  | Bruxism, malocclusion | Hard brushing, abrasive toothpaste, habits | Bruxism, aging, malocclusion | Trauma, weakened enamel, occlusal overload
+| Progression   | Gradual with continued stress | Gradual but accelerates with excessive force | Slow and continuous over time | Sudden or progressive if stress persists
+| Treatment     | Occlusal adjustments, nightguard, restoration | Soft-bristle toothbrush, habit modification | Occlusal guard, restorations if severe | Bonding, veneer, crown, RCT if pulp exposed
+|===
+
+
+
+or or 
+infection spread pathway anatomy 
+any tooth structure abnormality => ask pain(pulpitis) if no then history of pain=> if no pain then depth(chronic pulpitis) => tender on percusion(pdl)
+
+
+
+
