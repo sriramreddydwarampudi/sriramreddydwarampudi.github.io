@@ -634,7 +634,8 @@ Yes, tagging is supported in AsciiDoc, mainly for:
 
 
 
+follows suffix  
+dont follow prefix
 
-
-
+for alphabetic sort
 
