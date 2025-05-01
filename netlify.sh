@@ -6,11 +6,16 @@ rsync -av --delete /storage/emulated/0/_markor/ ~/sriramreddydwarampudi.github.i
 # Step 2: Change to project directory
 cd ~/sriramreddydwarampudi.github.io || exit
 
-# Step 3: Stage changes
+
+
+# 2. Pull latest changes and auto-merge
+git pull origin main --rebase
+
+# 3. Now stage your local changes
 git add .
 
-# Step 4: Commit with timestamp
+# 4. Commit with timestamp
 git commit -m "Update notes: $(date '+%Y-%m-%d %H:%M:%S')"
 
-# Step 5: Push to main branch
+# 5. Push to main branch
 git push origin main
