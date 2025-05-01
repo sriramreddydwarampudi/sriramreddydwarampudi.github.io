@@ -1,0 +1,184 @@
+{
+  "main": {
+    "id": "357e07cc62a9b24e",
+    "type": "split",
+    "children": [
+      {
+        "id": "bc941593b6742f42",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0d70fb3cd1e9af16",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "945458b361894f66",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "1de818262c8f7c87",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "byModifiedTimeReverse"
+          }
+        }
+      },
+      {
+        "id": "1bc329062a0f4ff6",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "f385ca567204e1ec",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "c50c46e2d0f20729",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      },
+      {
+        "id": "06878cf76a2a7987",
+        "type": "leaf",
+        "state": {
+          "type": "mk-path-view",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "a3d6813a452f062f",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "c8bbb8b52c410857",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "fcc672c35ce27d13",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "9f79e7496f549575",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {}
+        }
+      },
+      {
+        "id": "c15ebada45a91083",
+        "type": "leaf",
+        "state": {
+          "type": "chronology-calendar-view",
+          "state": {}
+        }
+      },
+      {
+        "id": "09150e21623bc254",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 4
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "single-file-daily-notes:Open daily notes": false
+    }
+  },
+  "active": "0d70fb3cd1e9af16",
+  "lastOpenFiles": [
+    "Untitled 1.canvas",
+    "2024-08-21.md",
+    "Daily Notes.md",
+    "Untitled.canvas",
+    "Prostho - PHD.md",
+    "2024-08-09.md",
+    "The way I am/Untitled 1.md",
+    "Untitled 1.md",
+    "Introduction.md",
+    "Preface(ముందుమాట).md",
+    "Untitled.md",
+    "2024-04-27.md",
+    "The way I am/Rage.md",
+    "My movies and songs.md",
+    "The way I am/My life events.md",
+    "The way I am",
+    "Untitled 2.md",
+    "The way I am/The way I am.md",
+    "The way I am/Untitled 3.md",
+    "Vault.md",
+    "Tags",
+    "2024-04-03.md",
+    "2024-05-20.md",
+    "2024-06-03.md",
+    "2024-05-08_to_2024-05-11.md",
+    "Madhu/3rd year final Praticals/G.M pratical (3-5-24).md",
+    "Madhu/3rd year final Praticals",
+    "Library",
+    "The way I am/My perspective.md",
+    "Madhu"
+  ]
+}

@@ -1,0 +1,14 @@
+Principles of tooth preparation 
+
+
+• Preservation of tooth structure • Retention and resistance • Structural durability • Marginal integrity • Preservation of periodontium
+Preservation of Tooth Structure “Muller De Van stated that the perpetual preservation of what remains is more important than the meticulous replacement of what is lost”. Care should be taken to prevent excessive tooth preparation. There should be minimal possible reduction done to obtain the required characteristics. Grossly decayed teeth should be retained with the help of dowel cores, cast posts and onlays, etc.
+Retention and Resistance Forms
+Retention prevents the removal of the restoration along the path of insertion on the long axis of the tooth. It can be defined as, “the ability of the preparation to prevent displacement of the restoration in a direction opposite to the path of insertion.” One of the major sources of retention in a fixed partial denture is tensofriction. Retention can be of classified as follows:
+• Primary Retention — Sleeve retention provided by the opposing vertical surfaces of the tooth preparation.
+— Wedge type retention seen in intracoronal restorations.
+• Secondary retention: Retention obtained by retentive features like pins, boxes and grooves, etc. is known as secondary retention. Resistance is the ability of the prosthesis to resist displacement by forces directed in an apical or oblique direction. This prevents any movement of the restoration under occlusal forces. Retention and resistance are reciprocative to one another; hence, an optimal balance between these factors should be established during any preparation.
+The following features in a preparation should be designed to strike the balance between retention and resistance forms.
+Taper
+The degree of taper is inversely proportional to the retention form. Zero degree taper is the most retentive but it is almost impossible to obtain. The sum of the degree of taper is called as degree of convergence. For optimum retention, 4°-10° convergence is sufficient (Fig. 29.1). Mandibular premolars are lingually tilted by 9o degrees, hence, reduction should not be prepared perpendicular to the occlusal plane instead the entire preparation should be lingually inclined (Fig. 29.2). A tapering fissure diamond is ideal to produce the required taper for any preparation. This diamond is designed with a three-degree taper. Hence if the operator aligns the diamond parallel to the long axis of the tooth during tooth preparation, a six-degree convergence will be produced (Fig. 29.3).
+Freedom of Displacement • Limiting the freedom of displacement from torquing and twisting forces aid to increase the resistance of the restoration.

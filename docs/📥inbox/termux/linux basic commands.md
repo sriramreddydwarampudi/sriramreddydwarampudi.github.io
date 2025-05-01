@@ -1,0 +1,7 @@
+- ls
+- cd
+- cat
+- touch
+- grep
+- sed
+- 

@@ -1,0 +1,1400 @@
+
+# Developmental disturbances of oral and paraoral structures
+Craniofacial anomalies
+Congenital deformations of head and neck
+Developmental disturbances of jaws
+Abnormalities of dental arch relations
+Developmental disturbances of lips and palate
+Developmental disturbances of oral mucosa
+Developmental disturbances of gingiva
+Developmental disturbances of tongue
+Developmental disturbances of oral lymphoid tissue
+Developmental disturbances of salivary glands
+Developmental disturbances in size of teeth
+Developmental disturbances in shape of teeth
+Developmental disturbances in number of teeth
+Developmental disturbances in structure of teeth
+Disturbances in eruption of teeth
+References
+3. Cysts of orofacial region
+Odontogenic cysts
+Nonodontogenic cysts
+Miscellaneous cysts
+References
+4. Odontogenic tumors
+Classification of odontogenic tumors
+Tumors arising from odontogenic epithelium
+Tumors arising from odontogenic epithelium with odontogenic
+ectomesenchyme
+Tumors arising from odontogenic ectomesenchyme with or
+without included odontogenic epithelium
+Malignant odontogenic tumors
+Odontogenic carcinomas
+Odontogenic sarcomas
+References
+5. Epithelial neoplasms of the oral cavity
+Benign neoplasms of epithelial tissue origin
+“Premalignant” lesions/conditions of epithelial tissue origin
+Malignant tumors of the epithelial tissue origin
+References
+6. Nonepithelial tumors of the oral cavity
+Benign tumors of connective tissue origin
+Malignant tumors of connective tissue origin
+Benign tumors of muscle tissue origin
+Malignant tumors of muscle tissue origin
+Benign tumors of nerve tissue origin
+Malignant tumors of nerve tissue origin
+7. Tumors of the salivary glands
+Benign epithelial tumors of salivary glands
+Malignant epithelial tumors of salivary glands
+Nonepithelial tumors
+Tumor-like lesions
+References
+8. Bacterial infections of the oral cavity
+Tuberculosis
+Leprosy (Hansen disease)
+Actinomycosis
+Tetanus (lock-jaw)
+Syphilis (lues)
+Gonorrhea
+Granuloma inguinale (granuloma venereum, donovanosis)
+Noma (cancrum oris, gangrenous stomatitis)
+Scarlet fever (scarlatina)
+Diphtheria
+Botryomycosis (bacterial actinophytosis, actinobacillosis)
+Tularemia (rabbit fever)
+Rhinoscleroma (scleroma)
+Cat-scratch disease (cat-scratch fever, benign lymphoreticulosis)
+Pyostomatitis vegetans
+References
+9. Viral infections
+Classification of major virus groups and viral diseases
+Measles (rubeola, red spots, morbilli)
+Mumps (epidemic parotitis)
+Nonspecific “mumps”
+Rubella (German measles)
+Herpangina (aphthous pharyngitis, vesicular pharyngitis)
+Acute lymphonodular pharyngitis
+Hand-foot-and-mouth disease
+Foot-and-mouth disease (aphthous fever, hoof-and-mouth
+disease, epizootic stomatitis)
+Chikungunya
+Herpes simplex (acute herpetic gingivostomatitis, herpes labialis,
+fever blisters, cold sores)
+Chickenpox (varicella)
+Herpes zoster (shingles, zona)
+Cytomegalovirus inclusion disease (salivary gland virus disease)
+Infectious mononucleosis (glandular fever, kissing disease)
+Smallpox (variola)
+Molluscum contagiosum
+Condyloma acuminatum (verruca acuminata, venereal wart)
+Acquired immunodeficiency syndrome (AIDS)
+Coronavirus disease (COVID-19)
+References
+10. Mycotic infections
+Fungal infections
+Paracytic infections
+References
+11. Dental caries
+Epidemiology of dental caries
+Etiology of dental caries
+Clinical aspects of dental caries
+Histopathology of dental caries
+Diagnosis of dental caries
+References
+
+12. Diseases of the pulp and periapical tissues
+Diseases of dental pulp
+Diseases of periapical tissues
+References
+13. Periodontal diseases
+The healthy periodontium
+Deposits on teeth
+Classification of periodontal diseases and conditions
+Gingival diseases
+Periodontal diseases
+Developmental or acquired deformities
+Peri-implant diseases
+References
+14. Spread of oral infection
+Osteomyelitis
+Cellulitis (phlegmon)
+Infections of specific tissue spaces
+Manifestations of various space infections
+Ludwig angina
+Cavernous sinus thrombosis or thrombophlebitis
+Maxillary sinusitis
+Focal infection
+References
+15. Bone and joint diseases
+Definitions
+Diseases of the bone involving maxilla and mandible
+Diseases of temporomandibular joint
+References
+16. Hematologic diseases
+Diseases involving red blood cells
+Diseases involving white blood cells
+Diseases involving blood platelets
+Diseases involving specific blood factors
+References
+17. Diseases of the skin
+Ectodermal dysplasia (hereditary ectodermal dysplasia,
+ectodermal dysplasia syndrome)
+White sponge nevus (familial white folded dysplasia of mucous
+
+membrane, oral epithelial nevus, congenital leukokeratosis,
+Cannon disease)
+Hereditary benign intraepithelial dyskeratosis
+Dyskeratosis congenita (Zinsser–Cole–Engman syndrome,
+Hoyeraal-Hreidarsson syndrome)
+Xeroderma pigmentosum
+Ehlers–danlos syndrome (Tenascin-X deficiency syndrome, Lysyl
+hydroxylase deficiency syndrome, cutis hyperelastica)
+Mucocutaneous lymph node syndrome (Kawasaki disease)
+Focal dermal hypoplasia syndrome (Goltz–Gorlin syndrome)
+Oral lichen planus (lichen ruber planus)
+Lichenoid reaction (lichenoid mucositis, lichenoid drug reaction,
+oral drug-induced lichenoid eruptions)
+Pemphigus
+Cicatricial pemphigoid (benign mucous membrane pemphigoid,
+ocular pemphigus)
+Bullous pemphigoid (parapemphigus)
+Epidermolysis bullosa
+Erythema multiforme (Stevens–Johnson syndrome, erythema
+multiforme major, erythema multiforme minor, herpes-associated
+erythema multiforme, drug-induced Stevens–Johnson syndrome)
+Systemic lupus erythematosus
+Systemic sclerosis (scleroderma, dermatosclerosis, hidebound)
+disease)
+Psoriasis
+Acanthosis nigricans
+Pityriasis rosea (pityriasis circinata, roseola annulata, herpes
+tonsurans maculosus)
+Dermatitis herpetiformis (Duhring–Brocq disease)
+Solar elastosis (senile elastosis, actinic elastosis)
+Graft-versus-host diseases
+References
+18. Diseases of the nerves and muscles
+Diseases of the nerves
+Diseases of the muscles
+References
+19. Allergic and immunologic diseases of the oral cavity
+Recurrent aphthous stomatitis (aphthous ulcers, canker sores)
+Behçet syndrome
+Reiter syndrome
+Sarcoidosis (boeck sarcoid, besnier–boeck–schaumann disease)
+Uveoparotid fever (uveoparotitis, heerfordt syndrome)
+Angioedema (angioneurotic edema, quincke edema, giant
+urticaria)
+Drug allergy (drug idiosyncrasy, drug sensitivity, stomatitis
+medicamentosa)
+Contact stomatitis and dermatitis (stomatitis and dermatitis
+venenata)
+Contact stomatitis from cinnamon flavoring agent
+Contact stomatitis from chronic oral mucosal contact with dental
+amalgam (silver amalgam)
+Perioral dermatitis
+Latex allergy
+Midline lethal granuloma (midline lethal granulomatous
+ulcerations)
+Wegener granulomatosis
+Chronic granulomatous disease
+References
+20. Oral aspects of metabolic diseases
+Disturbances in mineral metabolism
+Disturbances in protein metabolism
+Individual amino acids
+Lysosomal storage diseases
+Disturbances in carbohydrate metabolism
+Disturbances in lipid metabolism
+Avitaminoses
+Fat-soluble vitamins
+Water-soluble vitamins
+Disturbances in hormone metabolism
+References
+21. Regressive alterations of the teeth
+Attrition, abrasion, and erosion
+Abfraction
+Dentinal sclerosis (transparent dentin)
+Dead tracts
+Secondary dentin
+Pulp calcification
+Resorption of teeth
+Hypercementosis (cementum hyperplasia)
+Cementicles
+References
+22. Physical and chemical injuries of the oral cavity
+Injuries of teeth associated with tooth preparation
+Effect of restorative materials
+Effect of cement bases, cavity liners, varnishes, and primers
+Effect of cavity-sterilizing agents
+Physical injuries of the teeth
+Injuries to the supporting structures of the tooth
+Physical injuries of the bone
+Physical injuries of soft tissues
+Radiation injuries
+Electrical burns
+Cervicofacial emphysema
+Anesthetic necrosis
+Human bite (morsus humanus)
+Oral trauma related to sexual practices
+Chemical injuries of oral cavity
+Occupational injuries of the oral cavity
+Occlusal trauma
+References
+23. Healing of oral wounds
+Factors affecting healing of oral wounds
+Complications of wound healing
+Healing after pulpal diseases
+Healing after periapical diseases
+Biopsy and healing of biopsy wound
+Exfoliative cytology
+Healing of gingivectomy wound
+Healing of extraction wound
+Healing of bone fracture
+Complications of fracture healing
+Distraction osteogenesis (osteodistraction and callus distraction)
+Replantation and transplantation of teeth
+Implants
+Stem cell therapy
+References
+24. Forensic odontology
+Personal identification
+Dental identification procedures
+Identification in disasters
+Identification from dental DNA
+Palatal rugae in identification
+Reconstructive dental identification
+Dental profiling
+Crime investigation
+The dentist as an expert witness
+Acknowledgments
+References
+25. Mucosal response to oral prostheses: Some pathological
+considerations
+Denture in the oral environment
+Direct sequelae caused by wearing dentures
+Indirect sequelae
+Oral reactions to orthodontic appliances
+References
+Diagrammatic representations of the histopathology of important oral
+lesions
+Index
+
+
+ **disease** is a particular abnormal condition that adversely affects the structure or function of all or part of an organism
+
+**medical conditions** that are associated with specific signs and symptoms
+
+
+CHAPTER 2
+Developmental disturbances of
+oral and paraoral structures
+B. Sivapathasundharam
+CHAPTER OUTLINE
+Craniofacial anomalies 11
+Congenital deformations of head and neck 12
+Teratogenic agents 12
+Developmental disturbances of jaws 12
+Agnathia 12
+Micrognathia 12
+Pierre Robin syndrome 13
+Macrognathia 14
+Mandibulofacial dysostosis 14
+Facial hemihypertrophy 15
+Facial hemiatrophy 16
+Abnormalities of dental arch relations 18
+Developmental disturbances of lips and palate 18
+Cleft lip and cleft palate 18
+Congenital lip and commissural pits, and fistulas 22
+van der Doude syndrome 22
+Double lip 23
+Cheilitis glandularis 24
+Cheilitis granulomatosa 25
+Developmental disturbances of oral mucosa 26
+Pigmented cellular nevus 26
+Labial and oral melanotic macule 29
+Hereditary intestinal polyposis syndrome 30
+Fordyce granules 31
+Focal epithelial hyperplasia 31
+Developmental disturbances of gingiva 32
+Fibromatosis gingivae 32
+Retrocuspid papilla 33
+Developmental disturbances of tongue 34
+Aglossia and microglossia syndrome 34
+Macroglossia 34
+Ankyloglossia 35
+Cleft tongue 35
+Fissured tongue 35
+Median rhomboid glossitis 36
+Benign migratory glossitis 38
+Hairy tongue 39
+Lingual varices 40
+Lingual thyroid nodule 40
+Developmental disturbances of oral lymphoid tissue 41
+Reactive lymphoid aggregate 41
+Lymphoid hamartoma 41
+Angiolymphoid hyperplasia with eosinophilia 42
+Developmental disturbances of salivary glands 42
+Aplasia 42
+Xerostomia 43
+Hyperplasia of palatal glands 44
+Atresia 44
+Aberrancy 45
+Developmental disturbances in size of teeth 45
+Microdontia 45
+Macrodontia 45
+Developmental disturbances in shape of teeth 45
+Gemination 45
+Fusion 46
+Concrescence 46
+Lobodontia 48
+Globodontia 48
+Dilaceration 48
+Talon cusp 49
+Dens in dente 49
+Dens evaginatus 50
+Enamel pearl 50
+Taurodontism 51
+Supernumerary roots 52
+Developmental disturbances in number of teeth 52
+Anodontia 52
+Supernumerary teeth 54
+Predeciduous dentition 55
+Postpermanent dentition 56
+Developmental disturbances in structure of teeth 56
+Amelogenesis imperfecta 56
+Environmental enamel hypoplasia 58
+Dentinogenesis imperfecta 62
+Dentin dysplasia 64
+Regional odontodysplasia 65
+Dentin hypocalcification 65
+Disturbances in eruption of teeth 66
+Premature eruption 66
+Eruption sequestrum 66
+Delayed eruption 67
+Multiple unerupted teeth 67
+Retained deciduous teeth 67
+Management 68
+Embedded and impacted teeth 68
+Ankylosed deciduous teeth 70
+
+CHAPTER 3
+Cysts of orofacial region
+B. Sivapathasundharam
+CHAPTER OUTLINE
+Odontogenic cysts 72
+Developmental odontogenic cysts 72
+Odontogenic keratocyst 72
+Orthokeratinized odontogenic cyst 76
+Dentigerous cyst 76
+Eruption cyst 80
+Lateral periodontal cyst 80
+Glandular odontogenic cyst 83
+Calcifying odontogenic cyst 84
+Gingival cyst of newborn 85
+Gingival cyst of adult 86
+Inflammatory odontogenic cysts 88
+Apical periodontal cyst 88
+Inflammatory collateral cyst 91
+Paradental cyst 92
+Buccal bifurcation cyst 92
+Nonodontogenic cysts 93
+Developmental nonodontogenic cysts 93
+Nasopalatine duct cyst 93
+Median palatal cyst 94
+Globulomaxillary cyst 94
+Median mandibular cyst 95
+Palatal cysts of neonate 96
+Nasolabial cyst 96
+Thyroglossal duct cyst 96
+Oral lymphoepithelial cyst 97
+Epidermoid cyst 98
+Dermoid cyst 99
+Inflammatory nonodontogenic cysts 100
+Salivary cysts 100
+Mucous extravasation cyst 100
+Ranula 101
+Mucous retention cyst 102
+Antral cysts 102
+Retention cyst of maxillary sinus 102
+Surgical ciliated cyst of maxilla 104
+Traumatic bone cyst 105
+Aneurysmal bone cyst 107
+Parasitic cysts 108
+Miscellaneous cysts 109
+Heterotopic oral gastrointestinal cyst 109
+Stafne bone cyst 109
+Anterior lingual depression 109
+CHAPTER 4
+Odontogenic tumors
+B. Sivapathasundharam, Preethi S.
+CHAPTER OUTLINE
+Classification of odontogenic tumors 111
+Tumors arising from odontogenic epithelium 112
+Ameloblastoma 112
+Metastasizing ameloblastoma 120
+Squamous odontogenic tumor 120
+Calcifying epithelial odontogenic tumor 122
+Adenomatoid odontogenic tumor 125
+Tumors arising from odontogenic epithelium with
+odontogenic ectomesenchyme 127
+Ameloblastic odontoma 127
+Ameloblastic fibroma 127
+Ameloblastic fibro-odontoma 129
+Odontoma 130
+Dentinogenic ghost cell tumor 132
+Primordial odontogenic tumor 134
+Tumors arising from odontogenic ectomesenchyme with or
+without included odontogenic epithelium 134
+Peripheral odontogenic fibroma 134
+Central odontogenic fibroma 135
+Odontogenic myxoma 136
+Granular cell odontogenic tumor 138
+Cementoblastoma 138
+Cemento-ossifying fibroma 139
+Malignant odontogenic tumors 139
+Odontogenic carcinomas 139
+Ameloblastic carcinoma 139
+Primary intraosseous carcinoma 140
+Sclerosing odontogenic carcinoma 141
+Ghost cell odontogenic carcinoma 142
+Clear-cell odontogenic carcinoma 143
+Odontogenic sarcomas 144
+Ameloblastic fibrosarcoma 144
+Odontogenic carcinosarcoma 144
+
+
+CHAPTER 5
+Epithelial neoplasms of the oral
+cavity
+B. Sivapathasundharam
+CHAPTER OUTLINE
+Benign neoplasms of epithelial tissue origin 147
+Squamous papilloma 147
+Squamous acanthoma 148
+Keratoacanthoma 148
+“Premalignant” lesions/conditions of epithelial tissue
+origin 149
+Dysplasia 150
+Proliferative organization of oral epithelium 151
+Staging of oral precancerous lesions 151
+Leukoplakia 152
+Verrucous hyperplasia 156
+Epithelial dysplasia 157
+Grading of epithelial dysplasia 157
+Leukoedema 159
+Intraepithelial carcinoma 160
+Erythroplakia 161
+Smoker’s palate 162
+Palatal changes associated with reverse smoking 162
+Palatal erythema 163
+Central papillary atrophy of the tongue 163
+Lesions associated with betel quid chewing 163
+Oral lichen planus-like lesion 164
+Oral submucous fibrosis 164
+Biological studies on individuals and tissues
+from OSF 166
+Management 167
+Malignant tumors of the epithelial tissue origin 167
+Basal cell carcinoma 167
+Nodular basal cell carcinoma 168
+Pigmented basal cell carcinoma 168
+Cystic basal cell carcinoma 168
+Superficial basal cell carcinoma 168
+Micronodular basal cell carcinoma 168
+Morpheaform and infiltrating basal cell
+carcinoma 168
+Squamous cell carcinoma 169
+Genetic basis of oral cancer 170
+Clinical presentations of oral cancer 172
+Metastatic carcinoma 172
+TNM classification of lip and oral cavity carcinomas 172
+Rules for classification 172
+Anatomical sites and subsites 172
+TNM clinical staging 174
+Histopathological grading of oral squamous cell
+carcinoma 175
+Emerging trends 176
+Carcinoma of lip 176
+Carcinoma of tongue 177
+Carcinoma of floor of the mouth 178
+Carcinoma of buccal mucosa 179
+Carcinoma of gingiva 179
+Carcinoma of palate 180
+Carcinoma of maxillary sinus 181
+Verrucous carcinoma 181
+Malignant melanoma 182
+Spindle cell carcinoma 187
+Adenoid squamous cell carcinoma 188
+Basaloid squamous cell carcinoma 189
+Adenosquamous cell carcinoma 189
+Carcinoma cuniculatum 189
+Papillary squamous cell carcinoma 190
+Undifferentiated carcinoma 190
+Lymphoepithelioma and transitional cell carcinoma 190
+Nasopharyngeal carcinoma 191
+Metastatic carcinomas 192
+CHAPTER 6
+Nonepithelial tumors of the oral
+cavity
+B. Sivapathasundharam, R. Sathish Muthukumar
+CHAPTER OUTLINE
+Benign tumors of connective tissue origin 194
+Oral fibroma 194
+Fibromatoses 196
+Giant cell fibroma 196
+Myofibroma and myofibromatosis 196
+Peripheral ossifying fibroma 197
+Central ossifying fibroma of bone 198
+Peripheral giant cell granuloma 199
+Central giant cell granuloma and giant cell tumor of bone
+201
+Giant cell tumor of bone 203
+Lipoma 204
+Lipoblastoma 206
+Verruciform xanthoma 206
+Oral hemangiomas and vascular malformations 207
+Hereditary hemorrhagic telangiectasia 211
+Encephalotrigeminal hemangiomatosis 212
+Nasopharyngeal angiofibroma 213
+Pyogenic granuloma 214
+Lymphangioma 216
+Myxoma 217
+Chondroma 218
+Benign chondroblastoma 219
+Chondromyxoid fibroma 219
+Osteoma 219
+Osteoid osteoma 220
+Benign osteoblastoma 222
+Torus palatinus 222
+Torus mandibularis 224
+Multiple exostoses 224
+Malignant tumors of connective tissue origin 225
+Fibrosarcoma 225
+Miscellaneous locally aggressive fibrous lesions 226
+Nodular fasciitis 227
+Aggressive fibromatosis 227
+Proliferative myositis 227
+Fibrous histiocytoma 227
+Atypical fibroxanthoma 227
+Desmoplastic fibroma of bone 227
+Fibrous histiocytoma 228
+Malignant fibrous histiocytoma 228
+Synovial sarcoma 229
+Liposarcoma 230
+Hemangioendothelioma 232
+Hemangiopericytoma 233
+Multiple idiopathic hemorrhagic sarcoma of Kaposi 234
+Ewing sarcoma 235
+Chondrosarcoma 237
+Osteosarcoma 239
+Malignant lymphoma 243
+Non-Hodgkin lymphoma 243
+Primary lymphoma of bone 247
+African jaw lymphoma 249
+Hodgkin disease 250
+Multiple myeloma and other plasma cell neoplasms 252
+Plasmacytoma 255
+Benign tumors of muscle tissue origin 257
+Leiomyoma 257
+Angiomyoma 257
+Rhabdomyoma 258
+Granular cell myoblastoma 258
+Congenital epulis 259
+Malignant tumors of muscle tissue origin 261
+Leiomyosarcoma 261
+Rhabdomyosarcoma 261
+Alveolar soft part sarcoma 263
+Benign tumors of nerve tissue origin 264
+Traumatic neuroma 264
+Multiple endocrine neoplasia syndrome 265
+Neurofibroma 266
+Localized neurofibroma 266
+Diffuse neurofibroma 266
+Plexiform neurofibroma 266
+Pigmented neurofibroma 267
+Neurofibromatosis 268
+Neurilemmoma 269
+Melanotic neuroectodermal tumor of infancy 270
+Malignant tumors of nerve tissue origin 271
+Malignant peripheral nerve sheath tumor 271
+Olfactory neuroblastoma 273
+Metastatic tumors of jaws 273
+CHAPTER 7
+Tumors of the salivary glands
+B. Sivapathasundharam
+CHAPTER OUTLINE
+Benign epithelial tumors of salivary glands 278
+Adenomas 278
+Pleomorphic adenoma 278
+Myoepithelioma 281
+Basal cell adenoma 281
+Warthin tumor 282
+Oncocytoma 283
+Canalicular adenoma 284
+Sebaceous adenoma 285
+Papillomas 285
+Ductal papilloma 285
+Inverted ductal papilloma 286
+Intraductal papilloma 286
+Sialadenoma papilliferum 286
+Cystadenoma 286
+Malignant epithelial tumors of salivary glands 287
+Carcinomas 287
+Mucoepidermoid carcinoma 287
+Adenocarcinoma 289
+Acinic cell carcinoma 290
+Adenoid cystic carcinoma 291
+Polymorphous low-grade adenocarcinoma 293
+Malignant mixed tumor 293
+Squamous cell carcinoma 294
+Basal cell adenocarcinoma 295
+Epithelial–myoepithelial carcinoma 295
+Papillary cystadenocarcinoma 297
+Undifferentiated carcinoma 297
+Salivary adenocarcinoma 298
+Oncocytic carcinoma 298
+Salivary duct carcinoma 298
+Sebaceous carcinoma 299
+Sebaceous lymphadenocarcinoma 299
+Malignant myoepithelioma 299
+Other carcinomas 300
+Small cell carcinoma 300
+Adenosquamous carcinoma 300
+Mucinous adenocarcinoma 300
+Mammary analogue secretory carcinoma 300
+Sialoblastoma 301
+Nonepithelial tumors 301
+Mesenchymal neoplasms 301
+Malignant lymphomas 301
+Secondary tumors 301
+Tumor-like lesions 302
+Sialadenosis 302
+Oncocytosis 302
+Necrotizing sialometaplasia 303
+Benign lymphoepithelial lesion 304
+IgG4-related mikulicz disease 305
+Sjögren syndrome 305
+Salivary cysts 308
+Chronic sclerosing sialadenitis of submandibular gland
+308
+Cystic lymphoid hyperplasia in AIDS 308
+
+CHAPTER 8
+Bacterial infections of the oral
+cavity
+B. Sivapathasundharam, N. Gururaj
+CHAPTER OUTLINE
+Tuberculosis 309
+Extensively drug resistant tuberculosis 313
+Leprosy 313
+Actinomycosis 314
+Tetanus 316
+Syphilis 317
+Acquired syphilis 317
+Congenital (prenatal) syphilis 319
+Gonorrhea 320
+Granuloma inguinale 320
+Noma 321
+Scarlet fever 322
+Diphtheria 322
+Botryomycosis 324
+Tularemia 324
+Rhinoscleroma 325
+Cat-scratch disease 325
+Pyostomatitis vegetans 325
+CHAPTER 9
+Viral infections
+B. Sivapathasundharam, N. Gururaj, K. Ranganathan
+CHAPTER OUTLINE
+Classification of major virus groups and viral diseases 327
+Measles 328
+Mumps 329
+Nonspecific “mumps” 330
+Chronic nonspecific sialadenitis 330
+Acute postoperative parotitis 330
+Nutritional “mumps” 331
+Chemical “mumps” 331
+Miscellaneous factors 331
+Rubella 332
+Herpangina 332
+Acute lymphonodular pharyngitis 332
+Hand-foot-and-mouth disease 333
+Foot-and-mouth disease 333
+Chikungunya 334
+Herpes simplex 334
+Primary herpetic stomatitis 336
+HSV infection and pregnancy 337
+Recurrent or secondary herpetic labialis and stomatitis
+337
+Chickenpox 339
+Herpes zoster 340
+Cytomegalovirus inclusion disease 342
+Infectious mononucleosis 342
+Smallpox 344
+Molluscum contagiosum 344
+Condyloma acuminatum 345
+Acquired immunodeficiency syndrome 345
+Human immunodeficiency virus 346
+Oral lesions in HIV infection 347
+Diagnosis of HIV 351
+Coronavirus disease 353
+
+
+CHAPTER 1 0
+Mycotic infections
+B. Sivapathasundharam, N. Gururaj
+CHAPTER OUTLINE
+Fungal infections 354
+Candidiasis 354
+Pseudomembranous candidiasis 355
+Erythematous candidiasis 356
+Chronic hyperplastic candidiasis 356
+Candida-associated lesions 357
+Denture stomatitis 357
+Secondary oral candidiasis 358
+Chronic mucocutaneous candidiasis 358
+Phycomycosis 359
+Rhinosporidiosis 361
+Aspergillosis 361
+Histoplasmosis 362
+North American blastomycosis 363
+South American blastomycosis 364
+Coccidioidomycosis 364
+Cryptococcosis 364
+Geotrichosis 365
+Sporotrichosis 365
+Paracytic infections 366
+Toxoplasmosis 366
+Helminthic diseases 367
+Cysticercosis 367
+Trichinosis 367
+Hydatid cyst 368
+Oral myiasis 368
+
+
+
+Dental caries
+CHAPTER 1 2
+Diseases of the pulp and
+periapical tissues
+B. Sivapathasundharam
+CHAPTER OUTLINE
+Diseases of dental pulp 404
+Etiologic factors 404
+Classification of pulpitis 405
+Focal reversible pulpitis 405
+Acute pulpitis 406
+Chronic pulpitis 409
+Chronic hyperplastic pulpitis 409
+Diseases of periapical tissues 411
+Apical periodontitis 411
+Acute apical periodontitis 412
+Chronic apical periodontitis 412
+Apical periodontal cyst 416
+Periapical abscess 416
+
+
+
+ CHAPTER 1 3
+Periodontal diseases
+B. Sivapathasundharam, C. Burnice Nalina Kumari
+CHAPTER OUTLINE
+The healthy periodontium 420
+Gingiva 420
+Epithelium 421
+Lamina propria 421
+Periodontal ligament 421
+Cementum 422
+Alveolar bone 422
+Deposits on teeth 422
+Dental stains 422
+Stains from smoking 423
+Brown stains 423
+Black stains 423
+Green stains 423
+Orange stains 423
+Metallic stains 423
+Antiseptic stains 424
+Dental plaque 424
+Composition of plaque 424
+Formation of plaque biofilm 424
+Dental calculus 424
+Distribution of calculus 424
+Composition of calculus 425
+Attachment of calculus 425
+Calculus formation 426
+Importance of calculus 426
+Halitosis 426
+Classification of periodontal diseases 427
+Gingival diseases 427
+1. Plaque-induced gingival diseases 427
+2. Nonplaque-induced gingival diseases 431
+Gingival enlargement 432
+Inflammatory gingival enlargement 433
+Drug-induced gingival enlargement 433
+Enlargement associated with systemic factors
+434
+Idiopathic gingival enlargement 436
+Neoplastic enlargements 437
+False enlargements 437
+Periodontal diseases 437
+Chronic periodontitis 440
+Aggressive periodontitis 442
+Periodontitis as the manifestation of systemic
+diseases 443
+Necrotizing diseases of periodontium 443
+Acute necrotizing ulcerative gingivitis 443
+Acute necrotizing ulcerative periodontitis 446
+Abscesses of periodontium 447
+Ginigival abscess 447
+
+Periodontal abscess 447
+Pericoronal abscess 448
+Periodontitis associated with endodontic lesions 449
+Endodontic-periodontal lesions 449
+Periodontal-endodontic lesions 449
+Combined lesions 449
+Developmental or acquired deformities 449
+Mucogingival deformities 449
+Mucogingival deformities and conditions around
+teeth 450
+Mucogingival deformities and conditions on
+edentulous edges 450
+Peri-implant diseases 450
+Peri-implant mucositis and peri-implantitis
+
+
+CHAPTER 1 4
+Spread of oral infection
+B. Sivapathasundharam
+CHAPTER OUTLINE
+Osteomyelitis 452
+Acute suppurative osteomyelitis 453
+Chronic suppurative osteomyelitis 454
+Chronic focal sclerosing osteomyelitis 455
+Chronic diffuse sclerosing osteomyelitis 456
+Chronic osteomyelitis with proliferative periostitis 457
+Cellulitis 459
+Infections of specific tissue spaces 460
+Spread of infection from maxillary teeth 460
+Spread of infection from mandibular teeth 460
+Manifestations of various space infections 461
+Infratemporal space 461
+Pterygomandibular space 461
+Lateral pharyngeal space 461
+Retropharyngeal space 462
+Parotid space 463
+Space of Body of the Mandible 463
+Submasseteric space 463
+Submandibular or Inframandibular Spaces 463
+Submandibular space 464
+Sublingual space 464
+Submental space 465
+Ludwig angina 465
+Cavernous sinus thrombosis or thrombophlebitis 466
+Maxillary sinusitis 466
+Acute maxillary sinusitis 466
+Chronic maxillary sinusitis 467
+Focal infection 467
+Mechanism of focal infection 468
+Oral foci of infection 468
+Significance of oral foci of infection 468
+CHAPTER 1 5
+Bone and joint diseases
+B. Sivapathasundharam, R. Madhavan Nirmal
+CHAPTER OUTLINE
+Definitions 472
+Diseases of the bone involving maxilla and mandible 472
+Osteogenesis imperfecta 472
+Sillence classification of osteogenesis
+imperfecta 473
+Osteopetrosis 474
+Fibrous dysplasia 475
+McCune–Albright syndrome 479
+Cemento-osseous dysplasia 480
+Gigantiform cementoma 481
+Cherubism 482
+Paget disease 484
+Massive osteolysis 488
+Infantile cortical hyperostosis 488
+Marfan syndrome 489
+Craniosynostosis syndromes 490
+Craniofacial dysostosis 491
+Apert syndrome 492
+Achondrogenesis 493
+Achondroplasia 494
+Chondroectodermal dysplasia 495
+Cleidocranial dysplasia 495
+Tricho-dento-osseous syndrome 497
+Down syndrome 497
+Langerhans cell histiocytosis 498
+Eosinophilic granuloma 499
+Hand–Schüller–Christian disease 499
+Letterer–Siwe disease 502
+Diseases of temporomandibular joint 502
+Developmental disturbances of temporomandibular joint
+502
+Condylar hypoplasia/aplasia 502
+Condylar hyperplasia 503
+Bifid condyle 504
+Traumatic disturbances of temporomandibular joint 504
+Dislocation of the condyles 504
+Ankylosis of TMJ 505
+Internal derangement of articular disk 506
+Inflammatory disturbances of temporomandibular joint
+508
+Osteoarthritis 508
+Rheumatoid arthritis 509
+Septic (infectious) arthritis 510
+Loose joint bodies 511
+Temporomandibular disorder (TMD) 511
+Neoplasms of temporomandibular joint 512
+CHAPTER 1 6
+Hematologic diseases
+Mandana Darafsh Donoghue, B. Sivapathasundharam
+CHAPTER OUTLINE
+Diseases involving red blood cells 513
+Anemia 513
+Anemia of reduced erythropoiesis 515
+Iron-deficiency anemia and Plummer–Vinson
+syndrome 515
+Megaloblastic anemia 517
+Aplastic anemia 520
+Thalassemia 526
+Polycythemia 529
+Polycythemia vera 529
+Diseases involving white blood cells 531
+Leukopenia 531
+Neutropenia/granulocytopenia 531
+Cyclic neutropenia 533
+Agranulocytosis 534
+Leukocytosis 535
+Leukemia 535
+Acute myeloid leukemia 537
+Chronic myelogenous leukemia 537
+Acute leukemia 539
+Chronic leukemia 539
+Diseases involving blood platelets 540
+Thrombocytopenia 541
+Thrombocytopenic purpura 541
+Diseases involving specific blood factors 544
+Hemophilia 545
+von Willebrand disease 546
+Rare clotting factor deficiencies 547
+Plasminogen deficiency 547
+
+
+CHAPTER 1 7
+Diseases of the skin
+B. Sivapathasundharam, Umadevi K. Rao
+CHAPTER OUTLINE
+Ectodermal dysplasia 549
+White sponge nevus 551
+Hereditary benign intraepithelial dyskeratosis 552
+Dyskeratosis congenita 553
+Xeroderma pigmentosum 554
+Ehlers–Danlos syndrome 554
+Mucocutaneous lymph node syndrome 556
+Focal dermal hypoplasia syndrome 556
+Oral lichen planus 557
+Lichenoid reaction 561
+Pemphigus 562
+Pemphigus vulgaris 562
+Pemphigus foliaceus 565
+Paraneoplastic pemphigus 565
+Familial benign pemphigus 566
+Cicatricial pemphigoid 567
+Bullous pemphigoid 568
+Epidermolysis bullosa 569
+Epidermolysis bullosa simplex 569
+Junctional epidermolysis bullosa 570
+Epidermolysis bullosa dystrophic, dominant 570
+Epidermolysis bullosa dystrophic, recessive 570
+Epidermolysis bullosa acquisita 571
+Erythema multiforme 571
+Stevens–Johnson syndrome 572
+Systemic lupus erythematosus 573
+Discoid lupus erythematosus 575
+Systemic sclerosis 576
+Psoriasis 578
+Acanthosis nigricans 580
+Pityriasis rosea 580
+Dermatitis herpetiformis 582
+Solar elastosis 582
+Graft-versus-host diseases 583
+CHAPTER 1 8
+Diseases of the nerves and
+muscles
+B. Sivapathasundharam
+CHAPTER OUTLINE
+Diseases of the nerves 584
+Disturbances of fifth cranial nerve 584
+Trigeminal neuralgia 584
+Paratrigeminal syndrome 586
+Sphenopalatine neuralgia 587
+Burning mouth syndrome 587
+Orolingual paresthesia 588
+Auriculotemporal syndrome 588
+Disturbances of seventh cranial nerve 589
+Bell palsy 589
+Disturbances of ninth cranial nerve 590
+Glossopharyngeal neuralgia 590
+Miscellaneous disturbances of nerves 590
+Dysgeusia 590
+Neuritis 592
+Migraine 592
+
+Temporal/giant cell arteritis 592
+Complex regional pain syndrome 593
+Atypical facial pain 593
+Atypical odontalgia 594
+Horner syndrome 594
+Motor system disease 594
+Multiple sclerosis 595
+Orofacial dyskinesia 595
+Marcus Gunn jaw-winking syndrome 596
+Diseases of the muscles 596
+Dystrophies 597
+Severe generalized familial muscular dystrophy
+597
+Mild restricted muscular dystrophy 597
+Myotonias 597
+Dystrophic myotonia 598
+Congenital myotonia 598
+Acquired myotonia 598
+Hemifacial spasm 598
+Periodic paralyses 599
+Hypotonia 599
+Myasthenia 599
+Myasthenia gravis 599
+Myositis 600
+Dermatomyositis 600
+Heterotopic ossification 601
+Proliferative myositis 603
+Focal myositis 603
+Miscellaneous myopathies 603
+Congenital facial diplegia 603
+CHAPTER 1 9
+Allergic and immunologic
+diseases of the oral cavity
+B. Sivapathasundharam
+CHAPTER OUTLINE
+Recurrent aphthous stomatitis 605
+Behçet syndrome 609
+Reiter syndrome 610
+Sarcoidosis 611
+Uveoparotid fever 611
+Angioedema 612
+Drug allergy 613
+Contact stomatitis and dermatitis 615
+Contact stomatitis from cinnamon flavoring agent 616
+Contact stomatitis from chronic oral mucosal contact with
+dental amalgam 617
+Perioral dermatitis 617
+Latex allergy 617
+Midline lethal granuloma 618
+Wegener granulomatosis 618
+Chronic granulomatous disease 619
+
+CHAPTER 2 0
+Oral aspects of metabolic diseases
+B. Sivapathasundharam’, Anitha Krishnan Pandarathodiyil
+CHAPTER OUTLINE
+Disturbances in mineral metabolism 622
+Minerals 622
+Calcium 622
+Phosphorus 625
+Magnesium 625
+Sodium 626
+Potassium 627
+Chlorine 628
+Trace elements 628
+Iodine 628
+Copper 628
+Iron 629
+Zinc 629
+Manganese 630
+Cobalt 630
+Chromium 630
+Selenium 630
+Fluoride 631
+Disturbances in protein metabolism 631
+Protein requirements 632
+Protein–energy (calorie) malnutrition 632
+Marasmus 632
+Kwashiorkor 632
+Individual amino acids 633
+Amyloidosis 633
+Porphyria 634
+Erythropoietic uroporphyria 635
+Lysosomal storage diseases 635
+Disturbances in carbohydrate metabolism 636
+Mucopolysaccharidoses 636
+Hurler syndrome 636
+Lipoid proteinosis 637
+Hereditary fructose intolerance 637
+Disturbances in lipid metabolism 637
+Gaucher disease 638
+Niemann–Pick disease 639
+Letterer–Siwe disease 639
+Avitaminoses 640
+Fat-soluble vitamins 640
+Vitamin A 640
+Hypervitaminosis A 641
+Vitamin D 642
+Vitamin D and cancer 642
+Relationship with calcium and phosphorus
+homeostasis 642
+Vitamin D–deficient rickets 642
+Osteomalacia 643
+Vitamin D–resistant rickets 64
+Renal rickets 644
+Hypophosphatasia 644
+Pseudohypophosphatasia 646
+Vitamin E 646
+Vitamin K 647
+Water-soluble vitamins 647
+Vitamin C 647
+Vitamin B complex 649
+Riboflavin 650
+Niacin (pellagra) 651
+Pantothenic acid 651
+Pyridoxine 652
+Choline 652
+Biotin 652
+Inositol 652
+Folic acid 652
+Vitamin B12 652
+Disturbances in hormone metabolism 652
+Pituitary hormones 653
+Hypopituitarism 654
+Hyperpituitarism 654
+Thyroid hormone 655
+Hypothyroidism 655
+Hyperthyroidism 656
+Parathyroid hormone 656
+Primary hyperparathyroidism 656
+Secondary hyperparathyroidism 658
+Hypoparathyroidism 658
+Gonadal hormones 6
+Adrenal hormones 658
+Acute insufficiency of the adrenal cortex 659
+Chronic insufficiency of the adrenal cortex:
+Addison disease 659
+Hyperfunction of adrenal gland 660
+Stress and the “adaptation syndrome” 660
+Pancreatic hormone: insulin 661
+Diabetes mellitus 661
+Progeria 662
+CHAPTER 2 1
+Regressive alterations of the teeth
+B. Sivapathasundharam
+CHAPTER OUTLINE
+Attrition, abrasion, and erosion 663
+Attrition 663
+Abrasion 664
+Erosion 665
+Causes 665
+Management of erosion 667
+Abfraction 668
+Dentinal sclerosis 668
+Dead tracts 669
+Secondary dentin 669
+Physiological secondary dentin 669
+Reparative secondary dentin 669
+Pulp calcification 670
+True denticles 670
+False denticles 670
+Diffuse calcifications 670
+Resorption of teeth 672
+External resorption 672
+
+Resorption associated with periapical
+inflammation 672
+Reimplanted teeth 672
+Tumors and cysts 672
+Excessive mechanical or occlusal forces 673
+Idiopathic resorption 674
+Internal resorption 674
+Hypercementosis 676
+Cementicles 678
+CHAPTER 2 2
+Physical and chemical injuries of
+the oral cavity
+B. Sivapathasundharam, Vijay Wadhwan
+CHAPTER OUTLINE
+Injuries of teeth associated with tooth preparation 680
+Effect of tooth preparation 680
+Effect of heat 680
+Effect of restorative materials 680
+Zinc oxide eugenol 681
+Silver amalgam 681
+Glass-ionomer 681
+Restorative resins 681
+Self-polymerizing acrylic resin 681
+Conventional composite resins 681
+Microfilled composite resins 682
+Effect of cement bases, cavity liners, varnishes, and
+primers 682
+Cement bases 682
+Cavity liners 682
+Cavity varnishes 683
+Effect of cavity-sterilizing agents 683
+
+Physical injuries of the teeth 683
+Bruxism 683
+Fractures of teeth 684
+Cracked tooth syndrome 685
+Injuries to the supporting structures of the tooth 685
+Concussion 685
+Subluxation 685
+Avulsion 685
+Tooth ankylosis 686
+Physical injuries of the bone 686
+Fractures of the jaws 686
+Fractures of the maxilla 686
+Fractures of the mandible 687
+Focal osteoporotic bone marrow defect of the jaw 687
+Physical injuries of soft tissues 688
+Linea alba 688
+Toothbrush trauma 689
+Traumatic ulcer 689
+Traumatic ulcerative granuloma with stromal eosinophilia
+690
+Angina bullosa hemorrhagica 691
+Factitial injuries 692
+Lip biting and cheek biting 692
+Denture injuries 693
+Traumatic ulcer 693
+Generalized inflammation 693
+Inflammatory (fibrous) hyperplasia 693
+Inflammatory papillary hyperplasia 694
+Denture base intolerance or allergy 695
+Sialolithiasis 695
+Maxillary antrolithiasis 697
+Rhinolithiasis 697
+Radiation injuries 697
+General effects of radiation on tissue 697
+Effects on skin 698
+Effects on oral mucosa 699
+Effects on salivary glands 699
+Effects on teeth 699
+Effects on bone 700
+Osteoradionecrosis 700
+Laser radiation 701
+Electrical burns 701
+Cervicofacial emphysema 701
+Anesthetic necrosis 702
+Human bite 702
+Oral trauma related to sexual practices 702
+Chemical injuries of oral cavity 703
+Nonallergic reaction to drugs and chemicals used locally
+703
+Aspirin 703
+Endodontic materials 703
+Gutta-percha 704
+Clove oil 704
+Nonallergic reactions to drugs and chemicals used
+systemically 704
+Dilantin sodium 705
+Cyclosporine 705
+Nifedipine 706
+Lead 706
+Mercury 706
+Maxillary antrolithiasis 697
+Rhinolithiasis 697
+Radiation injuries 697
+General effects of radiation on tissue 697
+Effects on skin 698
+Effects on oral mucosa 699
+Effects on salivary glands 699
+Effects on teeth 699
+Effects on bone 700
+Osteoradionecrosis 700
+Laser radiation 701
+Electrical burns 701
+Cervicofacial emphysema 701
+Anesthetic necrosis 702
+Human bite 702
+Oral trauma related to sexual practices 702
+Chemical injuries of oral cavity 703
+Nonallergic reaction to drugs and chemicals used locally
+703
+Aspirin 703
+Endodontic materials 703
+Gutta-percha 704
+Clove oil 704
+Nonallergic reactions to drugs and chemicals used
+systemically 704
+Dilantin sodium 705
+Cyclosporine 705
+Nifedipine 706
+Lead 706
+Mercury 706
+
+
+CHAPTER 2 5
+Mucosal response to oral
+prostheses: Some pathological
+considerations
+Mahesh Verma’, Priya Kumar
+CHAPTER OUTLINE
+Denture in the oral environment 759
+Sequelae caused by wearing removable prostheses 760
+Interaction of prosthetic materials and the oral
+environment 760
+Direct sequelae caused by wearing dentures 760
+Denture stomatitis 760
+Flabby ridge 761
+Denture irritation hyperplasia 761
+Traumatic ulcers 762
+Angular cheilitis 762
+Oral cancer in denture wearers 763
+Burning mouth syndrome 763
+Etiological factors 763
+Gagging 764
+Residual ridge resorption 764
+Overdenture abutments: caries and periodontal disease
+764
+Indirect sequelae 764
+Atrophy of masticatory muscles 764
+Nutritional deficiencies 765
+Masticatory ability and performance 765
+Allergic reactions 765
+Peri-implant disease 766
+Oral reactions to orthodontic appliances 768
+Effect on teeth 768
+Enamel 768
+Pulp 768
+Roots 769
+Effect on periodontium 769
+Effects on lining mucosa 769
+Allergy 769
+
+
+
+
+
+
+
+
+# structure
+
+sets
+	- tooth and gingiva(direction)
+	- buccal mucosa
+	- palate
+	- tongue
+	- salivary glands
+	- tonsils
+	- muscles of mastication
+	- tmj
+	- pharynx
+
+signs
+
+
+
+

@@ -1,0 +1,468 @@
+{
+  "main": {
+    "id": "4a4e999eb6274bcf",
+    "type": "split",
+    "children": [
+      {
+        "id": "266d58e63cef57f4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "feaf4c100e8b5daa",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "b4fcf5bae6fe5ae6",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "d19aaf434c5606c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Index"
+            }
+          },
+          {
+            "id": "0e84395c4e08d4d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "examination index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "examination index"
+            }
+          },
+          {
+            "id": "54e015ed6162a57a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "b27aa52c4283f72d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "().md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "()"
+            }
+          },
+          {
+            "id": "c93f1af3697d6d03",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dentamap.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Dentamap"
+            }
+          },
+          {
+            "id": "5e923811a6716137",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "977eae159b567deb",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "8fbb46802e306c47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maxillo.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Maxillo"
+            }
+          },
+          {
+            "id": "d126dd751994c7f7",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "74b96337832115f5",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "cef1c7f0d89a9d91",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "browsh.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "browsh"
+            }
+          },
+          {
+            "id": "6925e00f5e8f684c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "15dfc4e064ad5878",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "634f36246a26aab1",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "87f23dc93ada985a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "6f4036fd2b4ff2cb",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "f1e406addcd5b2e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Treatment index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Treatment index"
+            }
+          },
+          {
+            "id": "bc3be3506ed85e12",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dentamap.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Dentamap"
+            }
+          },
+          {
+            "id": "764ca65cd75f369c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dentamap.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Dentamap"
+            }
+          },
+          {
+            "id": "b23b9ec02e9a3306",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Representative diagnosis.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Representative diagnosis"
+            }
+          },
+          {
+            "id": "355cfdc161e6fdd2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dentamap.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Dentamap"
+            }
+          },
+          {
+            "id": "bf0ff4de61303fb1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "steps in machine learning.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "steps in machine learning"
+            }
+          }
+        ],
+        "currentTab": 23
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6f167fcfeca0cc90",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "afb0a2d934a07dbd",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "44206bdcf41c2142",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "24ed361515d21c5a",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "85767a92311e8f88",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "f3c76664e3b259b7",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "d5e3c938782689f5",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "my linking.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "2d990443562f74b2",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "2024-09-08.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "e8e866814fd75e00",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "2024-09-08.md"
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "bf0ff4de61303fb1",
+  "lastOpenFiles": [
+    "Dentamap.md",
+    "steps in machine learning.md",
+    "().md",
+    "my linking.md",
+    "diagnosis.md",
+    "Representative diagnosis.md",
+    "All diseases algorithm.md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "Discrete mathematics/Elements/Sets/Set.md",
+    "(with images)An Ultimate List Of Equipment And Instruments For A Dental Clinic.md",
+    "1.1 Determination of parts of speech.md",
+    "2.0 Trees.md",
+    "2.1 representation of tree.md",
+    "Ideal requirements of radiograph.md",
+    "abnormal diagnosis.md",
+    "2.4 Rules in tree.md",
+    "assests/SmartSelect_20240608_193646_Xodo.jpg",
+    "assests",
+    "d.md",
+    "Hasse_diagram_of_powerset_of_3.png",
+    "examination of tongue.md",
+    "2024-08-31.md",
+    "Restoration.md",
+    "treatments and indications.md",
+    "Prostho treatments and indications.md",
+    "assests/SmartSelect_20240622_124820_Xodo.jpg",
+    "assests/SmartSelect_20240622_141105_Xodo.jpg",
+    "2.2 components in tree.md",
+    "Instruments map.md",
+    "Treatment index.md",
+    "Prostho",
+    "Oral medicine",
+    "Maxillo(trauma)",
+    "Perio",
+    "endo(pulp)",
+    "Ortho",
+    "Pulp",
+    "Sum up"
+  ]
+}

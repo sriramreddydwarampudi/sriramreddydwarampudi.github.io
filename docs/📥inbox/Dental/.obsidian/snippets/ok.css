@@ -1,0 +1,82 @@
+/* Customize h1 */
+.cm-header-1 {
+    color: #FF6B6B; /* High-contrast color for h1 (red) */
+}
+
+/* Customize h2 */
+.cm-header-2 {
+    color: #FFE66D; /* Medium-contrast color for h2 (yellow) */
+}
+
+/* Customize h3 */
+.cm-header-3 {
+    color: #88FCA3; /* Lower-contrast color for h3 (green) */
+}
+
+/* Customize h4 */
+.cm-header-4 {
+    color: #6ED9F6; /* Even lower-contrast color for h4 (blue) */
+}
+
+/* Customize h5 */
+.cm-header-5 {
+    color: #C0A3FF; /* Very low contrast color for h5 (purple) */
+}
+
+/* Customize h6 */
+.cm-header-6 {
+    color: #FF9BF5; /* Minimal-contrast color for h6 (pink) */
+}
+
+
+
+
+
+
+/* Add separator line after each header */
+.cm-header-1:after,
+.cm-header-2:after,
+.cm-header-3:after {
+    content: "";
+    display: block;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Default color */
+    margin-top: 10px; /* Adjust as needed */
+    width: 100%; /* Full width by default */
+}
+
+/* Style for h1 */
+.cm-header-1:after {
+    border-top: 3px solid #FF6B6B; /* Color for h1 */
+}
+
+/* Style for h2 */
+.cm-header-2:after {
+    border-top: 2px dashed #FFE66D; /* Color for h2 */
+    width: 0%; /* Adjust width based on heading length */
+}
+
+/* Style for h3 */
+.cm-header-3:after {
+    border-top: 1px dotted #88FCA3; /* Color for h3 */
+    width: 0%; /* Adjust width based on heading length */
+}
+
+/* Add more styles for other header levels as needed */
+
+/* Hide the rendered Mermaid diagrams */
+/* Hide the rendered Mermaid diagrams with StateDiagram class */
+.markdown-preview-view .StateDiagram {
+    display: none !important;
+}
+
+/* Optionally hide the raw Mermaid code block (if you want) */
+.markdown-preview-view pre.language-mermaid,
+.markdown-preview-view code.language-mermaid {
+    display: none !important;
+}
+
+
+/* Set global text size */
+* {
+  font-size: 12px !important;
+}

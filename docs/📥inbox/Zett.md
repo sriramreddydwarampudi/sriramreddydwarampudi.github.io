@@ -1,0 +1,1 @@
+Termux at beginning is only .termux with .properties file

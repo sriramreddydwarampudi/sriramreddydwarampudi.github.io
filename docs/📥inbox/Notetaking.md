@@ -1,0 +1,32 @@
+- file manager✅
+- textual
+- md syntax
+- links,tags,path,bookmarks,pin,backlinks,footnote, citations 
+- search
+- map of contents
+- special formatting 
+- data view - book library 
+- aldo language
+- pdf annotor ✅
+- templates 
+- css sinnepts and anuppuccian theme,make.md,minimal cards and style setting✅
+- calender,habits
+- tasks
+- obisidian chartview
+- graph view theory 
+- canvas,mindmap,excildraw
+- brainexcil
+- zettel workflow + my life flow
+- khoj AI
+- dictionary 
+- auto completion 
+- browser surfing 
+- buttons
+- logs 
+- terminal
+
+
+Neovim
+- markdown
+- file manager
+- terminal

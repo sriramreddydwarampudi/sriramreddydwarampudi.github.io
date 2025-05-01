@@ -1,0 +1,1 @@
+Sonetimes I miss ellis class 4 fracture as enamel,dentin,pulp fracture. But pulp fracture comes under pulpitis so only fracture means enamel fracture.

@@ -1,0 +1,5 @@
+
+Visual
+Percussion 
+Palpation
+Probing

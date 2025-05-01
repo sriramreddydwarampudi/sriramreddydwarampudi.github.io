@@ -1,0 +1,2 @@
+* anytype
+* Beaver notes

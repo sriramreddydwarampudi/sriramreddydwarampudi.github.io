@@ -1,0 +1,257 @@
+{
+  "main": {
+    "id": "1efefac0334c583d",
+    "type": "split",
+    "children": [
+      {
+        "id": "6714b3f6529d10a3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f318f168c6b3f5f9",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b2bf288f15692fd8",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "dc9e6f852c8d96bc",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "e5c0f41d6d7aac6d",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "Perio examin",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": true,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "5401025865f1fc41",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "cc4f094bfc00c6a7",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      },
+      {
+        "id": "d913853a1598873f",
+        "type": "leaf",
+        "state": {
+          "type": "recent-files",
+          "state": {}
+        }
+      },
+      {
+        "id": "9a5fd16e286102b7",
+        "type": "leaf",
+        "state": {
+          "type": "mk-path-view",
+          "state": {}
+        }
+      },
+      {
+        "id": "08499467deae2a76",
+        "type": "leaf",
+        "state": {
+          "type": "file-tree-view",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "516f8e77b4c9ecbd",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "b50681afea044565",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "177c7b6423884191",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "1420233c0e1a23ab",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {}
+        }
+      },
+      {
+        "id": "14dd8c5e111e76eb",
+        "type": "leaf",
+        "state": {
+          "type": "juggl_nodes",
+          "state": {}
+        }
+      },
+      {
+        "id": "0ebeb6cd1cf66d14",
+        "type": "leaf",
+        "state": {
+          "type": "juggl_style",
+          "state": {}
+        }
+      },
+      {
+        "id": "a12fe52810d88b71",
+        "type": "leaf",
+        "state": {
+          "type": "graph-analysis",
+          "state": {}
+        }
+      },
+      {
+        "id": "ffd2e83ce19be815",
+        "type": "leaf",
+        "state": {
+          "type": "mermaid-toolbar-view",
+          "state": {}
+        }
+      },
+      {
+        "id": "597898a1e3e0841a",
+        "type": "leaf",
+        "state": {
+          "type": "todo",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 6
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "switcher:Open quick switcher": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "dbfolder:Create a new database table": false,
+      "notion-like-tables:Create loom": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false,
+      "adjacency-matrix-exporter:AdjacencyMatrixExporter": false,
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "juggl:Juggl global graph": false,
+      "homepage:Open homepage": false,
+      "file-tree-alternative:File Tree Alternative Plugin": false
+    }
+  },
+  "active": "dc9e6f852c8d96bc",
+  "lastOpenFiles": [
+    "Form.md",
+    "Map of examination.md",
+    "Index.md",
+    "Evaluation/_Index_of_Evaluation.md",
+    "Index 1.md",
+    "Demographic information/Index.md",
+    "Untitled 3.canvas",
+    "Untitled 1.canvas",
+    "Time table and tasks management.md",
+    "Perio.md",
+    "_Index_of_Dental.md",
+    "Examination(diagnosis process)/_Index_of_Examination(diagnosis process).md",
+    "Untitled 2.canvas",
+    "Diagnosis in oral cavity.md",
+    "Fixed partial dentures parts.md",
+    "Books/Books list.md",
+    "Books/_Index_of_Books.md",
+    "Books",
+    "Examination(diagnosis process)/Investigation examination/Index- anatomy.md",
+    "Tags",
+    "Odontogram/Restoration/Levels of Clinical Significance.md",
+    "Odontogram/Sql.md",
+    "Untitled.canvas",
+    "Odontogram/Examination of pulp (endo).md",
+    "Logic.md",
+    "Diagnosis/Periodontitics diagnosis.md",
+    "Ortho clinical work.md",
+    "Diagnosis/Conservative diagnosis.md",
+    "Diagnosis/Maxillo.md",
+    "Diagnosis/Orthodontics diagnosis.md",
+    "Diagnosis/Endodontics diagnosis.md",
+    "Treatment/Map of procedures.md",
+    "images (4).jpeg",
+    "Odontogram",
+    "Treatment for diagnosis",
+    "Treatment plan",
+    "Clinical examination of diagnosis",
+    "treatment indications/Periodontitics",
+    "treatment indications/Maxillo",
+    "treatment indications/Ortho",
+    "treatment indications/Prostho",
+    "SmartSelect_20240706_160601_Xodo.jpg",
+    "SmartSelect_20240706_160540_Xodo.jpg",
+    "images.png",
+    "images.jpeg",
+    "images (1).jpeg",
+    "images (5).jpeg",
+    "images (6).jpeg",
+    "SmartSelect_20240706_105541_Xodo.jpg",
+    "SmartSelect_20240622_141105_Xodo.jpg",
+    "Chief complaint, history of present illness,/Untitled.canvas"
+  ]
+}

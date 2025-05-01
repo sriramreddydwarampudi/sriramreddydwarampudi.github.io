@@ -1,0 +1,2 @@
+- pulpitis 
+- pulp-periapical infection pathway

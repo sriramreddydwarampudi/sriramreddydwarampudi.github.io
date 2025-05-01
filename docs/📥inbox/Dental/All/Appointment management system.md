@@ -1,0 +1,158 @@
+## Appointment management system
+
+Appointment management in the modern dental practice most often takes the form of a software system as well as a patient communication program that is integrated into your software. 
+- form
+- communication 
+
+The traditional appointment book, although still available, is seen now as archaic and obsolete. Appointment management on the computer was one of the last holdouts for many dentists years ago, but today most dentists have realized that electronic appointment scheduling is more efficient and provides a variety of additional benefits that the traditional appointment book does not. The benefits of the electronic appointment scheduler are shown in Box 11.1.
+
+• Production goals can help with appointment scheduling. 
+• Production data are visible daily.
+• Data entries are easy to read. 
+• Autoscheduling promotes efficiency.
+• Various screen viewing modes are available. 
+• Cross-referencing saves time and motion.
+• Patient data are can be updated to maintain accuracy. 
+• Searching for appropriate appointment openings is easy.
+• Procedures can be posted to several different records from one entry.
+• Patient follow-up is efficient.
+
+Source:There are a variety of companies that provide electronic appointment scheduling systems, including Curve Dental, Open Dental, Dentrix, Easy Dental, and Eaglesoft. It is not feasible to provide instructions for all these programs, but the concepts of appointment scheduling are similar for all of them.
+
+Practice management apps and software are available to support all of the previously mentioned tasks, and they can perform specific tasks for dental offices, including those related to account reports, patient reports, patient history,transactions, prescription history, insurance claim processing, appointment scheduling, treatment planning, summary reports, billing and aging receivables, referral tracking, income analysis, recall, and inventory management. 
+
+• The patient information screen (see Fig. 5.7) includes comprehensive patient information.
+• The patient accounts screen (see Fig. 5.8) includes accounts receivable information. A variety of payment and remittance information is found on this screen, including the minimum monthly payment, the date of the last statement, the current account balance, and any outstanding insurance or budget plan balances.
+• The patient master report (see Fig. 5.9) can be filtered or sorted with the use of different criteria, such as patient zip codes, birthdays, phone numbers, insurance coverage, and more.
+• The prescription window (see Fig. 5.10) lists the patient’s medication history.
+• The transaction entry screen (see Fig. 5.11) is a window within the American Dental Association (ADA) window that shows the ADA codes for completed treatments.
+• The claim transaction window (see Fig. 5.12) is the portion of the practice management software that handles claims processing. It tracks all open claims, shows what was submitted with each claim, and allows for the electronic submission of claims.
+• The treatment plan screen (see Fig. 5.13) enables the production of a treatment plan for the patient and tracks all of the planned treatment to completion.
+• The daily appointment screen (see Fig. 5.14) indicates the schedule for various treatment rooms.
+• The schedule versus goal screen allows for the viewing of a provider’s scheduled appointments versus the goals for each day (see Fig. 5.15).
+• The family recall feature (see Fig. 5.16) can pull up everyone in a specific family and identify their examination due dates.
+• The quick fill list (see Fig. 5.17) is provided in the appointment section of the program to collect and store information about patients who have missed, canceled, or broken appointments. It allows for the easy tracking of patients who need to be contacted to reschedule.
+• Clinical charting (see Fig. 5.18) can be done in the treatment room with the use of a graphic format. Charting can be done in a basic format, or it may include complex charts for periodontics and other specialty areas. Radiographs from the patient’s chart can even be e-mailed to another dentist for evaluation.
+• The day sheet report (see Fig. 5.19) summarizes practice activity for a period of time.
+• Annual graphic reports are generated to illustrate categorical treatment production (see Fig. 5.20).
+
+
+
+
+
+
+
+Common electronic software scheduling packages generally have a number of components, including the following:
+
+## Components 
+
+Finding the available appointment time and book:This feature allows the staff member to find an open appointment time in a matter of seconds. It lets the person scheduling the appointment search on specific days, during specific hours, and for selected providers; it then provides a list of available appointments so that the patient may select what works best for him or her. Fig. 11.1 shows a screen that will enable the appointment coordinator to search for an available appointment.
+
+
+
+Who is next appointmented for doctor and patient 
+If patient miss they go into free hour
+
+## ENTERING APPOINTMENTS
+#### Patient Information
+Use the Patient bar to open other features such as patient's hypohetical treatment plan or symptom that you may want to review before making the appointment
+
+Patient information=>chief complaint=>patient's expecting treatment plan 
+
+tab; review the Primary and Secondary information
+
+
+
+Appointment Entry Use the dropdown arrows to select the Appointment Type(for time estimation)and Provider for the appointment. Use the dropdown arrow to select the Confirmation Status, and enter a Confirmation Note if desired.
+
+
+Services
+Select the Services button to pin the Services window to the bottom of the appointment. The Services window defaults to the provider attached to the appointment and to the time units selected previously. Use the Add Services button to add more service codes(CDT) to the current appointment
+
+
+Additional features
+- APPOINTMENT SEARCH
+- APPOINTMENT CARD
+- DAILY APPOINTMENT SCHEDULE
+
+## Payment 
+
+## Review
+
+- ABANDONMENT
+- FRAUD
+- DEFAMATION OF CHARACTER
+- SEXUAL HARASSMENT
+- WORKPLACE BULLYING AND DISRUPTIVE BEHAVIOR
+- FAULTY RECORDS MANAGEMENT
+- NEGLIGENCE
+- INVASION OF PRIVACY
+- OFFICE ARCHITECTURE AND ENVIRONMENT 
+- SEXUAL HARASSMENT
+- CARE
+
+providing care to the injured in a caring, safe manner, with no intent to do bodily harm.
+
+
+
+COMPONENTS OF A CLINICAL RECORD A patient’s clinical record commonly includes the following: 
+• Patient registration 
+• Health history and updates 
+• HIPAA consent forms, waivers, and authorizations 
+• Clinical chart or odontogram 
+• Treatment record/progress notes 
+• Dental diagnosis and treatment plan 
+• Medication history and prescriptions 
+• Laboratory requisitions 
+• Consent forms 
+• Consultation and referral reports 
+• Letters 
+• Postal receipts 
+• Radiographs and photographs 
+• Copies of laboratory tests
+
+
+
+
+
+
+
+CLASSIFICATION OF FILING SYSTEMS FIVE BASIC SYSTEMS
+The five basic classification systems of filing are alphabetical, geographical, numerical, subject, and chronological. Except the chronological system, these methods essentially apply alphabetical procedures. The method used in a dental office depends on the type of practice and the sophistication of the office’s systems, but it is not uncommon to use several of these methods for various types of filing, whether electronic or paper.
+Practice Note
+Delay or failure to find information makes an office vulnerable to patient dissatisfaction, financial loss, and adverse legal judgments.
+
+
+
+## SELECTING THE APPROPRIATE FILING SYSTEM
+#### Alphabetical filing system
+
+the arrangement of names appears in sequence from A to Z. The alphabetical filing system accounts for about 90% of the filing that a person is likely to perform, and it can be applied to various situations. Box 8.1 illustrates standard alphabetizing indexing rules that can be applied to a variety of situations.
+
+#### geographical filing system
+location is the important factor of reference. The principle of geographical filing is essentially the same as alphabetical filing except that geographical filing is done by a territorial division (e.g., state, city, street, practice name) rather than by patient name. Geographical information can be included in the file name for electronic records (see Box 8.2).
+
+#### numerical filing system
+It involves a method of assigning numbers to each new patient or account. Automatic numbering is a feature of many dental software programs, and some offices use the feature. In large clinics with access to computer centers, a numerical system can be used to great advantage, because computers handle numerical data faster than alphabetical characters. 
+
+#### The subject filing system
+It is the alphabetical arrangement of papers according to the subject or topic of the papers. This system is used when it is more desirable to assemble information by topic than by name. For example, it may be used for filing receipts for accounts payable: a large file folder labeled “Utilities” may hold several smaller folders divided by company. 
+
+#### The chronological filing system
+It is a method of filing by date. It can be used within an alphabetical, geographical, subject, or numerical system by filing the most recent correspondence in the front of the file folder. For instance, insurance company Explanation of Benefits documents received for payment can be
+
+## Written communication and Telecommunication
+LETTER
+E-MAIL
+TEXT MESSAGING
+CALL
+
+Rules for each is given
+
+
+Action verbs (use resume)
+## Supplying orders
+
+Both the ADA Dental Claim Form and the HIPAA standard electronic dental claim transaction can report up to four diagnosis codes (Item 34a, Diagnosis Codes). This capability was added to the claim forms with the expectation that ICD would, at some point, become a required data element for dental claim adjudication,CDT.
+
+## Financial system 

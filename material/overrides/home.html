@@ -1,0 +1,61 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+{% extends "main.html" %}
+
+{% block extrahead %}
+  <style>
+    .full-image-container {
+      text-align: center; /* Center align the image */
+      margin: 0 auto;
+    }
+
+    .full-image {
+      width: 100%; /* Ensure image spans full width */
+      height: auto; /* Maintain aspect ratio */
+      max-width: 100%; /* Prevent oversizing */
+      display: block;
+    }
+
+    .mdx-hero__content {
+      text-align: center; /* Center align the content below the image */
+      padding: 20px;
+    }
+  </style>
+{% endblock %}
+
+{% block tabs %}
+  {{ super() }}
+  <section class="mdx-container">
+    <div class="md-grid md-typeset">
+      <div class="mdx-hero">
+        <div class="full-image-container">
+          <img 
+            src="assets/images/1733038003525.jpg" 
+            alt="Sri Ram's Image" 
+            class="full-image"
+            draggable="false">
+        </div>
+        <div class="mdx-hero__content">
+          <h1>I'm Sri Ram</h1>
+          <p>You are not alone and one.we all have same paths.Take my hand.walk together through the storm.whatever weather cold or warm</p>
+          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
+            Quick start
+          </a>
+          <a href="{{ 'insiders/' | url }}" title="Material for MkDocs Insiders" class="md-button">
+            Get Insiders
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block footer %}
+  <footer>
+    <p style="text-align: center;">© {{ config.site_name }} - All rights reserved</p>
+  </footer>
+{% endblock %}

@@ -1,0 +1,6 @@
+- Transitive
+- reflective 
+- symmetry
+
+
+

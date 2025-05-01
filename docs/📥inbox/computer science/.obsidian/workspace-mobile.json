@@ -1,0 +1,444 @@
+{
+  "main": {
+    "id": "de5ddf93dcdef29b",
+    "type": "split",
+    "children": [
+      {
+        "id": "bcd5bff8841ebac8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1369afee868e0055",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Introduction to programming.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d4194eddf29ca000",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Taskwarrior.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "43ceb49d29384a20",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Syntax.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5ac83927ad782afe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Syntax.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b08ee0f11d7d2473",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Taskwarrior.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "95127332a6674bd6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Taskwarrior.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f71396a647329a62",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "My OS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6690c2f201f21dcf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pragmatics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "44eca46f883d7c1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Quota.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b1d685fc575ac728",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Termux.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d3e7385d19149049",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Termux.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "96bfa6ba42fa9642",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Neovim.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4a64cc8beb934d93",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Neovim.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8aaa58a43461b289",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "html,css,js.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fb061e810dd6af62",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lampp.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ea3b855fbbe8c574",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Odo.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b0a8bb9b13ad8020",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "odontogram.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dba7ad09e183b14e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fun.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dcf4ba2fed59dce5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sp.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1834b987abfac201",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "full codes.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "55001db78b48dbb8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Login.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "573c54083a4d6e44",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Login.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "60793e396e29ab2b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docx to xsl.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5d6ecb73bb542b41",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming spectrum.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 22
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d2bed6ea7f0fda98",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "6645f5ba43f5e7bc",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "57ec6458b8bf82e9",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "Laws",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "e4063cb9fc7c663c",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "ec7c4684eb179159",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "5d92c180d370335b",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "547229580161424b",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "docx to xsl.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "c43d40b4018d4b56",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "docx to xsl.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "720f9a8bed260300",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "docx to xsl.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "60793e396e29ab2b",
+  "lastOpenFiles": [
+    "Login.md",
+    "docx to xsl.md",
+    "Login control.md",
+    "full codes.md",
+    "Sp.md",
+    "fun.md",
+    "odontogram.md",
+    "Odo.md",
+    "Mysql.md",
+    "Lampp.md",
+    "Php.md",
+    "html,css,js.md",
+    "Neovim.md",
+    "Termux.md",
+    "Nerd font.md",
+    "Quota.md",
+    "Mine health.md",
+    "Pragmatics.md",
+    "My OS.md",
+    "Taskwarrior.md",
+    "SmartSelect_20240702_115314_Drive.jpg",
+    "SmartSelect_20240702_123912_Drive.jpg",
+    "Syntax.md",
+    "task-2.3.0.ref.pdf",
+    "SmartSelect_20240702_195454_Drive.jpg",
+    "Semantics.md",
+    "Map.md",
+    "Introduction to programming.md",
+    "Programming spectrum.md",
+    "Programming.md"
+  ]
+}

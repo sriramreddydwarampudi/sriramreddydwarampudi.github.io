@@ -1,0 +1,63 @@
+• Clinical assessment (provisional diagnosis method)
+   - General examination 
+	- psychological
+	- physiological 
+   - local examination 
+	- Extraoral
+	    - Head(1/3)
+	    - Face(2/3)
+			- shape/structure
+			- symmetry 
+			- profile
+			- Devergence
+			- jaw-relations
+			- proportions
+	- Intraoral
+		- Lip
+		- Tongue
+		- Gingiva
+			- colour
+			- size
+			- Texture
+			- contour
+			- consistency
+			- Bleeding on probe
+			- position
+			
+		- Teeth
+			- Type of dentition 
+			- Tooth Presence
+				- Number
+				    - ==Missing (= present)
+				    - ==supernumerary==
+				    - ==impacted==
+				- Position
+			- Tooth structure 
+			    - Segment 
+				    - flurosis
+				    - hypoplasia
+				    - stains
+				    - wasting
+				    - Bridge
+			    - Single
+				    - Decayed
+					    - class
+					    - Depth
+					    - Type
+				    - Filled
+				    - Fractured
+				    - inclined
+				    - crown
+			- Occlusal trauma
+			- Occlusion
+			- periodontal status
+				- gingivitis
+				- pockets
+				- mobility
+				- furcution
+    - Functional 
+- Provisional Diagnosis
+
+
+
+Probing

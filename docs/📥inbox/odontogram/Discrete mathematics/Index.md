@@ -1,0 +1,13 @@
+- Introduction 
+- sets theory 
+	- Introduction 
+	- Types
+- Relations 
+- Function and algorithms
+- Logic and propositions
+- counting techinque 
+- recurring relations 
+- probability theory 
+- Graph theory 
+- Binary
+- 
