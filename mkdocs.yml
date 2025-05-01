@@ -163,3 +163,9 @@ markdown_extensions:
   - pymdownx.tilde
 
 
+extra_javascript:
+  - https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js
+  - https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js
+  - js/firebase-auth.js
+
+

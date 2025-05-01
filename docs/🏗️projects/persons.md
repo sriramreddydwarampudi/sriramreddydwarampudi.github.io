@@ -1,3 +1,7 @@
+
+
+<button onclick="logoutUser()">Logout</button>
+
 # Hate
 
 

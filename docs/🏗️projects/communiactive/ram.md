@@ -1,3 +1,8 @@
+
+
+
+
+
 - structural characteristics of natural language categorization 
 	- prototypicality
 	- systematic polysemy
