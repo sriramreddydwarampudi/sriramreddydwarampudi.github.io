@@ -1,1 +1,0 @@
-A data structure is a particular way to arrange data so it can be saved in memory and retrieved for later use where as an algorithm is a set of steps for solving a known problem. Data Structures and Algorithms is abbreviated as DSA in the context of Computer Science.
