@@ -1,33 +1,36 @@
-// Initialize Netlify Identity
+function renderNetlifyAuth(user) {
+  const el = document.getElementById("netlify-auth");
+  if (!el) return;
+
+  if (user) {
+    el.innerHTML = `
+      <span style="margin-right: 0.5em;">${user.user_metadata.full_name || user.email}</span>
+      <button id="logout-btn">Logout</button>
+    `;
+    document.getElementById("logout-btn").addEventListener("click", () => {
+      netlifyIdentity.logout();
+    });
+  } else {
+    el.innerHTML = `<button id="login-btn">Login</button>`;
+    document.getElementById("login-btn").addEventListener("click", () => {
+      netlifyIdentity.open();
+    });
+  }
+}
+
 if (window.netlifyIdentity) {
-  window.netlifyIdentity.on("init", user => {
-    console.log("Netlify Identity initialized", user);
-
-    // If no user is logged in, open login modal on click
-    const loginBtn = document.getElementById("login-btn");
-    if (loginBtn) {
-      loginBtn.addEventListener("click", () => {
-        window.netlifyIdentity.open();
-      });
-    }
-
-    const logoutBtn = document.getElementById("logout-btn");
-    if (logoutBtn) {
-      logoutBtn.addEventListener("click", () => {
-        window.netlifyIdentity.logout();
-      });
-    }
-
-    window.netlifyIdentity.on("login", user => {
-      console.log("User logged in:", user);
-      window.location.reload(); // or redirect if needed
-    });
-
-    window.netlifyIdentity.on("logout", () => {
-      console.log("User logged out");
-      window.location.reload();
-    });
+  netlifyIdentity.on("init", user => {
+    renderNetlifyAuth(user);
   });
 
-  window.netlifyIdentity.init();
+  netlifyIdentity.on("login", user => {
+    renderNetlifyAuth(user);
+    netlifyIdentity.close();
+  });
+
+  netlifyIdentity.on("logout", () => {
+    renderNetlifyAuth(null);
+  });
+
+  netlifyIdentity.init();
 }
