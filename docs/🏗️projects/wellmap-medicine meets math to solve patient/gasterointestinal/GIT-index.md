@@ -7,7 +7,15 @@ firebase.auth().onAuthStateChanged(user => {
 </script>
 
 
+Upper stores food
+Lower absorbs food
 
+
+Symptoms too
+
+
+UGIT Ask to inject 
+LGIT Ask to leave
 
 
 You're right in noting a distinction between upper and lower gastrointestinal (GI) tract conditions. Here's a clearer breakdown:

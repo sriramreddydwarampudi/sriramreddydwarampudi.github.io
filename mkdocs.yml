@@ -164,8 +164,5 @@ markdown_extensions:
 
 
 extra_javascript:
-  - https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js
-  - https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js
-  - js/firebase-auth.js
-
-
+  - https://identity.netlify.com/v1/netlify-identity-widget.js
+  - js/netlify-auth.js
