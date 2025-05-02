@@ -12,10 +12,12 @@
     <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}" class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
       {% include "partials/logo.html" %}
     </a>
+
     <label class="md-header__button md-icon" for="__drawer">
       {% set icon = config.theme.icon.menu or "material/menu" %}
       {% include ".icons/" ~ icon ~ ".svg" %}
     </label>
+
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
@@ -34,17 +36,21 @@
         </div>
       </div>
     </div>
+
     {% if config.theme.palette %}
       {% if not config.theme.palette is mapping %}
         {% include "partials/palette.html" %}
       {% endif %}
     {% endif %}
+
     {% if not config.theme.palette is mapping %}
       {% include "partials/javascripts/palette.html" %}
     {% endif %}
+
     {% if config.extra.alternate %}
       {% include "partials/alternate.html" %}
     {% endif %}
+
     {% if "material/search" in config.plugins %}
       <label class="md-header__button md-icon" for="__search">
         {% set icon = config.theme.icon.search or "material/magnify" %}
@@ -52,53 +58,19 @@
       </label>
       {% include "partials/search.html" %}
     {% endif %}
+
     {% if config.repo_url %}
       <div class="md-header__source">
         {% include "partials/source.html" %}
       </div>
     {% endif %}
 
-<div id="netlify-auth" class="md-header__button md-identity" style="margin-left: auto;">
-  <button id="netlify-login-btn" style="all: unset; cursor: pointer; color: var(--md-accent-fg-color); padding: 0 0.5em;">
-    Login
-  </button>
-</div>
-
-<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    if (window.netlifyIdentity) {
-      netlifyIdentity.on("init", user => {
-        updateLoginButton(user);
-      });
-
-      netlifyIdentity.on("login", user => {
-        updateLoginButton(user);
-        netlifyIdentity.close();
-      });
-
-      netlifyIdentity.on("logout", () => {
-        updateLoginButton(null);
-      });
-
-      netlifyIdentity.init();
-    }
-
-    function updateLoginButton(user) {
-      const btn = document.getElementById("netlify-login-btn");
-      if (!btn) return;
-      if (user) {
-        btn.textContent = user.user_metadata.full_name || "Logout";
-        btn.onclick = () => netlifyIdentity.logout();
-      } else {
-        btn.textContent = "Login";
-        btn.onclick = () => netlifyIdentity.open();
-      }
-    }
-  });
-</script>
-
-    
+    <!-- Netlify Login Button -->
+    <div id="netlify-auth" class="md-header__button md-identity" style="margin-left: auto;">
+      <button id="netlify-login-btn" class="md-icon" style="all: unset; cursor: pointer; padding: 0 0.5em; color: var(--md-accent-fg-color);">
+        Login
+      </button>
+    </div>
 
   </nav>
 
@@ -107,14 +79,32 @@
       {% include "partials/tabs.html" %}
     {% endif %}
   {% endif %}
-
-  <!-- Netlify Identity Scripts -->
-  <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      if (window.netlifyIdentity) {
-        netlifyIdentity.init();
-      }
-    });
-  </script>
 </header>
+
+<!-- Netlify Identity Scripts -->
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.netlifyIdentity) {
+      function updateLoginButton(user) {
+        const btn = document.getElementById("netlify-login-btn");
+        if (!btn) return;
+        if (user) {
+          btn.textContent = user.user_metadata.full_name || "Logout";
+          btn.onclick = () => netlifyIdentity.logout();
+        } else {
+          btn.textContent = "Login";
+          btn.onclick = () => netlifyIdentity.open();
+        }
+      }
+
+      netlifyIdentity.on("init", user => updateLoginButton(user));
+      netlifyIdentity.on("login", user => {
+        updateLoginButton(user);
+        netlifyIdentity.close();
+      });
+      netlifyIdentity.on("logout", () => updateLoginButton(null));
+      netlifyIdentity.init();
+    }
+  });
+</script>
