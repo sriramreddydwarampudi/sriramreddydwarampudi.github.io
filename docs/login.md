@@ -1,4 +1,4 @@
-# Login
+
 
 <div id="netlify-auth" style="display: flex; flex-direction: column; align-items: center; margin-top: 2em;">
   <button id="netlify-login-btn"
@@ -7,14 +7,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 64px;
-      height: 64px;
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
       overflow: hidden;
       cursor: pointer;
-      transition: transform 0.2s ease;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-      background-color: #f9f9f9;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      background-color: #f1f1f1;
     "
     title="Login"
   >
@@ -25,7 +25,10 @@
       style="width: 100%; height: 100%; object-fit: cover;"
     />
   </button>
-  <p id="netlify-user-name" style="margin-top: 0.5em; font-weight: bold; font-size: 1rem; color: #333;"></p>
+
+  <p id="netlify-user-name" style="margin-top: 1em; font-weight: bold; font-size: 1.1rem; color: #333;">
+    Please login to access inside of Dr. Ram's second brain
+  </p>
 </div>
 
 <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -47,16 +50,29 @@
           img.src = avatar;
           img.alt = "Logout";
           btn.title = "Logout";
-          nameText.textContent = "Welcome, " + name;
-          btn.onclick = () => netlifyIdentity.logout();
+          nameText.textContent = "You can access my second brain, " + name;
+          btn.onclick = () => {
+            netlifyIdentity.logout();
+            setTimeout(() => location.reload(), 300); // reload after logout
+          };
         } else {
           img.src = "https://img.icons8.com/material-outlined/48/000000/user.png";
           img.alt = "Login";
           btn.title = "Login";
-          nameText.textContent = "";
+          nameText.textContent = "Please login to access inside of Dr. Ram's second brain";
           btn.onclick = () => netlifyIdentity.open();
         }
       }
+
+      // Add hover effect
+      btn.addEventListener("mouseover", () => {
+        btn.style.transform = "scale(1.05)";
+        btn.style.boxShadow = "0 6px 16px rgba(0,0,0,0.3)";
+      });
+      btn.addEventListener("mouseout", () => {
+        btn.style.transform = "scale(1)";
+        btn.style.boxShadow = "0 4px 12px rgba(0,0,0,0.2)";
+      });
 
       netlifyIdentity.on("init", user => updateLoginButton(user));
       netlifyIdentity.on("login", user => {
@@ -68,7 +84,3 @@
     }
   });
 </script>
-
-
-
-Please login to access inside of dr.ram's second brain 
