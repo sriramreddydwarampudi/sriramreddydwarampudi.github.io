@@ -166,3 +166,14 @@ markdown_extensions:
 extra_javascript:
   - https://identity.netlify.com/v1/netlify-identity-widget.js
   - js/netlify-auth.js
+
+
+extra:
+  include_redirects: true
+
+plugins:
+  - search
+  - include-markdown
+  - macros
+  - glightbox
+  - redirects
