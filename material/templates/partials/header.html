@@ -18,6 +18,9 @@
       {% include ".icons/" ~ icon ~ ".svg" %}
     </label>
 
+
+
+
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
@@ -51,6 +54,8 @@
       {% include "partials/alternate.html" %}
     {% endif %}
 
+{% include "partials/login.html" %}
+
     {% if "material/search" in config.plugins %}
       <label class="md-header__button md-icon" for="__search">
         {% set icon = config.theme.icon.search or "material/magnify" %}
@@ -64,47 +69,3 @@
         {% include "partials/source.html" %}
       </div>
     {% endif %}
-
-    <!-- Netlify Login Button -->
-    <div id="netlify-auth" class="md-header__button md-identity" style="margin-left: auto;">
-      <button id="netlify-login-btn" class="md-icon" style="all: unset; cursor: pointer; padding: 0 0.5em; color: var(--md-accent-fg-color);">
-        Login
-      </button>
-    </div>
-
-  </nav>
-
-  {% if "navigation.tabs.sticky" in features %}
-    {% if "navigation.tabs" in features %}
-      {% include "partials/tabs.html" %}
-    {% endif %}
-  {% endif %}
-</header>
-
-<!-- Netlify Identity Scripts -->
-<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    if (window.netlifyIdentity) {
-      function updateLoginButton(user) {
-        const btn = document.getElementById("netlify-login-btn");
-        if (!btn) return;
-        if (user) {
-          btn.textContent = user.user_metadata.full_name || "Logout";
-          btn.onclick = () => netlifyIdentity.logout();
-        } else {
-          btn.textContent = "Login";
-          btn.onclick = () => netlifyIdentity.open();
-        }
-      }
-
-      netlifyIdentity.on("init", user => updateLoginButton(user));
-      netlifyIdentity.on("login", user => {
-        updateLoginButton(user);
-        netlifyIdentity.close();
-      });
-      netlifyIdentity.on("logout", () => updateLoginButton(null));
-      netlifyIdentity.init();
-    }
-  });
-</script>

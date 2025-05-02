@@ -1,0 +1,37 @@
+<div id="netlify-auth" class="md-header__button md-identity" style="margin-left: auto;">
+  <button id="netlify-login-btn" class="md-icon" style="all: unset; cursor: pointer; padding: 0 0.5em;">
+    <img id="netlify-profile-pic" src="" alt="Login" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover;" />
+  </button>
+</div>
+
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.netlifyIdentity) {
+      function updateLoginButton(user) {
+        const btn = document.getElementById("netlify-login-btn");
+        const img = document.getElementById("netlify-profile-pic");
+        if (!btn || !img) return;
+
+        if (user) {
+          const avatar = user.user_metadata.avatar_url || "https://ui-avatars.com/api/?name=" + encodeURIComponent(user.user_metadata.full_name || "User");
+          img.src = avatar;
+          img.alt = "Logout";
+          btn.onclick = () => netlifyIdentity.logout();
+        } else {
+          img.src = "https://img.icons8.com/material-outlined/24/000000/user.png";
+          img.alt = "Login";
+          btn.onclick = () => netlifyIdentity.open();
+        }
+      }
+
+      netlifyIdentity.on("init", user => updateLoginButton(user));
+      netlifyIdentity.on("login", user => {
+        updateLoginButton(user);
+        netlifyIdentity.close();
+      });
+      netlifyIdentity.on("logout", () => updateLoginButton(null));
+      netlifyIdentity.init();
+    }
+  });
+</script>
