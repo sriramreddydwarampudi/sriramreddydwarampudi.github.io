@@ -173,5 +173,6 @@ extra:
 
 plugins:
   - search
+  - include-markdown
   - glightbox
   - redirects
