@@ -1,5 +1,3 @@
-# Block the inbox folder (works for /inbox/ and files inside it)
-📥inbox/*     /login    401! Role=authenticated
-
-# Block communiactive/ram page (converted to /projects/communiactive/ram/)
-🏗️projects/communiactive/ram/  /login  401! Role=authenticated
+# Redirect unauthenticated users
+/inbox/*     /login   302!
+/projects/communiactive/ram/     /login   302!
