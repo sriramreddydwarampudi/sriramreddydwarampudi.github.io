@@ -1,5 +1,5 @@
-# Block the inbox folder
-/docs/inbox/*     /docs/login    401! Role=authenticated
+# Require authentication for inbox folder
+/inbox/*    /login    401! Role=authenticated
 
-# Block the communiactive/ram.md file
-/docs/projects/communiactive/ram.md  /docs/login  401! Role=authenticated
+# Require authentication for communiactive/ram page
+/projects/communiactive/ram/    /login    401! Role=authenticated
