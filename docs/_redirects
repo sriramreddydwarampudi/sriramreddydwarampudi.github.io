@@ -1,3 +1,3 @@
 # Redirect unauthenticated users
-/inbox/*     /login.md   302!
-/projects/communiactive/ram/     /login.md   302!
+/inbox/*     /login/   302!
+/projects/communiactive/ram/     /login/   302!
