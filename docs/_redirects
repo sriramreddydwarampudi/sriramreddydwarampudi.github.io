@@ -1,5 +1,5 @@
-# Require authentication for inbox folder
-/inbox/*    /login    401! Role=authenticated
+# Block the inbox folder (works for /inbox/ and files inside it)
+📥inbox/*     /login    401! Role=authenticated
 
-# Require authentication for communiactive/ram page
-/projects/communiactive/ram/    /login    401! Role=authenticated
+# Block communiactive/ram page (converted to /projects/communiactive/ram/)
+🏗️projects/communiactive/ram/  /login  401! Role=authenticated
