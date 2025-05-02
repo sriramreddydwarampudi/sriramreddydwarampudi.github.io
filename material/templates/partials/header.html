@@ -58,16 +58,30 @@
       </div>
     {% endif %}
 
-
-
-<div id="netlify-auth" class="md-header__button md-identity" style="margin-left: auto; color: var(--md-default-fg-color); display: flex; align-items: center;"></div>
-<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
+    <!-- Netlify Login Button -->
+    <div id="netlify-auth" class="md-header__button md-identity"
+         style="margin-left: auto; color: var(--md-default-fg-color); display: flex; align-items: center;">
+      <button onclick="netlifyIdentity.open()"
+              style="all: unset; cursor: pointer; color: var(--md-accent-fg-color); padding: 0 0.5em;">
+        Login
+      </button>
+    </div>
 
   </nav>
+
   {% if "navigation.tabs.sticky" in features %}
     {% if "navigation.tabs" in features %}
       {% include "partials/tabs.html" %}
     {% endif %}
   {% endif %}
+
+  <!-- Netlify Identity Scripts -->
+  <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.netlifyIdentity) {
+        netlifyIdentity.init();
+      }
+    });
+  </script>
 </header>
