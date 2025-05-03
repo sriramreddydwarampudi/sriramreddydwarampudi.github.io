@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentPath = window.location.pathname;
 
   const protectedPages = [
-    "/inbox/private-notes/",
-    "/projects/communiactive/ram/",
+    "/inbox/",
+    "/projects/communiactive/ram.md",
   ];
 
   const requiresAuth = protectedPages.includes(currentPath);
