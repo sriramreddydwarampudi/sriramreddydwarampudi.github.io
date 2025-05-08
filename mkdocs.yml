@@ -163,11 +163,6 @@ markdown_extensions:
   - pymdownx.tilde
 
 
-extra_javascript:
-  - https://identity.netlify.com/v1/netlify-identity-widget.js
-  - js/netlify-auth.js
-  - js/auth-check.js
-
 extra:
   include_redirects: true
 
@@ -175,3 +170,6 @@ plugins:
   - search
   - glightbox
   - redirects
+
+
+

@@ -1,3 +1,0 @@
-Enamel 
-
-Variables = dental caries

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Music/Essential raagas.md",
+                "file": "wellmap~medicine_meets_maths_to_solve_patient/step-04 - Establish Pathophysiology Function.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Essential raagas"
+              "title": "step-04 - Establish Pathophysiology Function"
             }
           }
         ]
@@ -98,6 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "wellmap~medicine_meets_maths_to_solve_patient/step-04 - Establish Pathophysiology Function.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -152,6 +153,9 @@
   },
   "active": "954ce885d762f4d5",
   "lastOpenFiles": [
+    "wellmap~medicine_meets_maths_to_solve_patient/index.md",
+    "wellmap-medicine meets math to solve patient/step-03 - Cross-System Mapping.md",
+    "wellmap-medicine meets math to solve patient/step-01 - Anatomical Abstraction.md",
     "persons.md",
     "Music/Essential raagas.md",
     "Music",

@@ -1,1 +1,0 @@
-Introduction • Unilateral RPD • Implant Supported RPD • Removable Partial Overdenture • Guide Plane Removable Partial Denture • I-Bar Removable Partial Dentures • Swing-lock Removable Partial Dentures • Temporary Partial Dentures • Immediate Partial Denture • Spoon Dentures • Every Dentures • Two-part Dentures • Claspless Dentures • Disjunct Denture
