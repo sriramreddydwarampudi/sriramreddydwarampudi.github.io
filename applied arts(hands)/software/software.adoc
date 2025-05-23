@@ -1,0 +1,15 @@
+= purpose
+
+= Methods
+* <<LAMP>> -> Website 
+* <<SDK,JDK>> -> apk
+* <<react>> -> cross platform 
+
+
+= LAMP
+
+
+
+
+
+

@@ -1,0 +1,6437 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="sri ram reddy dwarampudi  documentation">
+      
+      
+        <meta name="author" content="sriramreddy_dwarampudi">
+      
+      
+        <link rel="canonical" href="https://sriramreddydwarampudi.github.io/applied%20arts%28hands%29/software/0.unix%20os/">
+      
+      
+        <link rel="prev" href="../visuals/">
+      
+      
+        <link rel="next" href="../1.lamp/resources/">
+      
+      
+      <link rel="icon" href="../../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Index - Dr.ram's second brain</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <link rel="stylesheet" href="../../../assets/stylesheets/custom.7c86dd97.min.css">
+
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="yellow" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#a" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+              </button>
+            
+            
+  For updates follow <strong>@squidfunk</strong> on
+  <a rel="me" href="https://fosstodon.org/@squidfunk">
+    <span class="twemoji mastodon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.5 102.5 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5m-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
+    </span>
+    <strong>Fosstodon</strong>
+  </a>
+  and
+  <a href="https://x.com/squidfunk">
+    <span class="twemoji twitter">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </span>
+    <strong>Twitter</strong>
+  </a>
+
+          </div>
+          
+            <script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Dr.ram&#39;s second brain" class="md-header__button md-logo" aria-label="Dr.ram's second brain" data-md-component="logo">
+      
+  <img src="../../../assets/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Dr.ram's second brain
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Index
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="yellow" data-md-color-accent="indigo"  aria-label=""  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label=""  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sriramreddydwarampudi/sriramreddydwarampudi.github.io.git" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sriramreddydwarampudi.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../license/" class="md-tabs__link">
+        
+  
+    
+  
+  License
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../time%20and%20space%28movement%29/" class="md-tabs__link">
+        
+  
+    
+  
+  projects
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../%E2%9D%97about/" class="md-tabs__link">
+        
+  
+    
+  
+  ❗about
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Applied arts(hands)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../archives/madhuram/2024-04-03/" class="md-tabs__link">
+          
+  
+    
+  
+  Archives
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../inbox/" class="md-tabs__link">
+          
+  
+    
+  
+  Inbox
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../purushottam%28heart%29/" class="md-tabs__link">
+          
+  
+    
+  
+  Purushottam(heart)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../wellmap%28head%29/" class="md-tabs__link">
+          
+  
+    
+  
+  Wellmap(head)
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Dr.ram&#39;s second brain" class="md-nav__button md-logo" aria-label="Dr.ram's second brain" data-md-component="logo">
+      
+  <img src="../../../assets/favicon.png" alt="logo">
+
+    </a>
+    Dr.ram's second brain
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sriramreddydwarampudi/sriramreddydwarampudi.github.io.git" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sriramreddydwarampudi.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../time%20and%20space%28movement%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    projects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E2%9D%97about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ❗about
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Applied arts(hands)
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Applied arts(hands)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../0.my%20projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.my projects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../persons/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Persons
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Music is an aid
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Music is an aid
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/0.Introduction%20to%20my%20music/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.Introduction to my music
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/Beat/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Beat
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/Beat_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Beat 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/Data%20storage%20system%20or%20technologies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data storage system or technologies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/Data%20view/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data view
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/Gamakam/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gamakam
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/Gamakam_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gamakam 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/Gamakas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gamakas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/Gamakas_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gamakas 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/Music/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Music
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/Music_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Music 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/Music_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Music 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/Rythm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rythm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/Tala/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tala
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/Untitled%204/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Untitled 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/Untitled%207/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Untitled 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/Untitled%208/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Untitled 8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/Untitled/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Untitled
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/Varisai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Varisai
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/Vennalave/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vennalave
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/composition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Composition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/daw/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Daw
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/gamaka%20csound/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gamaka csound
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/interpretation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interpretation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/live%20keyboard%20piano/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Live keyboard piano
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/lyrics%20scansion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lyrics scansion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/lyrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lyrics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/model%20songs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Model songs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/phrases%20script/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Phrases script
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/raagas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Raagas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/semnatic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semnatic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/trash%20analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trash analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/versepad%20-%20my%20software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Versepad   my software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Music_is_an_aid/workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Music_is_an_aid/Music/2024-07-17/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Music
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Communiactive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            Communiactive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communiactive/Index/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communiactive/Lingualisitics%20books/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lingualisitics books
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communiactive/english%20syntax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    English syntax
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communiactive/ram/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ram
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../communiactive/Lingualisitics/Anno/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Lingualisitics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    House management 
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            House management 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../house%20management%20/angulations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Angulations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../house%20management%20/my%20clinic%20name/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    My clinic name
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../house%20management%20/radiograph%20interpretation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radiograph interpretation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../house%20management%20/services/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_7" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Software
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_7" id="__nav_5_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_7">
+            <span class="md-nav__icon md-icon"></span>
+            Software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0.introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Android%20studio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Android studio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chroot%20and%20linux%20os/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chroot and linux os
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Contacts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contacts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DAW/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DAW
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dashboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Data%20storage%20system%20or%20technologies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data storage system or technologies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Data%20view/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data view
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Jekyll/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jekyll
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lampp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lampp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Obisidian/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Obisidian
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PKMS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PKMS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PMS_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PMS 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Pkg/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pkg
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Search/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Search
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sql/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sql
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tasks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tasks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Taskwarrior/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Taskwarrior
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Termux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Termux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Textual/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Textual
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Textual_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Textual 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Time%20table/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Time table
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Time/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    time
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Timetable/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Timetable
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Trash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trash
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zettelkasten%20workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zettelkasten workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../astronvim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Astronvim
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../browsh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Browsh
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contents
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conventions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conventions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../creating-your-site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creating your site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../customization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    font
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../customization_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../editor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html%2Ccss%2Cjs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Html,css,js
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kalki%20os/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The largest Awesome List of CLI/TUI programs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lamp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lamp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lifestyle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lifestyle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux%20basic%20commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux basic commands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mkdocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mkdocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notes_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notes 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../obisidian%20and%20plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Obisidian and plugins
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../obisidian%20and%20plugins.sync-conflict-20240819-125902-D3YTONE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    obisidian and plugins.sync conflict 20240819 125902 D3YTONE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organisation%20thoughts%2Ctasks%2Cevents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Organisation thoughts,tasks,events
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rapserver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rapserver
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../react/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    React
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sql%20commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sql commands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terms%20mission%2Cgoal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Terms mission,goal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../termux-api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    termux-wake-lock
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../time%20table_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Time table 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visuals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visuals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_7_58" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  <span class="md-ellipsis">
+    0.unix os
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_7_58_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_7_58">
+            <span class="md-nav__icon md-icon"></span>
+            0.unix os
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../1.lamp/resources/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    1.lamp
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../Django/Test/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Django
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../computer%20science/Introduction%20to%20programming/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Computer science
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../my%20ko%20and%20workflow/Dental/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    My ko and workflow
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../second%20brain%20manual/Information%20cognitive%20processes/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Second brain manual
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../../archives/madhuram/2024-04-03/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Archives
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../inbox/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Inbox
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../purushottam%28heart%29/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Purushottam(heart)
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../wellmap%28head%29/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Wellmap(head)
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/sriramreddydwarampudi/sriramreddydwarampudi.github.io.git/edit/master/docs/applied arts(hands)/software/0.unix os/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/sriramreddydwarampudi/sriramreddydwarampudi.github.io.git/raw/master/docs/applied arts(hands)/software/0.unix os/index.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<ul>
+<li><a href="index.html">Unix Commands - Home</a></li>
+</ul>
+<h1 id="a">A<a class="headerlink" href="#a" title="Permanent link">&para;</a></h1>
+<ul>
+<li><a href="accept.html">accept</a></li>
+<li><a href="accton.html">accton</a></li>
+<li><a href="acpid.html">acpid</a></li>
+<li><a href="addftinfo.html">addftinfo</a></li>
+<li><a href="addpart.html">addpart</a></li>
+<li><a href="addr2line.html">addr2line</a></li>
+<li><a href="adduser.html">adduser</a></li>
+<li><a href="agetty.html">agetty</a></li>
+<li><a href="alias.html">alias</a></li>
+<li><a href="alternatives.html">alternatives</a></li>
+<li><a href="amtu.html">amtu</a></li>
+<li><a href="anacron.html">anacron</a></li>
+<li><a href="animate.html">animate</a></li>
+<li><a href="anvil.html">anvil</a></li>
+<li><a href="apachectl.html">apachectl</a></li>
+<li><a href="apm.html">apm</a></li>
+<li><a href="apmd.html">apmd</a></li>
+<li><a href="apmsleep.html">apmsleep</a></li>
+<li><a href="appletviewer.html">appletviewer</a></li>
+<li><a href="apropos.html">apropos</a></li>
+<li><a href="apt.html">apt</a></li>
+<li><a href="ar.html">ar</a></li>
+<li><a href="arbitron.html">arbitron</a></li>
+<li><a href="arch.html">arch</a></li>
+<li><a href="arp.html">arp</a></li>
+<li><a href="arping.html">arping</a></li>
+<li><a href="as.html">as</a></li>
+<li><a href="aspell.html">aspell</a></li>
+<li><a href="at.html">at</a></li>
+<li><a href="atd.html">atd</a></li>
+<li><a href="atq.html">atq</a></li>
+<li><a href="atrm.html">atrm</a></li>
+<li><a href="atrun.html">atrun</a></li>
+<li><a href="attr.html">attr</a></li>
+<li><a href="audispd.html">audispd</a></li>
+<li><a href="auditctl.html">auditctl</a></li>
+<li><a href="auditd.html">auditd</a></li>
+<li><a href="aulast.html">aulast</a></li>
+<li><a href="aulastlog.html">aulastlog</a></li>
+<li><a href="aureport.html">aureport</a></li>
+<li><a href="ausearch.html">ausearch</a></li>
+<li><a href="ausyscall.html">ausyscall</a></li>
+<li><a href="authconfig.html">authconfig</a></li>
+<li><a href="autoconf.html">autoconf</a></li>
+<li><a href="autofs.html">autofs</a></li>
+<li><a href="automount.html">automount</a></li>
+<li><a href="autoreconf.html">autoreconf</a></li>
+<li><a href="autoscan.html">autoscan</a></li>
+<li><a href="autoupdate.html">autoupdate</a></li>
+<li><a href="autrace.html">autrace</a></li>
+<li><a href="avcstat.html">avcstat</a></li>
+<li><a href="avctrl.html">avctrl</a></li>
+<li><a href="awk.html">awk</a></li>
+</ul>
+<h1 id="b">B<a class="headerlink" href="#b" title="Permanent link">&para;</a></h1>
+<ul>
+<li><a href="badblocks.html">badblocks</a></li>
+<li><a href="base64.html">base64</a></li>
+<li><a href="basename.html">basename</a></li>
+<li><a href="bash.html">bash</a></li>
+<li><a href="bashbug.html">bashbug</a></li>
+<li><a href="batch.html">batch</a></li>
+<li><a href="bc.html">bc</a></li>
+<li><a href="bccmd.html">bccmd</a></li>
+<li><a href="bg.html">bg</a></li>
+<li><a href="bind.html">bind</a></li>
+<li><a href="bison.html">bison</a></li>
+<li><a href="blkid.html">blkid</a></li>
+<li><a href="blockdev.html">blockdev</a></li>
+<li><a href="bmp2tiff.html">bmp2tiff</a></li>
+<li><a href="booleans.html">booleans</a></li>
+<li><a href="bounce.html">bounce</a></li>
+<li><a href="break.html">break</a></li>
+<li><a href="builtin.html">builtin</a></li>
+<li><a href="builtins.html">builtins</a></li>
+<li><a href="bunzip2.html">bunzip2</a></li>
+<li><a href="bzcat.html">bzcat</a></li>
+<li><a href="bzcmp.html">bzcmp</a></li>
+<li><a href="bzdiff.html">bzdiff</a></li>
+<li><a href="bzgrep.html">bzgrep</a></li>
+<li><a href="bzip2.html">bzip2</a></li>
+<li><a href="bzless.html">bzless</a></li>
+<li><a href="bzmore.html">bzmore</a></li>
+</ul>
+<h1 id="c">C<a class="headerlink" href="#c" title="Permanent link">&para;</a></h1>
+<ul>
+<li><a href="c%2b%2bfilt.html">c++filt</a></li>
+<li><a href="cal.html">cal</a></li>
+<li><a href="callback.html">callback</a></li>
+<li><a href="cancel.html">cancel</a></li>
+<li><a href="case.html">case</a></li>
+<li><a href="cat.html">cat</a></li>
+<li><a href="cd.html">cd</a></li>
+<li><a href="chage.html">chage</a></li>
+<li><a href="chat.html">chat</a></li>
+<li><a href="chattr.html">chattr</a></li>
+<li><a href="chcat.html">chcat</a></li>
+<li><a href="chcon.html">chcon</a></li>
+<li><a href="checkmodule.html">checkmodule</a></li>
+<li><a href="checkpolicy.html">checkpolicy</a></li>
+<li><a href="chfn.html">chfn</a></li>
+<li><a href="chgrp.html">chgrp</a></li>
+<li><a href="chkconfig.html">chkconfig</a></li>
+<li><a href="chmod.html">chmod</a></li>
+<li><a href="chown.html">chown</a></li>
+<li><a href="chpasswd.html">chpasswd</a></li>
+<li><a href="chroot.html">chroot</a></li>
+<li><a href="chrt.html">chrt</a></li>
+<li><a href="chsh.html">chsh</a></li>
+<li><a href="chvt.html">chvt</a></li>
+<li><a href="ciphers.html">ciphers</a></li>
+<li><a href="ciptool.html">ciptool</a></li>
+<li><a href="cjpeg.htm">cjpeg</a></li>
+<li><a href="cksum.html">cksum</a></li>
+<li><a href="cleanlinks.html">cleanlinks</a></li>
+<li><a href="cleanup.html">cleanup</a></li>
+<li><a href="clear.html">clear</a></li>
+<li><a href="clockdiff.html">clockdiff</a></li>
+<li><a href="clusterdb.html">clusterdb</a></li>
+<li><a href="cmp.html">cmp</a></li>
+<li><a href="col.htm">col</a></li>
+<li><a href="colcrt.html">colcrt</a></li>
+<li><a href="colrm.html">colrm</a></li>
+<li><a href="column.html">column</a></li>
+<li><a href="combinediff.html">combinediff</a></li>
+<li><a href="comm.html">comm</a></li>
+<li><a href="command.html">command</a></li>
+<li><a href="compare.html">compare</a></li>
+<li><a href="compgen.html">compgen</a></li>
+<li><a href="compile_et.html">compile_et</a></li>
+<li><a href="complete.html">complete</a></li>
+<li><a href="composite.html">composite</a></li>
+<li><a href="conjure.html">conjure</a></li>
+<li><a href="conman.html">conman</a></li>
+<li><a href="conmand.html">conmand</a></li>
+<li><a href="continue.html">continue</a></li>
+<li><a href="convert.html">convert</a></li>
+<li><a href="convertquota.html">convertquota</a></li>
+<li><a href="cp.html">cp</a></li>
+<li><a href="cpan.html">cpan</a></li>
+<li><a href="cpio.html">cpio</a></li>
+<li><a href="cpp.html">cpp</a></li>
+<li><a href="cpuspeed.html">cpuspeed</a></li>
+<li><a href="crash.html">crash</a></li>
+<li><a href="createdb.html">createdb</a></li>
+<li><a href="createlang.html">createlang</a></li>
+<li><a href="createuser.html">createuser</a></li>
+<li><a href="cron.html">cron</a></li>
+<li><a href="crond.html">crond</a></li>
+<li><a href="crontab.html">crontab</a></li>
+<li><a href="cryptsetup.html">cryptsetup</a></li>
+<li><a href="csh.html">csh</a></li>
+<li><a href="csplit.html">csplit</a></li>
+<li><a href="ctags.html">ctags</a></li>
+<li><a href="cupsctl.html">cupsctl</a></li>
+<li><a href="cupsd.html">cupsd</a></li>
+<li><a href="curl.html">curl</a></li>
+<li><a href="cut.html">cut</a></li>
+<li><a href="cvs.html">cvs</a></li>
+<li><a href="cvsbug.html">cvsbug</a></li>
+<li><a href="cyradm.html">cyradm</a></li>
+<li><a href="cytune.html">cytune</a></li>
+</ul>
+<h1 id="d">D<a class="headerlink" href="#d" title="Permanent link">&para;</a></h1>
+<ul>
+<li><a href="date.html">date</a></li>
+<li><a href="dc.html">dc</a></li>
+<li><a href="dd.html">dd</a></li>
+<li><a href="deallocvt.html">deallocvt</a></li>
+<li><a href="debugfs.html">debugfs</a></li>
+<li><a href="declare.html">declare</a></li>
+<li><a href="defer.html">defer</a></li>
+<li><a href="deliver.html">deliver</a></li>
+<li><a href="delpart.html">delpart</a></li>
+<li><a href="depmod.html">depmod</a></li>
+<li><a href="df.html">df</a></li>
+<li><a href="dfutool.html">dfutool</a></li>
+<li><a href="dgst.html">dgst</a></li>
+<li><a href="diff.html">diff</a></li>
+<li><a href="diffstat.html">diffstat</a></li>
+<li><a href="dig.html">dig</a></li>
+<li><a href="dir.html">dir</a></li>
+<li><a href="dircolors.html">dircolors</a></li>
+<li><a href="dirname.html">dirname</a></li>
+<li><a href="dirs.html">dirs</a></li>
+<li><a href="discard.html">discard</a></li>
+<li><a href="disown.html">disown</a></li>
+<li><a href="display.html">display</a></li>
+<li><a href="distcache.html">distcache</a></li>
+<li><a href="djpeg.html">djpeg</a></li>
+<li><a href="dmesg.html">dmesg</a></li>
+<li><a href="dmidecode.html">dmidecode</a></li>
+<li><a href="dmraid.html">dmraid</a></li>
+<li><a href="dmsetup.html">dmsetup</a></li>
+<li><a href="dnsdomainname.html">dnsdomainname</a></li>
+<li><a href="dnsmasq.html">dnsmasq</a></li>
+<li><a href="doexec.html">doexec</a></li>
+<li><a href="domainname.html">domainname</a></li>
+<li><a href="dos2unix.html">dos2unix</a></li>
+<li><a href="dosfsck.html">dosfsck</a></li>
+<li><a href="doxygen.html">doxygen</a></li>
+<li><a href="doxytag.html">doxytag</a></li>
+<li><a href="dprofpp.html">dprofpp</a></li>
+<li><a href="dropdb.html">dropdb</a></li>
+<li><a href="droplang.html">droplang</a></li>
+<li><a href="dropuser.html">dropuser</a></li>
+<li><a href="dsa.html">dsa</a></li>
+<li><a href="dsaparam.html">dsaparam</a></li>
+<li><a href="du.html">du</a></li>
+<li><a href="dump.html">dump</a></li>
+<li><a href="dund.html">dund</a></li>
+<li><a href="dvipdf.html">dvipdf</a></li>
+</ul>
+<h1 id="e">E<a class="headerlink" href="#e" title="Permanent link">&para;</a></h1>
+<ul>
+<li><a href="ec.html">ec</a></li>
+<li><a href="echo.html">echo</a></li>
+<li><a href="ecparam.html">ecparam</a></li>
+<li><a href="ed.html">ed</a></li>
+<li><a href="editdiff.html">editdiff</a></li>
+<li><a href="edquota.html">edquota</a></li>
+<li><a href="egrep.html">egrep</a></li>
+<li><a href="eject.html">eject</a></li>
+<li><a href="elinks.html">elinks</a></li>
+<li><a href="emacs.html">emacs</a></li>
+<li><a href="enable.html">enable</a></li>
+<li><a href="enc.html">enc</a></li>
+<li><a href="env.html">env</a></li>
+<li><a href="envsubst.html">envsubst</a></li>
+<li><a href="eqn.html">eqn</a></li>
+<li><a href="error.html">error</a></li>
+<li><a href="errstr.html">errstr</a></li>
+<li><a href="esd.html">esd</a></li>
+<li><a href="esdcat.html">esdcat</a></li>
+<li><a href="esdctl.html">esdctl</a></li>
+<li><a href="esddsp.html">esddsp</a></li>
+<li><a href="esdfilt.html">esdfilt</a></li>
+<li><a href="esdloop.html">esdloop</a></li>
+<li><a href="esdmon.html">esdmon</a></li>
+<li><a href="esdplay.html">esdplay</a></li>
+<li><a href="esdrec.html">esdrec</a></li>
+<li><a href="esdsample.html">esdsample</a></li>
+<li><a href="espdiff.html">espdiff</a></li>
+<li><a href="etags.html">etags</a></li>
+<li><a href="ethtool.html">ethtool</a></li>
+<li><a href="eval.html">eval</a></li>
+<li><a href="eventlogadm.html">eventlogadm</a></li>
+<li><a href="ex.html">ex</a></li>
+<li><a href="exec.html">exec</a></li>
+<li><a href="execstack.html">execstack</a></li>
+<li><a href="exit.html">exit</a></li>
+<li><a href="expand.html">expand</a></li>
+<li><a href="export.html">export</a></li>
+<li><a href="exportfs.html">exportfs</a></li>
+<li><a href="expr.html">expr</a></li>
+<li><a href="extcheck.html">extcheck</a></li>
+</ul>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   F
+-   <a href="factor.html">factor</a>
+-   <a href="faillog.html">faillog</a>
+-   <a href="false.html">false</a>
+-   <a href="fancontrol.html">fancontrol</a>
+-   <a href="fastjar.html">fastjar</a>
+-   <a href="fax2ps.html">fax2ps</a>
+-   <a href="fax2tiff.html">fax2tiff</a>
+-   <a href="fbset.html">fbset</a>
+-   <a href="fc.html">fc</a>
+-   <a href="fdformat.html">fdformat</a>
+-   <a href="fdisk.html">fdisk</a>
+-   <a href="fetchmail.html">fetchmail</a>
+-   <a href="fg.html">fg</a>
+-   <a href="fgconsole.html">fgconsole</a>
+-   <a href="fgrep.html">fgrep</a>
+-   <a href="file.html">file</a>
+-   <a href="filefrag.html">filefrag</a>
+-   <a href="filterdiff.html">filterdiff</a>
+-   <a href="find.html">find</a>
+-   <a href="find2perl.html">find2perl</a>
+-   <a href="findchip.html">findchip</a>
+-   <a href="findfs.html">findfs</a>
+-   <a href="findsmb.html">findsmb</a>
+-   <a href="finger.html">finger</a>
+-   <a href="fixcvsdiff.html">fixcvsdiff</a>
+-   <a href="fixfiles.html">fixfiles</a>
+-   <a href="flipdiff.html">flipdiff</a>
+-   <a href="flock.html">flock</a>
+-   <a href="floppy.html">floppy</a>
+-   <a href="flush.html">flush</a>
+-   <a href="fmt.html">fmt</a>
+-   <a href="fold.html">fold</a>
+-   <a href="font2c.html">font2c</a>
+-   <a href="fonttosfnt.html">fonttosfnt</a>
+-   <a href="formail.html">formail</a>
+-   <a href="free.html">free</a>
+-   <a href="fsadm.html">fsadm</a>
+-   <a href="fsck.html">fsck</a>
+-   <a href="ftp.html">ftp</a>
+-   <a href="fud.html">fud</a>
+-   <a href="funzip.html">funzip</a>
+-   <a href="fuser.html">fuser</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   G
+-   <a href="g%2b%2b.html">g++</a>
+-   <a href="gawk.html">gawk</a>
+-   <a href="gcc.html">gcc</a>
+-   <a href="gccmakedep.html">gccmakedep</a>
+-   <a href="gcj.html">gcj</a>
+-   <a href="gcjh.html">gcjh</a>
+-   <a href="gcov.html">gcov</a>
+-   <a href="gctags.html">gctags</a>
+-   <a href="gdb.html">gdb</a>
+-   <a href="gdbserver.html">gdbserver</a>
+-   <a href="gdbtui.html">gdbtui</a>
+-   <a href="gendiff.html">gendiff</a>
+-   <a href="gendsa.html">gendsa</a>
+-   <a href="genhomedircon.html">genhomedircon</a>
+-   <a href="genhostid.html">genhostid</a>
+-   <a href="genrsa.html">genrsa</a>
+-   <a href="geqn.html">geqn</a>
+-   <a href="getenforce.html">getenforce</a>
+-   <a href="getent.html">getent</a>
+-   <a href="getfacl.html">getfacl</a>
+-   <a href="getfattr.html">getfattr</a>
+-   <a href="getkey.html">getkey</a>
+-   <a href="getkeycodes.html">getkeycodes</a>
+-   <a href="getopt.html">getopt</a>
+-   <a href="getopts.html">getopts</a>
+-   <a href="getsebool.html">getsebool</a>
+-   <a href="gettext.html">gettext</a>
+-   <a href="gfdl.html">gfdl</a>
+-   <a href="ghostscript.html">ghostscript</a>
+-   <a href="gif2tiff.html">gif2tiff</a>
+-   <a href="gij.html">gij</a>
+-   <a href="gindxbib.html">gindxbib</a>
+-   <a href="gjnih.html">gjnih</a>
+-   <a href="glookbib.html">glookbib</a>
+-   <a href="gnroff.html">gnroff</a>
+-   <a href="gpasswd.html">gpasswd</a>
+-   <a href="gpg.html">gpg</a>
+-   <a href="gpg.ru.html">gpg.ru</a>
+-   <a href="gpgv.html">gpgv</a>
+-   <a href="gpic.html">gpic</a>
+-   <a href="gpm.html">gpm</a>
+-   <a href="gprof.html">gprof</a>
+-   <a href="grefer.html">grefer</a>
+-   <a href="grep.html">grep</a>
+-   <a href="grepdiff.html">grepdiff</a>
+-   <a href="grepjar.html">grepjar</a>
+-   <a href="grmic.html">grmic</a>
+-   <a href="grmiregistry.html">grmiregistry</a>
+-   <a href="grn.html">grn</a>
+-   <a href="grodvi.html">grodvi</a>
+-   <a href="groff.html">groff</a>
+-   <a href="groffer.html">groffer</a>
+-   <a href="grohtml.html">grohtml</a>
+-   <a href="grolbp.html">grolbp</a>
+-   <a href="grolj4.html">grolj4</a>
+-   <a href="grops.html">grops</a>
+-   <a href="grotty.html">grotty</a>
+-   <a href="groupadd.html">groupadd</a>
+-   <a href="groupdel.html">groupdel</a>
+-   <a href="groupmod.html">groupmod</a>
+-   <a href="groups.html">groups</a>
+-   <a href="grpck.html">grpck</a>
+-   <a href="grpconv.html">grpconv</a>
+-   <a href="grpunconv.html">grpunconv</a>
+-   <a href="grub.html">grub</a>
+-   <a href="grubby.html">grubby</a>
+-   <a href="gs.html">gs</a>
+-   <a href="gtroff.html">gtroff</a>
+-   <a href="gunzip.html">gunzip</a>
+-   <a href="gzexe.html">gzexe</a>
+-   <a href="gzip.html">gzip</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   H
+-   <a href="hald.html">hald</a>
+-   <a href="halt.html">halt</a>
+-   <a href="hash.html">hash</a>
+-   <a href="hcid.html">hcid</a>
+-   <a href="hcitool.html">hcitool</a>
+-   <a href="hdparm.html">hdparm</a>
+-   <a href="head.html">head</a>
+-   <a href="help.html">help</a>
+-   <a href="hexdump.html">hexdump</a>
+-   <a href="history.html">history</a>
+-   <a href="host.html">host</a>
+-   <a href="hostid.html">hostid</a>
+-   <a href="hostname.html">hostname</a>
+-   <a href="htdbm.html">htdbm</a>
+-   <a href="htdigest.html">htdigest</a>
+-   <a href="htpasswd.html">htpasswd</a>
+-   <a href="httpd.html">httpd</a>
+-   <a href="hwclock.html">hwclock</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   I
+-   <a href="icclink.html">icclink</a>
+-   <a href="iconv.html">iconv</a>
+-   <a href="id.html">id</a>
+-   <a href="identify.html">identify</a>
+-   <a href="idmapd.html">idmapd</a>
+-   <a href="ifconfig.html">ifconfig</a>
+-   <a href="ifnames.html">ifnames</a>
+-   <a href="ifrename.html">ifrename</a>
+-   <a href="igawk.html">igawk</a>
+-   <a href="imake.html">imake</a>
+-   <a href="imapd.html">imapd</a>
+-   <a href="import.html">import</a>
+-   <a href="imtest.html">imtest</a>
+-   <a href="indxbib.html">indxbib</a>
+-   <a href="info.html">info</a>
+-   <a href="infocmp.html">infocmp</a>
+-   <a href="infokey.html">infokey</a>
+-   <a href="infotocap.html">infotocap</a>
+-   <a href="init.html">init</a>
+-   <a href="initdb.html">initdb</a>
+-   <a href="initlog.html">initlog</a>
+-   <a href="innochecksum.html">innochecksum</a>
+-   <a href="insmod.html">insmod</a>
+-   <a href="install.html">install</a>
+-   <a href="installsieve.html">installsieve</a>
+-   <a href="instmodsh.html">instmodsh</a>
+-   <a href="interdiff.html">interdiff</a>
+-   <a href="intro.html">intro</a>
+-   <a href="ionice.html">ionice</a>
+-   <a href="ip.html">ip</a>
+-   <a href="ip6tables.html">ip6tables</a>
+-   <a href="ipcalc.html">ipcalc</a>
+-   <a href="ipcclean.html">ipcclean</a>
+-   <a href="ipcrm.html">ipcrm</a>
+-   <a href="ipcs.html">ipcs</a>
+-   <a href="iptables-restore.html">iptables-restore</a>
+-   <a href="iptables-save.html">iptables-save</a>
+-   <a href="iptables.html">iptables</a>
+-   <a href="iptstate.html">iptstate</a>
+-   <a href="ipurge.html">ipurge</a>
+-   <a href="irattach.html">irattach</a>
+-   <a href="irdadump.html">irdadump</a>
+-   <a href="irdaping.html">irdaping</a>
+-   <a href="irnetd.html">irnetd</a>
+-   <a href="irpsion5.html">irpsion5</a>
+-   <a href="irqbalance.html">irqbalance</a>
+-   <a href="isadump.html">isadump</a>
+-   <a href="isaset.html">isaset</a>
+-   <a href="isosize.html">isosize</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   J
+-   <a href="jade.html">jade</a>
+-   <a href="jarsigner.html">jarsigner</a>
+-   <a href="java.html">java</a>
+-   <a href="javac.html">javac</a>
+-   <a href="javadoc.html">javadoc</a>
+-   <a href="javah.html">javah</a>
+-   <a href="javap.html">javap</a>
+-   <a href="javaws.html">javaws</a>
+-   <a href="jconsole.html">jconsole</a>
+-   <a href="jdb.html">jdb</a>
+-   <a href="jinfo.html">jinfo</a>
+-   <a href="jmap.html">jmap</a>
+-   <a href="jobs.html">jobs</a>
+-   <a href="join.html">join</a>
+-   <a href="jpegicc.html">jpegicc</a>
+-   <a href="jpegtran.html">jpegtran</a>
+-   <a href="jps.html">jps</a>
+-   <a href="jsadebugd.html">jsadebugd</a>
+-   <a href="jstack.html">jstack</a>
+-   <a href="jstat.html">jstat</a>
+-   <a href="jstatd.html">jstatd</a>
+-   <a href="jwhois.html">jwhois</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   K
+-   <a href="kbd_mode.html">kbd_mode</a>
+-   <a href="kbdrate.html">kbdrate</a>
+-   <a href="keytool.html">keytool</a>
+-   <a href="kill.html">kill</a>
+-   <a href="killall.html">killall</a>
+-   <a href="kinit.html">kinit</a>
+-   <a href="klist.html">klist</a>
+-   <a href="klogd.html">klogd</a>
+-   <a href="kpartx.html">kpartx</a>
+-   <a href="ksh.html">ksh</a>
+-   <a href="ktab.html">ktab</a>
+-   <a href="kudzu.html">kudzu</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   L
+-   <a href="last.html">last</a>
+-   <a href="lastb.html">lastb</a>
+-   <a href="lastcomm.html">lastcomm</a>
+-   <a href="lastlog.html">lastlog</a>
+-   <a href="lchage.html">lchage</a>
+-   <a href="lchfn.html">lchfn</a>
+-   <a href="lchsh.html">lchsh</a>
+-   <a href="ld.html">ld</a>
+-   <a href="ldconfig.html">ldconfig</a>
+-   <a href="ldd.html">ldd</a>
+-   <a href="less.html">less</a>
+-   <a href="lessecho.html">lessecho</a>
+-   <a href="lesskey.html">lesskey</a>
+-   <a href="let.html">let</a>
+-   <a href="lftp.html">lftp</a>
+-   <a href="lftpget.html">lftpget</a>
+-   <a href="libnetcfg.html">libnetcfg</a>
+-   <a href="lid.html">lid</a>
+-   <a href="link.html">link</a>
+-   <a href="links.html">links</a>
+-   <a href="lkbib.html">lkbib</a>
+-   <a href="lmtp.html">lmtp</a>
+-   <a href="lmtpd.html">lmtpd</a>
+-   <a href="lmtptest.html">lmtptest</a>
+-   <a href="ln.html">ln</a>
+-   <a href="lndir.html">lndir</a>
+-   <a href="lnewusers.html">lnewusers</a>
+-   <a href="loadkeys.html">loadkeys</a>
+-   <a href="loadunimap.html">loadunimap</a>
+-   <a href="local.html">local</a>
+-   <a href="locale.html">locale</a>
+-   <a href="localedef.html">localedef</a>
+-   <a href="locate.html">locate</a>
+-   <a href="lockd.html">lockd</a>
+-   <a href="lockfile.html">lockfile</a>
+-   <a href="logger.html">logger</a>
+-   <a href="login.html">login</a>
+-   <a href="logname.html">logname</a>
+-   <a href="logout.html">logout</a>
+-   <a href="logresolve.html">logresolve</a>
+-   <a href="logrotate.html">logrotate</a>
+-   <a href="logsave.html">logsave</a>
+-   <a href="logwatch.html">logwatch</a>
+-   <a href="look.html">look</a>
+-   <a href="lookbib.html">lookbib</a>
+-   <a href="losetup.html">losetup</a>
+-   <a href="lp.html">lp</a>
+-   <a href="lpadmin.html">lpadmin</a>
+-   <a href="lpasswd.html">lpasswd</a>
+-   <a href="lpc.html">lpc</a>
+-   <a href="lpinfo.html">lpinfo</a>
+-   <a href="lpmove.html">lpmove</a>
+-   <a href="lpoptions.html">lpoptions</a>
+-   <a href="lppasswd.html">lppasswd</a>
+-   <a href="lpq-cups.html">lpq-cups</a>
+-   <a href="lpq.html">lpq</a>
+-   <a href="lpr.html">lpr</a>
+-   <a href="lprm.html">lprm</a>
+-   <a href="lpstat.html">lpstat</a>
+-   <a href="ls.html">ls</a>
+-   <a href="lsattr.html">lsattr</a>
+-   <a href="lsdiff.html">lsdiff</a>
+-   <a href="lshal.html">lshal</a>
+-   <a href="lsmod.html">lsmod</a>
+-   <a href="lsof.html">lsof</a>
+-   <a href="lspci.html">lspci</a>
+-   <a href="lspcmcia.html">lspcmcia</a>
+-   <a href="lsusb.html">lsusb</a>
+-   <a href="ltrace.html">ltrace</a>
+-   <a href="lwresd.html">lwresd</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   M
+-   <a href="m4.html">m4</a>
+-   <a href="mac2unix.html">mac2unix</a>
+-   <a href="mail.html">mail</a>
+-   <a href="mailq.html">mailq</a>
+-   <a href="make.html">make</a>
+-   <a href="makedepend.html">makedepend</a>
+-   <a href="makeg.html">makeg</a>
+-   <a href="makestrs.html">makestrs</a>
+-   <a href="makewhatis.html">makewhatis</a>
+-   <a href="man.html">man</a>
+-   <a href="man2html.html">man2html</a>
+-   <a href="manpath.html">manpath</a>
+-   <a href="map.html">map</a>
+-   <a href="mapscrn.html">mapscrn</a>
+-   <a href="master.html">master</a>
+-   <a href="matchpathcon.html">matchpathcon</a>
+-   <a href="mattrib.html">mattrib</a>
+-   <a href="mbadblocks.html">mbadblocks</a>
+-   <a href="mbchk.html">mbchk</a>
+-   <a href="mbexamine.html">mbexamine</a>
+-   <a href="mbpath.html">mbpath</a>
+-   <a href="mcat.html">mcat</a>
+-   <a href="mcd.html">mcd</a>
+-   <a href="mclasserase.html">mclasserase</a>
+-   <a href="mcookie.html">mcookie</a>
+-   <a href="mcopy.html">mcopy</a>
+-   <a href="md5sum.html">md5sum</a>
+-   <a href="mdadm.html">mdadm</a>
+-   <a href="mdassemble.html">mdassemble</a>
+-   <a href="mdeltree.html">mdeltree</a>
+-   <a href="mdir.html">mdir</a>
+-   <a href="mdmpd.html">mdmpd</a>
+-   <a href="mdu.html">mdu</a>
+-   <a href="mergelib.html">mergelib</a>
+-   <a href="mesg.html">mesg</a>
+-   <a href="mev.html">mev</a>
+-   <a href="mformat.html">mformat</a>
+-   <a href="mgetty.html">mgetty</a>
+-   <a href="minfo.html">minfo</a>
+-   <a href="mingetty.html">mingetty</a>
+-   <a href="mkbootdisk.html">mkbootdisk</a>
+-   <a href="mkdir.html">mkdir</a>
+-   <a href="mkdirhier.html">mkdirhier</a>
+-   <a href="mkdosfs.html">mkdosfs</a>
+-   <a href="mke2fs.html">mke2fs</a>
+-   <a href="mkfifo.html">mkfifo</a>
+-   <a href="mkfontdir.html">mkfontdir</a>
+-   <a href="mkfontscale.html">mkfontscale</a>
+-   <a href="mkfs.ext2.html">mkfs.ext2</a>
+-   <a href="mkfs.ext3.html">mkfs.ext3</a>
+-   <a href="mkfs.html">mkfs</a>
+-   <a href="mkhtmlindex.html">mkhtmlindex</a>
+-   <a href="mkinitrd.html">mkinitrd</a>
+-   <a href="mklost%2bfound.html">mklost+found</a>
+-   <a href="mkmanifest.html">mkmanifest</a>
+-   <a href="mkmapfile.html">mkmapfile</a>
+-   <a href="mknod.html">mknod</a>
+-   <a href="mkswap.html">mkswap</a>
+-   <a href="mktemp.html">mktemp</a>
+-   <a href="mlabel.html">mlabel</a>
+-   <a href="mmd.html">mmd</a>
+-   <a href="mmount.html">mmount</a>
+-   <a href="mmove.html">mmove</a>
+-   <a href="modinfo.html">modinfo</a>
+-   <a href="modprobe.html">modprobe</a>
+-   <a href="mogrify.html">mogrify</a>
+-   <a href="montage.html">montage</a>
+-   <a href="more.html">more</a>
+-   <a href="mount.html">mount</a>
+-   <a href="mountd.html">mountd</a>
+-   <a href="mountpoint.html">mountpoint</a>
+-   <a href="mpartition.html">mpartition</a>
+-   <a href="mrd.html">mrd</a>
+-   <a href="mren.html">mren</a>
+-   <a href="msgattrib.html">msgattrib</a>
+-   <a href="msgcat.html">msgcat</a>
+-   <a href="msgcmp.html">msgcmp</a>
+-   <a href="msgcomm.html">msgcomm</a>
+-   <a href="msgconv.html">msgconv</a>
+-   <a href="msgen.html">msgen</a>
+-   <a href="msgexec.html">msgexec</a>
+-   <a href="msgfilter.html">msgfilter</a>
+-   <a href="msgfmt.html">msgfmt</a>
+-   <a href="msggrep.html">msggrep</a>
+-   <a href="msginit.html">msginit</a>
+-   <a href="msgmerge.html">msgmerge</a>
+-   <a href="msgunfmt.html">msgunfmt</a>
+-   <a href="msguniq.html">msguniq</a>
+-   <a href="mshowfat.html">mshowfat</a>
+-   <a href="msql2mysql.html">msql2mysql</a>
+-   <a href="mtools.html">mtools</a>
+-   <a href="mtoolstest.html">mtoolstest</a>
+-   <a href="mtr.html">mtr</a>
+-   <a href="mtype.html">mtype</a>
+-   <a href="multipath.html">multipath</a>
+-   <a href="multipathd.html">multipathd</a>
+-   <a href="mupdatetest.html">mupdatetest</a>
+-   <a href="mutt.html">mutt</a>
+-   <a href="mv.html">mv</a>
+-   <a href="mysql.html">mysql</a>
+-   <a href="mysqlaccess.html">mysqlaccess</a>
+-   <a href="mysqladmin.html">mysqladmin</a>
+-   <a href="mysqlbinlog.html">mysqlbinlog</a>
+-   <a href="mysqlbug.html">mysqlbug</a>
+-   <a href="mysqlcheck.html">mysqlcheck</a>
+-   <a href="mysqld.html">mysqld</a>
+-   <a href="mysqld_multi.html">mysqld_multi</a>
+-   <a href="mysqld_safe.html">mysqld_safe</a>
+-   <a href="mysqldump.html">mysqldump</a>
+-   <a href="mysqldumpslow.html">mysqldumpslow</a>
+-   <a href="mysqlhotcopy.html">mysqlhotcopy</a>
+-   <a href="mysqlimport.html">mysqlimport</a>
+-   <a href="mysqlman.html">mysqlman</a>
+-   <a href="mysqlmanager.html">mysqlmanager</a>
+-   <a href="mysqlshow.html">mysqlshow</a>
+-   <a href="mysqlslap.html">mysqlslap</a>
+-   <a href="mysqltest.html">mysqltest</a>
+-   <a href="mzip.html">mzip</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   N
+-   <a href="named.html">named</a>
+-   <a href="namei.html">namei</a>
+-   <a href="nameif.html">nameif</a>
+-   <a href="nano.html">nano</a>
+-   <a href="nash.html">nash</a>
+-   <a href="nc.html">nc</a>
+-   <a href="neqn.html">neqn</a>
+-   <a href="net.html">net</a>
+-   <a href="netplugd.html">netplugd</a>
+-   <a href="netreport.html">netreport</a>
+-   <a href="netstat.html">netstat</a>
+-   <a href="newaliases.html">newaliases</a>
+-   <a href="newgrp.html">newgrp</a>
+-   <a href="newusers.html">newusers</a>
+-   <a href="nfsd.html">nfsd</a>
+-   <a href="nfsstat.html">nfsstat</a>
+-   <a href="ngettext.html">ngettext</a>
+-   <a href="nhfsgraph.html">nhfsgraph</a>
+-   <a href="nhfsnums.html">nhfsnums</a>
+-   <a href="nhfsrun.html">nhfsrun</a>
+-   <a href="nhfsstone.html">nhfsstone</a>
+-   <a href="nice.html">nice</a>
+-   <a href="nm.html">nm</a>
+-   <a href="nmbd.html">nmbd</a>
+-   <a href="nmblookup.html">nmblookup</a>
+-   <a href="nntpd.html">nntpd</a>
+-   <a href="nntptest.html">nntptest</a>
+-   <a href="nohup.html">nohup</a>
+-   <a href="nologin.html">nologin</a>
+-   <a href="notifyd.html">notifyd</a>
+-   <a href="nroff.html">nroff</a>
+-   <a href="nscd.html">nscd</a>
+-   <a href="nseq.html">nseq</a>
+-   <a href="nsgmls.html">nsgmls</a>
+-   <a href="nslookup.html">nslookup</a>
+-   <a href="nsupdate.html">nsupdate</a>
+-   <a href="ntlm_auth.html">ntlm_auth</a>
+-   <a href="ntpd.html">ntpd</a>
+-   <a href="ntpdate.html">ntpdate</a>
+-   <a href="ntpdc.html">ntpdc</a>
+-   <a href="ntpq.html">ntpq</a>
+-   <a href="ntpstat.html">ntpstat</a>
+-   <a href="ntptime.html">ntptime</a>
+-   <a href="ntptrace.html">ntptrace</a>
+-   <a href="ntsysv.html">ntsysv</a>
+-   <a href="numactl.html">numactl</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   O
+-   <a href="objcopy.html">objcopy</a>
+-   <a href="objdump.html">objdump</a>
+-   <a href="ocsp.html">ocsp</a>
+-   <a href="od.html">od</a>
+-   <a href="oddjobd.html">oddjobd</a>
+-   <a href="onsgmls.html">onsgmls</a>
+-   <a href="openjade.html">openjade</a>
+-   <a href="openssl.html">openssl</a>
+-   <a href="openvt.html">openvt</a>
+-   <a href="oqmgr.html">oqmgr</a>
+-   <a href="orbd.html">orbd</a>
+-   <a href="osgmlnorm.html">osgmlnorm</a>
+-   <a href="ospam.html">ospam</a>
+-   <a href="ospcat.html">ospcat</a>
+-   <a href="ospent.html">ospent</a>
+-   <a href="ownership.html">ownership</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   P
+-   <a href="pand.html">pand</a>
+-   <a href="paps.html">paps</a>
+-   <a href="parted.html">parted</a>
+-   <a href="partprobe.html">partprobe</a>
+-   <a href="partx.html">partx</a>
+-   <a href="passwd.html">passwd</a>
+-   <a href="paste.html">paste</a>
+-   <a href="patch.html">patch</a>
+-   <a href="pathchk.html">pathchk</a>
+-   <a href="pax.html">pax</a>
+-   <a href="pccardctl.html">pccardctl</a>
+-   <a href="pcregrep.html">pcregrep</a>
+-   <a href="pcretest.html">pcretest</a>
+-   <a href="pcscd.html">pcscd</a>
+-   <a href="pdbedit.html">pdbedit</a>
+-   <a href="pdf2dsc.html">pdf2dsc</a>
+-   <a href="pdf2ps.html">pdf2ps</a>
+-   <a href="pdffonts.html">pdffonts</a>
+-   <a href="pdfimages.html">pdfimages</a>
+-   <a href="pdfinfo.html">pdfinfo</a>
+-   <a href="pdfopt.html">pdfopt</a>
+-   <a href="pdftohtml.html">pdftohtml</a>
+-   <a href="pdftops.html">pdftops</a>
+-   <a href="pdftotext.html">pdftotext</a>
+-   <a href="perror.html">perror</a>
+-   <a href="pf2afm.html">pf2afm</a>
+-   <a href="pfbtopfa.html">pfbtopfa</a>
+-   <a href="pfbtops.html">pfbtops</a>
+-   <a href="pftp.html">pftp</a>
+-   <a href="pgawk.html">pgawk</a>
+-   <a href="pgrep.html">pgrep</a>
+-   <a href="php-config.html">php-config</a>
+-   <a href="php.html">php</a>
+-   <a href="phpize.html">phpize</a>
+-   <a href="pic.html">pic</a>
+-   <a href="pic2graph.html">pic2graph</a>
+-   <a href="pickup.html">pickup</a>
+-   <a href="piconv.html">piconv</a>
+-   <a href="pidof.html">pidof</a>
+-   <a href="pinfo.html">pinfo</a>
+-   <a href="ping.html">ping</a>
+-   <a href="ping6.html">ping6</a>
+-   <a href="pinky.html">pinky</a>
+-   <a href="pipe.html">pipe</a>
+-   <a href="pkg-config.html">pkg-config</a>
+-   <a href="pkill.html">pkill</a>
+-   <a href="plipconfig.html">plipconfig</a>
+-   <a href="pluginviewer.html">pluginviewer</a>
+-   <a href="pman.html">pman</a>
+-   <a href="pmap.html">pmap</a>
+-   <a href="pod2html.html">pod2html</a>
+-   <a href="pod2latex.html">pod2latex</a>
+-   <a href="pod2man.html">pod2man</a>
+-   <a href="pod2text.html">pod2text</a>
+-   <a href="pod2usage.html">pod2usage</a>
+-   <a href="podchecker.html">podchecker</a>
+-   <a href="podselect.html">podselect</a>
+-   <a href="policytool.html">policytool</a>
+-   <a href="pop3d.html">pop3d</a>
+-   <a href="pop3test.html">pop3test</a>
+-   <a href="popd.html">popd</a>
+-   <a href="portmap.html">portmap</a>
+-   <a href="postalias.html">postalias</a>
+-   <a href="postcat.html">postcat</a>
+-   <a href="postconf.html">postconf</a>
+-   <a href="postdrop.html">postdrop</a>
+-   <a href="postfix.html">postfix</a>
+-   <a href="postgres.html">postgres</a>
+-   <a href="postkick.html">postkick</a>
+-   <a href="postlock.html">postlock</a>
+-   <a href="postlog.html">postlog</a>
+-   <a href="postmap.html">postmap</a>
+-   <a href="postmaster.html">postmaster</a>
+-   <a href="postqueue.html">postqueue</a>
+-   <a href="postsuper.html">postsuper</a>
+-   <a href="poweroff.html">poweroff</a>
+-   <a href="ppm2tiff.html">ppm2tiff</a>
+-   <a href="pppd.html">pppd</a>
+-   <a href="pppdump.html">pppdump</a>
+-   <a href="pppoe.html">pppoe</a>
+-   <a href="pppstats.html">pppstats</a>
+-   <a href="pr.html">pr</a>
+-   <a href="prelink.html">prelink</a>
+-   <a href="printafm.html">printafm</a>
+-   <a href="printenv.html">printenv</a>
+-   <a href="printf.html">printf</a>
+-   <a href="procmail.html">procmail</a>
+-   <a href="profiles.html">profiles</a>
+-   <a href="protoize.html">protoize</a>
+-   <a href="prove.html">prove</a>
+-   <a href="proxymap.html">proxymap</a>
+-   <a href="ps.html">ps</a>
+-   <a href="psed.html">psed</a>
+-   <a href="psql.html">psql</a>
+-   <a href="pstack.html">pstack</a>
+-   <a href="pstree.html">pstree</a>
+-   <a href="pstruct.html">pstruct</a>
+-   <a href="ptar.html">ptar</a>
+-   <a href="ptardiff.html">ptardiff</a>
+-   <a href="ptx.html">ptx</a>
+-   <a href="pushd.html">pushd</a>
+-   <a href="pvchange.html">pvchange</a>
+-   <a href="pvck.html">pvck</a>
+-   <a href="pvcreate.html">pvcreate</a>
+-   <a href="pvdisplay.html">pvdisplay</a>
+-   <a href="pvmove.html">pvmove</a>
+-   <a href="pvremove.html">pvremove</a>
+-   <a href="pvresize.html">pvresize</a>
+-   <a href="pvs.html">pvs</a>
+-   <a href="pvscan.html">pvscan</a>
+-   <a href="pwck.html">pwck</a>
+-   <a href="pwconv.html">pwconv</a>
+-   <a href="pwd.html">pwd</a>
+-   <a href="pwdx.html">pwdx</a>
+-   <a href="pwmconfig.html">pwmconfig</a>
+-   <a href="pwunconv.html">pwunconv</a>
+-   <a href="python.html">python</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   Q
+-   <a href="qmgr.html">qmgr</a>
+-   <a href="qmqpd.html">qmqpd</a>
+-   <a href="qshape.html">qshape</a>
+-   <a href="quota.html">quota</a>
+-   <a href="quotacheck.html">quotacheck</a>
+-   <a href="quotaon.html">quotaon</a>
+-   <a href="quotastats.html">quotastats</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   R
+-   <a href="racoon.html">racoon</a>
+-   <a href="racoonctl.html">racoonctl</a>
+-   <a href="ramsize.html">ramsize</a>
+-   <a href="ranlib.html">ranlib</a>
+-   <a href="ras2tiff.html">ras2tiff</a>
+-   <a href="raw.html">raw</a>
+-   <a href="raw2tiff.html">raw2tiff</a>
+-   <a href="rawdevices.html">rawdevices</a>
+-   <a href="rcp.html">rcp</a>
+-   <a href="rdate.html">rdate</a>
+-   <a href="rdev.html">rdev</a>
+-   <a href="rdisc.html">rdisc</a>
+-   <a href="rdist.html">rdist</a>
+-   <a href="rdjpgcom.html">rdjpgcom</a>
+-   <a href="rdump.html">rdump</a>
+-   <a href="read.html">read</a>
+-   <a href="readelf.html">readelf</a>
+-   <a href="readlink.html">readlink</a>
+-   <a href="readonly.html">readonly</a>
+-   <a href="readprofile.html">readprofile</a>
+-   <a href="reboot.html">reboot</a>
+-   <a href="reconstruct.html">reconstruct</a>
+-   <a href="recountdiff.html">recountdiff</a>
+-   <a href="red.html">red</a>
+-   <a href="rediff.html">rediff</a>
+-   <a href="refer.html">refer</a>
+-   <a href="reindexdb.html">reindexdb</a>
+-   <a href="reject.html">reject</a>
+-   <a href="rename.html">rename</a>
+-   <a href="renice.html">renice</a>
+-   <a href="replace.html">replace</a>
+-   <a href="repquota.html">repquota</a>
+-   <a href="req.html">req</a>
+-   <a href="reset.html">reset</a>
+-   <a href="resize2fs.html">resize2fs</a>
+-   <a href="resizecons.html">resizecons</a>
+-   <a href="resolveip.html">resolveip</a>
+-   <a href="restore.html">restore</a>
+-   <a href="restorecon.html">restorecon</a>
+-   <a href="restorecond.html">restorecond</a>
+-   <a href="return.html">return</a>
+-   <a href="rev.html">rev</a>
+-   <a href="revpath.html">revpath</a>
+-   <a href="rexec.html">rexec</a>
+-   <a href="rfcomm.html">rfcomm</a>
+-   <a href="rgb2ycbcr.html">rgb2ycbcr</a>
+-   <a href="rlogin.html">rlogin</a>
+-   <a href="rm.html">rm</a>
+-   <a href="rmdir.html">rmdir</a>
+-   <a href="rmid.html">rmid</a>
+-   <a href="rmmod.html">rmmod</a>
+-   <a href="rmnews.html">rmnews</a>
+-   <a href="rmt.html">rmt</a>
+-   <a href="rnano.html">rnano</a>
+-   <a href="rootflags.html">rootflags</a>
+-   <a href="rotatelogs.html">rotatelogs</a>
+-   <a href="route.html">route</a>
+-   <a href="rpcclient.html">rpcclient</a>
+-   <a href="rpcdebug.html">rpcdebug</a>
+-   <a href="rpcgen.html">rpcgen</a>
+-   <a href="rpcinfo.html">rpcinfo</a>
+-   <a href="rsa.html">rsa</a>
+-   <a href="rsautl.html">rsautl</a>
+-   <a href="rsh.html">rsh</a>
+-   <a href="rsvg.html">rsvg</a>
+-   <a href="rsync.html">rsync</a>
+-   <a href="ruby.html">ruby</a>
+-   <a href="runcon.html">runcon</a>
+-   <a href="runlevel.html">runlevel</a>
+-   <a href="runuser.html">runuser</a>
+-   <a href="rvi.html">rvi</a>
+-   <a href="rview.html">rview</a>
+-   <a href="rvim.html">rvim</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   S
+-   <a href="safe_mysqld.html">safe_mysqld</a>
+-   <a href="saslauthd.html">saslauthd</a>
+-   <a href="scache.html">scache</a>
+-   <a href="scp.html">scp</a>
+-   <a href="script.html">script</a>
+-   <a href="sdiff.html">sdiff</a>
+-   <a href="sdpd.html">sdpd</a>
+-   <a href="sdptool.html">sdptool</a>
+-   <a href="sechecker.html">sechecker</a>
+-   <a href="secon.html">secon</a>
+-   <a href="sed.html">sed</a>
+-   <a href="sediff.html">sediff</a>
+-   <a href="seinfo.html">seinfo</a>
+-   <a href="selinux.html">selinux</a>
+-   <a href="selinuxenabled.html">selinuxenabled</a>
+-   <a href="semanage.html">semanage</a>
+-   <a href="sensors.html">sensors</a>
+-   <a href="seq.html">seq</a>
+-   <a href="serialver.html">serialver</a>
+-   <a href="servertool.html">servertool</a>
+-   <a href="service.html">service</a>
+-   <a href="sesearch.html">sesearch</a>
+-   <a href="sestatus.html">sestatus</a>
+-   <a href="set.html">set</a>
+-   <a href="setarch.html">setarch</a>
+-   <a href="setenforce.html">setenforce</a>
+-   <a href="setfacl.html">setfacl</a>
+-   <a href="setfattr.html">setfattr</a>
+-   <a href="setfiles.html">setfiles</a>
+-   <a href="setfont.html">setfont</a>
+-   <a href="setkey.html">setkey</a>
+-   <a href="setkeycodes.html">setkeycodes</a>
+-   <a href="setleds.html">setleds</a>
+-   <a href="setmetamode.html">setmetamode</a>
+-   <a href="setpci.html">setpci</a>
+-   <a href="setquota.html">setquota</a>
+-   <a href="setsebool.html">setsebool</a>
+-   <a href="setserial.html">setserial</a>
+-   <a href="setsid.html">setsid</a>
+-   <a href="setterm.html">setterm</a>
+-   <a href="sfdisk.html">sfdisk</a>
+-   <a href="sftp.html">sftp</a>
+-   <a href="sg.html">sg</a>
+-   <a href="sgpio.html">sgpio</a>
+-   <a href="sh.html">sh</a>
+-   <a href="sha.html">sha</a>
+-   <a href="shift.html">shift</a>
+-   <a href="shopt.html">shopt</a>
+-   <a href="showkey.html">showkey</a>
+-   <a href="showmount.html">showmount</a>
+-   <a href="showq.html">showq</a>
+-   <a href="shred.html">shred</a>
+-   <a href="shutdown.html">shutdown</a>
+-   <a href="sieveshell.html">sieveshell</a>
+-   <a href="sivtest.html">sivtest</a>
+-   <a href="size.html">size</a>
+-   <a href="skill.html">skill</a>
+-   <a href="slabtop.html">slabtop</a>
+-   <a href="slattach.html">slattach</a>
+-   <a href="sleep.html">sleep</a>
+-   <a href="sln.html">sln</a>
+-   <a href="slogin.html">slogin</a>
+-   <a href="smartctl.html">smartctl</a>
+-   <a href="smartd.html">smartd</a>
+-   <a href="smbcacls.html">smbcacls</a>
+-   <a href="smbclient.html">smbclient</a>
+-   <a href="smbcontrol.html">smbcontrol</a>
+-   <a href="smbcquotas.html">smbcquotas</a>
+-   <a href="smbd.html">smbd</a>
+-   <a href="smbget.html">smbget</a>
+-   <a href="smbpasswd.html">smbpasswd</a>
+-   <a href="smbspool.html">smbspool</a>
+-   <a href="smbstatus.html">smbstatus</a>
+-   <a href="smbtar.html">smbtar</a>
+-   <a href="smbtree.html">smbtree</a>
+-   <a href="smime.html">smime</a>
+-   <a href="smmapd.html">smmapd</a>
+-   <a href="smtp.html">smtp</a>
+-   <a href="smtpd.html">smtpd</a>
+-   <a href="smtptest.html">smtptest</a>
+-   <a href="snice.html">snice</a>
+-   <a href="snmpd.html">snmpd</a>
+-   <a href="snmptrapd.html">snmptrapd</a>
+-   <a href="sntp.html">sntp</a>
+-   <a href="soelim.html">soelim</a>
+-   <a href="sort.html">sort</a>
+-   <a href="sosreport.html">sosreport</a>
+-   <a href="source.html">source</a>
+-   <a href="spam.html">spam</a>
+-   <a href="spamassassin.html">spamassassin</a>
+-   <a href="spamc.html">spamc</a>
+-   <a href="spamd.html">spamd</a>
+-   <a href="spawn.html">spawn</a>
+-   <a href="speed.html">speed</a>
+-   <a href="spent.html">spent</a>
+-   <a href="spkac.html">spkac</a>
+-   <a href="splain.html">splain</a>
+-   <a href="split.html">split</a>
+-   <a href="splitdiff.html">splitdiff</a>
+-   <a href="sprof.html">sprofa&gt;</a>
+-   <a href="sqlite3.html">sqlite3</a>
+-   <a href="squatter.html">squatter</a>
+-   <a href="ssh-add.html">ssh-add</a>
+-   <a href="ssh-agent.html">ssh-agent</a>
+-   <a href="ssh-copy-id.html">ssh-copy-id</a>
+-   <a href="ssh-keygen.html">ssh-keygen</a>
+-   <a href="ssh-keyscan.html">ssh-keyscan</a>
+-   <a href="ssh-keysign.html">ssh-keysign</a>
+-   <a href="ssh.html">ssh</a>
+-   <a href="sshd.html">sshd</a>
+-   <a href="sslpasswd.html">sslpasswd</a>
+-   <a href="sslrand.html">sslrand</a>
+-   <a href="sslswamp.html">sslswamp</a>
+-   <a href="stat.html">stat</a>
+-   <a href="statd.html">statd</a>
+-   <a href="strace.html">strace</a>
+-   <a href="strings.html">strings</a>
+-   <a href="strip.html">strip</a>
+-   <a href="stty.html">stty</a>
+-   <a href="stunnel.html">stunnel</a>
+-   <a href="su.html">su</a>
+-   <a href="sudo.html">sudo</a>
+-   <a href="sudoedit.html">sudoedit</a>
+-   <a href="suexec.html">suexec</a>
+-   <a href="sulogin.html">sulogin</a>
+-   <a href="sum.html">sum</a>
+-   <a href="suspend.html">suspend</a>
+-   <a href="svcgssd.html">svcgssd</a>
+-   <a href="swapoff.html">swapoff</a>
+-   <a href="swapon.html">swapon</a>
+-   <a href="symlinks.html">symlinks</a>
+-   <a href="sync.html">sync</a>
+-   <a href="sysctl.html">sysctl</a>
+-   <a href="sysklogd.html">sysklogd</a>
+-   <a href="syslogd.html">syslogd</a>
+-   <a href="systool.html">systool</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   T
+-   <a href="tac.html">tac</a>
+-   <a href="tack.html">tack</a>
+-   <a href="tail.html">tail</a>
+-   <a href="tailf.html">tailf</a>
+-   <a href="talk.html">talk</a>
+-   <a href="tar.html">tar</a>
+-   <a href="taskset.html">taskset</a>
+-   <a href="tbl.html">tbl</a>
+-   <a href="tclsh.html">tclsh</a>
+-   <a href="tcpd.html">tcpd</a>
+-   <a href="tcpdump.html">tcpdump</a>
+-   <a href="tcpslice.html">tcpslice</a>
+-   <a href="tcsh.html">tcsh</a>
+-   <a href="tdbbackup.html">tdbbackup</a>
+-   <a href="tdbdump.html">tdbdump</a>
+-   <a href="tdbtool.html">tdbtool</a>
+-   <a href="tee.html">tee</a>
+-   <a href="telinit.html">telinit</a>
+-   <a href="telnet.html">telnet</a>
+-   <a href="test.html">test</a>
+-   <a href="testparm.html">testparm</a>
+-   <a href="tfmtodit.html">tfmtodit</a>
+-   <a href="tftp.html">tftp</a>
+-   <a href="thumbnail.html">thumbnail</a>
+-   <a href="tic.html">tic</a>
+-   <a href="tiff2bw.html">tiff2bw</a>
+-   <a href="tiff2pdf.html">tiff2pdf</a>
+-   <a href="tiff2ps.html">tiff2ps</a>
+-   <a href="tiff2rgba.html">tiff2rgba</a>
+-   <a href="tiffcmp.html">tiffcmp</a>
+-   <a href="tiffcp.html">tiffcp</a>
+-   <a href="tiffdither.html">tiffdither</a>
+-   <a href="tiffdump.html">tiffdump</a>
+-   <a href="tifficc.html">tifficc</a>
+-   <a href="tiffinfo.html">tiffinfo</a>
+-   <a href="tiffmedian.html">tiffmedian</a>
+-   <a href="tiffset.html">tiffset</a>
+-   <a href="tiffsplit.html">tiffsplit</a>
+-   <a href="time.html">time</a>
+-   <a href="times.html">times</a>
+-   <a href="timsieved.html">timsieved</a>
+-   <a href="tload.html">tload</a>
+-   <a href="tls_prune.html">tls_prune</a>
+-   <a href="tlsmgr.html">tlsmgr</a>
+-   <a href="tmpwatch.html">tmpwatch</a>
+-   <a href="tnameserv.html">tnameserv</a>
+-   <a href="toe.html">toe</a>
+-   <a href="top.html">top</a>
+-   <a href="touch.html">touch</a>
+-   <a href="tput.html">tput</a>
+-   <a href="tr.html">tr</a>
+-   <a href="trace.html">trace</a>
+-   <a href="tracepath.html">tracepath</a>
+-   <a href="traceroute.html">traceroute</a>
+-   <a href="trap.html">trap</a>
+-   <a href="tree.html">tree</a>
+-   <a href="troff.html">troff</a>
+-   <a href="true.html">TRUE</a>
+-   <a href="tset.html">tset</a>
+-   <a href="tsort.html">tsort</a>
+-   <a href="tty.html">tty</a>
+-   <a href="tune2fs.html">tune2fs</a>
+-   <a href="tunelp.html">tunelp</a>
+-   <a href="type.html">type</a>
+-   <a href="typeset.html">typeset</a>
+-   <a href="tzselect.html">tzselect</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   U
+-   <a href="ucs2any.html">ucs2any</a>
+-   <a href="udevcontrol.html">udevcontrol</a>
+-   <a href="udevd.html">udevd</a>
+-   <a href="udevinfo.html">udevinfo</a>
+-   <a href="udevmonitor.html">udevmonitor</a>
+-   <a href="udevsettle.html">udevsettle</a>
+-   <a href="udevtest.html">udevtest</a>
+-   <a href="udevtrigger.html">udevtrigger</a>
+-   <a href="ul.html">ul</a>
+-   <a href="ulimit.html">ulimit</a>
+-   <a href="umap.html">umap</a>
+-   <a href="umask.html">umask</a>
+-   <a href="umount.html">umount</a>
+-   <a href="unalias.html">unalias</a>
+-   <a href="uname.html">uname</a>
+-   <a href="unexpand.html">unexpand</a>
+-   <a href="unexpunge.html">unexpunge</a>
+-   <a href="uniq.html">uniq</a>
+-   <a href="unix2dos.html">unix2dos</a>
+-   <a href="unlink.html">unlink</a>
+-   <a href="unprotoize.html">unprotoize</a>
+-   <a href="unset.html">unset</a>
+-   <a href="unwrapdiff.html">unwrapdiff</a>
+-   <a href="unzip.html">unzip</a>
+-   <a href="unzipsfx.html">unzipsfx</a>
+-   <a href="updatedb.html">updatedb</a>
+-   <a href="uptime.html">uptime</a>
+-   <a href="urlview.html">urlview</a>
+-   <a href="useradd.html">useradd</a>
+-   <a href="userdel.html">userdel</a>
+-   <a href="userhelper.html">userhelper</a>
+-   <a href="userinfo.html">userinfo</a>
+-   <a href="usermod.html">usermod</a>
+-   <a href="usermount.html">usermount</a>
+-   <a href="usernetctl.html">usernetctl</a>
+-   <a href="userpasswd.html">userpasswd</a>
+-   <a href="users.html">users</a>
+-   <a href="usleep.html">usleep</a>
+-   <a href="uuidgen.html">uuidgen</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   V
+-   <a href="vacuumdb.html">vacuumdb</a>
+-   <a href="vbetool.html">vbetool</a>
+-   <a href="vconfig.html">vconfig</a>
+-   <a href="vdir.html">vdir</a>
+-   <a href="verify.html">verify</a>
+-   <a href="version.html">version</a>
+-   <a href="vfstest.html">vfstest</a>
+-   <a href="vi.html">vi</a>
+-   <a href="vidmode.html">vidmode</a>
+-   <a href="view.html">view</a>
+-   <a href="vigr.html">vigr</a>
+-   <a href="vim.html">vim</a>
+-   <a href="vimdiff.html">vimdiff</a>
+-   <a href="vimtutor.html">vimtutor</a>
+-   <a href="vipw.html">vipw</a>
+-   <a href="virtual.html">virtual</a>
+-   <a href="visudo.html">visudo</a>
+-   <a href="vmstat.html">vmstat</a>
+-   <a href="vol_id.html">vol_id</a>
+-   <a href="volname.html">volname</a>
+-   <a href="vpddecode.html">vpddecode</a>
+-   <a href="vsftpd.html">vsftpd</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   W
+-   <a href="w.html">w</a>
+-   <a href="wait.html">wait</a>
+-   <a href="wall.html">wall</a>
+-   <a href="warnquota.html">warnquota</a>
+-   <a href="watch.html">watch</a>
+-   <a href="wbinfo.html">wbinfo</a>
+-   <a href="wc.html">wc</a>
+-   <a href="webalizer.html">webalizer</a>
+-   <a href="wftopfa.html">wftopfa</a>
+-   <a href="wget.html">wget</a>
+-   <a href="whatis.html">whatis</a>
+-   <a href="whereis.html">whereis</a>
+-   <a href="which.html">which</a>
+-   <a href="whiptail.html">whiptail</a>
+-   <a href="who.html">who</a>
+-   <a href="whoami.html">whoami</a>
+-   <a href="whois.html">whois</a>
+-   <a href="winbindd.html">winbindd</a>
+-   <a href="wish.html">wish</a>
+-   <a href="write.html">write</a>
+-   <a href="wrjpgcom.html">wrjpgcom</a>
+-   <a href="wtpt.html">wtpt</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   X
+-   <a href="xargs.html">xargs</a>
+-   <a href="xfs.html">xfs</a>
+-   <a href="xgettext.html">xgettext</a>
+-   <a href="xglyph.html">xglyph</a>
+-   <a href="xmkmf.html">xmkmf</a>
+-   <a href="xmlcatalog.html">xmlcatalog</a>
+-   <a href="xmllint.html">xmllint</a>
+-   <a href="xmlwf.html">xmlwf</a>
+-   <a href="xqmstats.html">xqmstats</a>
+-   <a href="xsltproc.html">xsltproc</a>
+-   <a href="xsubpp.html">xsubpp</a>
+-   <a href="xulrunner.html">xulrunner</a>
+-   <a href="xxd.html">xxd</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   Y
+-   <a href="yes.html">yes</a>
+-   <a href="ypbind.html">ypbind</a>
+-   <a href="ypcat.html">ypcat</a>
+-   <a href="ypchfn.html">ypchfn</a>
+-   <a href="ypchsh.html">ypchsh</a>
+-   <a href="ypmatch.html">ypmatch</a>
+-   <a href="yppasswd.html">yppasswd</a>
+-   <a href="yppoll.html">yppoll</a>
+-   <a href="ypset.html">ypset</a>
+-   <a href="yptest.html">yptest</a>
+-   <a href="ypwhich.html">ypwhich</a>
+-   <a href="yum.html">yum</a></p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>&lt;!-- --&gt;
+</span></code></pre></div>
+-   Z
+-   <a href="zcat.html">zcat</a>
+-   <a href="zcmp.html">zcmp</a>
+-   <a href="zdiff.html">zdiff</a>
+-   <a href="zdump.html">zdump</a>
+-   <a href="zforce.html">zforce</a>
+-   <a href="zgrep.html">zgrep</a>
+-   <a href="zic.html">zic</a>
+-   <a href="zip.html">zip</a>
+-   <a href="zipgrep.html">zipgrep</a>
+-   <a href="zipinfo.html">zipinfo</a>
+-   <a href="zless.html">zless</a>
+-   <a href="zmore.html">zmore</a>
+-   <a href="znew.html">znew</a>
+-   <a href="zsoelim.html">zsoelim</a>
+:::</p>
+<p>[<a href="./#A">a</a>]                                                             <br />
+  [<a href="#B">b</a>]                                                             <br />
+  [<a href="#c">c</a>]                                                             <br />
+  [<a href="#d">d</a>]                                                             <br />
+  [<a href="index.html#e">e</a>]                                                             <br />
+  [<a href="index.html#f">f</a>]                                                             <br />
+  [<a href="index.html#g">g</a>]                                                             <br />
+  [<a href="index.html#h">h</a>]                                                             <br />
+  [<a href="index.html#i">i</a>]                                                             <br />
+  [<a href="index.html#j">j</a>]                                                             <br />
+  [<a href="index.html#k">k</a>]                                                             <br />
+  [<a href="index.html#l">l</a>]                                                             <br />
+  [<a href="index.html#m">m</a>]                                                            <br />
+  [<a href="index.html#n">n</a>]                                                             <br />
+  [<a href="index.html#o">o</a>]                                                             <br />
+  [<a href="index.html#p">p</a>]                                                             <br />
+  [<a href="index.html#q">q</a>]                                                             <br />
+  [<a href="index.html#r">r</a>]                                                             <br />
+  [<a href="index.html#s">s</a>]                                                             <br />
+  [<a href="index.html#t">t</a>]                                                             <br />
+  [<a href="index.html#u">u</a>]                                                             <br />
+  [<a href="index.html#v">v</a>]                                                             <br />
+  [<a href="index.html#w">w</a>]                                                             <br />
+  [<a href="index.html#x">x</a>]                                                             <br />
+  [<a href="index.html#y">y</a>]                                                             <br />
+  [<a href="index.html#z">z</a>]                                                               </p>
+<p><a href="accept.html">accept</a>                 <a href="iptables-restore.html">iptables-restore</a>   <a href="pwd.html">pwd</a>\
+  <a href="accton.html">accton</a>                 <a href="iptables-save.html">iptables-save</a>         <a href="pwdx.html">pwdx</a>\
+  <a href="acpid.html">acpid</a>                   <a href="iptables.html">iptables</a>                   <a href="pwmconfig.html">pwmconfig</a>\
+  <a href="addftinfo.html">addftinfo</a>           <a href="iptstate.html">iptstate</a>                   <a href="pwunconv.html">pwunconv</a>\
+  <a href="addpart.html">addpart</a>               <a href="ipurge.html">ipurge</a>                       <a href="python.html">python</a>\
+  <a href="addr2line.html">addr2line</a>           <a href="irattach.html">irattach</a>                   [ ]{#q} <a href="qmgr.html">qmgr</a>\
+  <a href="adduser.html">adduser</a>               <a href="irdadump.html">irdadump</a>                   <a href="qmqpd.html">qmqpd</a>\
+  <a href="agetty.html">agetty</a>                 <a href="irdaping.html">irdaping</a>                   <a href="qshape.html">qshape</a>\
+  <a href="alias.html">alias</a>                   <a href="irnetd.html">irnetd</a>                       <a href="quota.html">quota</a>\
+  <a href="alternatives.html">alternatives</a>     <a href="irpsion5.html">irpsion5</a>                   <a href="quotacheck.html">quotacheck</a>\
+  <a href="amtu.html">amtu</a>                     <a href="irqbalance.html">irqbalance</a>               <a href="quotaon.html">quotaon</a>\
+  <a href="anacron.html">anacron</a>               <a href="isadump.html">isadump</a>                     <a href="quotastats.html">quotastats</a>\
+  <a href="animate.html">animate</a>               <a href="isaset.html">isaset</a>                       [ ]{#r} <a href="racoon.html">racoon</a>\
+  <a href="anvil.html">anvil</a>                   <a href="isosize.html">isosize</a>                     <a href="racoonctl.html">racoonctl</a>\
+  <a href="apachectl.html">apachectl</a>           [ ]{#j} <a href="jade.html">jade</a>                   <a href="ramsize.html">ramsize</a>\
+  <a href="apm.html">apm</a>                       <a href="jarsigner.html">jarsigner</a>                 <a href="ranlib.html">ranlib</a>\
+  <a href="apmd.html">apmd</a>                     <a href="java.html">java</a>                           <a href="ras2tiff.html">ras2tiff</a>\
+  <a href="apmsleep.html">apmsleep</a>             <a href="javac.html">javac</a>                         <a href="raw.html">raw</a>\
+  <a href="appletviewer.html">appletviewer</a>     <a href="javadoc.html">javadoc</a>                     <a href="raw2tiff.html">raw2tiff</a>\
+  <a href="apropos.html">apropos</a>               <a href="javah.html">javah</a>                         <a href="rawdevices.html">rawdevices</a>\
+  <a href="apt.html">apt</a>                       <a href="javap.html">javap</a>                         <a href="rcp.html">rcp</a>\
+  <a href="ar.html">ar</a>                         <a href="javaws.html">javaws</a>                       <a href="rdate.html">rdate</a>\
+  <a href="arbitron.html">arbitron</a>             <a href="jconsole.html">jconsole</a>                   <a href="rdev.html">rdev</a>\
+  <a href="arch.html">arch</a>                     <a href="jdb.html">jdb</a>                             <a href="rdisc.html">rdisc</a>\
+  <a href="arp.html">arp</a>                       <a href="jinfo.html">jinfo</a>                         <a href="rdist.html">rdist</a>\
+  <a href="arping.html">arping</a>                 <a href="jmap.html">jmap</a>                           <a href="rdjpgcom.html">rdjpgcom</a>\
+  <a href="as.html">as</a>                         <a href="jobs.html">jobs</a>                           <a href="rdump.html">rdump</a>\
+  <a href="aspell.html">aspell</a>                 <a href="join.html">join</a>                           <a href="read.html">read</a>\
+  <a href="at.html">at</a>                         <a href="jpegicc.html">jpegicc</a>                     <a href="readelf.html">readelf</a>\
+  <a href="atd.html">atd</a>                       <a href="jpegtran.html">jpegtran</a>                   <a href="readlink.html">readlink</a>\
+  <a href="atq.html">atq</a>                       <a href="jps.html">jps</a>                             <a href="readonly.html">readonly</a>\
+  <a href="atrm.html">atrm</a>                     <a href="jsadebugd.html">jsadebugd</a>                 <a href="readprofile.html">readprofile</a>\
+  <a href="atrun.html">atrun</a>                   <a href="jstack.html">jstack</a>                       <a href="reboot.html">reboot</a>\
+  <a href="attr.html">attr</a>                     <a href="jstat.html">jstat</a>                         <a href="reconstruct.html">reconstruct</a>\
+  <a href="audispd.html">audispd</a>               <a href="jstatd.html">jstatd</a>                       <a href="recountdiff.html">recountdiff</a>\
+  <a href="auditctl.html">auditctl</a>             <a href="jwhois.html">jwhois</a>                       <a href="red.html">red</a>\
+  <a href="auditd.html">auditd</a>                 [ ]{#k} <a href="kbd_mode.html">kbd_mode</a>           <a href="rediff.html">rediff</a>\
+  <a href="aulast.html">aulast</a>                 <a href="kbdrate.html">kbdrate</a>                     <a href="refer.html">refer</a>\
+  <a href="aulastlog.html">aulastlog</a>           <a href="keytool.html">keytool</a>                     <a href="reindexdb.html">reindexdb</a>\
+  <a href="aureport.html">aureport</a>             <a href="kill.html">kill</a>                           <a href="reject.html">reject</a>\
+  <a href="ausearch.html">ausearch</a>             <a href="killall.html">killall</a>                     <a href="rename.html">rename</a>\
+  <a href="ausyscall.html">ausyscall</a>           <a href="kinit.html">kinit</a>                         <a href="renice.html">renice</a>\
+  <a href="authconfig.html">authconfig</a>         <a href="klist.html">klist</a>                         <a href="replace.html">replace</a>\
+  <a href="autoconf.html">autoconf</a>             <a href="klogd.html">klogd</a>                         <a href="repquota.html">repquota</a>\
+  <a href="autofs.html">autofs</a>                 <a href="kpartx.html">kpartx</a>                       <a href="req.html">req</a>\
+  <a href="automount.html">automount</a>           <a href="ksh.html">ksh</a>                             <a href="reset.html">reset</a>\
+  <a href="autoreconf.html">autoreconf</a>         <a href="ktab.html">ktab</a>                           <a href="resize2fs.html">resize2fs</a>\
+  <a href="autoscan.html">autoscan</a>             <a href="kudzu.html">kudzu</a>                         <a href="resizecons.html">resizecons</a>\
+  <a href="autoupdate.html">autoupdate</a>         [ ]{#l} <a href="last.html">last</a>                   <a href="resolveip.html">resolveip</a>\
+  <a href="autrace.html">autrace</a>               <a href="lastb.html">lastb</a>                         <a href="restore.html">restore</a>\
+  <a href="avcstat.html">avcstat</a>               <a href="lastcomm.html">lastcomm</a>                   <a href="restorecon.html">restorecon</a>\
+  <a href="avctrl.html">avctrl</a>                 <a href="lastlog.html">lastlog</a>                     <a href="restorecond.html">restorecond</a>\
+  <a href="awk.html">awk</a>                       <a href="lchage.html">lchage</a>                       <a href="return.html">return</a>\
+  [ ]{#b} <a href="badblocks.html">badblocks</a>   <a href="lchfn.html">lchfn</a>                         <a href="rev.html">rev</a>\
+  <a href="base64.html">base64</a>                 <a href="lchsh.html">lchsh</a>                         <a href="revpath.html">revpath</a>\
+  <a href="basename.html">basename</a>             <a href="ld.html">ld</a>                               <a href="rexec.html">rexec</a>\
+  <a href="bash.html">bash</a>                     <a href="ldconfig.html">ldconfig</a>                   <a href="rfcomm.html">rfcomm</a>\
+  <a href="bashbug.html">bashbug</a>               <a href="ldd.html">ldd</a>                             <a href="rgb2ycbcr.html">rgb2ycbcr</a>\
+  <a href="batch.html">batch</a>                   <a href="less.html">less</a>                           <a href="rlogin.html">rlogin</a>\
+  <a href="bc.html">bc</a>                         <a href="lessecho.html">lessecho</a>                   <a href="rm.html">rm</a>\
+  <a href="bccmd.html">bccmd</a>                   <a href="lesskey.html">lesskey</a>                     <a href="rmdir.html">rmdir</a>\
+  <a href="bg.html">bg</a>                         <a href="let.html">let</a>                             <a href="rmid.html">rmid</a>\
+  <a href="bind.html">bind</a>                     <a href="lftp.html">lftp</a>                           <a href="rmmod.html">rmmod</a>\
+  <a href="bison.html">bison</a>                   <a href="lftpget.html">lftpget</a>                     <a href="rmnews.html">rmnews</a>\
+  <a href="blkid.html">blkid</a>                   <a href="libnetcfg.html">libnetcfg</a>                 <a href="rmt.html">rmt</a>\
+  <a href="blockdev.html">blockdev</a>             <a href="lid.html">lid</a>                             <a href="rnano.html">rnano</a>\
+  <a href="bmp2tiff.html">bmp2tiff</a>             <a href="link.html">link</a>                           <a href="rootflags.html">rootflags</a>\
+  <a href="booleans.html">booleans</a>             <a href="links.html">links</a>                         <a href="rotatelogs.html">rotatelogs</a>\
+  <a href="bounce.html">bounce</a>                 <a href="lkbib.html">lkbib</a>                         <a href="route.html">route</a>\
+  <a href="break.html">break</a>                   <a href="lmtp.html">lmtp</a>                           <a href="rpcclient.html">rpcclient</a>\
+  <a href="builtin.html">builtin</a>               <a href="lmtpd.html">lmtpd</a>                         <a href="rpcdebug.html">rpcdebug</a>\
+  <a href="builtins.html">builtins</a>             <a href="lmtptest.html">lmtptest</a>                   <a href="rpcgen.html">rpcgen</a>\
+  <a href="bunzip2.html">bunzip2</a>               <a href="ln.html">ln</a>                               <a href="rpcinfo.html">rpcinfo</a>\
+  <a href="bzcat.html">bzcat</a>                   <a href="lndir.html">lndir</a>                         <a href="rsa.html">rsa</a>\
+  <a href="bzcmp.html">bzcmp</a>                   <a href="lnewusers.html">lnewusers</a>                 <a href="rsautl.html">rsautl</a>\
+  <a href="bzdiff.html">bzdiff</a>                 <a href="loadkeys.html">loadkeys</a>                   <a href="rsh.html">rsh</a>\
+  <a href="bzgrep.html">bzgrep</a>                 <a href="loadunimap.html">loadunimap</a>               <a href="rsvg.html">rsvg</a>\
+  <a href="bzip2.html">bzip2</a>                   <a href="local.html">local</a>                         <a href="rsync.html">rsync</a>\
+  <a href="bzless.html">bzless</a>                 <a href="locale.html">locale</a>                       <a href="ruby.html">ruby</a>\
+  <a href="bzmore.html">bzmore</a>                 <a href="localedef.html">localedef</a>                 <a href="runcon.html">runcon</a>\
+  [ ]{#c} <a href="c%2b%2bfilt.html">c++filt</a>   <a href="locate.html">locate</a>                       <a href="runlevel.html">runlevel</a>\
+  <a href="cal.html">cal</a>                       <a href="lockd.html">lockd</a>                         <a href="runuser.html">runuser</a>\
+  <a href="callback.html">callback</a>             <a href="lockfile.html">lockfile</a>                   <a href="rvi.html">rvi</a>\
+  <a href="cancel.html">cancel</a>                 <a href="logger.html">logger</a>                       <a href="rview.html">rview</a>\
+  <a href="cat.html">cat</a>                       <a href="login.html">login</a>                         <a href="rvim.html">rvim</a>\
+  <a href="cd.html">cd</a>                         <a href="logname.html">logname</a>                     [ ]{#s} <a href="safe_mysqld.html">safe_mysqld</a>\
+  <a href="chage.html">chage</a>                   <a href="logout.html">logout</a>                       <a href="saslauthd.html">saslauthd</a>\
+  <a href="chat.html">chat</a>                     <a href="logresolve.html">logresolve</a>               <a href="scache.html">scache</a>\
+  <a href="chattr.html">chattr</a>                 <a href="logrotate.html">logrotate</a>                 <a href="scp.html">scp</a>\
+  <a href="chcat.html">chcat</a>                   <a href="logsave.html">logsave</a>                     <a href="script.html">script</a>\
+  <a href="chcon.html">chcon</a>                   <a href="logwatch.html">logwatch</a>                   <a href="sdiff.html">sdiff</a>\
+  <a href="checkmodule.html">checkmodule</a>       <a href="look.html">look</a>                           <a href="sdpd.html">sdpd</a>\
+  <a href="checkpolicy.html">checkpolicy</a>       <a href="lookbib.html">lookbib</a>                     <a href="sdptool.html">sdptool</a>\
+  <a href="chfn.html">chfn</a>                     <a href="losetup.html">losetup</a>                     <a href="sechecker.html">sechecker</a>\
+  <a href="chgrp.html">chgrp</a>                   <a href="lp.html">lp</a>                               <a href="secon.html">secon</a>\
+  <a href="chkconfig.html">chkconfig</a>           <a href="lpadmin.html">lpadmin</a>                     <a href="sed.html">sed</a>\
+  <a href="chmod.html">chmod</a>                   <a href="lpasswd.html">lpasswd</a>                     <a href="sediff.html">sediff</a>\
+  <a href="chown.html">chown</a>                   <a href="lpc.html">lpc</a>                             <a href="seinfo.html">seinfo</a>\
+  <a href="chpasswd.html">chpasswd</a>             <a href="lpinfo.html">lpinfo</a>                       <a href="selinux.html">selinux</a>\
+  <a href="chroot.html">chroot</a>                 <a href="lpmove.html">lpmove</a>                       <a href="selinuxenabled.html">selinuxenabled</a>\
+  <a href="chrt.html">chrt</a>                     <a href="lpoptions.html">lpoptions</a>                 <a href="semanage.html">semanage</a>\
+  <a href="chsh.html">chsh</a>                     <a href="lppasswd.html">lppasswd</a>                   <a href="sensors.html">sensors</a>\
+  <a href="chvt.html">chvt</a>                     <a href="lpq-cups.html">lpq-cups</a>                   <a href="seq.html">seq</a>\
+  <a href="ciphers.html">ciphers</a>               <a href="lpq.html">lpq</a>                             <a href="serialver.html">serialver</a>\
+  <a href="ciptool.html">ciptool</a>               <a href="lpr.html">lpr</a>                             <a href="servertool.html">servertool</a>\
+  <a href="cjpeg.htm">cjpeg</a>                    <a href="lprm.html">lprm</a>                           <a href="service.html">service</a>\
+  <a href="cksum.html">cksum</a>                   <a href="lpstat.html">lpstat</a>                       <a href="sesearch.html">sesearch</a>\
+  <a href="cleanlinks.html">cleanlinks</a>         <a href="ls.html">ls</a>                               <a href="sestatus.html">sestatus</a>\
+  <a href="cleanup.html">cleanup</a>               <a href="lsattr.html">lsattr</a>                       <a href="set.html">set</a>\
+  <a href="clear.html">clear</a>                   <a href="lsdiff.html">lsdiff</a>                       <a href="setarch.html">setarch</a>\
+  <a href="clockdiff.html">clockdiff</a>           <a href="lshal.html">lshal</a>                         <a href="setenforce.html">setenforce</a>\
+  <a href="clusterdb.html">clusterdb</a>           <a href="lsmod.html">lsmod</a>                         <a href="setfacl.html">setfacl</a>\
+  <a href="cmp.html">cmp</a>                       <a href="lsof.html">lsof</a>                           <a href="setfattr.html">setfattr</a>\
+  <a href="col.htm">col</a>                        <a href="lspci.html">lspci</a>                         <a href="setfiles.html">setfiles</a>\
+  <a href="colcrt.html">colcrt</a>                 <a href="lspcmcia.html">lspcmcia</a>                   <a href="setfont.html">setfont</a>\
+  <a href="colrm.html">colrm</a>                   <a href="lsusb.html">lsusb</a>                         <a href="setkey.html">setkey</a>\
+  <a href="column.html">column</a>                 <a href="ltrace.html">ltrace</a>                       <a href="setkeycodes.html">setkeycodes</a>\
+  <a href="combinediff.html">combinediff</a>       <a href="lwresd.html">lwresd</a>                       <a href="setleds.html">setleds</a>\
+  <a href="comm.html">comm</a>                     [ ]{#m} <a href="m4.html">m4</a>                       <a href="setmetamode.html">setmetamode</a>\
+  <a href="command.html">command</a>               <a href="mac2unix.html">mac2unix</a>                   <a href="setpci.html">setpci</a>\
+  <a href="compare.html">compare</a>               <a href="mail.html">mail</a>                           <a href="setquota.html">setquota</a>\
+  <a href="compgen.html">compgen</a>               <a href="mailq.html">mailq</a>                         <a href="setsebool.html">setsebool</a>\
+  <a href="compile_et.html">compile_et</a>         <a href="make.html">make</a>                           <a href="setserial.html">setserial</a>\
+  <a href="complete.html">complete</a>             <a href="makedepend.html">makedepend</a>               <a href="setsid.html">setsid</a>\
+  <a href="composite.html">composite</a>           <a href="makeg.html">makeg</a>                         <a href="setterm.html">setterm</a>\
+  <a href="conjure.html">conjure</a>               <a href="makestrs.html">makestrs</a>                   <a href="sfdisk.html">sfdisk</a>\
+  <a href="conman.html">conman</a>                 <a href="makewhatis.html">makewhatis</a>               <a href="sftp.html">sftp</a>\
+  <a href="conmand.html">conmand</a>               <a href="man.html">man</a>                             <a href="sg.html">sg</a>\
+  <a href="continue.html">continue</a>             <a href="man2html.html">man2html</a>                   <a href="sgpio.html">sgpio</a>\
+  <a href="convert.html">convert</a>               <a href="manpath.html">manpath</a>                     <a href="sh.html">sh</a>\
+  <a href="convertquota.html">convertquota</a>     <a href="map.html">map</a>                             <a href="sha.html">sha</a>\
+  <a href="cp.html">cp</a>                         <a href="mapscrn.html">mapscrn</a>                     <a href="shift.html">shift</a>\
+  <a href="cpan.html">cpan</a>                     <a href="master.html">master</a>                       <a href="shopt.html">shopt</a>\
+  <a href="cpio.html">cpio</a>                     <a href="matchpathcon.html">matchpathcon</a>           <a href="showkey.html">showkey</a>\
+  <a href="cpp.html">cpp</a>                       <a href="mattrib.html">mattrib</a>                     <a href="showmount.html">showmount</a>\
+  <a href="cpuspeed.html">cpuspeed</a>             <a href="mbadblocks.html">mbadblocks</a>               <a href="showq.html">showq</a>\
+  <a href="crash.html">crash</a>                   <a href="mbchk.html">mbchk</a>                         <a href="shred.html">shred</a>\
+  <a href="createdb.html">createdb</a>             <a href="mbexamine.html">mbexamine</a>                 <a href="shutdown.html">shutdown</a>\
+  <a href="createlang.html">createlang</a>         <a href="mbpath.html">mbpath</a>                       <a href="sieveshell.html">sieveshell</a>\
+  <a href="createuser.html">createuser</a>         <a href="mcat.html">mcat</a>                           <a href="sivtest.html">sivtest</a>\
+  <a href="cron.html">cron</a>                     <a href="mcd.html">mcd</a>                             <a href="size.html">size</a>\
+  <a href="crond.html">crond</a>                   <a href="mclasserase.html">mclasserase</a>             <a href="skill.html">skill</a>\
+  <a href="crontab.html">crontab</a>               <a href="mcookie.html">mcookie</a>                     <a href="slabtop.html">slabtop</a>\
+  <a href="cryptsetup.html">cryptsetup</a>         <a href="mcopy.html">mcopy</a>                         <a href="slattach.html">slattach</a>\
+  <a href="csh.html">csh</a>                       <a href="md5sum.html">md5sum</a>                       <a href="sleep.html">sleep</a>\
+  <a href="csplit.html">csplit</a>                 <a href="mdadm.html">mdadm</a>                         <a href="sln.html">sln</a>\
+  <a href="ctags.html">ctags</a>                   <a href="mdassemble.html">mdassemble</a>               <a href="slogin.html">slogin</a>\
+  <a href="cupsctl.html">cupsctl</a>               <a href="mdeltree.html">mdeltree</a>                   <a href="smartctl.html">smartctl</a>\
+  <a href="cupsd.html">cupsd</a>                   <a href="mdir.html">mdir</a>                           <a href="smartd.html">smartd</a>\
+  <a href="curl.html">curl</a>                     <a href="mdmpd.html">mdmpd</a>                         <a href="smbcacls.html">smbcacls</a>\
+  <a href="cut.html">cut</a>                       <a href="mdu.html">mdu</a>                             <a href="smbclient.html">smbclient</a>\
+  <a href="cvs.html">cvs</a>                       <a href="mergelib.html">mergelib</a>                   <a href="smbcontrol.html">smbcontrol</a>\
+  <a href="cvsbug.html">cvsbug</a>                 <a href="mesg.html">mesg</a>                           <a href="smbcquotas.html">smbcquotas</a>\
+  <a href="cyradm.html">cyradm</a>                 <a href="mev.html">mev</a>                             <a href="smbd.html">smbd</a>\
+  <a href="cytune.html">cytune</a>                 <a href="mformat.html">mformat</a>                     <a href="smbget.html">smbget</a>\
+  [ ]{#d} <a href="date.html">date</a>             <a href="mgetty.html">mgetty</a>                       <a href="smbpasswd.html">smbpasswd</a>\
+  <a href="dc.html">dc</a>                         <a href="minfo.html">minfo</a>                         <a href="smbspool.html">smbspool</a>\
+  <a href="dd.html">dd</a>                         <a href="mingetty.html">mingetty</a>                   <a href="smbstatus.html">smbstatus</a>\
+  <a href="deallocvt.html">deallocvt</a>           <a href="mkbootdisk.html">mkbootdisk</a>               <a href="smbtar.html">smbtar</a>\
+  <a href="debugfs.html">debugfs</a>               <a href="mkdir.html">mkdir</a>                         <a href="smbtree.html">smbtree</a>\
+  <a href="declare.html">declare</a>               <a href="mkdirhier.html">mkdirhier</a>                 <a href="smime.html">smime</a>\
+  <a href="defer.html">defer</a>                   <a href="mkdosfs.html">mkdosfs</a>                     <a href="smmapd.html">smmapd</a>\
+  <a href="deliver.html">deliver</a>               <a href="mke2fs.html">mke2fs</a>                       <a href="smtp.html">smtp</a>\
+  <a href="delpart.html">delpart</a>               <a href="mkfifo.html">mkfifo</a>                       <a href="smtpd.html">smtpd</a>\
+  <a href="depmod.html">depmod</a>                 <a href="mkfontdir.html">mkfontdir</a>                 <a href="smtptest.html">smtptest</a>\
+  <a href="df.html">df</a>                         <a href="mkfontscale.html">mkfontscale</a>             <a href="snice.html">snice</a>\
+  <a href="dfutool.html">dfutool</a>               <a href="mkfs.ext2.html">mkfs.ext2</a>                 <a href="snmpd.html">snmpd</a>\
+  <a href="dgst.html">dgst</a>                     <a href="mkfs.ext3.html">mkfs.ext3</a>                 <a href="snmptrapd.html">snmptrapd</a>\
+  <a href="diff.html">diff</a>                     <a href="mkfs.html">mkfs</a>                           <a href="sntp.html">sntp</a>\
+  <a href="diffstat.html">diffstat</a>             <a href="mkhtmlindex.html">mkhtmlindex</a>             <a href="soelim.html">soelim</a>\
+  <a href="dig.html">dig</a>                       <a href="mkinitrd.html">mkinitrd</a>                   <a href="sort.html">sort</a>\
+  <a href="dir.html">dir</a>                       <a href="mklost%2bfound.html">mklost+found</a>         <a href="sosreport.html">sosreport</a>\
+  <a href="dircolors.html">dircolors</a>           <a href="mkmanifest.html">mkmanifest</a>               <a href="source.html">source</a>\
+  <a href="dirname.html">dirname</a>               <a href="mkmapfile.html">mkmapfile</a>                 <a href="spam.html">spam</a>\
+  <a href="dirs.html">dirs</a>                     <a href="mknod.html">mknod</a>                         <a href="spamassassin.html">spamassassin</a>\
+  <a href="discard.html">discard</a>               <a href="mkswap.html">mkswap</a>                       <a href="spamc.html">spamc</a>\
+  <a href="disown.html">disown</a>                 <a href="mktemp.html">mktemp</a>                       <a href="spamd.html">spamd</a>\
+  <a href="display.html">display</a>               <a href="mlabel.html">mlabel</a>                       <a href="spawn.html">spawn</a>\
+  <a href="distcache.html">distcache</a>           <a href="mmd.html">mmd</a>                             <a href="speed.html">speed</a>\
+  <a href="djpeg.html">djpeg</a>                   <a href="mmount.html">mmount</a>                       <a href="spent.html">spent</a>\
+  <a href="dmesg.html">dmesg</a>                   <a href="mmove.html">mmove</a>                         <a href="spkac.html">spkac</a>\
+  <a href="dmidecode.html">dmidecode</a>           <a href="modinfo.html">modinfo</a>                     <a href="splain.html">splain</a>\
+  <a href="dmraid.html">dmraid</a>                 <a href="modprobe.html">modprobe</a>                   <a href="split.html">split</a>\
+  <a href="dmsetup.html">dmsetup</a>               <a href="mogrify.html">mogrify</a>                     <a href="splitdiff.html">splitdiff</a>\
+  <a href="dnsdomainname.html">dnsdomainname</a>   <a href="montage.html">montage</a>                     <a href="sprof.html">sprof</a>\
+  <a href="dnsmasq.html">dnsmasq</a>               <a href="more.html">more</a>                           <a href="sqlite3.html">sqlite3</a>\
+  <a href="doexec.html">doexec</a>                 <a href="mount.html">mount</a>                         <a href="squatter.html">squatter</a>\
+  <a href="domainname.html">domainname</a>         <a href="mountd.html">mountd</a>                       <a href="ssh-add.html">ssh-add</a>\
+  <a href="dos2unix.html">dos2unix</a>             <a href="mountpoint.html">mountpoint</a>               <a href="ssh-agent.html">ssh-agent</a>\
+  <a href="dosfsck.html">dosfsck</a>               <a href="mpartition.html">mpartition</a>               <a href="ssh-copy-id.html">ssh-copy-id</a>\
+  <a href="doxygen.html">doxygen</a>               <a href="mrd.html">mrd</a>                             <a href="ssh-keygen.html">ssh-keygen</a>\
+  <a href="doxytag.html">doxytag</a>               <a href="mren.html">mren</a>                           <a href="ssh-keyscan.html">ssh-keyscan</a>\
+  <a href="dprofpp.html">dprofpp</a>               <a href="msgattrib.html">msgattrib</a>                 <a href="ssh-keysign.html">ssh-keysign</a>\
+  <a href="dropdb.html">dropdb</a>                 <a href="msgcat.html">msgcat</a>                       <a href="ssh.html">ssh</a>\
+  <a href="droplang.html">droplang</a>             <a href="msgcmp.html">msgcmp</a>                       <a href="sshd.html">sshd</a>\
+  <a href="dropuser.html">dropuser</a>             <a href="msgcomm.html">msgcomm</a>                     <a href="sslpasswd.html">sslpasswd</a>\
+  <a href="dsa.html">dsa</a>                       <a href="msgconv.html">msgconv</a>                     <a href="sslrand.html">sslrand</a>\
+  <a href="dsaparam.html">dsaparam</a>             <a href="msgen.html">msgen</a>                         <a href="sslswamp.html">sslswamp</a>\
+  <a href="du.html">du</a>                         <a href="msgexec.html">msgexec</a>                     <a href="stat.html">stat</a>\
+  <a href="dump.html">dump</a>                     <a href="msgfilter.html">msgfilter</a>                 <a href="statd.html">statd</a>\
+  <a href="dund.html">dund</a>                     <a href="msgfmt.html">msgfmt</a>                       <a href="strace.html">strace</a>\
+  <a href="dvipdf.html">dvipdf</a>                 <a href="msggrep.html">msggrep</a>                     <a href="strings.html">strings</a>\
+  [ ]{#e} <a href="ec.html">ec</a>                 <a href="msginit.html">msginit</a>                     <a href="strip.html">strip</a>\
+  <a href="echo.html">echo</a>                     <a href="msgmerge.html">msgmerge</a>                   <a href="stty.html">stty</a>\
+  <a href="ecparam.html">ecparam</a>               <a href="msgunfmt.html">msgunfmt</a>                   <a href="stunnel.html">stunnel</a>\
+  <a href="ed.html">ed</a>                         <a href="msguniq.html">msguniq</a>                     <a href="su.html">su</a>\
+  <a href="editdiff.html">editdiff</a>             <a href="mshowfat.html">mshowfat</a>                   <a href="sudo.html">sudo</a>\
+  <a href="edquota.html">edquota</a>               <a href="msql2mysql.html">msql2mysql</a>               <a href="sudoedit.html">sudoedit</a>\
+  <a href="egrep.html">egrep</a>                   <a href="mtools.html">mtools</a>                       <a href="suexec.html">suexec</a>\
+  <a href="eject.html">eject</a>                   <a href="mtoolstest.html">mtoolstest</a>               <a href="sulogin.html">sulogin</a>\
+  <a href="elinks.html">elinks</a>                 <a href="mtr.html">mtr</a>                             <a href="sum.html">sum</a>\
+  <a href="emacs.html">emacs</a>                   <a href="mtype.html">mtype</a>                         <a href="suspend.html">suspend</a>\
+  <a href="enable.html">enable</a>                 <a href="multipath.html">multipath</a>                 <a href="svcgssd.html">svcgssd</a>\
+  <a href="enc.html">enc</a>                       <a href="multipathd.html">multipathd</a>               <a href="swapoff.html">swapoff</a>\
+  <a href="env.html">env</a>                       <a href="mupdatetest.html">mupdatetest</a>             <a href="swapon.html">swapon</a>\
+  <a href="envsubst.html">envsubst</a>             <a href="mutt.html">mutt</a>                           <a href="symlinks.html">symlinks</a>\
+  <a href="eqn.html">eqn</a>                       <a href="mv.html">mv</a>                               <a href="sync.html">sync</a>\
+  <a href="error.html">error</a>                   <a href="mysql.html">mysql</a>                         <a href="sysctl.html">sysctl</a>\
+  <a href="errstr.html">errstr</a>                 <a href="mysqlaccess.html">mysqlaccess</a>             <a href="sysklogd.html">sysklogd</a>\
+  <a href="esd.html">esd</a>                       <a href="mysqladmin.html">mysqladmin</a>               <a href="syslogd.html">syslogd</a>\
+  <a href="esdcat.html">esdcat</a>                 <a href="mysqlbinlog.html">mysqlbinlog</a>             <a href="systool.html">systool</a>\
+  <a href="esdctl.html">esdctl</a>                 <a href="mysqlbug.html">mysqlbug</a>                   [ ]{#t} <a href="tac.html">tac</a>\
+  <a href="esddsp.html">esddsp</a>                 <a href="mysqlcheck.html">mysqlcheck</a>               <a href="tack.html">tack</a>\
+  <a href="esdfilt.html">esdfilt</a>               <a href="mysqld.html">mysqld</a>                       <a href="tail.html">tail</a>\
+  <a href="esdloop.html">esdloop</a>               <a href="mysqld_multi.html">mysqld_multi</a>           <a href="tailf.html">tailf</a>\
+  <a href="esdmon.html">esdmon</a>                 <a href="mysqld_safe.html">mysqld_safe</a>             <a href="talk.html">talk</a>\
+  <a href="esdplay.html">esdplay</a>               <a href="mysqldump.html">mysqldump</a>                 <a href="tar.html">tar</a>\
+  <a href="esdrec.html">esdrec</a>                 <a href="mysqldumpslow.html">mysqldumpslow</a>         <a href="taskset.html">taskset</a>\
+  <a href="esdsample.html">esdsample</a>           <a href="mysqlhotcopy.html">mysqlhotcopy</a>           <a href="tbl.html">tbl</a>\
+  <a href="espdiff.html">espdiff</a>               <a href="mysqlimport.html">mysqlimport</a>             <a href="tclsh.html">tclsh</a>\
+  <a href="etags.html">etags</a>                   <a href="mysqlman.html">mysqlman</a>                   <a href="tcpd.html">tcpd</a>\
+  <a href="ethtool.html">ethtool</a>               <a href="mysqlmanager.html">mysqlmanager</a>           <a href="tcpdump.html">tcpdump</a>\
+  <a href="eval.html">eval</a>                     <a href="mysqlshow.html">mysqlshow</a>                 <a href="tcpslice.html">tcpslice</a>\
+  <a href="eventlogadm.html">eventlogadm</a>       <a href="mysqlslap.html">mysqlslap</a>                 <a href="tcsh.html">tcsh</a>\
+  <a href="ex.html">ex</a>                         <a href="mysqltest.html">mysqltest</a>                 <a href="tdbbackup.html">tdbbackup</a>\
+  <a href="exec.html">exec</a>                     <a href="mzip.html">mzip</a>                           <a href="tdbdump.html">tdbdump</a>\
+  <a href="execstack.html">execstack</a>           [ ]{#n} <a href="named.html">named</a>                 <a href="tdbtool.html">tdbtool</a>\
+  <a href="exit.html">exit</a>                     <a href="namei.html">namei</a>                         <a href="tee.html">tee</a>\
+  <a href="expand.html">expand</a>                 <a href="nameif.html">nameif</a>                       <a href="telinit.html">telinit</a>\
+  <a href="export.html">export</a>                 <a href="nano.html">nano</a>                           <a href="telnet.html">telnet</a>\
+  <a href="exportfs.html">exportfs</a>             <a href="nash.html">nash</a>                           <a href="test.html">test</a>\
+  <a href="expr.html">expr</a>                     <a href="nc.html">nc</a>                               <a href="testparm.html">testparm</a>\
+  <a href="extcheck.html">extcheck</a>             <a href="neqn.html">neqn</a>                           <a href="tfmtodit.html">tfmtodit</a>\
+  [ ]{#f} <a href="factor.html">factor</a>         <a href="net.html">net</a>                             <a href="tftp.html">tftp</a>\
+  <a href="faillog.html">faillog</a>               <a href="netplugd.html">netplugd</a>                   <a href="thumbnail.html">thumbnail</a>\
+  <a href="false.html">false</a>                   <a href="netreport.html">netreport</a>                 <a href="tic.html">tic</a>\
+  <a href="fancontrol.html">fancontrol</a>         <a href="netstat.html">netstat</a>                     <a href="tiff2bw.html">tiff2bw</a>\
+  <a href="fastjar.html">fastjar</a>               <a href="newaliases.html">newaliases</a>               <a href="tiff2pdf.html">tiff2pdf</a>\
+  <a href="fax2ps.html">fax2ps</a>                 <a href="newgrp.html">newgrp</a>                       <a href="tiff2ps.html">tiff2ps</a>\
+  <a href="fax2tiff.html">fax2tiff</a>             <a href="newusers.html">newusers</a>                   <a href="tiff2rgba.html">tiff2rgba</a>\
+  <a href="fbset.html">fbset</a>                   <a href="nfsd.html">nfsd</a>                           <a href="tiffcmp.html">tiffcmp</a>\
+  <a href="fc.html">fc</a>                         <a href="nfsstat.html">nfsstat</a>                     <a href="tiffcp.html">tiffcp</a>\
+  <a href="fdformat.html">fdformat</a>             <a href="ngettext.html">ngettext</a>                   <a href="tiffdither.html">tiffdither</a>\
+  <a href="fdisk.html">fdisk</a>                   <a href="nhfsgraph.html">nhfsgraph</a>                 <a href="tiffdump.html">tiffdump</a>\
+  <a href="fetchmail.html">fetchmail</a>           <a href="nhfsnums.html">nhfsnums</a>                   <a href="tifficc.html">tifficc</a>\
+  <a href="fg.html">fg</a>                         <a href="nhfsrun.html">nhfsrun</a>                     <a href="tiffinfo.html">tiffinfo</a>\
+  <a href="fgconsole.html">fgconsole</a>           <a href="nhfsstone.html">nhfsstone</a>                 <a href="tiffmedian.html">tiffmedian</a>\
+  <a href="fgrep.html">fgrep</a>                   <a href="nice.html">nice</a>                           <a href="tiffset.html">tiffset</a>\
+  <a href="file.html">file</a>                     <a href="nm.html">nm</a>                               <a href="tiffsplit.html">tiffsplit</a>\
+  <a href="filefrag.html">filefrag</a>             <a href="nmbd.html">nmbd</a>                           <a href="time.html">time</a>\
+  <a href="filterdiff.html">filterdiff</a>         <a href="nmblookup.html">nmblookup</a>                 <a href="times.html">times</a>\
+  <a href="find.html">find</a>                     <a href="nntpd.html">nntpd</a>                         <a href="timsieved.html">timsieved</a>\
+  <a href="find2perl.html">find2perl</a>           <a href="nntptest.html">nntptest</a>                   <a href="tload.html">tload</a>\
+  <a href="findchip.html">findchip</a>             <a href="nohup.html">nohup</a>                         <a href="tls_prune.html">tls_prune</a>\
+  <a href="findfs.html">findfs</a>                 <a href="nologin.html">nologin</a>                     <a href="tlsmgr.html">tlsmgr</a>\
+  <a href="findsmb.html">findsmb</a>               <a href="notifyd.html">notifyd</a>                     <a href="tmpwatch.html">tmpwatch</a>\
+  <a href="finger.html">finger</a>                 <a href="nroff.html">nroff</a>                         <a href="tnameserv.html">tnameserv</a>\
+  <a href="fixcvsdiff.html">fixcvsdiff</a>         <a href="nscd.html">nscd</a>                           <a href="toe.html">toe</a>\
+  <a href="fixfiles.html">fixfiles</a>             <a href="nseq.html">nseq</a>                           <a href="top.html">top</a>\
+  <a href="flipdiff.html">flipdiff</a>             <a href="nsgmls.html">nsgmls</a>                       <a href="touch.html">touch</a>\
+  <a href="flock.html">flock</a>                   <a href="nslookup.html">nslookup</a>                   <a href="tput.html">tput</a>\
+  <a href="floppy.html">floppy</a>                 <a href="nsupdate.html">nsupdate</a>                   <a href="tr.html">tr</a>\
+  <a href="flush.html">flush</a>                   <a href="ntlm_auth.html">ntlm_auth</a>                 <a href="trace.html">trace</a>\
+  <a href="fmt.html">fmt</a>                       <a href="ntpd.html">ntpd</a>                           <a href="tracepath.html">tracepath</a>\
+  <a href="fold.html">fold</a>                     <a href="ntpdate.html">ntpdate</a>                     <a href="traceroute.html">traceroute</a>\
+  <a href="font2c.html">font2c</a>                 <a href="ntpdc.html">ntpdc</a>                         <a href="trap.html">trap</a>\
+  <a href="fonttosfnt.html">fonttosfnt</a>         <a href="ntpq.html">ntpq</a>                           <a href="tree.html">tree</a>\
+  <a href="formail.html">formail</a>               <a href="ntpstat.html">ntpstat</a>                     <a href="troff.html">troff</a>\
+  <a href="free.html">free</a>                     <a href="ntptime.html">ntptime</a>                     <a href="true.html">TRUE</a>\
+  <a href="fsadm.html">fsadm</a>                   <a href="ntptrace.html">ntptrace</a>                   <a href="tset.html">tset</a>\
+  <a href="fsck.html">fsck</a>                     <a href="ntsysv.html">ntsysv</a>                       <a href="tsort.html">tsort</a>\
+  <a href="ftp.html">ftp</a>                       <a href="numactl.html">numactl</a>                     <a href="tty.html">tty</a>\
+  <a href="fud.html">fud</a>                       [ ]{#o} <a href="objcopy.html">objcopy</a>             <a href="tune2fs.html">tune2fs</a>\
+  <a href="funzip.html">funzip</a>                 <a href="objdump.html">objdump</a>                     <a href="tunelp.html">tunelp</a>\
+  <a href="fuser.html">fuser</a>                   <a href="ocsp.html">ocsp</a>                           <a href="type.html">type</a>\
+  [ ]{#g} <a href="g%2b%2b.html">g++</a>           <a href="od.html">od</a>                               <a href="typeset.html">typeset</a>\
+  <a href="gawk.html">gawk</a>                     <a href="oddjobd.html">oddjobd</a>                     <a href="tzselect.html">tzselect</a>\
+  <a href="gcc.html">gcc</a>                       <a href="onsgmls.html">onsgmls</a>                     [ ]{#u} <a href="ucs2any.html">ucs2any</a>\
+  <a href="gccmakedep.html">gccmakedep</a>         <a href="openjade.html">openjade</a>                   <a href="udevcontrol.html">udevcontrol</a>\
+  <a href="gcj.html">gcj</a>                       <a href="openssl.html">openssl</a>                     <a href="udevd.html">udevd</a>\
+  <a href="gcjh.html">gcjh</a>                     <a href="openvt.html">openvt</a>                       <a href="udevinfo.html">udevinfo</a>\
+  <a href="gcov.html">gcov</a>                     <a href="oqmgr.html">oqmgr</a>                         <a href="udevmonitor.html">udevmonitor</a>\
+  <a href="gctags.html">gctags</a>                 <a href="orbd.html">orbd</a>                           <a href="udevsettle.html">udevsettle</a>\
+  <a href="gdb.html">gdb</a>                       <a href="osgmlnorm.html">osgmlnorm</a>                 <a href="udevtest.html">udevtest</a>\
+  <a href="gdbserver.html">gdbserver</a>           <a href="ospam.html">ospam</a>                         <a href="udevtrigger.html">udevtrigger</a>\
+  <a href="gdbtui.html">gdbtui</a>                 <a href="ospcat.html">ospcat</a>                       <a href="ul.html">ul</a>\
+  <a href="gendiff.html">gendiff</a>               <a href="ospent.html">ospent</a>                       <a href="ulimit.html">ulimit</a>\
+  <a href="gendsa.html">gendsa</a>                 <a href="ownership.html">ownership</a>                 <a href="umap.html">umap</a>\
+  <a href="genhomedircon.html">genhomedircon</a>   [ ]{#p} <a href="pand.html">pand</a>                   <a href="umask.html">umask</a>\
+  <a href="genhostid.html">genhostid</a>           <a href="paps.html">paps</a>                           <a href="umount.html">umount</a>\
+  <a href="genrsa.html">genrsa</a>                 <a href="parted.html">parted</a>                       <a href="unalias.html">unalias</a>\
+  <a href="geqn.html">geqn</a>                     <a href="partprobe.html">partprobe</a>                 <a href="uname.html">uname</a>\
+  <a href="getenforce.html">getenforce</a>         <a href="partx.html">partx</a>                         <a href="unexpand.html">unexpand</a>\
+  <a href="getent.html">getent</a>                 <a href="passwd.html">passwd</a>                       <a href="unexpunge.html">unexpunge</a>\
+  <a href="getfacl.html">getfacl</a>               <a href="paste.html">paste</a>                         <a href="uniq.html">uniq</a>\
+  <a href="getfattr.html">getfattr</a>             <a href="patch.html">patch</a>                         <a href="unix2dos.html">unix2dos</a>\
+  <a href="getkey.html">getkey</a>                 <a href="pathchk.html">pathchk</a>                     <a href="unlink.html">unlink</a>\
+  <a href="getkeycodes.html">getkeycodes</a>       <a href="pax.html">pax</a>                             <a href="unprotoize.html">unprotoize</a>\
+  <a href="getopt.html">getopt</a>                 <a href="pccardctl.html">pccardctl</a>                 <a href="unset.html">unset</a>\
+  <a href="getopts.html">getopts</a>               <a href="pcregrep.html">pcregrep</a>                   <a href="unwrapdiff.html">unwrapdiff</a>\
+  <a href="getsebool.html">getsebool</a>           <a href="pcretest.html">pcretest</a>                   <a href="unzip.html">unzip</a>\
+  <a href="gettext.html">gettext</a>               <a href="pcscd.html">pcscd</a>                         <a href="unzipsfx.html">unzipsfx</a>\
+  <a href="gfdl.html">gfdl</a>                     <a href="pdbedit.html">pdbedit</a>                     <a href="updatedb.html">updatedb</a>\
+  <a href="ghostscript.html">ghostscript</a>       <a href="pdf2dsc.html">pdf2dsc</a>                     <a href="uptime.html">uptime</a>\
+  <a href="gif2tiff.html">gif2tiff</a>             <a href="pdf2ps.html">pdf2ps</a>                       <a href="urlview.html">urlview</a>\
+  <a href="gij.html">gij</a>                       <a href="pdffonts.html">pdffonts</a>                   <a href="useradd.html">useradd</a>\
+  <a href="gindxbib.html">gindxbib</a>             <a href="pdfimages.html">pdfimages</a>                 <a href="userdel.html">userdel</a>\
+  <a href="gjnih.html">gjnih</a>                   <a href="pdfinfo.html">pdfinfo</a>                     <a href="userhelper.html">userhelper</a>\
+  <a href="glookbib.html">glookbib</a>             <a href="pdfopt.html">pdfopt</a>                       <a href="userinfo.html">userinfo</a>\
+  <a href="gnroff.html">gnroff</a>                 <a href="pdftohtml.html">pdftohtml</a>                 <a href="usermod.html">usermod</a>\
+  <a href="gpasswd.html">gpasswd</a>               <a href="pdftops.html">pdftops</a>                     <a href="usermount.html">usermount</a>\
+  <a href="gpg.html">gpg</a>                       <a href="pdftotext.html">pdftotext</a>                 <a href="usernetctl.html">usernetctl</a>\
+  <a href="gpg.ru.html">gpg.ru</a>                 <a href="perror.html">perror</a>                       <a href="userpasswd.html">userpasswd</a>\
+  <a href="gpgv.html">gpgv</a>                     <a href="pf2afm.html">pf2afm</a>                       <a href="users.html">users</a>\
+  <a href="gpic.html">gpic</a>                     <a href="pfbtopfa.html">pfbtopfa</a>                   <a href="usleep.html">usleep</a>\
+  <a href="gpm.html">gpm</a>                       <a href="pfbtops.html">pfbtops</a>                     <a href="uuidgen.html">uuidgen</a>\
+  <a href="gprof.html">gprof</a>                   <a href="pftp.html">pftp</a>                           [ ]{#v} <a href="vacuumdb.html">vacuumdb</a>\
+  <a href="grefer.html">grefer</a>                 <a href="pgawk.html">pgawk</a>                         <a href="vbetool.html">vbetool</a>\
+  <a href="grep.html">grep</a>                     <a href="pgrep.html">pgrep</a>                         <a href="vconfig.html">vconfig</a>\
+  <a href="grepdiff.html">grepdiff</a>             <a href="php-config.html">php-config</a>               <a href="vdir.html">vdir</a>\
+  <a href="grepjar.html">grepjar</a>               <a href="php.html">php</a>                             <a href="verify.html">verify</a>\
+  <a href="grmic.html">grmic</a>                   <a href="phpize.html">phpize</a>                       <a href="version.html">version</a>\
+  <a href="grmiregistry.html">grmiregistry</a>     <a href="pic.html">pic</a>                             <a href="vfstest.html">vfstest</a>\
+  <a href="grn.html">grn</a>                       <a href="pic2graph.html">pic2graph</a>                 <a href="vi.html">vi</a>\
+  <a href="grodvi.html">grodvi</a>                 <a href="pickup.html">pickup</a>                       <a href="vidmode.html">vidmode</a>\
+  <a href="groff.html">groff</a>                   <a href="piconv.html">piconv</a>                       <a href="view.html">view</a>\
+  <a href="groffer.html">groffer</a>               <a href="pidof.html">pidof</a>                         <a href="vigr.html">vigr</a>\
+  <a href="grohtml.html">grohtml</a>               <a href="pinfo.html">pinfo</a>                         <a href="vim.html">vim</a>\
+  <a href="grolbp.html">grolbp</a>                 <a href="ping.html">ping</a>                           <a href="vimdiff.html">vimdiff</a>\
+  <a href="grolj4.html">grolj4</a>                 <a href="ping6.html">ping6</a>                         <a href="vimtutor.html">vimtutor</a>\
+  <a href="grops.html">grops</a>                   <a href="pinky.html">pinky</a>                         <a href="vipw.html">vipw</a>\
+  <a href="grotty.html">grotty</a>                 <a href="pipe.html">pipe</a>                           <a href="virtual.html">virtual</a>\
+  <a href="groupadd.html">groupadd</a>             <a href="pkg-config.html">pkg-config</a>               <a href="visudo.html">visudo</a>\
+  <a href="groupdel.html">groupdel</a>             <a href="pkill.html">pkill</a>                         <a href="vmstat.html">vmstat</a>\
+  <a href="groupmod.html">groupmod</a>             <a href="plipconfig.html">plipconfig</a>               <a href="vol_id.html">vol_id</a>\
+  <a href="groups.html">groups</a>                 <a href="pluginviewer.html">pluginviewer</a>           <a href="volname.html">volname</a>\
+  <a href="grpck.html">grpck</a>                   <a href="pman.html">pman</a>                           <a href="vpddecode.html">vpddecode</a>\
+  <a href="grpconv.html">grpconv</a>               <a href="pmap.html">pmap</a>                           <a href="vsftpd.html">vsftpd</a>\
+  <a href="grpunconv.html">grpunconv</a>           <a href="pod2html.html">pod2html</a>                   [ ]{#w} <a href="w.html">w</a>\
+  <a href="grub.html">grub</a>                     <a href="pod2latex.html">pod2latex</a>                 <a href="wait.html">wait</a>\
+  <a href="grubby.html">grubby</a>                 <a href="pod2man.html">pod2man</a>                     <a href="wall.html">wall</a>\
+  <a href="gs.html">gs</a>                         <a href="pod2text.html">pod2text</a>                   <a href="warnquota.html">warnquota</a>\
+  <a href="gtroff.html">gtroff</a>                 <a href="pod2usage.html">pod2usage</a>                 <a href="watch.html">watch</a>\
+  <a href="gunzip.html">gunzip</a>                 <a href="podchecker.html">podchecker</a>               <a href="wbinfo.html">wbinfo</a>\
+  <a href="gzexe.html">gzexe</a>                   <a href="podselect.html">podselect</a>                 <a href="wc.html">wc</a>\
+  <a href="gzip.html">gzip</a>                     <a href="policytool.html">policytool</a>               <a href="webalizer.html">webalizer</a>\
+  [ ]{#h} <a href="hald.html">hald</a>             <a href="pop3d.html">pop3d</a>                         <a href="wftopfa.html">wftopfa</a>\
+  <a href="halt.html">halt</a>                     <a href="pop3test.html">pop3test</a>                   <a href="wget.html">wget</a>\
+  <a href="hash.html">hash</a>                     <a href="popd.html">popd</a>                           <a href="whatis.html">whatis</a>\
+  <a href="hcid.html">hcid</a>                     <a href="portmap.html">portmap</a>                     <a href="whereis.html">whereis</a>\
+  <a href="hcitool.html">hcitool</a>               <a href="postalias.html">postalias</a>                 <a href="which.html">which</a>\
+  <a href="hdparm.html">hdparm</a>                 <a href="postcat.html">postcat</a>                     <a href="whiptail.html">whiptail</a>\
+  <a href="head.html">head</a>                     <a href="postconf.html">postconf</a>                   <a href="who.html">who</a>\
+  <a href="help.html">help</a>                     <a href="postdrop.html">postdrop</a>                   <a href="whoami.html">whoami</a>\
+  <a href="hexdump.html">hexdump</a>               <a href="postfix.html">postfix</a>                     <a href="whois.html">whois</a>\
+  <a href="history.html">history</a>               <a href="postgres.html">postgres</a>                   <a href="winbindd.html">winbindd</a>\
+  <a href="host.html">host</a>                     <a href="postkick.html">postkick</a>                   <a href="wish.html">wish</a>\
+  <a href="hostid.html">hostid</a>                 <a href="postlock.html">postlock</a>                   <a href="write.html">write</a>\
+  <a href="hostname.html">hostname</a>             <a href="postlog.html">postlog</a>                     <a href="wrjpgcom.html">wrjpgcom</a>\
+  <a href="htdbm.html">htdbm</a>                   <a href="postmap.html">postmap</a>                     <a href="wtpt.html">wtpt</a>\
+  <a href="htdigest.html">htdigest</a>             <a href="postmaster.html">postmaster</a>               [ ]{#x} <a href="xargs.html">xargs</a>\
+  <a href="htpasswd.html">htpasswd</a>             <a href="postqueue.html">postqueue</a>                 <a href="xfs.html">xfs</a>\
+  <a href="httpd.html">httpd</a>                   <a href="postsuper.html">postsuper</a>                 <a href="xgettext.html">xgettext</a>\
+  <a href="hwclock.html">hwclock</a>               <a href="poweroff.html">poweroff</a>                   <a href="xglyph.html">xglyph</a>\
+  [ ]{#i} <a href="icclink.html">icclink</a>       <a href="ppm2tiff.html">ppm2tiff</a>                   <a href="xmkmf.html">xmkmf</a>\
+  <a href="iconv.html">iconv</a>                   <a href="pppd.html">pppd</a>                           <a href="xmlcatalog.html">xmlcatalog</a>\
+  <a href="id.html">id</a>                         <a href="pppdump.html">pppdump</a>                     <a href="xmllint.html">xmllint</a>\
+  <a href="identify.html">identify</a>             <a href="pppoe.html">pppoe</a>                         <a href="xmlwf.html">xmlwf</a>\
+  <a href="idmapd.html">idmapd</a>                 <a href="pppstats.html">pppstats</a>                   <a href="xqmstats.html">xqmstats</a>\
+  <a href="ifconfig.html">ifconfig</a>             <a href="pr.html">pr</a>                               <a href="xsltproc.html">xsltproc</a>\
+  <a href="ifnames.html">ifnames</a>               <a href="prelink.html">prelink</a>                     <a href="xsubpp.html">xsubpp</a>\
+  <a href="ifrename.html">ifrename</a>             <a href="printafm.html">printafm</a>                   <a href="xulrunner.html">xulrunner</a>\
+  <a href="igawk.html">igawk</a>                   <a href="printenv.html">printenv</a>                   <a href="xxd.html">xxd</a>\
+  <a href="imake.html">imake</a>                   <a href="printf.html">printf</a>                       [ ]{#y} <a href="yes.html">yes</a>\
+  <a href="imapd.html">imapd</a>                   <a href="procmail.html">procmail</a>                   <a href="ypbind.html">ypbind</a>\
+  <a href="import.html">import</a>                 <a href="profiles.html">profiles</a>                   <a href="ypcat.html">ypcat</a>\
+  <a href="imtest.html">imtest</a>                 <a href="protoize.html">protoize</a>                   <a href="ypchfn.html">ypchfn</a>\
+  <a href="indxbib.html">indxbib</a>               <a href="prove.html">prove</a>                         <a href="ypchsh.html">ypchsh</a>\
+  <a href="info.html">info</a>                     <a href="proxymap.html">proxymap</a>                   <a href="ypmatch.html">ypmatch</a>\
+  <a href="infocmp.html">infocmp</a>               <a href="ps.html">ps</a>                               <a href="yppasswd.html">yppasswd</a>\
+  <a href="infokey.html">infokey</a>               <a href="psed.html">psed</a>                           <a href="yppoll.html">yppoll</a>\
+  <a href="infotocap.html">infotocap</a>           <a href="psql.html">psql</a>                           <a href="ypset.html">ypset</a>\
+  <a href="init.html">init</a>                     <a href="pstack.html">pstack</a>                       <a href="yptest.html">yptest</a>\
+  <a href="initdb.html">initdb</a>                 <a href="pstree.html">pstree</a>                       <a href="ypwhich.html">ypwhich</a>\
+  <a href="initlog.html">initlog</a>               <a href="pstruct.html">pstruct</a>                     <a href="yum.html">yum</a>\
+  <a href="innochecksum.html">innochecksum</a>     <a href="ptar.html">ptar</a>                           [ ]{#z} <a href="zcat.html">zcat</a>\
+  <a href="insmod.html">insmod</a>                 <a href="ptardiff.html">ptardiff</a>                   <a href="zcmp.html">zcmp</a>\
+  <a href="install.html">install</a>               <a href="ptx.html">ptx</a>                             <a href="zdiff.html">zdiff</a>\
+  <a href="installsieve.html">installsieve</a>     <a href="pushd.html">pushd</a>                         <a href="zdump.html">zdump</a>\
+  <a href="instmodsh.html">instmodsh</a>           <a href="pvchange.html">pvchange</a>                   <a href="zforce.html">zforce</a>\
+  <a href="interdiff.html">interdiff</a>           <a href="pvck.html">pvck</a>                           <a href="zgrep.html">zgrep</a>\
+  <a href="intro.html">intro</a>                   <a href="pvcreate.html">pvcreate</a>                   <a href="zic.html">zic</a>\
+  <a href="ionice.html">ionice</a>                 <a href="pvdisplay.html">pvdisplay</a>                 <a href="zip.html">zip</a>\
+  <a href="ip.html">ip</a>                         <a href="pvmove.html">pvmove</a>                       <a href="zipgrep.html">zipgrep</a>\
+  <a href="ip6tables.html">ip6tables</a>           <a href="pvremove.html">pvremove</a>                   <a href="zipinfo.html">zipinfo</a>\
+  <a href="ipcalc.html">ipcalc</a>                 <a href="pvresize.html">pvresize</a>                   <a href="zless.html">zless</a>\
+  <a href="ipcclean.html">ipcclean</a>             <a href="pvs.html">pvs</a>                             <a href="zmore.html">zmore</a>\
+  <a href="ipcrm.html">ipcrm</a>                   <a href="pvscan.html">pvscan</a>                       <a href="znew.html">znew</a>\
+  <a href="ipcs.html">ipcs</a>                     <a href="pwck.html">pwck</a>                           <a href="zsoelim.html">zsoelim</a>\
+                                         <a href="pwconv.html">pwconv</a>                       </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../visuals/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Visuals">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Visuals
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../1.lamp/resources/" class="md-footer__link md-footer__link--next" aria-label="Next: Resources">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Resources
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy;2025 sriramreddy_dwarampudi
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+  
+      <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  <script src="../../../assets/javascripts/custom.4e50d00f.min.js"></script>
+
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

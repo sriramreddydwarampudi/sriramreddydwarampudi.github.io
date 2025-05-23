@@ -1,0 +1,747 @@
+:toc:
+
+* all about hinduism by sri swami sivananda.hinduism index
+* PACS,physics subject classification system.physics index
+
+= English
+
+
+* copyediting; the chicago guide to 
+* communication;introducing communication theory analysis and application richard l west,lynn h.turmer
+
+* grammar; pratical english in usuage by ,micheal swan "grammar in pratical"
+* grammar;objective general english sp bakshi
+
+* my general sentence book; 1001 english expressions and phrases by jackie bolen
+* my dictonary;Roget's dictonary
+* people,feelings,personality dictonary; trait names_A psycho lexical study allport
+* my phrase book;McGraw Hill's Dictionary of American Idioms and Phrasal Verbs
+* my rhyme book;surprising rhyming an alternative rhyming dictonary  brian oliver
+
+
+
+
+* telugu dictonary;brownya telugu english nighantuvu
+
+
+= linguistics
+* an illustrative dictonary of semnatics
+"concepts"
+* schaum's outlines of logic
+* syntax ;English syntax by Andrew Radford
+* syntax;syntatic theory palgrave
+* sumtax;tagmemic analysis walter a cook s.j
+* phonetics; English phonetics and phonology by peter roach
+* phonetics;vaiyakarana siddhanta kaumudi with introduction
+* semnatics 
+* pragmatics jacob L mey
+* morphology;what is morphology mark aronoff and kirsten fudeman
+
+# music
+* csound*floss manual
+* The public csound reference manual by barry vercoe from MIT
+
+* western;The complete musician*an integrated approach to theory by laitz steven G
+* indian;Melodic types of hindustani by narendra kumar bose 
+
+
+* grammar of carnatic music
+* satyanarayana v sanglta lakshanamu
+* pucca*venkatasubramanya sastri sanglta sastra vachakamu
+* indian genius in talaprastara by akella mallikarjuna* tala cheatsheet
+* raga pravaham dr.m.n.dhandapani,d.pattammal* raga index
+
+# Programming
+* fundamentals of sql programming 
+* html and css ;duckett
+* js ; eloquent javascript
+* js; you don't know js
+* php documentation
+* tutorialspoint
+* md ; https://www.markdownguide.org/cheatsheet
+* sql ; https://www.tutorialspoint.com/sql/index.htm
+* php ; https://www.tutorialspoint.com/php/index.htm
+* html; https://www.tutorialspoint.com/html/index.htm
+* css ; https://www.tutorialspoint.com/css/index.htm
+* js; https://www.tutorialspoint.com/javascript/index.htm
+* python; https://www.tutorialspoint.com/python/index.htm
+* java ; https://www.tutorialspoint.com/java/index.htm
+* ajax; https://www.tutorialspoint.com/ajax/ajax_history.htm
+* json; https://www.tutorialspoint.com/json/index.htm
+
+
+platform
+* lamp;
+
+* react native;
+https://www.tutorialspoint.com/react_native/index.htm
+* node.js; https://www.tutorialspoint.com/nodejs/index.htm
+* android studio; https://www.tutorialspoint.com/android/index.htm
+* git; 
+https://www.tutorialspoint.com/git/index.htm
+* docker; https://www.tutorialspoint.com/docker/index.htm
+* unix; 
+https://www.tutorialspoint.com/unix/index.htm
+
+
+
+
+* mathematics; https://www.tutorialspoint.com/mathematics*tutorials.htm
+* pyschology ; https://www.tutorialspoint.com/psychology*tutorials.htm
+* english ; https://www.tutorialspoint.com/english*tutorials.htm
+
+* https://www.tutorialspoint.com/computer_programming/index.htm
+
+
+* data mining; https://www.tutorialspoint.com/data_mining/index.htm
+* datascience; https://www.tutorialspoint.com/data_science/index.htm
+* machine learning; https://www.tutorialspoint.com/functional_programming/index.htm
+* artificial intelligence; https://www.tutorialspoint.com/artificial_intelligence/index.htm
+* data structure and algorithm; https://www.tutorialspoint.com/data_structures_algorithms/index.htm
+* desgin and analysis algorithm; https://www.tutorialspoint.com/design_and_analysis_of_algorithms/index.htm
+
+
+
+
+
+
+* object oriented programming; https://www.tutorialspoint.com/object_oriented_analysis_design/index.htm
+* functional programming; https://www.tutorialspoint.com/functional_programming/index.htm
+
+= Math
+* applied discrete structures
+* complex variables
+* vector analysis
+* matrix operations
+* abstract algebra
+
+
+
+* matrix; algebra by artin,michael
+* combinators; counting rocks
+* disceret ; n chandrasekar
+
+= Dental
+
+* practice managment for dental team finkbeiner
+link:../../🔖subjects/dental/Dofka,%20C.M.%20-%20Dental%20Terminology%20(2012,%20Cengage%20Learning)%20-%20libgen.li.pdf[Dofka, C.M. - Dental Terminology (2012, Cengage Learning) - libgen.li]
+* dental terminology by charline m.dofka
+* gupta p.v differential diagnosis
+
+
+* wheelers dental anatomy,physiology,occlusion
+* phillips science of dental materials
+* misch's contemporary implants
+
+* strudevant's operative dentistry
+* ingles endodontics
+* neelima anil malik oral and maxillofacial
+* orban's oral histology and embryology
+* burkets oral medicine
+* pyush oral medicine
+
+* white and pharoh radiology
+* ms rani ortho appliances
+* balaji orthodontics
+* s.s hiremanth
+* nallaswamy prosthodontics
+* essentials of clinical periodontics by shantipriya
+* ergnomics
+* dental instruments_ a pocket guide 
+* ada pdr drug guide
+
+
+
+
+
+
+
+= medicine
+* fitzpatrick's dermatology
+* hazzard's geriatric medicine
+* krause's food and nutrition
+* practical management honorio t benzon
+* nelson textbook of pediatrics
+* park textbokk of preventive medicine
+* williams textbook of endocrinology
+* informatics ramona nelson
+* handbook of cosmetic science and technology
+* human physiology from cells to
+* a textbook of modern toxicology ernest
+* principles and practice of infectious disease
+
+
+
+# cooking
+* western reciepe; the professional chef
+* indian reciepe;classic indian cooking by  julie sahni
+* dictonary; larousse gastronomique
+* baking; how baking works paula figoni
+
+
+
+
+
+# self*help
+* 48th laws of power
+* powermoves
+
+# psychology
+
+* apa dictonary
+
+* cognitive pyschology * connecting mind,research,everyday experience by cengage
+* the pyschology of criminal conduct
+* existenital*humanistic therapy * krug and schneider
+* Family therapy concepts and methods by michael p.nichols
+* The handbook of systemic family therapy
+* family diversity continuity and change in contemporary
+* health psychology by shelley E.taylor
+* health psychology a textbook jane ogden
+* applied behaviour analysis bh pearson
+* development through the life span p laura E.berk
+* interpersonal concepts and competencies foundations
+* group dynamics
+* positive psychology
+* abnormal psychology  ronald comer
+* learning;Encyclopedia of the sciences of learning by springer
+* theory and practice of counselling and psychotherapy * gerald corey
+* fish's clinical psychopathology
+* nancy mcwilliam psychoanalysis
+* personality psychology domains of knowledge 
+
+
+
+# philosophy
+* sanathana dharma * an elementary textbook of hindu religion and ethics
+* eight upanisads with commentary of sankaracarya translated by swami gambhirananda
+* a modern introduction to indian logic by s.s.barlingay
+* fundamentals of sociology University
+
+
+* encyclopedia of buddhism
+
+
+
+*  abhidhammatha sangaha* a manual of abidhama by narada maha thera
+
+
+* the illustiated mind of buddist meditation
+* the buddist way of tranquility and insight 
+
+
+
+Dharma
+
+* Manu’s Code of Law: A Critical Edition and Translation of the Manava*Dharmasastra by Patrick Olivelle
+* The Mahabharata (10*volume translation) by Bibek Debroy
+* The Bhagavad Gita (standalone translations):By Swami Prabhupada (Bhagavad Gita As It Is)
+* The Ramayana of Valmiki: An Epic of Ancient India (7 volumes) by Robert P. Goldman and Sheldon I. Pollock
+* Ramcharitmanas (English translation) by Gita Press
+* The Dharmasutras: The Law Codes of Ancient India by Patrick Olivelle
+* Mitakshara
+* The Laws of Manu 
+* the Laws of Parashara (combined works, various publishers)
+* The Nyaya Sutras of Gautama translated by Ganganath Jha
+* The Vishnu Purana translated by H.H. Wilson
+* The Shiva Purana by Dr. Shantilal Nagar
+
+
+Artha
+* The Arthashastra by Kautilya, translated by R. Shamasastry
+* Kamandakiya Niti Shastra: Principles of Politics (Niti*Shastra), some translated sections available in compilations.
+*  Brihaspati Sutra
+*  Sukra Niti
+* The Hitopadesa: A New Translation from the Sanskrit Text by Francis Johnson
+* The Panchatantra by Arthur W. Ryder
+* Jataka Tales translated by E.B. Cowell
+
+Kama
+* The Complete Kamasutra by Alain Daniélou
+* The Natyashastra: English Translation with Critical Notes by Adya Rangacharya
+* The Secrets of Love (Ratirahasya) by Kokkoka, translated in excerpts by various authors.
+* The Ananga Ranga: The Stage of Love by Kalyanamalla, translated by Richard Burton
+* Gita Govinda of Jayadeva: Love Song of the Dark Lord by Barbara Stoler Miller
+
+
+Moksha
+* The Principal Upanishads by S. Radhakrishna
+* The Yoga Sutras of Patanjali by Swami Satchidananda
+* The Brahma Sutras: With Commentary by Adi Shankaracharya translated by Swami Sivananda
+* Crest Jewel of Discrimination (Vivekachudamani) by Adi Shankaracharya, translated by Swami Prabhavananda
+* The Concise Yoga Vasistha translated by Swami Venkatesananda
+* Ashtavakra Gita: The Heart of Awareness by Thomas Byrom
+ * Gaudapada’s Karika on the Mandukya Upanishad by Swami Nikhilananda
+* The Mystery Beyond the Trinity (Tripura Rahasya) by Swami Sri Ramananda
+
+Abhidhamma
+*  Dhammasangani .A Comprehensive Manual of Abhidhamma by Bhikkhu Bodhi
+* Vibhanga
+*  Dhatukatha .Found in Buddhist Psychological Ethics by Caroline A.F. Rhys Davids.
+*  Puggalapannatti .Part of the Abhidhamma Pitaka translations in Pali Text Society editions.
+* Kathavatthu.Translations available in Pali Text Society’s editions.
+* Yamaka
+* Patthana
+
+
+
+
+
+
+***
+Dharma
+
+Manusmriti
+
+An ancient legal text attributed to Manu. It outlines laws, ethics, caste duties, and social order in Vedic society. Known for its influence on Hindu law.
+
+
+* Manu’s Code of Law: A Critical Edition and Translation of the Manava*Dharmasastra by Patrick Olivelle
+
+Mahabharata
+
+An epic attributed to Vyasa. It discusses dharma, governance, war, and philosophy, with key sections like Shanti Parva (governance) and Bhagavad Gita (spiritual guidance).
+
+*  The Mahabharata (10*volume translation) by Bibek Debroy
+
+
+Ramayana
+
+Attributed to Valmiki, it narrates the life of Rama, exploring themes of dharma, duty, and relationships. It provides moral and ethical guidelines.
+
+* The Ramayana of Valmiki: An Epic of Ancient India (7 volumes) by Robert P. Goldman and Sheldon I. Pollock
+
+Dharma Shastras
+
+Gautama Dharma Sutra: Early work focusing on legal and ritual practices.
+Apastamba Dharma Sutra: Discusses laws, ethics, and daily rituals.
+Baudhayana Dharma Sutra: Includes laws and practices, with special focus on penance.
+Vasistha Dharma Sutra: Addresses laws, asceticism, and moral conduct.
+
+
+Yajnavalkya Smriti: Focuses on civil law and justice.
+Narada Smriti: Concentrates on legal disputes and justice administration.
+Vishnu Smriti: Combines law and ritual practices.
+
+
+
+* The Dharmasutras: The Law Codes of Ancient India by Patrick Olivelle
+
+Mitakshara
+
+A commentary by Vijnaneswara on the Yajnavalkya Smriti, forming the basis of Hindu law in many regions of India.
+
+Parashara Smriti
+
+Focuses on laws suitable for the Kali Yuga, emphasizing dharma in challenging times.
+
+* The Laws of Manu and the Laws of Parashara (combined works, various publishers)
+
+
+
+
+
+
+Mahapuranas
+
+Mythological texts such as the Vishnu Purana and Shiva Purana that provide stories and guidelines for dharmic living.
+
+18 mahapuranas divided into three. 1.Sattva/vishu/preservation/goodness
+2.Rajas/brahma/creation/passion
+3.Tamas/shiva/destruction/ignorance
+
+* The Vishnu Purana translated by H.H. Wilson
+* The Shiva Purana by Dr. Shantilal Nagar
+
+
+
+Nyaya Sutras
+
+Attributed to Gautama, this is a foundational text on logic, reasoning, and epistemology.
+
+* The Nyaya Sutras of Gautama translated by Ganganath Jha
+
+
+Rajadharma
+
+Sections in the Mahabharata (Shanti Parva) and Manusmriti discuss the duties of kings and governance.
+
+
+***
+
+Artha
+Arthashastra
+
+Attributed to Kautilya (Chanakya), this is a treatise on statecraft, economics, and military strategy.
+
+* The Arthashastra by Kautilya, translated by R. Shamasastry
+
+Kamandakiya Niti Shastra
+
+A text on political ethics and diplomacy by Kamandaka.
+
+* Kamandakiya Niti Shastra: Principles of Politics (Niti*Shastra), some translated sections available in compilations.
+
+Brihaspati Sutra
+
+An early work focusing on economics, law, and governance.
+
+Sukra Niti
+
+Attributed to Shukracharya, this text provides guidance on politics, diplomacy, and governance.
+
+Hitopadesa
+
+Written by Narayana Pandit, it provides moral and practical lessons through stories.
+
+* The Hitopadesa: A New Translation from the Sanskrit Text by Francis Johnson
+
+Nitishastra by Bhartrihari
+
+A poetic treatise discussing ethics and governance.
+
+Panchatantra
+
+A collection of animal fables by Vishnu Sharma, imparting wisdom on practical life and governance.
+
+* The Panchatantra by Arthur W. Ryder
+
+Dasharatha Jataka
+
+A Buddhist text offering lessons on rulership and ethics through the story of Dasharatha.
+* Jataka Tales translated by E.B. Cowell
+
+***
+
+Kama
+
+Kamasutra
+
+Written by Vatsyayana, it is the foundational text on love, intimacy, and relationships, exploring the art of living.
+
+* The Complete Kamasutra by Alain Daniélou
+
+
+Natyashastra
+
+Attributed to Bharata Muni, it discusses performing arts, aesthetics, and rasa (emotions), extending into love and beauty.
+
+* The Natyashastra: English Translation with Critical Notes by Adya Rangacharya
+
+Ratirahasya
+
+Written by Kokkoka, it explores the secrets of love and intimacy.
+
+* The Secrets of Love (Ratirahasya) by Kokkoka, translated in excerpts by various authors.
+
+Jayamangala
+
+A commentary on the Kamasutra by Yashodhara.
+
+
+Smaradipika
+
+A lesser*known text on love and aesthetics.
+
+Ratimanjari
+
+A poetic work by Jayadeva exploring themes of love and intimacy.
+
+Anangaranga
+
+By Kalyanamalla, this text elaborates on love and marital relationships.
+
+* The Ananga Ranga: The Stage of Love by Kalyanamalla, translated by Richard Burton
+
+
+
+Gita Govinda
+
+A devotional and sensual poem by Jayadeva, focusing on the relationship between Radha and Krishna.
+
+* Gita Govinda of Jayadeva: Love Song of the Dark Lord by Barbara Stoler Miller
+
+
+Sringara Tilaka
+
+A poetic text celebrating romantic and aesthetic emotions.
+
+Mohana Tarangini
+
+A text discussing love and aesthetics.
+
+
+***
+
+
+
+
+
+Upanishads
+
+Philosophical texts discussing the nature of reality, self (Atman), and ultimate liberation (Moksha).
+
+* The Principal Upanishads by S. Radhakrishna
+
+Bhagavad Gita
+
+A part of the Mahabharata, this dialogue between Krishna and Arjuna explores dharma, devotion, and paths to liberation.
+
+* The Bhagavad Gita (standalone translations):By Swami Prabhupada (Bhagavad Gita As It Is)
+
+
+Yoga Sutras
+
+By Patanjali, these sutras outline the principles of yoga and meditation for spiritual liberation.
+
+* The Yoga Sutras of Patanjali by Swami Satchidananda
+
+Brahma Sutras
+
+Attributed to Badarayana/Vyasa, these aphorisms discuss Vedanta philosophy and the nature of Brahman.
+* The Brahma Sutras: With Commentary by Adi Shankaracharya translated by Swami Sivananda
+
+Vedanta Texts
+
+Commentaries by sages like Adi Shankaracharya explaining the non*dual nature of reality.
+
+* Crest Jewel of Discrimination (Vivekachudamani) by Adi Shankaracharya, translated by Swami Prabhavananda
+
+Yoga Vashistha
+
+A dialogue between Sage Vashistha and Rama on self*realization and the illusory nature of the world.
+*  The Concise Yoga Vasistha translated by Swami Venkatesananda
+
+
+Ashtavakra Gita
+
+A philosophical treatise emphasizing Advaita Vedanta and the realization of the self.
+* Ashtavakra Gita: The Heart of Awareness by Thomas Byrom
+
+Taittiriya Upanishad
+
+Focuses on the layers of existence and the pursuit of bliss (Ananda).
+
+Mandukya Upanishad with Karika
+
+Attributed to Gaudapada, it explores non*duality and the nature of consciousness.
+* Gaudapada’s Karika on the Mandukya Upanishad by Swami Nikhilananda
+Bhagavata Purana
+
+A devotional text emphasizing bhakti (devotion) as a path to liberation.
+
+Tripura Rahasya
+
+A dialogue exploring consciousness, Advaita philosophy, and liberation.
+
+*  The Mystery Beyond the Trinity (Tripura Rahasya) by Swami Sri Ramananda
+***
+
+Abhidhamma (Buddhist Philosophy)
+
+Dhammasangani
+Analyzes mental states and their classifications.
+
+
+*  abhidhammatha sangaha* a comprehensive manual of abidhama by bhikku bodhi
+
+
+Vibhanga
+Explores the nature of mental factors and reality.
+
+* the book of analysis(vibhanga)* the 2 book of abhidhamma pitaka  by pathamakyaw ashin thittila 
+
+Dhatukatha
+Analyzes the elements (dhatus) of existence.
+
+Puggalapannatti
+Categorizes individuals based on mental and ethical qualities.
+
+Kathavatthu
+Attributed to Moggaliputta*Tissa, it discusses philosophical debates and controversies.
+
+Yamaka
+A text in pairs, analyzing concepts systematically.
+
+Patthana
+Discusses causal relations, forming the foundation of Abhidhamma philosophy.
+
+
+# medicine
+
+1. Charaka Samhita
+
+Title: Charaka Samhita: Handbook on Internal Medicine
+
+
+
+2. Sushruta Samhita
+
+Title: Sushruta Samhita: The Compendium of Surgery
+
+
+
+3. Ashtanga Hridaya
+
+Title: Ashtanga Hridaya: The Heart of Medicine
+
+
+
+4. Ashtanga Sangraha
+
+Title: Ashtanga Sangraha: The Comprehensive Medicine Guide
+
+
+
+5. Bhela Samhita
+
+Title: Bhela Samhita: Ancient Treatise on Medicine
+
+
+
+6. Kashyapa Samhita
+
+Title: Kashyapa Samhita: Pediatrics and Obstetrics in Ayurveda
+
+
+
+7. Madhava Nidana
+
+Title: Madhava Nidana: The Diagnosis of Diseases
+
+
+
+Rasashastra (Alchemy and Medicine)
+
+1. Rasaratna Samuchchaya
+
+Title: Rasaratna Samuchchaya: A Compendium of Alchemy
+
+
+
+2. Rasarnava
+
+Title: Rasarnava: The Ocean of Alchemy
+
+
+1. Bhavaprakasha
+
+Title: Bhavaprakasha: Encyclopedia of Medicinal Plants
+
+
+
+2. Sharngadhara Samhita
+
+Title: Sharngadhara Samhita: Ayurvedic Pharmaceutics
+
+
+
+3. Yoga Sutras of Patanjali
+
+Title: The Yoga Sutras of Patanjali: Teachings on Mental and Physical Health
+
+4. Hatha Yoga Pradipika
+
+Title: Hatha Yoga Pradipika: Guide to Yogic Prac
+
+
+
+# Music
+
+https://musicresearchlibrary.net
+//For hindustani books
+
+* Melodiy types
+// Scientific part*1 is western and part *2 is hindustani
+* Complete musician
+// Western music
+
+# Diseases
+## 1
+* Nevii oral and maxillofacial 
+* Robbins pathology 
+
+## 2
+* Shafers
+* Harsha mohan
+
+
+# math
+* Discrete math
+
+
+
+ICCC 
+
+
+
+Sanskrit books major works
+https://sanskritdocuments.org/doc_z_misc_major_works/
+
+
+Anna's archive
+Library genesis 
+Z Library 
+
+
+
+= Journey 
+
+
+
+
+
+
+
+
+
+= Medicine 
+
+* shafers textbook of oral pathology
+This is a standard oral pathology book contains all diagnosis related to oral cavity in detailed with pathological concept wise 
+
+* Pocket Atlas of Oral Diseases George Laskaris
+This book contains oral medicine diagnosis in clinical classification scheme i.e into red,white,black,vesicles,ulcerative and each condition with definition,clinical features, treatment 
+
+
+* Robbins and Cotran Pathologic Basis of Disease
+
+* Kumar & Clark’s Clinical Medicine
+
+
+
+== Mathematics 
+
+*https://www.mathsisfun.com/
+* Discrete mathematics oscar levin
+* Carl Stitz, Jeff Zeager - College Algebra
+* Introduction to Applied Linear Algebra Vectors,  Matrices, and Least Squares Stephen Boyd cambridge 
+* Vector Calculus Michael Corral
+* Applied Combinatorics Mitchel T. Keller
+
+
+
+
+* Introduction to Logic
+Irving M. Copi Carl Cohen Kenneth McMahon Fourteenth Edition
+* Language,proof and logic dave barker plummer
+
+* FUZZY LOGIC WITH ENGINEERING APPLICATIONS
+Fourth Edition
+
+
+
+== Music
+* 
+
+
+
+
+
+== Computer 
+* Markdown and asciidoc
+* linux and softwares
+* html
+* py
+* Sql
+* Android studio
