@@ -1,20 +1,7 @@
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.ready.then(reg => {
-    reg.addEventListener('updatefound', () => {
-      const newWorker = reg.installing;
-      newWorker.addEventListener('statechange', () => {
-        if (newWorker.state === 'installed') {
-          showUpdateNotification();
-        }
-      });
-    });
-  });
-}
-
 function showUpdateNotification() {
   const notice = document.createElement('div');
   notice.className = 'offline-notice';
-  notice.textContent = 'New content available – please refresh.';
+  notice.textContent = 'New content available! Refresh to update.';
   document.body.appendChild(notice);
   notice.style.display = 'block';
 }
