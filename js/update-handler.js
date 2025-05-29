@@ -14,7 +14,7 @@ if ('serviceWorker' in navigator) {
 function showUpdateNotification() {
   const notice = document.createElement('div');
   notice.className = 'offline-notice';
-  notice.textContent = 'New content available! Refresh to update.';
+  notice.textContent = 'New content available – please refresh.';
   document.body.appendChild(notice);
   notice.style.display = 'block';
 }
