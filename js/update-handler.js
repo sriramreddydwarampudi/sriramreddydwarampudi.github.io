@@ -1,3 +1,4 @@
-if (‘serviceWorker’ in navigator) { navigator.serviceWorker.ready.then(reg => { reg.addEventListener(‘updatefound’, () => { const newWorker = reg.installing; newWorker.addEventListener(‘statechange’, () => { if (newWorker.state === ‘installed’) { showUpdateNotification(); }
-}); }); }); }
-function showUpdateNotification() { const notice = document.createElement(‘div’); notice.className = ‘offline-notice’; notice.textContent = ‘New content available – please refresh.’; document.body.appendChild(notice); notice.style.display = ‘block’; }
+navigator.serviceWorker.addEventListener('controllerchange', () => {
+  console.log('New Service Worker activated. Reloading...');
+  window.location.reload();
+});
