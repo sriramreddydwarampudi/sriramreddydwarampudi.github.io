@@ -1,24 +1,21 @@
-const CACHE_NAME = 'pwa-cache-v1';
+const CACHE_NAME = 'offline-cache-v1';
 const OFFLINE_URL = '/offline.html';
-
-const OFFLINE_FILES = [
+const ASSETS_TO_CACHE = [
   '/',
-  '/index.html',
-  '/styles.css',
-  '/main.js',
-  '/manifest.json',
   '/offline.html',
-  '/icon-192.png',
-  '/icon-512.png'
+  '/js/register-sw.js',
+  '/js/update-handler.js',
 ];
 
+// Cache core assets
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(OFFLINE_FILES))
+    caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS_TO_CACHE))
   );
   self.skipWaiting();
 });
 
+// Clean up old caches
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys =>
@@ -28,10 +25,15 @@ self.addEventListener('activate', event => {
   self.clients.claim();
 });
 
+// Handle requests
 self.addEventListener('fetch', event => {
-  event.respondWith(
-    fetch(event.request).catch(() =>
-      caches.match(event.request).then(res => res || caches.match(OFFLINE_URL))
-    )
-  );
+  if (event.request.mode === 'navigate') {
+    event.respondWith(
+      fetch(event.request).catch(() => caches.match(OFFLINE_URL))
+    );
+  } else {
+    event.respondWith(
+      caches.match(event.request).then(response => response || fetch(event.request))
+    );
+  }
 });
