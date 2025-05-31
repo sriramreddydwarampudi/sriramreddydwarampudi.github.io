@@ -103,6 +103,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#create-a-folder-for-sdk" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -3625,6 +3630,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="Andriod%20studio.html" class="md-nav__link md-nav__link--active">
         
@@ -4633,9 +4640,73 @@
   
 
 
-  <h1>Andriod studio</h1>
-
-
+<p>Got it! You want to automatically install Android Studio CLI tools (or at least set up an environment so the build scripts don’t fail trying to open Android Studio)** from Termux or your CLI environment** so the Capacitor command npx cap open android works smoothly without that error.</p>
+<hr />
+<p>Key points:</p>
+<p>Android Studio itself is a large GUI app, and cannot be fully installed from Termux or a CLI-only environment like a typical Linux CLI — it requires a GUI and lots of manual setup.</p>
+<p>However, you can install just the Android SDK command line tools and related build tools which are enough for building and compiling your APK.</p>
+<p>Then you configure Capacitor or your environment to use these CLI tools instead of Android Studio GUI.</p>
+<hr />
+<p>How to fix / automate this setup:</p>
+<hr />
+<ol>
+<li>Install Android SDK Command Line Tools manually</li>
+</ol>
+<p>You can download the Android SDK command line tools from Google:</p>
+<p><a href="https://developer.android.com/studio#command-line-tools">https://developer.android.com/studio#command-line-tools</a></p>
+<p>Download the latest command-line tools ZIP for Linux.</p>
+<p>Then from Termux:</p>
+<h1 id="create-a-folder-for-sdk">Create a folder for sdk<a class="headerlink" href="#create-a-folder-for-sdk" title="Permanent link">&para;</a></h1>
+<p>mkdir -p ~/Android/Sdk/cmdline-tools
+cd ~/Android/Sdk/cmdline-tools</p>
+<h1 id="download-the-latest-command-line-tools-zip-use-wget-or-curl">Download the latest command line tools zip (use wget or curl)<a class="headerlink" href="#download-the-latest-command-line-tools-zip-use-wget-or-curl" title="Permanent link">&para;</a></h1>
+<p>wget <a href="https://dl.google.com/android/repository/commandlinetools-linux-8512546_latest.zip">https://dl.google.com/android/repository/commandlinetools-linux-8512546_latest.zip</a></p>
+<h1 id="unzip">Unzip<a class="headerlink" href="#unzip" title="Permanent link">&para;</a></h1>
+<p>unzip commandlinetools-linux-8512546_latest.zip</p>
+<h1 id="move-extracted-content-into-a-folder-named-tools">Move extracted content into a folder named "tools"<a class="headerlink" href="#move-extracted-content-into-a-folder-named-tools" title="Permanent link">&para;</a></h1>
+<p>mv cmdline-tools tools</p>
+<hr />
+<ol>
+<li>Set environment variables</li>
+</ol>
+<p>Add these lines to your ~/.bashrc or ~/.zshrc:</p>
+<p>export ANDROID_SDK_ROOT=<span class="arithmatex">\(HOME/Android/Sdk
+export PATH=\)</span>ANDROID_SDK_ROOT/cmdline-tools/tools/bin:<span class="arithmatex">\(ANDROID_SDK_ROOT/platform-tools:\)</span>PATH</p>
+<p>Reload your shell:</p>
+<p>source ~/.zshrc  # or ~/.bashrc</p>
+<hr />
+<ol>
+<li>Install SDK packages</li>
+</ol>
+<p>Use sdkmanager to install required packages:</p>
+<p>sdkmanager --sdk_root=$ANDROID_SDK_ROOT "platform-tools" "platforms;android-33" "build-tools;33.0.0"</p>
+<p>Adjust Android versions to match your target.</p>
+<hr />
+<ol>
+<li>Configure Capacitor</li>
+</ol>
+<p>Capacitor by default tries to open Android Studio GUI. To avoid the error:</p>
+<p>When running npx cap open android, it tries to launch Android Studio GUI, which you don't have.</p>
+<p>Instead, just build from CLI:</p>
+<p>npx cap copy android
+cd android
+./gradlew assembleDebug</p>
+<p>This builds your APK without opening Android Studio GUI.</p>
+<hr />
+<ol>
+<li>Optional: Set CAPACITOR_ANDROID_STUDIO_PATH to a dummy</li>
+</ol>
+<p>If you want to suppress the error, set the environment variable to a harmless path:</p>
+<p>export CAPACITOR_ANDROID_STUDIO_PATH=/bin/true</p>
+<p>This tricks the Capacitor open command into thinking Android Studio exists.</p>
+<hr />
+<p>Summary</p>
+<p>You cannot fully install Android Studio GUI from CLI/Termux automatically.</p>
+<p>But you can install the Android SDK command line tools to build APKs.</p>
+<p>Use ./gradlew assembleDebug for CLI builds.</p>
+<p>Set CAPACITOR_ANDROID_STUDIO_PATH to avoid errors when running npx cap open android.</p>
+<hr />
+<p>If you want, I can help you create a Termux bash script to download and install the SDK CLI tools and set up environment variables automatically. Want that?</p>
 
 
 
