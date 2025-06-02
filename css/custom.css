@@ -19,7 +19,7 @@
 /* Copy button positioning */
 .md-clipboard {
   top: 0.8rem;
-  right: 1.4rem; /* Move it further *inside* */
+  right: 3.4rem; /* Move it further *inside* */
   background-color: #333;
   color: white;
   border-radius: 6px;
