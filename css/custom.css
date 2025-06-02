@@ -1,0 +1,30 @@
+/* Better spacing for code blocks */
+.md-typeset pre {
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #1e1e1e; /* Matches dark mode */
+    overflow-x: auto;
+}
+
+/* Improve inline code */
+.md-typeset code {
+    font-size: 0.95em;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+}
+
+/* Fix the position of copy button */
+.md-clipboard {
+    top: 0.75rem !important;
+    right: 1rem !important;
+    background-color: #2c2c2c;
+    border-radius: 6px;
+    padding: 0.3em 0.6em;
+}
+
+/* Optional: Hover effect for copy button */
+.md-clipboard:hover {
+    background-color: #444;
+    cursor: pointer;
+}
