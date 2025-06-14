@@ -2079,6 +2079,8 @@
       
         
       
+        
+      
     
     
       
@@ -2138,6 +2140,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -2334,6 +2340,27 @@
   
   <span class="md-ellipsis">
     0.introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="4.python%20kivy%20app.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.python kivy app
   </span>
   
 
@@ -3605,6 +3632,8 @@
       
         
       
+        
+      
     
     
       
@@ -3711,6 +3740,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -3770,6 +3803,8 @@
       
         
       
+        
+      
     
     
       
@@ -3788,11 +3823,64 @@
         
   
   
-    <a href="3.vite%20react%20capacitor%20%28frontend%29%20and%20node.js%28backend%29/arrangment.html" class="md-nav__link">
+    <a href="3.react%20expo/arrangment.html" class="md-nav__link">
       
   
   <span class="md-ellipsis">
-    3.vite react capacitor (frontend) and node.js(backend)
+    3.react expo
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="4.python%20kivy%20app/briefcase.html" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    4.python kivy app
   </span>
   
 
@@ -4687,10 +4775,6 @@
       
         
       
-        
-      
-        
-      
     
     
       
@@ -4814,6 +4898,61 @@
 </span></code></pre></div>
 <hr />
 <p>Would you like a custom CSS theme or a cover page added to your book?</p>
+<p>You’re asking if there is a way to convert Markdown files that reference images in a local ./assets folder into a single HTML file where those images are embedded as base64 (inline), right?</p>
+<hr />
+<p>✅ Short answer:</p>
+<p>Yes, there are tools and workflows that convert Markdown to single self-contained HTML with images embedded as Base64 data URIs.</p>
+<hr />
+<p>How to do this? Here are some common methods:</p>
+<hr />
+<ol>
+<li>Pandoc with --self-contained option</li>
+</ol>
+<p>Pandoc is a powerful universal document converter.</p>
+<p>It can convert .md to .html</p>
+<p>The flag --self-contained embeds local images as base64 inside the HTML</p>
+<p>Example command:</p>
+<p>pandoc input.md -o output.html --self-contained</p>
+<p>Requirements:</p>
+<p>Images referenced in Markdown like:</p>
+<p><a class="glightbox" href="./assets/image.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="./assets/image.png" /></a></p>
+<p>Pandoc must be able to find the images in the relative path</p>
+<p>Result:</p>
+<p>One single HTML file with images embedded as Base64 data URLs</p>
+<hr />
+<ol>
+<li>Markdown-it + Plugin (for Node.js)</li>
+</ol>
+<p>If you prefer a Node.js approach:</p>
+<p>Use markdown-it</p>
+<p>Use a plugin like markdown-it-imsize or write a custom plugin</p>
+<p>Write a script to:</p>
+<p>Read the markdown file</p>
+<p>Detect image references</p>
+<p>Convert images to Base64 data URIs</p>
+<p>Replace image links in the rendered HTML</p>
+<hr />
+<ol>
+<li>Other tools</li>
+</ol>
+<p>Typora (Markdown editor) — exports to HTML with embedded images (configurable)</p>
+<p>Grip + custom scripts</p>
+<p>md-to-html converters with base64 embed support</p>
+<hr />
+<p>Sample Pandoc usage in Termux or Linux:</p>
+<p>sudo apt install pandoc
+pandoc ./README.md -o ./output.html --self-contained</p>
+<hr />
+<p>Summary:</p>
+<p>Tool    Embed Images as Base64  Output  Ease of Use</p>
+<p>Pandoc  Yes (--self-contained)  Single HTML Very easy (CLI)
+markdown-it + custom scripts    Yes, customizable   Single HTML Requires Node.js scripting
+Typora  Yes (export option) Single HTML GUI-based</p>
+<hr />
+<p>If you want, I can help you:</p>
+<p>Write a Pandoc command for your files</p>
+<p>Write a Node.js script that converts Markdown + local images to single HTML with base64 images embedded</p>
+<p>Would you prefer CLI or Node.js approach?</p>
 
 
 
