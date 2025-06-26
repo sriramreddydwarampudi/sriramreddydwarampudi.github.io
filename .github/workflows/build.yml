@@ -1,0 +1,52 @@
+name: Export Beautiful PDFs and Publish to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ✅ Checkout Main Branch
+        uses: actions/checkout@v4
+
+      - name: 📦 Install Pandoc + LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex fonts-dejavu
+
+      - name: 📚 Generate PDFs from each top-level folder
+        run: |
+          mkdir output_pdfs
+          for dir in */; do
+            folder=$(basename "$dir")
+            sanitized=$(echo "$folder" | tr -cd '[:alnum:]_' | tr ' ' '_' | tr '[:upper:]' '[:lower:]')
+            md_files=$(find "$dir" -name '*.md' | sort)
+            if [ -n "$md_files" ]; then
+              pandoc $md_files -o "output_pdfs/${sanitized}.pdf" --toc --pdf-engine=xelatex \
+                -V geometry:a4paper -V fontsize=12pt -V mainfont="DejaVu Serif"
+            fi
+          done
+
+      - name: 📥 Checkout gh-pages Branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: 🗂️ Copy PDFs to gh-pages/books/
+        run: |
+          mkdir -p gh-pages/books
+          cp output_pdfs/*.pdf gh-pages/books/
+
+      - name: 🚀 Commit and Push PDFs to gh-pages
+        run: |
+          cd gh-pages
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add books/*.pdf
+          git commit -m "📚 Auto-update PDFs from CI" || echo "No changes"
+          git push origin gh-pages
