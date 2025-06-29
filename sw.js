@@ -1,45 +1,48 @@
-const CACHE_NAME = 'offline-cache-v3';
+const CACHE_NAME = 'offline-cache-v5';
 const OFFLINE_URL = '/offline.html';
 const NO_CACHE_PATHS = [
   '/auth',
   '/login',
   '/__/auth/',
-  'firebase-auth.js',
-  'www.gstatic.com/firebasejs',
-  'firebaseapp.com'
+  'firebase',
+  'googleapis',
+  'gstatic',
+  'firebaseapp.com',
+  'accounts.google.com',
+  'securetoken.googleapis.com'
 ];
 
-// Install - Cache only essential non-auth assets
-self.addEventListener('install', event => {
-  const assetsToCache = [
-    '/',
-    OFFLINE_URL,
-    '/js/register-sw.js',
-    '/js/update-handler.js'
-  ].filter(asset => !NO_CACHE_PATHS.some(path => asset.includes(path)));
-
+self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then(cache => cache.addAll(assetsToCache))
-      .then(() => self.skipWaiting()) // Force immediate activation
+      .then(cache => cache.addAll([
+        '/',
+        OFFLINE_URL,
+        '/css/main.css',
+        '/js/main.js'
+      ].filter(asset => 
+        !NO_CACHE_PATHS.some(path => asset.includes(path))
+      ))
+      .then(() => self.skipWaiting())
   );
 });
 
-// Activate - Clean old caches and claim clients
-self.addEventListener('activate', event => {
+self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys()
       .then(keys => Promise.all(
-        keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k))
-      )
-      .then(() => self.clients.claim()) // Control all pages immediately
+        keys.map(key => key !== CACHE_NAME && caches.delete(key))
+      ))
+      .then(() => self.clients.claim())
   );
 });
 
-// Fetch - Bypass cache for auth and dynamic content
-self.addEventListener('fetch', event => {
-  // Skip caching for auth-related requests
-  if (NO_CACHE_PATHS.some(path => event.request.url.includes(path))) {
+self.addEventListener('fetch', (event) => {
+  // Bypass SW completely for auth-related requests
+  if (NO_CACHE_PATHS.some(path => 
+    event.request.url.includes(path) ||
+    (event.request.referrer && event.request.referrer.includes(path))
+  )) {
     event.respondWith(fetch(event.request));
     return;
   }
@@ -48,6 +51,12 @@ self.addEventListener('fetch', event => {
   if (event.request.mode === 'navigate') {
     event.respondWith(
       fetch(event.request)
+        .then(response => {
+          // Cache the page but don't intercept future requests
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+          return response;
+        })
         .catch(() => caches.match(OFFLINE_URL))
     );
     return;
@@ -60,8 +69,7 @@ self.addEventListener('fetch', event => {
   );
 });
 
-// Handle skipWaiting messages
-self.addEventListener('message', event => {
+self.addEventListener('message', (event) => {
   if (event.data === 'skipWaiting') {
     self.skipWaiting();
     clients.matchAll().then(clients => {

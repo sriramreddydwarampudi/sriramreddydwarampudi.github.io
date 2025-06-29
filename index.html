@@ -1836,21 +1836,20 @@
       
     
   <script>
-    // Immediate visibility while loading
-    document.body.style.opacity = 1;
-
-    // Service Worker Control - Skip waiting immediately
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js').then(reg => {
+    // Initialize immediately
+    (async function() {
+      // Service Worker Control
+      if ('serviceWorker' in navigator) {
+        const reg = await navigator.serviceWorker.register('/sw.js');
         reg.update();
-        if (reg.active && !navigator.serviceWorker.controller) {
-          window.location.reload();
+        
+        // Ensure latest SW controls the page
+        if (navigator.serviceWorker.controller) {
+          navigator.serviceWorker.controller.postMessage('skipWaiting');
         }
-      });
-    }
+      }
 
-    // Auth Initialization
-    const initializeAuth = async () => {
+      // Load Firebase
       const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
       const { getAuth, signInWithPopup, onAuthStateChanged, GoogleAuthProvider, signOut } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
 
@@ -1867,29 +1866,33 @@
       const auth = getAuth(app);
       const provider = new GoogleAuthProvider();
 
-      document.getElementById('login-button').onclick = () => {
+      // Login handler
+      document.getElementById('login-btn').addEventListener('click', () => {
         signInWithPopup(auth, provider)
-          .catch(err => console.error("Login failed:", err));
-      };
-      
-      window.logout = () => signOut(auth);
+          .catch(err => console.error("Login error:", err));
+      });
 
-      // Handle auth state changes
+      // Logout handler
+      document.getElementById('logout-btn').addEventListener('click', () => {
+        signOut(auth);
+      });
+
+      // Auth state listener
       onAuthStateChanged(auth, (user) => {
         if (user) {
-          document.getElementById('loading').style.display = 'none';
+          document.getElementById('auth-container').style.display = 'none';
           document.getElementById('main-content').style.display = 'block';
         } else {
-          // Already showing login by default
+          document.getElementById('auth-container').style.display = 'flex';
+          document.getElementById('main-content').style.display = 'none';
         }
       });
-    };
-
-    // Start auth immediately, don't wait for DOMContentLoaded
-    initializeAuth().catch(err => {
-      console.error("Auth initialization failed:", err);
-      document.getElementById('loading').innerHTML = 
-        '<p>⚠️ Error loading authentication. Please <a href="javascript:window.location.reload()">refresh</a></p>';
+    })().catch(err => {
+      console.error("Initialization failed:", err);
+      document.getElementById('auth-content').innerHTML = `
+        <h2>⚠️ Error Loading</h2>
+        <p>Please <a href="javascript:window.location.reload()">refresh</a> the page</p>
+      `;
     });
   </script>
 
