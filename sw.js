@@ -1,64 +1,71 @@
-const CACHE_NAME = 'offline-cache-v2'; // Incremented version
+const CACHE_NAME = 'offline-cache-v3';
 const OFFLINE_URL = '/offline.html';
-const NO_CACHE_PATHS = ['/login', '/auth', '/api']; // Add login-related paths here
+const NO_CACHE_PATHS = [
+  '/auth',
+  '/login',
+  '/__/auth/',
+  'firebase-auth.js',
+  'www.gstatic.com/firebasejs',
+  'firebaseapp.com'
+];
 
-// Cache core assets
+// Install - Cache only essential non-auth assets
 self.addEventListener('install', event => {
   const assetsToCache = [
     '/',
     OFFLINE_URL,
     '/js/register-sw.js',
-    '/js/update-handler.js',
-    // Explicitly exclude login-related assets
+    '/js/update-handler.js'
   ].filter(asset => !NO_CACHE_PATHS.some(path => asset.includes(path)));
 
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(assetsToCache))
+    caches.open(CACHE_NAME)
+      .then(cache => cache.addAll(assetsToCache))
+      .then(() => self.skipWaiting()) // Force immediate activation
   );
-  self.skipWaiting();
 });
 
-// Clean up old caches
+// Activate - Clean old caches and claim clients
 self.addEventListener('activate', event => {
   event.waitUntil(
-    caches.keys().then(keys =>
-      Promise.all(
+    caches.keys()
+      .then(keys => Promise.all(
         keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k))
       )
-    )
+      .then(() => self.clients.claim()) // Control all pages immediately
   );
-  self.clients.claim();
 });
 
-// Handle requests
+// Fetch - Bypass cache for auth and dynamic content
 self.addEventListener('fetch', event => {
-  // Bypass cache for login-related requests and dynamic content
+  // Skip caching for auth-related requests
   if (NO_CACHE_PATHS.some(path => event.request.url.includes(path))) {
     event.respondWith(fetch(event.request));
     return;
   }
 
+  // Network-first for HTML pages
   if (event.request.mode === 'navigate') {
     event.respondWith(
       fetch(event.request)
-        .then(response => {
-          // Update cache with fresh page
-          const responseClone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(event.request, responseClone));
-          return response;
-        })
         .catch(() => caches.match(OFFLINE_URL))
     );
-  } else {
-    event.respondWith(
-      caches.match(event.request).then(response => response || fetch(event.request))
-    );
+    return;
   }
+
+  // Cache-first for other assets
+  event.respondWith(
+    caches.match(event.request)
+      .then(cached => cached || fetch(event.request))
+  );
 });
 
-// Force refresh when new content is available
+// Handle skipWaiting messages
 self.addEventListener('message', event => {
   if (event.data === 'skipWaiting') {
     self.skipWaiting();
+    clients.matchAll().then(clients => {
+      clients.forEach(client => client.postMessage('reload'));
+    });
   }
 });

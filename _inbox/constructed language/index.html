@@ -61,16 +61,10 @@
     
   <style>
     body {
-      visibility: hidden;
       opacity: 0;
       transition: opacity 0.3s ease;
     }
     #loading {
-      text-align: center;
-      margin-top: 5rem;
-    }
-    #login-section {
-      display: none;
       text-align: center;
       margin-top: 5rem;
     }
@@ -5678,15 +5672,10 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-<!-- Spinner -->
+<!-- Combined Loading/Login UI -->
 <div id="loading">
-  <p>⏳ Checking login status...</p>
-</div>
-
-<!-- Login UI -->
-<div id="login-section">
   <h2>🔐 Login Required</h2>
-  <button onclick="loginWithGoogle()" class="md-button md-button--primary">
+  <button id="login-button" class="md-button md-button--primary">
     👉 Login with Google
   </button>
 </div>
@@ -7229,23 +7218,18 @@ A structured file system to manage and access different aspects of dental anatom
       
     
   <script>
-    // Service Worker Control
-    const handleServiceWorker = async () => {
-      if ('serviceWorker' in navigator) {
-        const reg = await navigator.serviceWorker.register('/sw.js');
-        
-        // Ensure controller is up-to-date
-        if (navigator.serviceWorker.controller) {
-          reg.update();
-          
-          // If page was loaded via SW cache, reload once
-          if (performance.navigation.type === performance.navigation.TYPE_BACK_FORWARD ||
-              performance.getEntriesByType('navigation')[0]?.type === 'back_forward') {
-            window.location.reload();
-          }
+    // Immediate visibility while loading
+    document.body.style.opacity = 1;
+
+    // Service Worker Control - Skip waiting immediately
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').then(reg => {
+        reg.update();
+        if (reg.active && !navigator.serviceWorker.controller) {
+          window.location.reload();
         }
-      }
-    };
+      });
+    }
 
     // Auth Initialization
     const initializeAuth = async () => {
@@ -7265,42 +7249,29 @@ A structured file system to manage and access different aspects of dental anatom
       const auth = getAuth(app);
       const provider = new GoogleAuthProvider();
 
-      window.loginWithGoogle = () => {
+      document.getElementById('login-button').onclick = () => {
         signInWithPopup(auth, provider)
           .catch(err => console.error("Login failed:", err));
       };
       
       window.logout = () => signOut(auth);
 
-      // UI Elements
-      const main = document.getElementById("main-content");
-      const login = document.getElementById("login-section");
-      const loading = document.getElementById("loading");
-
-      // Auth State Handler
+      // Handle auth state changes
       onAuthStateChanged(auth, (user) => {
-        loading.style.display = "none";
-        main.style.display = user ? "block" : "none";
-        login.style.display = user ? "none" : "block";
-        
-        // Smooth transition
-        document.body.style.visibility = "visible";
-        setTimeout(() => { document.body.style.opacity = 1 }, 50);
+        if (user) {
+          document.getElementById('loading').style.display = 'none';
+          document.getElementById('main-content').style.display = 'block';
+        } else {
+          // Already showing login by default
+        }
       });
     };
 
-    // Main Execution Flow
-    document.addEventListener('DOMContentLoaded', async () => {
-      try {
-        await handleServiceWorker();
-        await initializeAuth();
-      } catch (error) {
-        console.error("Initialization error:", error);
-        document.body.style.visibility = "visible";
-        document.body.style.opacity = 1;
-        document.getElementById('loading').innerHTML = 
-          '<p>⚠️ Error loading page. Please <a href="javascript:window.location.reload()">refresh</a></p>';
-      }
+    // Start auth immediately, don't wait for DOMContentLoaded
+    initializeAuth().catch(err => {
+      console.error("Auth initialization failed:", err);
+      document.getElementById('loading').innerHTML = 
+        '<p>⚠️ Error loading authentication. Please <a href="javascript:window.location.reload()">refresh</a></p>';
     });
   </script>
 
