@@ -1,79 +1,31 @@
-const CACHE_NAME = 'offline-cache-v5';
+// Minimal service worker that does NOT interfere with auth
+const CACHE_NAME = 'no-auth-cache-v1';
 const OFFLINE_URL = '/offline.html';
-const NO_CACHE_PATHS = [
-  '/auth',
-  '/login',
-  '/__/auth/',
-  'firebase',
-  'googleapis',
-  'gstatic',
-  'firebaseapp.com',
-  'accounts.google.com',
-  'securetoken.googleapis.com'
-];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then(cache => cache.addAll([
-        '/',
-        OFFLINE_URL,
-        '/css/main.css',
-        '/js/main.js'
-      ].filter(asset => 
-        !NO_CACHE_PATHS.some(path => asset.includes(path))
-      ))
-      .then(() => self.skipWaiting())
-  );
-});
-
-self.addEventListener('activate', (event) => {
-  event.waitUntil(
-    caches.keys()
-      .then(keys => Promise.all(
-        keys.map(key => key !== CACHE_NAME && caches.delete(key))
-      ))
-      .then(() => self.clients.claim())
+      .then(cache => cache.add(OFFLINE_URL))
   );
 });
 
 self.addEventListener('fetch', (event) => {
-  // Bypass SW completely for auth-related requests
-  if (NO_CACHE_PATHS.some(path => 
-    event.request.url.includes(path) ||
-    (event.request.referrer && event.request.referrer.includes(path))
-  )) {
-    event.respondWith(fetch(event.request));
-    return;
+  // Bypass ALL auth-related domains
+  if ([
+    'firebase',
+    'googleapis',
+    'gstatic',
+    'firebaseapp.com',
+    'accounts.google.com'
+  ].some(domain => event.request.url.includes(domain))) {
+    return; // Let browser handle normally
   }
 
-  // Network-first for HTML pages
+  // Only handle offline page
   if (event.request.mode === 'navigate') {
     event.respondWith(
       fetch(event.request)
-        .then(response => {
-          // Cache the page but don't intercept future requests
-          const clone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
-          return response;
-        })
         .catch(() => caches.match(OFFLINE_URL))
     );
-    return;
-  }
-
-  // Cache-first for other assets
-  event.respondWith(
-    caches.match(event.request)
-      .then(cached => cached || fetch(event.request))
-  );
-});
-
-self.addEventListener('message', (event) => {
-  if (event.data === 'skipWaiting') {
-    self.skipWaiting();
-    clients.matchAll().then(clients => {
-      clients.forEach(client => client.postMessage('reload'));
-    });
   }
 });

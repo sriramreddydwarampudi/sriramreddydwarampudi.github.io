@@ -66,18 +66,16 @@
       left: 0;
       width: 100%;
       height: 100%;
+      background: white;
+      z-index: 10000;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: rgba(255,255,255,0.9);
-      z-index: 1000;
     }
-    #auth-content {
+    .auth-box {
       text-align: center;
+      max-width: 300px;
       padding: 2rem;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
     #main-content {
       display: none;
@@ -5399,17 +5397,18 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-<!-- Auth Container (shown by default) -->
+<!-- Auth Container (shown first) -->
 <div id="auth-container">
-  <div id="auth-content">
-    <h2>🔐 Authentication Required</h2>
-    <button id="login-btn" class="md-button md-button--primary">
+  <div class="auth-box">
+    <h2>Login Required</h2>
+    <button id="login-button" class="md-button md-button--primary">
       Sign in with Google
     </button>
+    <p id="login-error" style="color: red; display: none;"></p>
   </div>
 </div>
 
-<!-- Main Content (hidden until auth) -->
+<!-- Main Content -->
 <div id="main-content">
   
                   
@@ -5506,7 +5505,7 @@
 
 
                 
-  <button id="logout-btn" class="md-button" style="position: fixed; top: 1rem; right: 1rem;">
+  <button id="logout-button" class="md-button" style="position: fixed; top: 1rem; right: 1rem;">
     Sign Out
   </button>
 </div>
@@ -5606,23 +5605,20 @@
       
     
   <script>
-    // Initialize immediately
-    (async function() {
-      // Service Worker Control
-      if ('serviceWorker' in navigator) {
-        const reg = await navigator.serviceWorker.register('/sw.js');
-        reg.update();
-        
-        // Ensure latest SW controls the page
-        if (navigator.serviceWorker.controller) {
-          navigator.serviceWorker.controller.postMessage('skipWaiting');
-        }
-      }
+    // 1. FIRST - Completely unregister any existing service workers
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(regs => {
+        regs.forEach(reg => reg.unregister());
+      });
+    }
 
-      // Load Firebase
+    // 2. Initialize Firebase Auth IMMEDIATELY
+    (async function initAuth() {
+      // Load Firebase scripts
       const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
       const { getAuth, signInWithPopup, onAuthStateChanged, GoogleAuthProvider, signOut } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
 
+      // Firebase config
       const firebaseConfig = {
         apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
         authDomain: "mkdocs-github.firebaseapp.com",
@@ -5632,22 +5628,38 @@
         appId: "1:846124399364:web:7164c56ce488ef7a11ae51"
       };
 
+      // Initialize Firebase
       const app = initializeApp(firebaseConfig);
       const auth = getAuth(app);
       const provider = new GoogleAuthProvider();
 
-      // Login handler
-      document.getElementById('login-btn').addEventListener('click', () => {
-        signInWithPopup(auth, provider)
-          .catch(err => console.error("Login error:", err));
+      // 3. Login button handler
+      document.getElementById('login-button').addEventListener('click', async () => {
+        try {
+          // Show loading state
+          document.getElementById('login-button').disabled = true;
+          
+          // Execute login in same click context
+          await signInWithPopup(auth, provider);
+        } catch (error) {
+          // Show error to user
+          const errorEl = document.getElementById('login-error');
+          errorEl.textContent = error.message;
+          errorEl.style.display = 'block';
+          document.getElementById('login-button').disabled = false;
+          
+          if (error.code === 'auth/popup-blocked') {
+            alert("Please allow popups for this site to login");
+          }
+        }
       });
 
-      // Logout handler
-      document.getElementById('logout-btn').addEventListener('click', () => {
+      // 4. Logout handler
+      document.getElementById('logout-button').addEventListener('click', () => {
         signOut(auth);
       });
 
-      // Auth state listener
+      // 5. Auth state listener
       onAuthStateChanged(auth, (user) => {
         if (user) {
           document.getElementById('auth-container').style.display = 'none';
@@ -5657,11 +5669,18 @@
           document.getElementById('main-content').style.display = 'none';
         }
       });
-    })().catch(err => {
-      console.error("Initialization failed:", err);
-      document.getElementById('auth-content').innerHTML = `
-        <h2>⚠️ Error Loading</h2>
-        <p>Please <a href="javascript:window.location.reload()">refresh</a> the page</p>
+
+      // 6. Only register service worker AFTER auth is ready
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js');
+      }
+    })().catch(error => {
+      console.error("Auth initialization failed:", error);
+      document.getElementById('auth-container').innerHTML = `
+        <div class="auth-box">
+          <h2>Error Loading Authentication</h2>
+          <p>Please <a href="javascript:location.reload()">refresh the page</a></p>
+        </div>
       `;
     });
   </script>
