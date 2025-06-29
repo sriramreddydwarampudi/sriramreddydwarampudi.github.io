@@ -59,6 +59,24 @@
     
     
     
+  <style>
+    body {
+      visibility: hidden;
+    }
+    #loading {
+      text-align: center;
+      margin-top: 5rem;
+    }
+    #login-section {
+      display: none;
+      text-align: center;
+      margin-top: 5rem;
+    }
+    #main-content {
+      display: none;
+    }
+  </style>
+
    <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
@@ -4363,14 +4381,19 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
+<!-- Spinner -->
+<div id="loading">
+  <p>⏳ Checking login status...</p>
+</div>
+
 <!-- Login UI -->
-<div id="login-section" style="display:none; text-align:center; margin-top: 5rem;">
+<div id="login-section">
   <h2>🔐 Login Required</h2>
-  <button onclick="loginWithGoogle()" style="font-size: 1rem; padding: 0.5rem 1rem;">Login with Google</button>
+  <button onclick="loginWithGoogle()" style="font-size: 1rem; padding: 0.5rem 1rem;">👉 Click here to Login with Google</button>
 </div>
 
 <!-- Main MkDocs content -->
-<div id="main-content" style="display:none;">
+<div id="main-content">
   
                   
 
@@ -4508,49 +4531,60 @@ The first girl who I ever say my most earlier wish,</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-
+  
       <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
-<script type="module">
-  window.addEventListener("DOMContentLoaded", async () => {
-    const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
-    const { getAuth, signInWithPopup, onAuthStateChanged, GoogleAuthProvider, signOut } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
+  <script type="module">
+    const waitForDOM = () =>
+      new Promise((resolve) => {
+        if (document.readyState === 'complete') {
+          resolve();
+        } else {
+          window.addEventListener('load', () => resolve(), { once: true });
+        }
+      });
 
-    const firebaseConfig = {
-      apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
-      authDomain: "mkdocs-github.firebaseapp.com",
-      projectId: "mkdocs-github",
-      storageBucket: "mkdocs-github.firebasestorage.app",
-      messagingSenderId: "846124399364",
-      appId: "1:846124399364:web:7164c56ce488ef7a11ae51",
-      measurementId: "G-P0BK1T09M1"
+    const startAuth = async () => {
+      const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
+      const { getAuth, signInWithPopup, onAuthStateChanged, GoogleAuthProvider, signOut } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
+        authDomain: "mkdocs-github.firebaseapp.com",
+        projectId: "mkdocs-github",
+        storageBucket: "mkdocs-github.firebasestorage.app",
+        messagingSenderId: "846124399364",
+        appId: "1:846124399364:web:7164c56ce488ef7a11ae51",
+        measurementId: "G-P0BK1T09M1"
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+      const provider = new GoogleAuthProvider();
+
+      window.loginWithGoogle = () => signInWithPopup(auth, provider).catch(err => alert("Login failed: " + err.message));
+      window.logout = () => signOut(auth);
+
+      const main = document.getElementById("main-content");
+      const login = document.getElementById("login-section");
+      const loading = document.getElementById("loading");
+
+      onAuthStateChanged(auth, (user) => {
+        loading.style.display = "none";
+        if (user) {
+          login.style.display = "none";
+          main.style.display = "block";
+        } else {
+          main.style.display = "none";
+          login.style.display = "block";
+        }
+        document.body.style.visibility = "visible";
+      });
     };
 
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
-    const provider = new GoogleAuthProvider();
-
-    window.loginWithGoogle = () => signInWithPopup(auth, provider).catch((err) => {
-      alert("Login failed: " + err.message);
-    });
-
-    window.logout = () => signOut(auth);
-
-    const main = document.getElementById("main-content");
-    const login = document.getElementById("login-section");
-
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        login.style.display = "none";
-        main.style.display = "block";
-      } else {
-        main.style.display = "none";
-        login.style.display = "block";
-      }
-    });
-  });
-</script>
+    waitForDOM().then(startAuth);
+  </script>
 
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
