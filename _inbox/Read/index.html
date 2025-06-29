@@ -59,29 +59,6 @@
     
     
     
-  <style>
-    #auth-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: white;
-      z-index: 10000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .auth-box {
-      text-align: center;
-      max-width: 300px;
-      padding: 2rem;
-    }
-    #main-content {
-      display: none;
-    }
-  </style>
-
    <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
@@ -4718,19 +4695,14 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-<!-- Auth Container (shown first) -->
-<div id="auth-container">
-  <div class="auth-box">
-    <h2>Login Required</h2>
-    <button id="login-button" class="md-button md-button--primary">
-      Sign in with Google
-    </button>
-    <p id="login-error" style="color: red; display: none;"></p>
-  </div>
+<!-- Login UI -->
+<div id="login-section" style="display:none; text-align:center; margin-top: 5rem;">
+  <h2>🔐 Login Required</h2>
+  <button onclick="loginWithGoogle()" style="font-size: 1rem; padding: 0.5rem 1rem;">Login with Google</button>
 </div>
 
-<!-- Main Content -->
-<div id="main-content">
+<!-- Main MkDocs content -->
+<div id="main-content" style="display:none;">
   
                   
 
@@ -4954,9 +4926,7 @@
 
 
                 
-  <button id="logout-button" class="md-button" style="position: fixed; top: 1rem; right: 1rem;">
-    Sign Out
-  </button>
+  <button onclick="logout()" style="position: fixed; top: 1rem; right: 1rem;">Logout</button>
 </div>
 
               </article>
@@ -5049,90 +5019,49 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-  
+
       <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
-  <script>
-    // 1. FIRST - Completely unregister any existing service workers
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations().then(regs => {
-        regs.forEach(reg => reg.unregister());
-      });
-    }
+<script type="module">
+  window.addEventListener("DOMContentLoaded", async () => {
+    const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
+    const { getAuth, signInWithPopup, onAuthStateChanged, GoogleAuthProvider, signOut } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
 
-    // 2. Initialize Firebase Auth IMMEDIATELY
-    (async function initAuth() {
-      // Load Firebase scripts
-      const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
-      const { getAuth, signInWithPopup, onAuthStateChanged, GoogleAuthProvider, signOut } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
+    const firebaseConfig = {
+      apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
+      authDomain: "mkdocs-github.firebaseapp.com",
+      projectId: "mkdocs-github",
+      storageBucket: "mkdocs-github.firebasestorage.app",
+      messagingSenderId: "846124399364",
+      appId: "1:846124399364:web:7164c56ce488ef7a11ae51",
+      measurementId: "G-P0BK1T09M1"
+    };
 
-      // Firebase config
-      const firebaseConfig = {
-        apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
-        authDomain: "mkdocs-github.firebaseapp.com",
-        projectId: "mkdocs-github",
-        storageBucket: "mkdocs-github.appspot.com",
-        messagingSenderId: "846124399364",
-        appId: "1:846124399364:web:7164c56ce488ef7a11ae51"
-      };
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
 
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const auth = getAuth(app);
-      const provider = new GoogleAuthProvider();
-
-      // 3. Login button handler
-      document.getElementById('login-button').addEventListener('click', async () => {
-        try {
-          // Show loading state
-          document.getElementById('login-button').disabled = true;
-          
-          // Execute login in same click context
-          await signInWithPopup(auth, provider);
-        } catch (error) {
-          // Show error to user
-          const errorEl = document.getElementById('login-error');
-          errorEl.textContent = error.message;
-          errorEl.style.display = 'block';
-          document.getElementById('login-button').disabled = false;
-          
-          if (error.code === 'auth/popup-blocked') {
-            alert("Please allow popups for this site to login");
-          }
-        }
-      });
-
-      // 4. Logout handler
-      document.getElementById('logout-button').addEventListener('click', () => {
-        signOut(auth);
-      });
-
-      // 5. Auth state listener
-      onAuthStateChanged(auth, (user) => {
-        if (user) {
-          document.getElementById('auth-container').style.display = 'none';
-          document.getElementById('main-content').style.display = 'block';
-        } else {
-          document.getElementById('auth-container').style.display = 'flex';
-          document.getElementById('main-content').style.display = 'none';
-        }
-      });
-
-      // 6. Only register service worker AFTER auth is ready
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js');
-      }
-    })().catch(error => {
-      console.error("Auth initialization failed:", error);
-      document.getElementById('auth-container').innerHTML = `
-        <div class="auth-box">
-          <h2>Error Loading Authentication</h2>
-          <p>Please <a href="javascript:location.reload()">refresh the page</a></p>
-        </div>
-      `;
+    window.loginWithGoogle = () => signInWithPopup(auth, provider).catch((err) => {
+      alert("Login failed: " + err.message);
     });
-  </script>
+
+    window.logout = () => signOut(auth);
+
+    const main = document.getElementById("main-content");
+    const login = document.getElementById("login-section");
+
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        login.style.display = "none";
+        main.style.display = "block";
+      } else {
+        main.style.display = "none";
+        login.style.display = "block";
+      }
+    });
+  });
+</script>
 
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
