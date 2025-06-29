@@ -60,20 +60,30 @@
     
     
   <style>
-    body {
-      visibility: hidden;
-    }
-    #loading {
-      text-align: center;
-      margin-top: 5rem;
-    }
-    #login-section {
+    #login-popup {
       display: none;
-      text-align: center;
-      margin-top: 5rem;
+      position: fixed;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      border: 2px solid #666;
+      border-radius: 10px;
+      padding: 2rem;
+      z-index: 1000;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      max-width: 90%;
     }
-    #main-content {
+    #login-popup h2 {
+      margin-top: 0;
+    }
+    #login-overlay {
       display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0,0,0,0.5);
+      z-index: 999;
     }
   </style>
 
@@ -3352,19 +3362,6 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-<!-- Spinner -->
-<div id="loading">
-  <p>⏳ Checking login status...</p>
-</div>
-
-<!-- Login UI -->
-<div id="login-section">
-  <h2>🔐 Login Required</h2>
-  <button onclick="loginWithGoogle()" style="font-size: 1rem; padding: 0.5rem 1rem;">👉 Click here to Login with Google</button>
-</div>
-
-<!-- Main MkDocs content -->
-<div id="main-content">
   
                   
 
@@ -3440,8 +3437,18 @@
 
 
                 
-  <button onclick="logout()" style="position: fixed; top: 1rem; right: 1rem;">Logout</button>
-</div>
+
+  <!-- Login Overlay + Popup -->
+  <div id="login-overlay"></div>
+  <div id="login-popup">
+    <h2>🔐 Please log in to continue reading</h2>
+    <p>This site requires login to access all content.</p>
+    <button onclick="loginWithGoogle()" style="padding: 0.5rem 1rem; font-size: 1rem;">
+      👉 Login with Google
+    </button>
+    <br/><br/>
+    <button onclick="closeLoginPopup()" style="font-size: 0.8rem;">✖ Close</button>
+  </div>
 
               </article>
             </div>
@@ -3538,16 +3545,7 @@
       
     
   <script type="module">
-    const waitForDOM = () =>
-      new Promise((resolve) => {
-        if (document.readyState === 'complete') {
-          resolve();
-        } else {
-          window.addEventListener('load', () => resolve(), { once: true });
-        }
-      });
-
-    const startAuth = async () => {
+    window.addEventListener("DOMContentLoaded", async () => {
       const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
       const { getAuth, signInWithPopup, onAuthStateChanged, GoogleAuthProvider, signOut } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
 
@@ -3565,27 +3563,34 @@
       const auth = getAuth(app);
       const provider = new GoogleAuthProvider();
 
-      window.loginWithGoogle = () => signInWithPopup(auth, provider).catch(err => alert("Login failed: " + err.message));
-      window.logout = () => signOut(auth);
+      const popup = document.getElementById("login-popup");
+      const overlay = document.getElementById("login-overlay");
 
-      const main = document.getElementById("main-content");
-      const login = document.getElementById("login-section");
-      const loading = document.getElementById("loading");
+      window.loginWithGoogle = () =>
+        signInWithPopup(auth, provider).then(() => {
+          popup.style.display = "none";
+          overlay.style.display = "none";
+        });
+
+      window.closeLoginPopup = () => {
+        popup.style.display = "none";
+        overlay.style.display = "none";
+      };
+
+      let isLoggedIn = false;
 
       onAuthStateChanged(auth, (user) => {
-        loading.style.display = "none";
-        if (user) {
-          login.style.display = "none";
-          main.style.display = "block";
-        } else {
-          main.style.display = "none";
-          login.style.display = "block";
-        }
-        document.body.style.visibility = "visible";
+        isLoggedIn = !!user;
       });
-    };
 
-    waitForDOM().then(startAuth);
+      // After 5 seconds, show popup if not logged in
+      setTimeout(() => {
+        if (!isLoggedIn) {
+          popup.style.display = "block";
+          overlay.style.display = "block";
+        }
+      }, 5000);
+    });
   </script>
 
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

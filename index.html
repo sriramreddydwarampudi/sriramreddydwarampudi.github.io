@@ -1836,16 +1836,7 @@
       
     
   <script type="module">
-    const waitForDOM = () =>
-      new Promise((resolve) => {
-        if (document.readyState === 'complete') {
-          resolve();
-        } else {
-          window.addEventListener('load', () => resolve(), { once: true });
-        }
-      });
-
-    const startAuth = async () => {
+    window.addEventListener("DOMContentLoaded", async () => {
       const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
       const { getAuth, signInWithPopup, onAuthStateChanged, GoogleAuthProvider, signOut } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
 
@@ -1863,27 +1854,34 @@
       const auth = getAuth(app);
       const provider = new GoogleAuthProvider();
 
-      window.loginWithGoogle = () => signInWithPopup(auth, provider).catch(err => alert("Login failed: " + err.message));
-      window.logout = () => signOut(auth);
+      const popup = document.getElementById("login-popup");
+      const overlay = document.getElementById("login-overlay");
 
-      const main = document.getElementById("main-content");
-      const login = document.getElementById("login-section");
-      const loading = document.getElementById("loading");
+      window.loginWithGoogle = () =>
+        signInWithPopup(auth, provider).then(() => {
+          popup.style.display = "none";
+          overlay.style.display = "none";
+        });
+
+      window.closeLoginPopup = () => {
+        popup.style.display = "none";
+        overlay.style.display = "none";
+      };
+
+      let isLoggedIn = false;
 
       onAuthStateChanged(auth, (user) => {
-        loading.style.display = "none";
-        if (user) {
-          login.style.display = "none";
-          main.style.display = "block";
-        } else {
-          main.style.display = "none";
-          login.style.display = "block";
-        }
-        document.body.style.visibility = "visible";
+        isLoggedIn = !!user;
       });
-    };
 
-    waitForDOM().then(startAuth);
+      // After 5 seconds, show popup if not logged in
+      setTimeout(() => {
+        if (!isLoggedIn) {
+          popup.style.display = "block";
+          overlay.style.display = "block";
+        }
+      }, 5000);
+    });
   </script>
 
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
