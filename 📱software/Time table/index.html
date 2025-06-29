@@ -60,30 +60,22 @@
     
     
   <style>
-    #login-popup {
-      display: none;
-      position: fixed;
-      top: 25%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: white;
-      border: 2px solid #666;
-      border-radius: 10px;
-      padding: 2rem;
-      z-index: 1000;
-      box-shadow: 0 0 20px rgba(0,0,0,0.2);
-      max-width: 90%;
+    body {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease;
     }
-    #login-popup h2 {
-      margin-top: 0;
+    #loading {
+      text-align: center;
+      margin-top: 5rem;
     }
-    #login-overlay {
+    #login-section {
       display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw; height: 100vh;
-      background: rgba(0,0,0,0.5);
-      z-index: 999;
+      text-align: center;
+      margin-top: 5rem;
+    }
+    #main-content {
+      display: none;
     }
   </style>
 
@@ -5652,6 +5644,21 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
+<!-- Spinner -->
+<div id="loading">
+  <p>⏳ Checking login status...</p>
+</div>
+
+<!-- Login UI -->
+<div id="login-section">
+  <h2>🔐 Login Required</h2>
+  <button onclick="loginWithGoogle()" class="md-button md-button--primary">
+    👉 Login with Google
+  </button>
+</div>
+
+<!-- Main MkDocs content -->
+<div id="main-content">
   
                   
 
@@ -5806,18 +5813,10 @@
 
 
                 
-
-  <!-- Login Overlay + Popup -->
-  <div id="login-overlay"></div>
-  <div id="login-popup">
-    <h2>🔐 Please log in to continue reading</h2>
-    <p>This site requires login to access all content.</p>
-    <button onclick="loginWithGoogle()" style="padding: 0.5rem 1rem; font-size: 1rem;">
-      👉 Login with Google
-    </button>
-    <br/><br/>
-    <button onclick="closeLoginPopup()" style="font-size: 0.8rem;">✖ Close</button>
-  </div>
+  <button onclick="logout()" class="md-button" style="position: fixed; top: 1rem; right: 1rem;">
+    Logout
+  </button>
+</div>
 
               </article>
             </div>
@@ -5913,8 +5912,27 @@
       <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
-  <script type="module">
-    window.addEventListener("DOMContentLoaded", async () => {
+  <script>
+    // Service Worker Control
+    const handleServiceWorker = async () => {
+      if ('serviceWorker' in navigator) {
+        const reg = await navigator.serviceWorker.register('/sw.js');
+        
+        // Ensure controller is up-to-date
+        if (navigator.serviceWorker.controller) {
+          reg.update();
+          
+          // If page was loaded via SW cache, reload once
+          if (performance.navigation.type === performance.navigation.TYPE_BACK_FORWARD ||
+              performance.getEntriesByType('navigation')[0]?.type === 'back_forward') {
+            window.location.reload();
+          }
+        }
+      }
+    };
+
+    // Auth Initialization
+    const initializeAuth = async () => {
       const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
       const { getAuth, signInWithPopup, onAuthStateChanged, GoogleAuthProvider, signOut } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
 
@@ -5922,43 +5940,51 @@
         apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
         authDomain: "mkdocs-github.firebaseapp.com",
         projectId: "mkdocs-github",
-        storageBucket: "mkdocs-github.firebasestorage.app",
+        storageBucket: "mkdocs-github.appspot.com",
         messagingSenderId: "846124399364",
-        appId: "1:846124399364:web:7164c56ce488ef7a11ae51",
-        measurementId: "G-P0BK1T09M1"
+        appId: "1:846124399364:web:7164c56ce488ef7a11ae51"
       };
 
       const app = initializeApp(firebaseConfig);
       const auth = getAuth(app);
       const provider = new GoogleAuthProvider();
 
-      const popup = document.getElementById("login-popup");
-      const overlay = document.getElementById("login-overlay");
-
-      window.loginWithGoogle = () =>
-        signInWithPopup(auth, provider).then(() => {
-          popup.style.display = "none";
-          overlay.style.display = "none";
-        });
-
-      window.closeLoginPopup = () => {
-        popup.style.display = "none";
-        overlay.style.display = "none";
+      window.loginWithGoogle = () => {
+        signInWithPopup(auth, provider)
+          .catch(err => console.error("Login failed:", err));
       };
+      
+      window.logout = () => signOut(auth);
 
-      let isLoggedIn = false;
+      // UI Elements
+      const main = document.getElementById("main-content");
+      const login = document.getElementById("login-section");
+      const loading = document.getElementById("loading");
 
+      // Auth State Handler
       onAuthStateChanged(auth, (user) => {
-        isLoggedIn = !!user;
+        loading.style.display = "none";
+        main.style.display = user ? "block" : "none";
+        login.style.display = user ? "none" : "block";
+        
+        // Smooth transition
+        document.body.style.visibility = "visible";
+        setTimeout(() => { document.body.style.opacity = 1 }, 50);
       });
+    };
 
-      // After 5 seconds, show popup if not logged in
-      setTimeout(() => {
-        if (!isLoggedIn) {
-          popup.style.display = "block";
-          overlay.style.display = "block";
-        }
-      }, 5000);
+    // Main Execution Flow
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        await handleServiceWorker();
+        await initializeAuth();
+      } catch (error) {
+        console.error("Initialization error:", error);
+        document.body.style.visibility = "visible";
+        document.body.style.opacity = 1;
+        document.getElementById('loading').innerHTML = 
+          '<p>⚠️ Error loading page. Please <a href="javascript:window.location.reload()">refresh</a></p>';
+      }
     });
   </script>
 
