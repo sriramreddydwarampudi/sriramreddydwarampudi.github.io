@@ -59,23 +59,10 @@
     
     
     
-  <style>
-    #auth-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: white;
-      z-index: 10000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    #main-content {
-      display: none;
-    }
-  </style>
+  
+  <!-- preload Firebase (optional, improves speed) -->
+  <link rel="preload" href="https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js" as="script">
+  <link rel="preload" href="https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js" as="script">
 
    <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
@@ -5392,20 +5379,6 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-<!-- Auth Overlay -->
-<div id="auth-overlay">
-  <div style="text-align: center">
-    <h2>🔒 Please Sign In</h2>
-    <button id="login-btn" class="md-button md-button--primary">
-      Sign in with Google
-    </button>
-    <p id="login-error" style="color: red; display: none;"></p>
-  </div>
-</div>
-
-<!-- Main Content -->
-<div id="main-content">
-  
                   
 
   
@@ -5457,11 +5430,6 @@ Record</p>
 
 
                 
-  <button id="logout-btn" class="md-button" style="position: fixed; top: 1rem; right: 1rem;">
-    Sign Out
-  </button>
-</div>
-
               </article>
             </div>
           
@@ -5552,106 +5520,9 @@ Record</p>
     <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-  
       <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
-  <script>
-    // 1. Wait for DOM to be fully ready
-    document.addEventListener('DOMContentLoaded', async () => {
-      // 2. Get DOM elements first
-      const authOverlay = document.getElementById('auth-overlay');
-      const mainContent = document.getElementById('main-content');
-      const loginBtn = document.getElementById('login-btn');
-      const logoutBtn = document.getElementById('logout-btn');
-      const loginError = document.getElementById('login-error');
-
-      // 3. Verify all elements exist
-      if (!authOverlay || !mainContent || !loginBtn || !logoutBtn || !loginError) {
-        console.error('Critical DOM elements missing');
-        return;
-      }
-
-      // 4. Unregister service workers
-      if ('serviceWorker' in navigator) {
-        try {
-          const registrations = await navigator.serviceWorker.getRegistrations();
-          await Promise.all(registrations.map(r => r.unregister()));
-          const keys = await caches.keys();
-          await Promise.all(keys.map(k => caches.delete(k)));
-        } catch (swError) {
-          console.warn('Service worker cleanup failed:', swError);
-        }
-      }
-
-      // 5. Load Firebase
-      try {
-        const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
-        const { getAuth, signInWithPopup, onAuthStateChanged, GoogleAuthProvider, signOut } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
-
-        const firebaseConfig = {
-          apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
-          authDomain: "mkdocs-github.firebaseapp.com",
-          projectId: "mkdocs-github",
-          storageBucket: "mkdocs-github.appspot.com",
-          messagingSenderId: "846124399364",
-          appId: "1:846124399364:web:7164c56ce488ef7a11ae51"
-        };
-
-        const app = initializeApp(firebaseConfig);
-        const auth = getAuth(app);
-        const provider = new GoogleAuthProvider();
-
-        // 6. Login handler
-        loginBtn.onclick = async () => {
-          try {
-            loginBtn.disabled = true;
-            loginBtn.textContent = 'Loading...';
-            await signInWithPopup(auth, provider);
-          } catch (error) {
-            console.error("Login error:", error);
-            loginError.textContent = error.message;
-            loginError.style.display = 'block';
-            loginBtn.disabled = false;
-            loginBtn.textContent = 'Sign in with Google';
-            
-            if (error.code === 'auth/popup-blocked') {
-              alert("Please allow popups for this site");
-            }
-          }
-        };
-
-        // 7. Logout handler
-        logoutBtn.onclick = () => signOut(auth);
-
-        // 8. Auth state handler
-        onAuthStateChanged(auth, (user) => {
-          authOverlay.style.display = user ? 'none' : 'flex';
-          mainContent.style.display = user ? 'block' : 'none';
-        });
-
-        // 9. Register service worker last
-        if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('/sw.js', {
-            updateViaCache: 'none'
-          });
-        }
-
-      } catch (firebaseError) {
-        console.error("Firebase init failed:", firebaseError);
-        authOverlay.innerHTML = `
-          <div style="text-align: center">
-            <h2>⚠️ Initialization Error</h2>
-            <p>Please refresh the page</p>
-            <button onclick="window.location.reload()" class="md-button">
-              Reload Page
-            </button>
-          </div>
-        `;
-      }
-    });
-  </script>
-
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
