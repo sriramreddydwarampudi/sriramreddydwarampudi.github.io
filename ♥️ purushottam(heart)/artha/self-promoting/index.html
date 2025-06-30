@@ -3819,7 +3819,35 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-<div id="page-locked" style="display:none;">
+<!-- Login UI (Shown if not logged in) -->
+<div id="login-section" style="
+  display: none;
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  z-index: 9999;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+">
+  <h2 style="font-size: 2rem; margin-bottom: 1rem;">🔐 Login Required</h2>
+  <button onclick="loginWithGoogle()" style="
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  ">Login with Google</button>
+</div>
+
+<!-- Main Content (Hidden until logged in) -->
+<div id="main-content" style="display: none;">
   
                   
 
@@ -3895,30 +3923,18 @@
 
 
                 
-</div>
-
-<!-- 🔒 Transparent login overlay -->
-<div id="auth-overlay" style="
-  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.4);  /* darker transparent */
-  backdrop-filter: blur(8px);
-  z-index: 9999;
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  font-family: sans-serif; text-align: center;
-  color: white;
-">
-  <h2 style="font-size: 24px;">🔒 Click below to login</h2>
-  <button id="login-btn" style="
-    margin-top: 1rem;
-    padding: 10px 24px;
-    font-size: 16px;
-    background: #1a73e8;
+  <button onclick="logout()" style="
+    position: fixed;
+    top: 1rem; right: 1rem;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    background: #e53935;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 4px;
+    z-index: 9999;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  ">Login with Google</button>
+  ">Logout</button>
 </div>
 
               </article>
@@ -4011,9 +4027,50 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
+
       <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
+<script type="module">
+  window.addEventListener("DOMContentLoaded", async () => {
+    const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
+    const { getAuth, signInWithPopup, onAuthStateChanged, GoogleAuthProvider, signOut } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
+      authDomain: "mkdocs-github.firebaseapp.com",
+      projectId: "mkdocs-github",
+      storageBucket: "mkdocs-github.appspot.com",
+      messagingSenderId: "846124399364",
+      appId: "1:846124399364:web:7164c56ce488ef7a11ae51"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+
+    window.loginWithGoogle = () => signInWithPopup(auth, provider).catch(err => {
+      alert("Login failed: " + err.message);
+    });
+
+    window.logout = () => signOut(auth);
+
+    const main = document.getElementById("main-content");
+    const login = document.getElementById("login-section");
+
+    onAuthStateChanged(auth, user => {
+      if (user) {
+        login.style.display = "none";
+        main.style.display = "block";
+      } else {
+        main.style.display = "flex"; // login fullscreen
+        main.style.opacity = "0"; // hide content
+        login.style.display = "flex";
+      }
+    });
+  });
+</script>
+
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
