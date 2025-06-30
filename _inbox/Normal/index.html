@@ -4414,15 +4414,27 @@ c.Lower posterior teeth are inclined lingually, progressively more from canine t
 
                 
 </div>
+
+<!-- 🔒 Transparent login overlay -->
 <div id="auth-overlay" style="
   position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-  background: white; z-index: 9999;
+  background: rgba(255, 255, 255, 0.95); z-index: 9999;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   font-family: sans-serif; text-align: center;
+  backdrop-filter: blur(4px);
 ">
-  <h2>🔒 Locked</h2>
-  <p>You must log in to view this content.</p>
-  <button id="login-btn" style="padding: 10px 20px; font-size: 16px;">Login with Google</button>
+  <h2 style="font-size: 24px;">🔒 Click below to login</h2>
+  <button id="login-btn" style="
+    margin-top: 1rem;
+    padding: 10px 24px;
+    font-size: 16px;
+    background: #3367d6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  ">Login with Google</button>
 </div>
 
               </article>
