@@ -1838,7 +1838,15 @@
 <script type="module">
   window.addEventListener("DOMContentLoaded", async () => {
     const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
-    const { getAuth, signInWithPopup, onAuthStateChanged, GoogleAuthProvider, signOut } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
+    const {
+      getAuth,
+      setPersistence,
+      browserLocalPersistence,
+      signInWithPopup,
+      onAuthStateChanged,
+      GoogleAuthProvider,
+      signOut
+    } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
 
     const firebaseConfig = {
       apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
@@ -1853,9 +1861,14 @@
     const auth = getAuth(app);
     const provider = new GoogleAuthProvider();
 
-    window.loginWithGoogle = () => signInWithPopup(auth, provider).catch(err => {
-      alert("Login failed: " + err.message);
-    });
+    // Ensure login persists across reloads
+    await setPersistence(auth, browserLocalPersistence);
+
+    window.loginWithGoogle = () => {
+      signInWithPopup(auth, provider).catch(err => {
+        alert("Login failed: " + err.message);
+      });
+    };
 
     window.logout = () => signOut(auth);
 
@@ -1866,10 +1879,11 @@
       if (user) {
         login.style.display = "none";
         main.style.display = "block";
+        console.log("✅ Logged in as:", user.email);
       } else {
-        main.style.display = "flex"; // login fullscreen
-        main.style.opacity = "0"; // hide content
-        login.style.display = "flex";
+        main.style.display = "none";
+        login.style.display = "block";
+        console.log("🔒 Not signed in.");
       }
     });
   });

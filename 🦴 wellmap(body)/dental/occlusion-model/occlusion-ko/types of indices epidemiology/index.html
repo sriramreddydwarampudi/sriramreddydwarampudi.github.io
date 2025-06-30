@@ -8121,21 +8121,9 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-<!-- Login UI (Shown if not logged in) -->
-<div id="login-section" style="
-  display: none;
-  position: fixed; top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(6px);
-  color: white;
-  font-family: sans-serif;
-  text-align: center;
-  z-index: 9999;
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-">
-  <h2 style="font-size: 2rem; margin-bottom: 1rem;">🔐 Login Required</h2>
+<!-- Login UI -->
+<div id="login-section" style="display: none; text-align: center; margin-top: 5rem;">
+  <h2>🔐 Login Required</h2>
   <button onclick="loginWithGoogle()" style="
     font-size: 1rem;
     padding: 0.6rem 1.2rem;
@@ -8144,12 +8132,11 @@
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   ">Login with Google</button>
 </div>
 
-<!-- Main Content (Hidden until logged in) -->
-<div id="main-content" style="display: none;">
+<!-- Main Content -->
+<div id="main-content" style="display: none; max-width: 900px; margin: 2rem auto;">
   
                   
 
@@ -8329,7 +8316,6 @@ f) Severe skeletal discrepancies</p>
     color: white;
     border: none;
     border-radius: 4px;
-    z-index: 9999;
     cursor: pointer;
   ">Logout</button>
 </div>
@@ -8431,7 +8417,15 @@ f) Severe skeletal discrepancies</p>
 <script type="module">
   window.addEventListener("DOMContentLoaded", async () => {
     const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
-    const { getAuth, signInWithPopup, onAuthStateChanged, GoogleAuthProvider, signOut } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
+    const {
+      getAuth,
+      setPersistence,
+      browserLocalPersistence,
+      signInWithPopup,
+      onAuthStateChanged,
+      GoogleAuthProvider,
+      signOut
+    } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
 
     const firebaseConfig = {
       apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
@@ -8446,9 +8440,14 @@ f) Severe skeletal discrepancies</p>
     const auth = getAuth(app);
     const provider = new GoogleAuthProvider();
 
-    window.loginWithGoogle = () => signInWithPopup(auth, provider).catch(err => {
-      alert("Login failed: " + err.message);
-    });
+    // Ensure login persists across reloads
+    await setPersistence(auth, browserLocalPersistence);
+
+    window.loginWithGoogle = () => {
+      signInWithPopup(auth, provider).catch(err => {
+        alert("Login failed: " + err.message);
+      });
+    };
 
     window.logout = () => signOut(auth);
 
@@ -8459,10 +8458,11 @@ f) Severe skeletal discrepancies</p>
       if (user) {
         login.style.display = "none";
         main.style.display = "block";
+        console.log("✅ Logged in as:", user.email);
       } else {
-        main.style.display = "flex"; // login fullscreen
-        main.style.opacity = "0"; // hide content
-        login.style.display = "flex";
+        main.style.display = "none";
+        login.style.display = "block";
+        console.log("🔒 Not signed in.");
       }
     });
   });
