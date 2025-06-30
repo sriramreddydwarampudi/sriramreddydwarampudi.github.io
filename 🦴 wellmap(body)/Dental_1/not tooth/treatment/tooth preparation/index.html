@@ -8031,7 +8031,6 @@
                 
 <!-- Login UI (Shown if not logged in) -->
 <div id="login-section" style="
-  display: none;
   position: fixed; top: 0; left: 0;
   width: 100%; height: 100%;
   background: rgba(0,0,0,0.6);
@@ -8216,7 +8215,7 @@ Freedom of Displacement • Limiting the freedom of displacement from torquing a
 <script type="module">
   window.addEventListener("DOMContentLoaded", async () => {
     const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
-    const { getAuth, signInWithPopup, onAuthStateChanged, GoogleAuthProvider, signOut } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
+    const { getAuth, signInWithRedirect, getRedirectResult, onAuthStateChanged, GoogleAuthProvider, signOut } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
 
     const firebaseConfig = {
       apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
@@ -8231,9 +8230,16 @@ Freedom of Displacement • Limiting the freedom of displacement from torquing a
     const auth = getAuth(app);
     const provider = new GoogleAuthProvider();
 
-    window.loginWithGoogle = () => signInWithPopup(auth, provider).catch(err => {
-      alert("Login failed: " + err.message);
+    // Try to handle redirect login result
+    getRedirectResult(auth).catch(err => {
+      console.error("Redirect error:", err);
     });
+
+    window.loginWithGoogle = () => {
+      signInWithRedirect(auth, provider).catch(err => {
+        alert("Login failed: " + err.message);
+      });
+    };
 
     window.logout = () => signOut(auth);
 
@@ -8245,8 +8251,7 @@ Freedom of Displacement • Limiting the freedom of displacement from torquing a
         login.style.display = "none";
         main.style.display = "block";
       } else {
-        main.style.display = "flex"; // login fullscreen
-        main.style.opacity = "0"; // hide content
+        main.style.display = "none";
         login.style.display = "flex";
       }
     });
