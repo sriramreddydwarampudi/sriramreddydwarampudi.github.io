@@ -5374,9 +5374,9 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-<!-- Login UI (Shown if not logged in) -->
-
-  <h2 style="font-size: 2rem; margin-bottom: 1rem;">🔐 Login Required</h2>
+<!-- Login Section (no overlay, minimal style) -->
+<div id="login-section" style="display: none; text-align: center; margin-top: 5rem;">
+  <h2>🔐 Login Required</h2>
   <button onclick="loginWithGoogle()" style="
     font-size: 1rem;
     padding: 0.6rem 1.2rem;
@@ -5385,12 +5385,11 @@
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   ">Login with Google</button>
 </div>
 
-<!-- Main Content (Hidden until logged in) -->
-<div id="main-content" style="display: none;">
+<!-- Main Content (centered and smaller width) -->
+<div id="main-content" style="display: none; max-width: 900px; margin: 2rem auto;">
   
                   
 
@@ -5498,14 +5497,14 @@ cd ~/storage/downloads      # Shortcut to Downloads</p>
                 
   <button onclick="logout()" style="
     position: fixed;
-    top: 1rem; right: 1rem;
+    top: 1rem;
+    right: 1rem;
     padding: 0.4rem 1rem;
     font-size: 0.9rem;
     background: #e53935;
     color: white;
     border: none;
     border-radius: 4px;
-    z-index: 9999;
     cursor: pointer;
   ">Logout</button>
 </div>
@@ -5636,9 +5635,8 @@ cd ~/storage/downloads      # Shortcut to Downloads</p>
         login.style.display = "none";
         main.style.display = "block";
       } else {
-        main.style.display = "flex"; // login fullscreen
-        main.style.opacity = "0"; // hide content
-        login.style.display = "flex";
+        main.style.display = "none";
+        login.style.display = "block";
       }
     });
   });
