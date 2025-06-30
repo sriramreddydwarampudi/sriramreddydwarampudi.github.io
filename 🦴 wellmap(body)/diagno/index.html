@@ -7609,7 +7609,8 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-
+<div id="page-locked" style="display:none;">
+  
                   
 
   
@@ -8999,8 +9000,16 @@ Allergy 769</p>
 
 
                 
-<div style="position:fixed;bottom:10px;left:10px;background:#eee;padding:4px;z-index:9999;">
-✅ main.html loaded
+</div>
+<div id="auth-overlay" style="
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: white; z-index: 9999;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  font-family: sans-serif; text-align: center;
+">
+  <h2>🔒 Locked</h2>
+  <p>You must log in to view this content.</p>
+  <button id="login-btn" style="padding: 10px 20px; font-size: 16px;">Login with Google</button>
 </div>
 
               </article>
