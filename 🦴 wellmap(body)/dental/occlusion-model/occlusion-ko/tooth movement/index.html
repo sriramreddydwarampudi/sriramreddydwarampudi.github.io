@@ -8197,23 +8197,24 @@ If force is not increased,further respotion will be periosteal type</li>
 <!-- 🔒 Transparent login overlay -->
 <div id="auth-overlay" style="
   position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.4);  /* darker transparent */
+  backdrop-filter: blur(8px);
   z-index: 9999;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   font-family: sans-serif; text-align: center;
+  color: white;
 ">
   <h2 style="font-size: 24px;">🔒 Click below to login</h2>
   <button id="login-btn" style="
     margin-top: 1rem;
     padding: 10px 24px;
     font-size: 16px;
-    background: #3367d6;
+    background: #1a73e8;
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   ">Login with Google</button>
 </div>
 
