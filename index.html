@@ -1867,8 +1867,9 @@
         login.style.display = "none";
         main.style.display = "block";
       } else {
-        main.style.display = "none";
-        login.style.display = "block";
+        main.style.display = "flex"; // login fullscreen
+        main.style.opacity = "0"; // hide content
+        login.style.display = "flex";
       }
     });
   });
