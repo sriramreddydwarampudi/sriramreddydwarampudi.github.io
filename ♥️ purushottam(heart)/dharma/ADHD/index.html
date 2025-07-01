@@ -3913,50 +3913,31 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-<!-- CSS to manage visibility -->
 <style>
-  /* Hide both sections by default until Firebase auth status is known */
-  body.loading #login-section,
-  body.loading #main-content {
-    display: none !important;
-  }
-
-  /* Also hide main-content by default (in case JS fails) */
-  #main-content {
+  #login-section, #main-content {
     display: none;
   }
 </style>
 
-<!-- Login UI (only shown if user not logged in) -->
+<!-- Login UI -->
 <div id="login-section" style="
-  pointer-events: all;
-  position: fixed; top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.85);
-  backdrop-filter: blur(6px);
-  color: white;
-  font-family: sans-serif;
-  text-align: center;
-  z-index: 9999;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: fixed; inset: 0;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  background: rgba(0,0,0,0.8); color: white;
+  z-index: 9999; font-family: sans-serif;
 ">
-  <h2 style="font-size: 2rem; margin-bottom: 1rem;">🔐 Login Required</h2>
+  <h2>🔐 Login Required</h2>
   <button onclick="loginWithGoogle()" style="
-    font-size: 1rem;
+    margin-top: 1rem;
     padding: 0.6rem 1.2rem;
-    background: #1a73e8;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background: #1a73e8; color: white;
+    border: none; border-radius: 6px;
+    font-size: 1rem; cursor: pointer;
   ">Login with Google</button>
 </div>
 
-<!-- Main content (only shown if logged in) -->
+<!-- Main content -->
 <div id="main-content">
   
                   
@@ -4155,16 +4136,11 @@
 
                 
   <button onclick="logout()" style="
-    position: fixed;
-    top: 1rem; right: 1rem;
-    padding: 0.4rem 1rem;
-    font-size: 0.9rem;
-    background: #e53935;
-    color: white;
-    border: none;
-    border-radius: 4px;
+    position: fixed; top: 1rem; right: 1rem;
+    background: #e53935; color: white;
+    padding: 0.5rem 1rem; border: none;
+    border-radius: 5px; cursor: pointer;
     z-index: 9999;
-    cursor: pointer;
   ">Logout</button>
 </div>
 
@@ -4263,75 +4239,45 @@
       
     
 <script type="module">
-  // Add loading class to body before auth check
-  document.body.classList.add("loading");
+  const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
+  const {
+    getAuth, signInWithPopup, onAuthStateChanged,
+    GoogleAuthProvider, signOut, setPersistence, browserLocalPersistence
+  } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
 
-  // Wait for DOM ready
-  const whenReady = new Promise(resolve => {
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", resolve);
+  const firebaseConfig = {
+    apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
+    authDomain: "mkdocs-github.firebaseapp.com",
+    projectId: "mkdocs-github",
+    storageBucket: "mkdocs-github.appspot.com",
+    messagingSenderId: "846124399364",
+    appId: "1:846124399364:web:7164c56ce488ef7a11ae51"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const provider = new GoogleAuthProvider();
+
+  await setPersistence(auth, browserLocalPersistence);
+
+  window.loginWithGoogle = () => signInWithPopup(auth, provider)
+    .catch(err => alert("Login failed: " + err.message));
+
+  window.logout = () => signOut(auth);
+
+  const login = document.getElementById("login-section");
+  const main = document.getElementById("main-content");
+
+  onAuthStateChanged(auth, user => {
+    if (user) {
+      login.style.display = "none";
+      main.style.display = "block";
+      console.log("✅ Logged in as", user.email);
     } else {
-      resolve();
+      login.style.display = "flex";
+      main.style.display = "none";
+      console.log("🔒 Not signed in");
     }
-  });
-
-  whenReady.then(async () => {
-    const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
-    const {
-      getAuth,
-      signInWithPopup,
-      onAuthStateChanged,
-      GoogleAuthProvider,
-      signOut,
-      setPersistence,
-      browserLocalPersistence
-    } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
-
-    // Firebase config
-    const firebaseConfig = {
-      apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
-      authDomain: "mkdocs-github.firebaseapp.com",
-      projectId: "mkdocs-github",
-      storageBucket: "mkdocs-github.appspot.com",
-      messagingSenderId: "846124399364",
-      appId: "1:846124399364:web:7164c56ce488ef7a11ae51"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
-    const provider = new GoogleAuthProvider();
-
-    // Persistent login
-    await setPersistence(auth, browserLocalPersistence);
-
-    // Bind login/logout globally
-    window.loginWithGoogle = () => {
-      signInWithPopup(auth, provider).catch(err => {
-        alert("Login failed: " + err.message);
-      });
-    };
-    window.logout = () => signOut(auth);
-
-    // DOM references
-    const login = document.getElementById("login-section");
-    const main = document.getElementById("main-content");
-
-    // Check login status
-    onAuthStateChanged(auth, user => {
-      if (user) {
-        login.style.display = "none";
-        main.style.display = "block";
-        console.log("✅ Logged in as:", user.email);
-      } else {
-        login.style.display = "flex";
-        main.style.display = "none";
-        console.log("🔒 Not signed in.");
-      }
-
-      // Now that we know, remove loading class
-      document.body.classList.remove("loading");
-    });
   });
 </script>
 

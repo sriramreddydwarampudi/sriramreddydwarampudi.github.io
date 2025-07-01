@@ -1790,75 +1790,45 @@
       
     
 <script type="module">
-  // Add loading class to body before auth check
-  document.body.classList.add("loading");
+  const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
+  const {
+    getAuth, signInWithPopup, onAuthStateChanged,
+    GoogleAuthProvider, signOut, setPersistence, browserLocalPersistence
+  } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
 
-  // Wait for DOM ready
-  const whenReady = new Promise(resolve => {
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", resolve);
+  const firebaseConfig = {
+    apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
+    authDomain: "mkdocs-github.firebaseapp.com",
+    projectId: "mkdocs-github",
+    storageBucket: "mkdocs-github.appspot.com",
+    messagingSenderId: "846124399364",
+    appId: "1:846124399364:web:7164c56ce488ef7a11ae51"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const provider = new GoogleAuthProvider();
+
+  await setPersistence(auth, browserLocalPersistence);
+
+  window.loginWithGoogle = () => signInWithPopup(auth, provider)
+    .catch(err => alert("Login failed: " + err.message));
+
+  window.logout = () => signOut(auth);
+
+  const login = document.getElementById("login-section");
+  const main = document.getElementById("main-content");
+
+  onAuthStateChanged(auth, user => {
+    if (user) {
+      login.style.display = "none";
+      main.style.display = "block";
+      console.log("✅ Logged in as", user.email);
     } else {
-      resolve();
+      login.style.display = "flex";
+      main.style.display = "none";
+      console.log("🔒 Not signed in");
     }
-  });
-
-  whenReady.then(async () => {
-    const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
-    const {
-      getAuth,
-      signInWithPopup,
-      onAuthStateChanged,
-      GoogleAuthProvider,
-      signOut,
-      setPersistence,
-      browserLocalPersistence
-    } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
-
-    // Firebase config
-    const firebaseConfig = {
-      apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
-      authDomain: "mkdocs-github.firebaseapp.com",
-      projectId: "mkdocs-github",
-      storageBucket: "mkdocs-github.appspot.com",
-      messagingSenderId: "846124399364",
-      appId: "1:846124399364:web:7164c56ce488ef7a11ae51"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
-    const provider = new GoogleAuthProvider();
-
-    // Persistent login
-    await setPersistence(auth, browserLocalPersistence);
-
-    // Bind login/logout globally
-    window.loginWithGoogle = () => {
-      signInWithPopup(auth, provider).catch(err => {
-        alert("Login failed: " + err.message);
-      });
-    };
-    window.logout = () => signOut(auth);
-
-    // DOM references
-    const login = document.getElementById("login-section");
-    const main = document.getElementById("main-content");
-
-    // Check login status
-    onAuthStateChanged(auth, user => {
-      if (user) {
-        login.style.display = "none";
-        main.style.display = "block";
-        console.log("✅ Logged in as:", user.email);
-      } else {
-        login.style.display = "flex";
-        main.style.display = "none";
-        console.log("🔒 Not signed in.");
-      }
-
-      // Now that we know, remove loading class
-      document.body.classList.remove("loading");
-    });
   });
 </script>
 
