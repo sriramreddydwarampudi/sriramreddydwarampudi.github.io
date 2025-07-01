@@ -3301,8 +3301,8 @@
   position: fixed; inset: 0;
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
-  background: rgba(0,0,0,0.8); color: white;
-  z-index: 9999; font-family: sans-serif;
+  background: rgba(0,0,0,0.85); color: white;
+  font-family: sans-serif; z-index: 9999;
 ">
   <h2>🔐 Login Required</h2>
   <button onclick="loginWithGoogle()" style="
@@ -3502,6 +3502,7 @@ sudo apt install vmpk</p>
     GoogleAuthProvider, signOut, setPersistence, browserLocalPersistence
   } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
 
+  // Firebase config
   const firebaseConfig = {
     apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
     authDomain: "mkdocs-github.firebaseapp.com",
@@ -3517,24 +3518,44 @@ sudo apt install vmpk</p>
 
   await setPersistence(auth, browserLocalPersistence);
 
-  window.loginWithGoogle = () => signInWithPopup(auth, provider)
-    .catch(err => alert("Login failed: " + err.message));
-
-  window.logout = () => signOut(auth);
-
   const login = document.getElementById("login-section");
   const main = document.getElementById("main-content");
 
-  onAuthStateChanged(auth, user => {
+  // Show UI based on current state
+  function showUI(user) {
     if (user) {
       login.style.display = "none";
       main.style.display = "block";
-      console.log("✅ Logged in as", user.email);
     } else {
       login.style.display = "flex";
       main.style.display = "none";
-      console.log("🔒 Not signed in");
     }
+  }
+
+  // Call this immediately after login
+  window.loginWithGoogle = () => {
+    signInWithPopup(auth, provider)
+      .then(result => {
+        showUI(result.user); // ✅ show content immediately
+        console.log("✅ Logged in:", result.user.email);
+      })
+      .catch(err => {
+        alert("Login failed: " + err.message);
+      });
+  };
+
+  // Logout handler
+  window.logout = () => {
+    signOut(auth).then(() => {
+      showUI(null);
+      console.log("👋 Logged out");
+    });
+  };
+
+  // On page load or reload
+  onAuthStateChanged(auth, user => {
+    showUI(user);
+    if (user) console.log("✅ Already signed in:", user.email);
   });
 </script>
 
