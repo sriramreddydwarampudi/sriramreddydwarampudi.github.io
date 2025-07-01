@@ -1836,7 +1836,8 @@
       
     
 <script type="module">
-  console.log("[🔥] Initializing Firebase...");
+document.addEventListener("DOMContentLoaded", async () => {
+  console.log("🔥 Initializing Firebase");
 
   const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
   const {
@@ -1858,7 +1859,7 @@
   await setPersistence(auth, browserLocalPersistence);
   const provider = new GoogleAuthProvider();
 
-  console.log("[✅] Firebase initialized.");
+  console.log("✅ Firebase initialized");
 
   const loginSection = document.getElementById("login-section");
   const loginBtn = document.getElementById("login-btn");
@@ -1868,43 +1869,40 @@
     if (user) {
       loginSection.style.display = "none";
       mainContent.style.display = "block";
-      console.log("[👤] Showing main content for:", user.email);
+      console.log("👤 Showing content for:", user.email);
     } else {
-      loginSection.style.display = "flex";
       mainContent.style.display = "none";
-      console.log("[🔒] Showing login screen (not logged in)");
+      loginSection.style.display = "flex";
+      console.log("🔒 Showing login screen");
     }
   }
 
-  // Run on page load
-  onAuthStateChanged(auth, user => {
-    console.log("[🔁] onAuthStateChanged triggered:", user ? user.email : "no user");
-    showUI(user);
-  });
-
-  // On Login button click
   loginBtn.onclick = () => {
-    console.log("[🖱️] Login button clicked");
+    console.log("🖱️ Login clicked");
     signInWithPopup(auth, provider)
       .then(result => {
-        console.log("[✅] Login successful:", result.user.email);
-        showUI(result.user); // 🔥 show immediately
+        console.log("✅ Login successful:", result.user.email);
+        showUI(result.user);
       })
       .catch(error => {
-        console.error("[❌] Login failed:", error);
+        console.error("❌ Login failed:", error);
         alert("Login failed: " + error.message);
       });
   };
 
-  // Logout
   window.logout = () => {
-    console.log("[🚪] Logging out...");
-    signOut(auth)
-      .then(() => {
-        console.log("[👋] Logged out successfully.");
-        showUI(null);
-      });
+    console.log("🚪 Logging out");
+    signOut(auth).then(() => {
+      console.log("👋 Logged out");
+      showUI(null);
+    });
   };
+
+  onAuthStateChanged(auth, user => {
+    console.log("🔁 Auth state:", user ? user.email : "Not logged in");
+    showUI(user);
+  });
+});
 </script>
 
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

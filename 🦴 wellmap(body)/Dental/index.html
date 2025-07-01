@@ -7659,25 +7659,24 @@
   }
 </style>
 
-<!-- Login UI -->
+<!-- 🔐 Login Screen -->
 <div id="login-section" style="
   position: fixed; inset: 0;
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
-  background: rgba(0,0,0,0.8); color: white;
-  font-family: sans-serif; z-index: 9999;
+  background: rgba(0,0,0,0.9); color: white;
+  z-index: 9999; font-family: sans-serif;
 ">
   <h2>🔐 Login Required</h2>
   <button id="login-btn" style="
-    margin-top: 1rem;
     padding: 0.6rem 1.2rem;
     background: #1a73e8; color: white;
-    border: none; border-radius: 6px;
-    font-size: 1rem; cursor: pointer;
+    font-size: 1rem; border: none;
+    border-radius: 5px; cursor: pointer;
   ">Login with Google</button>
 </div>
 
-<!-- Main Content -->
+<!-- ✅ Main Content -->
 <div id="main-content">
   
                   
@@ -7778,9 +7777,8 @@ Perio</p>
   <button onclick="logout()" style="
     position: fixed; top: 1rem; right: 1rem;
     background: #e53935; color: white;
-    padding: 0.5rem 1rem; border: none;
-    border-radius: 5px; cursor: pointer;
-    z-index: 9999;
+    padding: 0.4rem 1rem; font-size: 0.9rem;
+    border: none; border-radius: 4px; z-index: 9999;
   ">Logout</button>
 </div>
 
@@ -7879,7 +7877,8 @@ Perio</p>
       
     
 <script type="module">
-  console.log("[🔥] Initializing Firebase...");
+document.addEventListener("DOMContentLoaded", async () => {
+  console.log("🔥 Initializing Firebase");
 
   const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
   const {
@@ -7901,7 +7900,7 @@ Perio</p>
   await setPersistence(auth, browserLocalPersistence);
   const provider = new GoogleAuthProvider();
 
-  console.log("[✅] Firebase initialized.");
+  console.log("✅ Firebase initialized");
 
   const loginSection = document.getElementById("login-section");
   const loginBtn = document.getElementById("login-btn");
@@ -7911,43 +7910,40 @@ Perio</p>
     if (user) {
       loginSection.style.display = "none";
       mainContent.style.display = "block";
-      console.log("[👤] Showing main content for:", user.email);
+      console.log("👤 Showing content for:", user.email);
     } else {
-      loginSection.style.display = "flex";
       mainContent.style.display = "none";
-      console.log("[🔒] Showing login screen (not logged in)");
+      loginSection.style.display = "flex";
+      console.log("🔒 Showing login screen");
     }
   }
 
-  // Run on page load
-  onAuthStateChanged(auth, user => {
-    console.log("[🔁] onAuthStateChanged triggered:", user ? user.email : "no user");
-    showUI(user);
-  });
-
-  // On Login button click
   loginBtn.onclick = () => {
-    console.log("[🖱️] Login button clicked");
+    console.log("🖱️ Login clicked");
     signInWithPopup(auth, provider)
       .then(result => {
-        console.log("[✅] Login successful:", result.user.email);
-        showUI(result.user); // 🔥 show immediately
+        console.log("✅ Login successful:", result.user.email);
+        showUI(result.user);
       })
       .catch(error => {
-        console.error("[❌] Login failed:", error);
+        console.error("❌ Login failed:", error);
         alert("Login failed: " + error.message);
       });
   };
 
-  // Logout
   window.logout = () => {
-    console.log("[🚪] Logging out...");
-    signOut(auth)
-      .then(() => {
-        console.log("[👋] Logged out successfully.");
-        showUI(null);
-      });
+    console.log("🚪 Logging out");
+    signOut(auth).then(() => {
+      console.log("👋 Logged out");
+      showUI(null);
+    });
   };
+
+  onAuthStateChanged(auth, user => {
+    console.log("🔁 Auth state:", user ? user.email : "Not logged in");
+    showUI(user);
+  });
+});
 </script>
 
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
