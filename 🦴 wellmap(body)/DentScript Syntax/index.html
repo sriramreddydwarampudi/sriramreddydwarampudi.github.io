@@ -7653,18 +7653,26 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
+<!-- CSS to manage visibility -->
 <style>
+  /* Hide both sections by default until Firebase auth status is known */
   body.loading #login-section,
   body.loading #main-content {
     display: none !important;
   }
+
+  /* Also hide main-content by default (in case JS fails) */
+  #main-content {
+    display: none;
+  }
 </style>
 
-<!-- Login UI -->
+<!-- Login UI (only shown if user not logged in) -->
 <div id="login-section" style="
+  pointer-events: all;
   position: fixed; top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.85);
   backdrop-filter: blur(6px);
   color: white;
   font-family: sans-serif;
@@ -7688,7 +7696,7 @@
   ">Login with Google</button>
 </div>
 
-<!-- Main Content -->
+<!-- Main content (only shown if logged in) -->
 <div id="main-content">
   
                   
@@ -7851,9 +7859,10 @@
       
     
 <script type="module">
-  // Always start in "loading" mode
+  // Add loading class to body before auth check
   document.body.classList.add("loading");
 
+  // Wait for DOM ready
   const whenReady = new Promise(resolve => {
     if (document.readyState === "loading") {
       document.addEventListener("DOMContentLoaded", resolve);
@@ -7874,6 +7883,7 @@
       browserLocalPersistence
     } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
 
+    // Firebase config
     const firebaseConfig = {
       apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
       authDomain: "mkdocs-github.firebaseapp.com",
@@ -7883,24 +7893,27 @@
       appId: "1:846124399364:web:7164c56ce488ef7a11ae51"
     };
 
+    // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);
     const provider = new GoogleAuthProvider();
 
+    // Persistent login
     await setPersistence(auth, browserLocalPersistence);
 
+    // Bind login/logout globally
     window.loginWithGoogle = () => {
       signInWithPopup(auth, provider).catch(err => {
         alert("Login failed: " + err.message);
       });
     };
-
     window.logout = () => signOut(auth);
 
+    // DOM references
     const login = document.getElementById("login-section");
     const main = document.getElementById("main-content");
 
-    // ✅ This callback ALWAYS runs, even on first visit
+    // Check login status
     onAuthStateChanged(auth, user => {
       if (user) {
         login.style.display = "none";
@@ -7912,7 +7925,7 @@
         console.log("🔒 Not signed in.");
       }
 
-      // ✅ Remove loader
+      // Now that we know, remove loading class
       document.body.classList.remove("loading");
     });
   });
