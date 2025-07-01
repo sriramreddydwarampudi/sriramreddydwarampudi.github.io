@@ -7142,15 +7142,7 @@ Yes, you can open PDFs in the terminal using command-line PDF viewers like <code
 <script type="module">
   window.addEventListener("DOMContentLoaded", async () => {
     const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
-    const {
-      getAuth,
-      setPersistence,
-      browserLocalPersistence,
-      signInWithPopup,
-      onAuthStateChanged,
-      GoogleAuthProvider,
-      signOut
-    } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
+    const { getAuth, signInWithPopup, onAuthStateChanged, GoogleAuthProvider, signOut } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
 
     const firebaseConfig = {
       apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
@@ -7161,7 +7153,9 @@ Yes, you can open PDFs in the terminal using command-line PDF viewers like <code
       appId: "1:846124399364:web:7164c56ce488ef7a11ae51"
     };
 
-    const app = initializeApp(firebaseConfig);
+
+
+const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);
     const provider = new GoogleAuthProvider();
 
@@ -7169,7 +7163,7 @@ Yes, you can open PDFs in the terminal using command-line PDF viewers like <code
     await setPersistence(auth, browserLocalPersistence);
 
     window.loginWithGoogle = () => {
-      signInWithPopup(auth, provider).catch(err => {
+      signInWithPopup(auth, provider). catch(err => {
         alert("Login failed: " + err.message);
       });
     };
