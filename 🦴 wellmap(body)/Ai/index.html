@@ -7724,11 +7724,11 @@
   position: fixed; inset: 0;
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
-  background: rgba(0,0,0,0.85); color: white;
+  background: rgba(0,0,0,0.8); color: white;
   font-family: sans-serif; z-index: 9999;
 ">
   <h2>🔐 Login Required</h2>
-  <button onclick="loginWithGoogle()" style="
+  <button id="login-btn" style="
     margin-top: 1rem;
     padding: 0.6rem 1.2rem;
     background: #1a73e8; color: white;
@@ -7737,7 +7737,7 @@
   ">Login with Google</button>
 </div>
 
-<!-- Main content -->
+<!-- Main Content -->
 <div id="main-content">
   
                   
@@ -7960,13 +7960,14 @@
       
     
 <script type="module">
+  console.log("[🔥] Initializing Firebase...");
+
   const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
   const {
-    getAuth, signInWithPopup, onAuthStateChanged,
-    GoogleAuthProvider, signOut, setPersistence, browserLocalPersistence
+    getAuth, signInWithPopup, GoogleAuthProvider,
+    onAuthStateChanged, signOut, setPersistence, browserLocalPersistence
   } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
 
-  // Firebase config
   const firebaseConfig = {
     apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
     authDomain: "mkdocs-github.firebaseapp.com",
@@ -7978,49 +7979,56 @@
 
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
+  await setPersistence(auth, browserLocalPersistence);
   const provider = new GoogleAuthProvider();
 
-  await setPersistence(auth, browserLocalPersistence);
+  console.log("[✅] Firebase initialized.");
 
-  const login = document.getElementById("login-section");
-  const main = document.getElementById("main-content");
+  const loginSection = document.getElementById("login-section");
+  const loginBtn = document.getElementById("login-btn");
+  const mainContent = document.getElementById("main-content");
 
-  // Show UI based on current state
   function showUI(user) {
     if (user) {
-      login.style.display = "none";
-      main.style.display = "block";
+      loginSection.style.display = "none";
+      mainContent.style.display = "block";
+      console.log("[👤] Showing main content for:", user.email);
     } else {
-      login.style.display = "flex";
-      main.style.display = "none";
+      loginSection.style.display = "flex";
+      mainContent.style.display = "none";
+      console.log("[🔒] Showing login screen (not logged in)");
     }
   }
 
-  // Call this immediately after login
-  window.loginWithGoogle = () => {
+  // Run on page load
+  onAuthStateChanged(auth, user => {
+    console.log("[🔁] onAuthStateChanged triggered:", user ? user.email : "no user");
+    showUI(user);
+  });
+
+  // On Login button click
+  loginBtn.onclick = () => {
+    console.log("[🖱️] Login button clicked");
     signInWithPopup(auth, provider)
       .then(result => {
-        showUI(result.user); // ✅ show content immediately
-        console.log("✅ Logged in:", result.user.email);
+        console.log("[✅] Login successful:", result.user.email);
+        showUI(result.user); // 🔥 show immediately
       })
-      .catch(err => {
-        alert("Login failed: " + err.message);
+      .catch(error => {
+        console.error("[❌] Login failed:", error);
+        alert("Login failed: " + error.message);
       });
   };
 
-  // Logout handler
+  // Logout
   window.logout = () => {
-    signOut(auth).then(() => {
-      showUI(null);
-      console.log("👋 Logged out");
-    });
+    console.log("[🚪] Logging out...");
+    signOut(auth)
+      .then(() => {
+        console.log("[👋] Logged out successfully.");
+        showUI(null);
+      });
   };
-
-  // On page load or reload
-  onAuthStateChanged(auth, user => {
-    showUI(user);
-    if (user) console.log("✅ Already signed in:", user.email);
-  });
 </script>
 
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
