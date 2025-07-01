@@ -1836,7 +1836,18 @@
       
     
 <script type="module">
-  window.addEventListener("DOMContentLoaded", async () => {
+  // Always start in "loading" mode
+  document.body.classList.add("loading");
+
+  const whenReady = new Promise(resolve => {
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", resolve);
+    } else {
+      resolve();
+    }
+  });
+
+  whenReady.then(async () => {
     const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
     const {
       getAuth,
@@ -1871,19 +1882,23 @@
 
     window.logout = () => signOut(auth);
 
-    const main = document.getElementById("main-content");
     const login = document.getElementById("login-section");
+    const main = document.getElementById("main-content");
 
+    // ✅ This callback ALWAYS runs, even on first visit
     onAuthStateChanged(auth, user => {
       if (user) {
         login.style.display = "none";
         main.style.display = "block";
         console.log("✅ Logged in as:", user.email);
       } else {
-        main.style.display = "none";
         login.style.display = "flex";
+        main.style.display = "none";
         console.log("🔒 Not signed in.");
       }
+
+      // ✅ Remove loader
+      document.body.classList.remove("loading");
     });
   });
 </script>
