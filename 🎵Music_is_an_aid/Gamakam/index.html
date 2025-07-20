@@ -3555,6 +3555,11 @@ Thripam, Spuritham, Kampitham, Leenam, Aandholitham, Vali, Thribinnam, Kurulam, 
     const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);
     const provider = new GoogleAuthProvider();
+    
+    // Add these lines to fix the nonce issue
+    provider.setCustomParameters({
+      prompt: 'select_account'
+    });
 
     // Set persistence for login session
     try {
@@ -3563,19 +3568,31 @@ Thripam, Spuritham, Kampitham, Leenam, Aandholitham, Vali, Thribinnam, Kurulam, 
       console.error("Error setting persistence:", error);
     }
 
-    // Login function
+    // Login function with error handling
     window.loginWithGoogle = () => {
-      signInWithPopup(auth, provider)
-        .catch(err => {
-          console.error("Login error:", err);
-          alert(`Login failed: ${err.message || "Unknown error"}`);
-        });
+      // Clear any existing auth state before trying again
+      signOut(auth).then(() => {
+        return signInWithPopup(auth, provider)
+          .catch(err => {
+            console.error("Login error:", err);
+            if (err.code === 'auth/missing-or-invalid-nonce') {
+              // Force a fresh login attempt
+              window.location.reload();
+            } else {
+              alert(`Login failed: ${err.message || "Unknown error"}`);
+            }
+          });
+      });
     };
 
     // Logout function
     window.logout = () => {
       signOut(auth)
-        .then(() => console.log("User signed out"))
+        .then(() => {
+          console.log("User signed out");
+          // Optional: reload the page to ensure clean state
+          window.location.reload();
+        })
         .catch(err => console.error("Logout error:", err));
     };
 

@@ -18,7 +18,7 @@
         <link rel="prev" href="../Dr.ram%20Foundation/Subjects/Social%20sciences/Introduction/">
       
       
-        <link rel="next" href="%28artha%20wealth%29chanikya%20neeti/">
+        <link rel="next" href="Difference%20between%20madness%20and%20geniusness/">
       
       
       <link rel="icon" href="../../assets/favicon.png">
@@ -1608,12 +1608,6 @@
       
         
       
-        
-      
-        
-      
-        
-      
     
     
       
@@ -1660,69 +1654,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="%28artha%20wealth%29chanikya%20neeti/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    (artha wealth)chanikya neeti
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Cognitive%20meanings%20of%20abstracts/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Cognitive meanings of abstracts
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Daily/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Daily
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -4023,13 +3954,13 @@ In the Purushottam journey, this text is the steel spine of Artha — where purp
         
         
           
-          <a href="%28artha%20wealth%29chanikya%20neeti/" class="md-footer__link md-footer__link--next" aria-label="Next: (artha wealth)chanikya neeti">
+          <a href="Difference%20between%20madness%20and%20geniusness/" class="md-footer__link md-footer__link--next" aria-label="Next: Difference between madness and geniusness">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                (artha wealth)chanikya neeti
+                Difference between madness and geniusness
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -4104,6 +4035,11 @@ In the Purushottam journey, this text is the steel spine of Artha — where purp
     const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);
     const provider = new GoogleAuthProvider();
+    
+    // Add these lines to fix the nonce issue
+    provider.setCustomParameters({
+      prompt: 'select_account'
+    });
 
     // Set persistence for login session
     try {
@@ -4112,19 +4048,31 @@ In the Purushottam journey, this text is the steel spine of Artha — where purp
       console.error("Error setting persistence:", error);
     }
 
-    // Login function
+    // Login function with error handling
     window.loginWithGoogle = () => {
-      signInWithPopup(auth, provider)
-        .catch(err => {
-          console.error("Login error:", err);
-          alert(`Login failed: ${err.message || "Unknown error"}`);
-        });
+      // Clear any existing auth state before trying again
+      signOut(auth).then(() => {
+        return signInWithPopup(auth, provider)
+          .catch(err => {
+            console.error("Login error:", err);
+            if (err.code === 'auth/missing-or-invalid-nonce') {
+              // Force a fresh login attempt
+              window.location.reload();
+            } else {
+              alert(`Login failed: ${err.message || "Unknown error"}`);
+            }
+          });
+      });
     };
 
     // Logout function
     window.logout = () => {
       signOut(auth)
-        .then(() => console.log("User signed out"))
+        .then(() => {
+          console.log("User signed out");
+          // Optional: reload the page to ensure clean state
+          window.location.reload();
+        })
         .catch(err => console.error("Logout error:", err));
     };
 

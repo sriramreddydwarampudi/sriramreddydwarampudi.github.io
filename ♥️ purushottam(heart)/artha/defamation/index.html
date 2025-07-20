@@ -1603,12 +1603,6 @@
       
         
       
-        
-      
-        
-      
-        
-      
     
     
       
@@ -1655,69 +1649,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%28artha%20wealth%29chanikya%20neeti/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    (artha wealth)chanikya neeti
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Cognitive%20meanings%20of%20abstracts/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Cognitive meanings of abstracts
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Daily/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Daily
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -3761,33 +3692,7 @@
 
   <h1>Defamation</h1>
 
-<p>Defamation is a communication that injures a third party's reputation and causes a legally redressable injury</p>
-<p>It not necessarily restricted to making assertions that are falsifiable, and can extend to concepts that are more abstract than reputation – like dignity and honour.</p>
-<p>United Nations International Covenant on Civil and Political Rights (ICCPR), which states that:</p>
-<p>No one shall be subjected to arbitrary or unlawful interference with his privacy, family, home or correspondence, nor to unlawful attacks on his honour and reputation.
-Everyone has the right to the protection of the law against such interference or attacks</p>
-<p>Privilege 
-Mistake of fact
-Mere vulgar abuse
-Fair comment
-Consent 
-Innocent dissemination 
-Incapability of further defamation
-Statue of limitations 
-No actual injury</p>
-<p>Although laws vary by state; in America, a defamation action typically requires that a plaintiff claiming defamation prove that the defendant:</p>
-<p>made a false and defamatory statement concerning the plaintiff;
-shared the statement with a third party (that is, somebody other than the person defamed by the statement);
-if the defamatory matter is of public concern, acted in a manner which amounted at least to negligence on the part of the defendant; and
-caused damages to the plaintiff</p>
-<p>Detraction
-edit
-Further information: Detraction
-The mortal sin of damaging another's good name, by revealing their faults or crimes (honestly believed real by the detractor). Contrasted with calumny, where the assertions are knowingly false.</p>
-<p>The degree of sinfulness depends on the harm done, based on three things:</p>
-<p>The criminality of the thing alleged
-The reputation of the detractor's trustworthiness
-The dignity or esteem of the victim</p>
+
 
 
 
@@ -3947,6 +3852,11 @@ The dignity or esteem of the victim</p>
     const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);
     const provider = new GoogleAuthProvider();
+    
+    // Add these lines to fix the nonce issue
+    provider.setCustomParameters({
+      prompt: 'select_account'
+    });
 
     // Set persistence for login session
     try {
@@ -3955,19 +3865,31 @@ The dignity or esteem of the victim</p>
       console.error("Error setting persistence:", error);
     }
 
-    // Login function
+    // Login function with error handling
     window.loginWithGoogle = () => {
-      signInWithPopup(auth, provider)
-        .catch(err => {
-          console.error("Login error:", err);
-          alert(`Login failed: ${err.message || "Unknown error"}`);
-        });
+      // Clear any existing auth state before trying again
+      signOut(auth).then(() => {
+        return signInWithPopup(auth, provider)
+          .catch(err => {
+            console.error("Login error:", err);
+            if (err.code === 'auth/missing-or-invalid-nonce') {
+              // Force a fresh login attempt
+              window.location.reload();
+            } else {
+              alert(`Login failed: ${err.message || "Unknown error"}`);
+            }
+          });
+      });
     };
 
     // Logout function
     window.logout = () => {
       signOut(auth)
-        .then(() => console.log("User signed out"))
+        .then(() => {
+          console.log("User signed out");
+          // Optional: reload the page to ensure clean state
+          window.location.reload();
+        })
         .catch(err => console.error("Logout error:", err));
     };
 
