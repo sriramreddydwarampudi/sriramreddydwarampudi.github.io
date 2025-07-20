@@ -3511,8 +3511,8 @@
       signOut(auth)
         .then(() => {
           console.log("User signed out");
-          // Reload to clear any state
-          window.location.reload();
+          // Update UI immediately after logout
+          updateAuthUI(null);
         })
         .catch(err => console.error("Logout error:", err));
     };
@@ -3617,16 +3617,12 @@
       logoutButton.onclick = window.logout;
     }
 
-    // Create the UI elements
-    createAuthUI();
-    
-    // Get references to UI elements
-    const loginOverlay = document.getElementById('login-overlay');
-    const logoutButton = document.getElementById('logout-button');
-    const mainContent = document.querySelector('.md-content'); // MkDocs main content area
-
-    // Auth state handler
-    onAuthStateChanged(auth, user => {
+    // Function to update UI based on auth state
+    function updateAuthUI(user) {
+      const loginOverlay = document.getElementById('login-overlay');
+      const logoutButton = document.getElementById('logout-button');
+      const mainContent = document.querySelector('.md-content');
+      
       if (user) {
         console.log("✅ Authenticated user:", user.email);
         if (loginOverlay) loginOverlay.style.display = "none";
@@ -3638,6 +3634,17 @@
         if (logoutButton) logoutButton.style.display = "none";
         if (mainContent) mainContent.style.display = "none";
       }
+    }
+
+    // Create the UI elements
+    createAuthUI();
+    
+    // Initial UI update based on current auth state
+    updateAuthUI(auth.currentUser);
+
+    // Auth state handler
+    onAuthStateChanged(auth, user => {
+      updateAuthUI(user);
     });
 
     // Listen for page navigation events
@@ -3646,19 +3653,16 @@
       // Recreate UI elements on navigation
       createAuthUI();
       
-      // Re-check auth state after a short delay to allow DOM to update
+      // Re-check auth state after a short delay
       setTimeout(() => {
-        const currentUser = auth.currentUser;
-        if (currentUser) {
-          document.getElementById('login-overlay').style.display = "none";
-          document.getElementById('logout-button').style.display = "block";
-          document.querySelector('.md-content').style.display = "block";
-        } else {
-          document.getElementById('login-overlay').style.display = "flex";
-          document.getElementById('logout-button').style.display = "none";
-          document.querySelector('.md-content').style.display = "none";
-        }
+        updateAuthUI(auth.currentUser);
       }, 100);
+    });
+    
+    // Add this to handle login/logout transitions without page reload
+    auth.onIdTokenChanged((user) => {
+      console.log("Token changed, updating UI");
+      updateAuthUI(user);
     });
   });
 </script>
