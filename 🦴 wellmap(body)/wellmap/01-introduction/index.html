@@ -86,11 +86,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#how-medicine-works" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -1083,8 +1078,6 @@
   
     
     
-      
-        
       
         
       
@@ -6915,8 +6908,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -7611,34 +7602,56 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-<style>
-  #login-section, #main-content {
-    display: none;
-  }
-</style>
-
-<!-- 🔐 Login screen -->
+<!-- Login UI -->
 <div id="login-section" style="
-  position: fixed; inset: 0;
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  background: rgba(0,0,0,0.9); color: white;
-  font-family: sans-serif; z-index: 9999;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(8px);
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 ">
-  <h2>🔐 Login Required</h2>
-  <button id="login-btn" style="
-    padding: 10px 20px;
-    background: #1a73e8;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  ">Login with Google</button>
+  <div style="background: #1e1e1e; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.3); max-width: 400px; width: 90%;">
+    <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">🔐 Login Required</h2>
+    <p style="margin-bottom: 2rem; color: #aaa;">You need to sign in to access this documentation</p>
+    <button onclick="loginWithGoogle()" style="
+      font-size: 1.1rem;
+      padding: 0.8rem 1.5rem;
+      background: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    ">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.56 12.25C22.56 11.47 22.49 10.72 22.36 10H12V14.26H17.92C17.66 15.63 16.82 16.79 15.62 17.57V20.34H19.24C21.44 18.34 22.56 15.6 22.56 12.25Z" fill="#4285F4"/>
+        <path d="M12 23C14.96 23 17.46 22.02 19.24 20.34L15.62 17.57C14.62 18.23 13.32 18.64 12 18.64C9.16 18.64 6.78 16.76 5.94 14.19H2.18V17.06C3.94 20.53 7.7 23 12 23Z" fill="#34A853"/>
+        <path d="M5.94 14.19C5.74 13.57 5.62 12.9 5.62 12.22C5.62 11.54 5.74 10.87 5.94 10.25V7.38H2.18C1.43 8.84 1 10.49 1 12.22C1 13.95 1.43 15.6 2.18 17.06L5.94 14.19Z" fill="#FBBC05"/>
+        <path d="M12 5.58C13.62 5.58 15.06 6.15 16.18 7.25L19.34 4.09C17.44 2.34 14.94 1 12 1C7.7 1 3.94 3.47 2.18 7.38L5.94 10.25C6.78 7.68 9.16 5.58 12 5.58Z" fill="#EA4335"/>
+      </svg>
+      Sign in with Google
+    </button>
+  </div>
 </div>
 
-<!-- ✅ Main content -->
-<div id="main-content">
+<!-- Main Content -->
+<div id="main-content" style="display: none;">
   
                   
 
@@ -7659,1183 +7672,9 @@
   
 
 
-<p>Medicine is the science and art of healing. It plays a crucial role in maintaining and restoring human health by diagnosing, treating, and preventing diseases. The effectiveness of medicine lies in its ability to understand the body’s functions, identify abnormalities, and intervene with targeted treatment.</p>
-<h1 id="how-medicine-works">How Medicine Works<a class="headerlink" href="#how-medicine-works" title="Permanent link">&para;</a></h1>
-<p>Medicine is the science and art of understanding, identifying, and restoring balance in living systems that have deviated from health. It revolves around three deeply interconnected pillars: the <strong>theory of disease</strong>, the <strong>process of diagnosis</strong>, and the <strong>science of treatment</strong>. Together, these form a feedback-driven loop that continuously refines human understanding and interventions in biology.</p>
-<hr />
-<h1 id="level-1">level 1<a class="headerlink" href="#level-1" title="Permanent link">&para;</a></h1>
-<h2 id="1-the-nature-of-disease">1. The Nature of Disease<a class="headerlink" href="#1-the-nature-of-disease" title="Permanent link">&para;</a></h2>
-<p>At its core, <strong>disease</strong> represents a disruption in a system's optimal function. In biological terms, a living organism functions through the harmony of its <strong>structure</strong>, <strong>function</strong>, and <strong>adaptation</strong>. When this harmony is disturbed—whether by internal degeneration, external assault, or control system failure—the result is dysfunction.</p>
-<p>Disease can manifest through multiple dimensions:
-- <strong>Structural damage</strong> (e.g., broken bone, malformed organ)
-- <strong>Functional decline</strong> (e.g., heart not pumping efficiently)
-- <strong>Regulatory errors</strong> (e.g., hormones out of balance)
-- <strong>Adaptive failure</strong> (e.g., immune system overreacting)
-- <strong>Communication faults</strong> (e.g., nerve signal loss)
-- <strong>Resource imbalance</strong> (e.g., nutrient or oxygen deficit)
-- <strong>Temporal patterns</strong> (e.g., chronic vs acute onset)</p>
-<p>These disruptions arise due to insults such as infections, toxins, trauma, genetic mutations, or lifestyle stressors. Some are <strong>reversible</strong>, others <strong>progressive</strong>, and many lie on a spectrum.</p>
-<p>Medicine first begins by recognizing this deviation from normalcy—not simply labeling symptoms, but identifying <strong>which system is failing</strong>, <strong>why</strong>, and <strong>how deeply</strong>.</p>
-<hr />
-<h2 id="2-the-process-of-diagnosis">2. The Process of Diagnosis<a class="headerlink" href="#2-the-process-of-diagnosis" title="Permanent link">&para;</a></h2>
-<p>To intervene effectively, medicine must make sense of disorder. This is where <strong>diagnosis</strong> enters: the bridge between observation and explanation. Diagnosis interprets <strong>signs</strong> (what a clinician sees), <strong>symptoms</strong> (what the patient feels), and <strong>data</strong> (what tools measure) to infer what internal disruption has occurred.</p>
-<p>Diagnosis works through reasoning models:
-- <strong>Pattern recognition</strong> (matching current case with known disorders)
-- <strong>Rule-based logic</strong> (if-then relationships)
-- <strong>Probabilistic reasoning</strong> (Bayesian thinking, weighing likelihoods)</p>
-<p>This process is iterative and adaptive. New findings may confirm or challenge initial impressions. Good diagnostic reasoning constantly loops back: collecting more data, refining hypotheses, and considering alternatives (differential diagnosis).</p>
-<p>Crucially, diagnosis is not just naming a disease—it’s about <strong>mapping the root dysfunction</strong>, its stage, and its system-wide effects. It enables targeted action rather than guesswork.</p>
-<hr />
-<h2 id="3-the-role-of-treatment">3. The Role of Treatment<a class="headerlink" href="#3-the-role-of-treatment" title="Permanent link">&para;</a></h2>
-<p>Once the system’s failure has been identified, <strong>treatment</strong> seeks to restore order. Treatment is intervention: the art of shifting a system from a disordered state back toward balance—either by eliminating causes, restoring function, or adapting the system to new realities.</p>
-<p>There are many strategies:
-- <strong>Causal treatment</strong> addresses the root (e.g., antibiotics for infection)
-- <strong>Symptomatic treatment</strong> reduces suffering (e.g., painkillers)
-- <strong>Supportive therapy</strong> boosts system resilience (e.g., hydration, oxygen)
-- <strong>Replacement therapy</strong> substitutes missing elements (e.g., insulin)
-- <strong>Regulatory intervention</strong> recalibrates control loops (e.g., blood pressure meds)
-- <strong>Training/adaptation</strong> enhances the system’s tolerance or performance (e.g., rehab)</p>
-<p>All treatments aim at one or more of three goals:
-- <strong>Cure</strong> (resolve the disruption entirely)
-- <strong>Control</strong> (manage dysfunction over time)
-- <strong>Comfort</strong> (minimize suffering when cure is not possible)</p>
-<p>The treatment itself functions like a control system:<br />
-- <strong>Input</strong> is the drug, therapy, or procedure<br />
-- <strong>Process</strong> is the system's response<br />
-- <strong>Output</strong> is symptom change, biomarker normalization, or recovery<br />
-- <strong>Feedback</strong> comes from ongoing monitoring, which guides adjustment  </p>
-<p>Thus, medicine doesn't stop at treatment—it <strong>listens to the system</strong> and <strong>adjusts its intervention</strong> based on the response. This creates a closed-loop system of care, always tuning itself for better outcomes.</p>
-<hr />
-<h2 id="4-the-full-medical-loop">4. The Full Medical Loop<a class="headerlink" href="#4-the-full-medical-loop" title="Permanent link">&para;</a></h2>
-<p>The journey of medicine is cyclical:</p>
-<ol>
-<li><strong>Observation</strong>: Detect deviations in health  </li>
-<li><strong>Diagnosis</strong>: Understand the cause and mechanism  </li>
-<li><strong>Treatment</strong>: Intervene to restore function  </li>
-<li><strong>Feedback</strong>: Monitor results and refine both diagnosis and treatment  </li>
-<li><strong>Learning</strong>: Update medical knowledge and models  </li>
-</ol>
-<p>This loop is not only applied to individuals, but also across populations—where <strong>public health</strong>, <strong>epidemiology</strong>, and <strong>preventive medicine</strong> operate at scale to reduce the incidence of disruption in the first place.</p>
-<hr />
-<h2 id="5-the-systemic-vision">5. The Systemic Vision<a class="headerlink" href="#5-the-systemic-vision" title="Permanent link">&para;</a></h2>
-<p>Ultimately, medicine is systems science applied to biology. The body is a network of feedback loops, flows, structures, and adaptive algorithms. Disease is a signal of breakdown; diagnosis is system inquiry; treatment is system repair and recalibration.</p>
-<p>By thinking in terms of systems, medicine:
-- Identifies which <strong>subsystem</strong> is misfiring (cardiovascular, neurological, metabolic)<br />
-- Determines <strong>how and why</strong> it failed (pathophysiology)<br />
-- Designs <strong>targeted interventions</strong> (from surgery to nanomedicine)<br />
-- Learns from <strong>responses and errors</strong> to improve continuously  </p>
-<p>Thus, medicine is not static. It is an evolving intelligence system—always integrating new data, refining its models, and improving its interventions.</p>
-<p>-</p>
-<hr />
-<div style="display: flex; justify-content: center; align-items: center; height: 40vh; font-size: 100px;">
-  ↓
-</div>
+  <h1>01 introduction</h1>
 
-<h1 id="level-2">level 2<a class="headerlink" href="#level-2" title="Permanent link">&para;</a></h1>
-<h1 id="theory-of-disease">🧬 Theory of Disease<a class="headerlink" href="#theory-of-disease" title="Permanent link">&para;</a></h1>
-<hr />
-<h2 id="1-definition">1. Definition<a class="headerlink" href="#1-definition" title="Permanent link">&para;</a></h2>
-<p>Disease is a deviation or disruption from a system's optimal state or function, resulting in maladaptation, degraded performance, or damage to its structure, control, or outputs.</p>
-<hr />
-<h2 id="2-core-principles">2. Core Principles<a class="headerlink" href="#2-core-principles" title="Permanent link">&para;</a></h2>
-<h3 id="a-normalcy-baseline">A. Normalcy Baseline<a class="headerlink" href="#a-normalcy-baseline" title="Permanent link">&para;</a></h3>
-<p>Every system has:</p>
-<ul>
-<li><strong>Structural Integrity</strong> – what it is  </li>
-<li><strong>Functional Equilibrium</strong> – what it does  </li>
-<li><strong>Adaptive Capacity</strong> – how it responds</li>
-</ul>
-<p>Disease begins when any of these are:</p>
-<ul>
-<li><strong>Broken</strong> – structural damage  </li>
-<li><strong>Dysregulated</strong> – functional failure  </li>
-<li><strong>Overwhelmed</strong> – adaptive limits exceeded</li>
-</ul>
-<hr />
-<h2 id="3-key-dimensions-of-disease">3. Key Dimensions of Disease<a class="headerlink" href="#3-key-dimensions-of-disease" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Dimension</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Structural</strong></td>
-<td>Physical integrity and architecture of the system</td>
-</tr>
-<tr>
-<td><strong>Functional</strong></td>
-<td>Performance and execution of intended roles or tasks</td>
-</tr>
-<tr>
-<td><strong>Regulatory</strong></td>
-<td>Control systems and feedback mechanisms maintaining balance</td>
-</tr>
-<tr>
-<td><strong>Adaptive</strong></td>
-<td>Capacity to respond to internal/external changes and stressors</td>
-</tr>
-<tr>
-<td><strong>Informational</strong></td>
-<td>Accuracy and fidelity of signaling and communication</td>
-</tr>
-<tr>
-<td><strong>Resource-related</strong></td>
-<td>Availability and utilization of essential inputs (energy, substrates, etc.)</td>
-</tr>
-<tr>
-<td><strong>Temporal</strong></td>
-<td>Timing, progression, and chronicity of disruption</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="4-system-disruption-model">4. System Disruption Model<a class="headerlink" href="#4-system-disruption-model" title="Permanent link">&para;</a></h2>
-<p>A disease state can emerge from:</p>
-<ul>
-<li>
-<p><strong>Input Overload</strong><br />
-  → Excessive stimulus overwhelms the system (e.g., toxins, stress)</p>
-</li>
-<li>
-<p><strong>Control Failure</strong><br />
-  → Feedback loops fail to maintain homeostasis</p>
-</li>
-<li>
-<p><strong>Structural Degradation</strong><br />
-  → Wear, injury, mutation, or malformation damages form</p>
-</li>
-<li>
-<p><strong>Communication Loss</strong><br />
-  → Signals (electrical, chemical, logical) fail or misroute</p>
-</li>
-<li>
-<p><strong>Energy/Resource Imbalance</strong><br />
-  → Deficient or excess resources impair function</p>
-</li>
-</ul>
-<hr />
-<h2 id="5-disease-lifecycle">5. Disease Lifecycle<a class="headerlink" href="#5-disease-lifecycle" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>Initiation</strong> – Trigger or insult is introduced  </li>
-<li><strong>Propagation</strong> – Local or systemic spread of effects  </li>
-<li><strong>Manifestation</strong> – Observable signs or symptoms emerge  </li>
-<li><strong>Compensation/Decompensation</strong> – System attempts adaptation  </li>
-<li><strong>Resolution/Deterioration</strong> – Recovery, chronicity, or failure</li>
-</ol>
-<hr />
-<h2 id="6-disease-categories-abstracted">6. Disease Categories (Abstracted)<a class="headerlink" href="#6-disease-categories-abstracted" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Degenerative</strong> – Loss of integrity over time  </li>
-<li><strong>Inflammatory/Reactive</strong> – Over-response to stimuli  </li>
-<li><strong>Neoplastic/Proliferative</strong> – Uncontrolled growth or replication  </li>
-<li><strong>Deficiency-based</strong> – Lacking essential inputs  </li>
-<li><strong>Infective/External</strong> – External agents disrupt the system  </li>
-<li><strong>Auto-regulatory</strong> – Self-destruction through internal misidentification</li>
-</ul>
-<hr />
-<h2 id="7-diagnosis-interface">7. Diagnosis Interface<a class="headerlink" href="#7-diagnosis-interface" title="Permanent link">&para;</a></h2>
-<p>To detect disease:</p>
-<ul>
-<li>Measure deviation from baselines  </li>
-<li>Identify failed feedback mechanisms  </li>
-<li>Map observed features to disruption patterns  </li>
-<li>Simulate outcomes with/without current control state</li>
-</ul>
-<hr />
-<h2 id="8-treatment-foundation">8. Treatment Foundation<a class="headerlink" href="#8-treatment-foundation" title="Permanent link">&para;</a></h2>
-<p>Treatment aims to:</p>
-<ul>
-<li>Remove the cause  </li>
-<li>Stabilize or repair the structure  </li>
-<li>Restore regulation or balance  </li>
-<li>Improve tolerance or adaptation</li>
-</ul>
-<hr />
-<h1 id="theory-of-diagnosis">∞ Theory of Diagnosis<a class="headerlink" href="#theory-of-diagnosis" title="Permanent link">&para;</a></h1>
-<hr />
-<h2 id="1-definition_1">1. Definition<a class="headerlink" href="#1-definition_1" title="Permanent link">&para;</a></h2>
-<p>Diagnosis is the cognitive and computational process of identifying the underlying cause of a deviation or dysfunction within a system, using observable data and inference.</p>
-<blockquote>
-<p>It transforms perception into understanding by bridging symptoms and mechanisms.</p>
-</blockquote>
-<hr />
-<h2 id="2-core-principles_1">2. Core Principles<a class="headerlink" href="#2-core-principles_1" title="Permanent link">&para;</a></h2>
-<h3 id="a-observability">A. Observability<a class="headerlink" href="#a-observability" title="Permanent link">&para;</a></h3>
-<p>Certain aspects of a system can be detected or measured.</p>
-<h3 id="b-causality">B. Causality<a class="headerlink" href="#b-causality" title="Permanent link">&para;</a></h3>
-<p>All observations emerge from underlying mechanisms.</p>
-<h3 id="c-regularity">C. Regularity<a class="headerlink" href="#c-regularity" title="Permanent link">&para;</a></h3>
-<p>Similar causes tend to produce similar patterns.</p>
-<h3 id="d-mappability">D. Mappability<a class="headerlink" href="#d-mappability" title="Permanent link">&para;</a></h3>
-<p>The connection between signs and causes can be modeled logically or statistically.</p>
-<hr />
-<h2 id="3-diagnostic-components">3. Diagnostic Components<a class="headerlink" href="#3-diagnostic-components" title="Permanent link">&para;</a></h2>
-<h3 id="a-input-layer">A. Input Layer<a class="headerlink" href="#a-input-layer" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Observable features (signs, symptoms, metrics)  </li>
-<li>Contextual data (history, timeline, environment)</li>
-</ul>
-<h3 id="b-knowledge-base">B. Knowledge Base<a class="headerlink" href="#b-knowledge-base" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Conditions and their characteristic patterns  </li>
-<li>Structure-function associations  </li>
-<li>Probabilistic priors (prevalence, risk)</li>
-</ul>
-<h3 id="c-inference-engines">C. Inference Engines<a class="headerlink" href="#c-inference-engines" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Statistical Matching</strong> – Likelihood-based selection  </li>
-<li><strong>Logical Deduction</strong> – Rule-based conclusions  </li>
-<li><strong>Similarity Measures</strong> – Pattern or vector alignment  </li>
-<li><strong>Bayesian Inference</strong> – Probabilistic updating  </li>
-<li><strong>Pattern Recognition</strong> – Learned templates or AI models</li>
-</ul>
-<hr />
-<h2 id="4-diagnostic-framework">4. Diagnostic Framework<a class="headerlink" href="#4-diagnostic-framework" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>Observation</strong> – Gather quantitative and qualitative data  </li>
-<li><strong>Pattern Recognition</strong> – Compare observations to known condition profiles  </li>
-<li><strong>Hypothesis Generation</strong> – Formulate likely causes  </li>
-<li><strong>Discriminatory Testing</strong> – Narrow down possibilities  </li>
-<li><strong>Conclusion</strong> – Assign diagnosis with confidence level</li>
-</ol>
-<hr />
-<h2 id="5-logical-models">5. Logical Models<a class="headerlink" href="#5-logical-models" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p><strong>Deductive Logic</strong><br />
-  → General rule → Specific conclusion<br />
-<em>Example: If A → B, and A is true, then B is expected.</em></p>
-</li>
-<li>
-<p><strong>Inductive Logic</strong><br />
-  → Specific observations → General rule<br />
-<em>Example: A, B, C all suggest hypothesis X.</em></p>
-</li>
-<li>
-<p><strong>Abductive Logic</strong><br />
-  → Inference to best explanation<br />
-<em>Example: Given the findings, what’s the most likely cause?</em></p>
-</li>
-</ul>
-<hr />
-<h2 id="6-diagnostic-validity">6. Diagnostic Validity<a class="headerlink" href="#6-diagnostic-validity" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Sensitivity</strong> – Can it detect true positives?  </li>
-<li><strong>Specificity</strong> – Can it avoid false positives?  </li>
-<li><strong>Predictive Value</strong> – How reliable is the diagnosis?  </li>
-<li><strong>Coherence</strong> – Do all findings align?</li>
-</ul>
-<hr />
-<h2 id="7-diagnostic-output">7. Diagnostic Output<a class="headerlink" href="#7-diagnostic-output" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Label</strong> – Identified condition or state  </li>
-<li><strong>Certainty</strong> – Probability or confidence estimate  </li>
-<li><strong>Differential List</strong> – Ranked alternative possibilities  </li>
-<li><strong>Next Steps</strong> – Tests, treatments, or monitoring</li>
-</ul>
-<hr />
-<h2 id="8-feedback-and-learning">8. Feedback and Learning<a class="headerlink" href="#8-feedback-and-learning" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Real-world outcomes update models  </li>
-<li>Diagnosis accuracy improves over time  </li>
-<li>Continuous refinement strengthens the system</li>
-</ul>
-<hr />
-<h1 id="theory-of-treatment">⚕️ Theory of Treatment<a class="headerlink" href="#theory-of-treatment" title="Permanent link">&para;</a></h1>
-<hr />
-<h2 id="1-definition_2">1. Definition<a class="headerlink" href="#1-definition_2" title="Permanent link">&para;</a></h2>
-<p>Treatment is the intentional application of interventions to restore, stabilize, or optimize a system that has deviated from its ideal functional state.</p>
-<p>It involves manipulating inputs, structures, or control mechanisms to return the system to equilibrium or improve its performance.</p>
-<hr />
-<h2 id="2-core-principles_2">2. Core Principles<a class="headerlink" href="#2-core-principles_2" title="Permanent link">&para;</a></h2>
-<h3 id="a-correction">A. Correction<a class="headerlink" href="#a-correction" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Identify root disruption  </li>
-<li>Apply counteracting measures</li>
-</ul>
-<h3 id="b-restoration">B. Restoration<a class="headerlink" href="#b-restoration" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Rebuild or reinforce damaged components  </li>
-<li>Replace or retrain lost functions</li>
-</ul>
-<h3 id="c-adaptation">C. Adaptation<a class="headerlink" href="#c-adaptation" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Modify system or environment  </li>
-<li>Enhance resilience</li>
-</ul>
-<hr />
-<h2 id="3-types-of-treatment">3. Types of Treatment<a class="headerlink" href="#3-types-of-treatment" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Goal</th>
-<th>Examples</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Curative</strong></td>
-<td>Eliminate the root cause</td>
-<td>Antibiotics for infection, surgery to remove a tumor</td>
-</tr>
-<tr>
-<td><strong>Supportive</strong></td>
-<td>Maintain function during healing</td>
-<td>IV fluids, oxygen therapy</td>
-</tr>
-<tr>
-<td><strong>Symptomatic</strong></td>
-<td>Alleviate symptoms</td>
-<td>Painkillers, antipyretics</td>
-</tr>
-<tr>
-<td><strong>Preventive</strong></td>
-<td>Prevent disease onset or recurrence</td>
-<td>Vaccines, lifestyle counseling</td>
-</tr>
-<tr>
-<td><strong>Rehabilitative</strong></td>
-<td>Restore or adapt function</td>
-<td>Physiotherapy, prosthetics</td>
-</tr>
-<tr>
-<td><strong>Palliative</strong></td>
-<td>Improve quality of life in incurable states</td>
-<td>Hospice care, terminal pain relief</td>
-</tr>
-<tr>
-<td><strong>Substitutive</strong></td>
-<td>Replace missing or failing component</td>
-<td>Insulin, dialysis, organ transplant</td>
-</tr>
-<tr>
-<td><strong>Regenerative</strong></td>
-<td>Stimulate healing or tissue regeneration</td>
-<td>Stem cell therapy, tissue engineering</td>
-</tr>
-<tr>
-<td><strong>Behavioral/Environmental</strong></td>
-<td>Modify behavior or surroundings</td>
-<td>Cognitive therapy, ergonomic adjustments</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="4-treatment-strategy-framework">4. Treatment Strategy Framework<a class="headerlink" href="#4-treatment-strategy-framework" title="Permanent link">&para;</a></h2>
-<h3 id="step-1-assessment">Step 1: Assessment<a class="headerlink" href="#step-1-assessment" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Measure deviation  </li>
-<li>Assess urgency and reversibility  </li>
-<li>Identify affected subsystems</li>
-</ul>
-<h3 id="step-2-targeting">Step 2: Targeting<a class="headerlink" href="#step-2-targeting" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Localize intervention site (input, control, structure)  </li>
-<li>Classify disturbance type (acute, chronic, feedback error)</li>
-</ul>
-<h3 id="step-3-intervention-planning">Step 3: Intervention Planning<a class="headerlink" href="#step-3-intervention-planning" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Choose action type (remove, repair, replace, regulate)  </li>
-<li>Prioritize:  </li>
-<li>Efficacy  </li>
-<li>Safety  </li>
-<li>Sustainability</li>
-</ul>
-<h3 id="step-4-execution">Step 4: Execution<a class="headerlink" href="#step-4-execution" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Apply under controlled conditions  </li>
-<li>Monitor for effects and side reactions</li>
-</ul>
-<h3 id="step-5-evaluation">Step 5: Evaluation<a class="headerlink" href="#step-5-evaluation" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Assess outcomes  </li>
-<li>Adjust plan as needed</li>
-</ul>
-<hr />
-<h2 id="5-optimization-criteria">5. Optimization Criteria<a class="headerlink" href="#5-optimization-criteria" title="Permanent link">&para;</a></h2>
-<p><strong>Effectiveness = (Reversibility × Precision × Adaptability) / (Cost × Risk × Time)</strong></p>
-<p>Where:</p>
-<ul>
-<li><strong>Reversibility</strong> – Ability to return to baseline  </li>
-<li><strong>Precision</strong> – Accuracy of targeting  </li>
-<li><strong>Adaptability</strong> – System’s capacity to integrate changes</li>
-</ul>
-<hr />
-<h2 id="6-control-theory-integration">6. Control Theory Integration<a class="headerlink" href="#6-control-theory-integration" title="Permanent link">&para;</a></h2>
-<p>Treatments as feedback systems:</p>
-<ul>
-<li><strong>Open-Loop</strong> – No monitoring  </li>
-<li><strong>Closed-Loop</strong> – Real-time adjustments  </li>
-<li><strong>Adaptive Control</strong> – Learns from outcomes</li>
-</ul>
-<hr />
-<h2 id="7-treatment-lifecycle">7. Treatment Lifecycle<a class="headerlink" href="#7-treatment-lifecycle" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>Initiation</strong> – Begin with hypothesis or protocol  </li>
-<li><strong>Application</strong> – Controlled deployment  </li>
-<li><strong>Response Tracking</strong> – Monitor effects  </li>
-<li><strong>Adjustment</strong> – Modify intervention  </li>
-<li><strong>Resolution</strong> – Recovery, compensation, or transformation</li>
-</ol>
-<hr />
-<h2 id="8-outcome-goals">8. Outcome Goals<a class="headerlink" href="#8-outcome-goals" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Cure</strong> – Full resolution  </li>
-<li><strong>Management</strong> – Controlled long-term balance  </li>
-<li><strong>Palliation</strong> – Comfort and stability  </li>
-<li><strong>Prevention</strong> – Block emergence or recurrence</li>
-</ul>
-<hr />
-<p>Would you like this structured into a <strong>PDF</strong>, <strong>HTML</strong>, or a <strong>Markdown</strong> document?</p>
-<p>Based on your model—which includes anatomical abstraction, physiological control systems, pathological progression modeling, diagnostic engines, and treatment optimization—here is a <strong>Theory of Treatment</strong> adapted and aligned specifically with your system architecture:</p>
-<hr />
-<p>Here’s a unified, system‑agnostic framework—anchored in your anatomical, physiological, and computational model—that ties together the <strong>Theory of Disease</strong>, <strong>Theory of Diagnosis</strong>, and <strong>Theory of Treatment</strong>.</p>
-<hr />
-<div style="display: flex; justify-content: center; align-items: center; height: 40vh; font-size: 100px;">
-  ↓
-</div>
 
-<h1 id="level-3">level 3<a class="headerlink" href="#level-3" title="Permanent link">&para;</a></h1>
-<h1 id="1-theory-of-disease">🧬 1. Theory of Disease<a class="headerlink" href="#1-theory-of-disease" title="Permanent link">&para;</a></h1>
-<h2 id="definition">Definition<a class="headerlink" href="#definition" title="Permanent link">&para;</a></h2>
-<p>A <strong>disease</strong> is any deviation from a system’s optimal state—structurally, functionally, or adaptively—resulting in degraded performance or damage.</p>
-<h2 id="core-components">Core Components<a class="headerlink" href="#core-components" title="Permanent link">&para;</a></h2>
-<ol>
-<li>
-<p><strong>Structural Foundation</strong></p>
-</li>
-<li>
-<p>Units encoded as geometric primitives in a shared coordinate space.</p>
-</li>
-<li>
-<p>Structural types (e.g. tissue, module) labeled numerically or symbolically.</p>
-</li>
-<li>
-<p><strong>Control System Integrity</strong></p>
-</li>
-<li>
-<p>Each unit modeled as a feedback control loop (inputs → transfer function → feedback → outputs).</p>
-</li>
-<li>
-<p>Homeostatic (negative) and amplifying (positive) loops maintain equilibrium.</p>
-</li>
-<li>
-<p><strong>State Progression</strong></p>
-</li>
-<li>
-<p>Pathological states represented as nodes in a finite‑state/Markov model.</p>
-</li>
-<li>Transitions driven by stimuli, control failures, or external insults.</li>
-<li>Fuzzy boundaries capture uncertainty between similar states.</li>
-</ol>
-<hr />
-<h1 id="2-theory-of-diagnosis">🧠 2. Theory of Diagnosis<a class="headerlink" href="#2-theory-of-diagnosis" title="Permanent link">&para;</a></h1>
-<h2 id="definition_1">Definition<a class="headerlink" href="#definition_1" title="Permanent link">&para;</a></h2>
-<p><strong>Diagnosis</strong> infers the underlying cause(s) of observed deviations by mapping features to modeled disease states.</p>
-<h2 id="inference-architecture">Inference Architecture<a class="headerlink" href="#inference-architecture" title="Permanent link">&para;</a></h2>
-<ol>
-<li>
-<p><strong>Feature Encoding</strong></p>
-</li>
-<li>
-<p>Map observable data (signs, metrics) into feature vectors or sets.</p>
-</li>
-<li>
-<p>Anchor in the same coordinate system used for anatomy.</p>
-</li>
-<li>
-<p><strong>Similarity Matching</strong></p>
-</li>
-<li>
-<p>Compute vector similarities (e.g., cosine) between patient data and each disease‑state prototype.</p>
-</li>
-<li>
-<p><strong>Probabilistic Reasoning</strong></p>
-</li>
-</ol>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>P(D|S) = \frac{P(S|D)\,P(D)}{P(S)}
-</span></code></pre></div>
-<ul>
-<li>
-<p>Update prior likelihoods of each disease given new evidence.</p>
-</li>
-<li>
-<p><strong>Logical Validation</strong></p>
-</li>
-<li>
-<p>Apply rule sets (AND/OR/NOT) to enforce structural and control‑based constraints.</p>
-</li>
-<li>
-<p><strong>Integrated Decision Function</strong></p>
-</li>
-</ul>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>D^* = \underset{D}{\arg\max}\bigl[\text{sim}(S,D)\times\mathbf{1}_{\text{logic}}(S,D)\times\text{specificity}(S,D)\bigr]
-</span></code></pre></div>
-<ul>
-<li>Balances pattern match, rule compliance, and discriminative power.</li>
-</ul>
-<hr />
-<h1 id="3-theory-of-treatment">⚙️ 3. Theory of Treatment<a class="headerlink" href="#3-theory-of-treatment" title="Permanent link">&para;</a></h1>
-<h2 id="definition_2">Definition<a class="headerlink" href="#definition_2" title="Permanent link">&para;</a></h2>
-<p><strong>Treatment</strong> is the deliberate modulation of system parameters, structures, or feedback mechanisms to steer the system from a diseased state back toward its optimal state.</p>
-<h2 id="treatment-architecture">Treatment Architecture<a class="headerlink" href="#treatment-architecture" title="Permanent link">&para;</a></h2>
-<ol>
-<li>
-<p><strong>Anatomical Correction</strong></p>
-</li>
-<li>
-<p>Represent interventions as vector transformations in the structural coordinate space.</p>
-</li>
-<li>
-<p><strong>Control Loop Tuning</strong></p>
-</li>
-<li>
-<p>Adjust transfer functions or feedback gains to re‑stabilize homeostasis.</p>
-</li>
-<li>
-<p><strong>State Transition Engineering</strong></p>
-</li>
-<li>
-<p>Use the state‑machine/Markov model to plan a sequence of interventions that maximizes the probability of restoration.</p>
-</li>
-<li>
-<p><strong>Decision Process</strong></p>
-</li>
-<li>
-<p><strong>Protocol Selection</strong></p>
-<p>$$
-    T^* = \arg\max_{T}\bigl[\Delta\text{State}(T)\times\text{Utility}(T)\bigr]
-  $$
-   2. <strong>Utility Function</strong></p>
-<p>$$
-    \text{Utility} = \frac{\text{Success}\times\text{Durability}}{\text{Cost}}
-  $$
-   3. <strong>Adaptive Feedback</strong></p>
-<ul>
-<li>Monitor system outputs in real time and adjust parameters via closed‑loop control.</li>
-</ul>
-</li>
-</ol>
-<hr />
-<h1 id="4-lifecycle-feedback">🔄 4. Lifecycle &amp; Feedback<a class="headerlink" href="#4-lifecycle-feedback" title="Permanent link">&para;</a></h1>
-<ol>
-<li>
-<p><strong>Initiation</strong></p>
-</li>
-<li>
-<p>Disease: Trigger enters system</p>
-</li>
-<li>Diagnosis: Features observed</li>
-<li>
-<p>Treatment: Base protocol selected</p>
-</li>
-<li>
-<p><strong>Propagation</strong></p>
-</li>
-<li>
-<p>Disease: States evolve</p>
-</li>
-<li>Diagnosis: Evidence accumulates</li>
-<li>
-<p>Treatment: Interim effects monitored</p>
-</li>
-<li>
-<p><strong>Resolution</strong></p>
-</li>
-<li>
-<p>Disease: System approaches equilibrium or fails</p>
-</li>
-<li>Diagnosis: Confidence refined</li>
-<li>
-<p>Treatment: Protocol converges or iterates</p>
-</li>
-<li>
-<p><strong>Learning Loop</strong></p>
-</li>
-<li>
-<p>Data from outcomes feed back to update geometric models, transfer‑function parameters, state‑transition probabilities, and rule sets—continuously improving accuracy and efficacy.</p>
-</li>
-</ol>
-<hr />
-<div style="display: flex; justify-content: center; align-items: center; height: 40vh; font-size: 100px;">
-  ↓
-</div>
-
-<h1 id="level-4">level 4<a class="headerlink" href="#level-4" title="Permanent link">&para;</a></h1>
-<p>This tri‑part framework ensures each phase—understanding disease, inferring its presence, and restoring function—is <strong>anchored in the same anatomical, physiological, and computational substrate</strong>, enabling seamless integration and adaptive refinement.</p>
-<h2 id="1-what-is-diseasetheory">1. What Is Disease?(Theory)<a class="headerlink" href="#1-what-is-diseasetheory" title="Permanent link">&para;</a></h2>
-<p>A disease is when something in a system (a body, a machine, or any organized setup) stops working the way it should. It can be:</p>
-<ul>
-<li><strong>Structural damage</strong> (broken part)</li>
-<li><strong>Control failure</strong> (feedback or regulation goes wrong)</li>
-<li><strong>Overload</strong> (too much stress or input)</li>
-</ul>
-<p>We can picture every part in a shared map (like a 3D grid) and track how it moves from “healthy” to “sick” over time.</p>
-<hr />
-<h2 id="2-how-we-figure-out-diagnose-the-problem">2. How We Figure Out (Diagnose) the Problem<a class="headerlink" href="#2-how-we-figure-out-diagnose-the-problem" title="Permanent link">&para;</a></h2>
-<p>Diagnosis means using what we see to find the root cause. We do this in steps:</p>
-<ol>
-<li><strong>Collect clues</strong>: Write down what’s wrong (symptoms or errors).</li>
-<li><strong>Compare patterns</strong>: See which known problems match those clues best.</li>
-<li><strong>Use probability</strong>: Update how likely each problem is when new clues appear.</li>
-<li><strong>Check rules</strong>: Make sure the chosen problem fits all known “if–then” rules.</li>
-<li><strong>Decide</strong>: Pick the problem that best fits the clues, probabilities, and rules.</li>
-</ol>
-<hr />
-<h2 id="3-how-we-fix-it-treatment">3. How We Fix It (Treatment)<a class="headerlink" href="#3-how-we-fix-it-treatment" title="Permanent link">&para;</a></h2>
-<p>Treatment means taking actions to bring the system back to normal. We:</p>
-<ol>
-<li><strong>Repair structure</strong>: Fix or replace broken parts.</li>
-<li><strong>Tune controls</strong>: Adjust feedback settings so the system self-regulates again.</li>
-<li><strong>Plan steps</strong>: Choose a series of actions that most likely moves the system back to “healthy.”</li>
-<li><strong>Measure success</strong>: Watch results in real time and adjust if needed.</li>
-</ol>
-<p>We pick the plan with the best balance of success, cost, and safety.</p>
-<hr />
-<h2 id="4-learning-and-improving">4. Learning and Improving<a class="headerlink" href="#4-learning-and-improving" title="Permanent link">&para;</a></h2>
-<p>After treatment, we record what happened. That data updates our maps, rules, and probabilities—so next time, we diagnose faster and treat more effectively.</p>
-<hr />
-<p>This simple loop—understand disease, diagnose it, treat it, then learn—works for bodies, machines, software, or any complex system</p>
-<p>Here is your refined, <strong>system-agnostic</strong> version of the framework, with examples removed so that it applies to any physiological or pathological system</p>
-<div style="display: flex; justify-content: center; align-items: center; height: 40vh; font-size: 100px;">
-  ↓
-</div>
-
-<h1 id="core-framework-architecture">🧱 Core Framework Architecture<a class="headerlink" href="#core-framework-architecture" title="Permanent link">&para;</a></h1>
-<h2 id="1-structural-foundation">1. Structural Foundation<a class="headerlink" href="#1-structural-foundation" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Geometric Modeling</strong>: Each anatomical unit represented using abstract geometric forms</li>
-<li>
-<p><strong>Coordinate System</strong>:</p>
-</li>
-<li>
-<p>Define origin point in reference to key structure</p>
-</li>
-<li>Assign axes corresponding to functional or directional relevance</li>
-<li>Encode structural types numerically or symbolically</li>
-</ul>
-<hr />
-<h2 id="2-control-system-representation">2. Control System Representation<a class="headerlink" href="#2-control-system-representation" title="Permanent link">&para;</a></h2>
-<p>Each physiological unit is modeled as a <strong>control system</strong>:</p>
-<ul>
-<li><strong>Inputs</strong>: External or internal stimuli/stresses</li>
-<li><strong>Transfer Functions</strong>: Transformation or resistance properties</li>
-<li>
-<p><strong>Feedback Mechanisms</strong>:</p>
-</li>
-<li>
-<p>Negative (homeostasis)</p>
-</li>
-<li>Positive (amplification)</li>
-<li><strong>Outputs</strong>: Observable features or disruptions</li>
-</ul>
-<hr />
-<h2 id="3-pathological-state-modeling">3. Pathological State Modeling<a class="headerlink" href="#3-pathological-state-modeling" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>State Transitions</strong>: Use finite-state or Markov models to represent progression</li>
-<li><strong>Fuzzy Boundaries</strong>: Represent overlap or uncertainty in symptom states using fuzzy logic</li>
-<li><strong>Causal Logic</strong>: Define rule-based structures using logical operators (AND, OR, NOT)</li>
-</ul>
-<hr />
-<h1 id="diagnostic-engine">🧠 Diagnostic Engine<a class="headerlink" href="#diagnostic-engine" title="Permanent link">&para;</a></h1>
-<h3 id="multilayer-inference-system">Multilayer Inference System:<a class="headerlink" href="#multilayer-inference-system" title="Permanent link">&para;</a></h3>
-<ol>
-<li>
-<p><strong>Feature Encoding</strong>:</p>
-</li>
-<li>
-<p>Convert observed features into sets or vectors</p>
-</li>
-<li>
-<p><strong>Similarity Matching</strong>:</p>
-</li>
-<li>
-<p>Compare encoded patient data with known condition patterns</p>
-</li>
-<li>
-<p><strong>Probabilistic Inference</strong>:</p>
-</li>
-<li>
-<p>Calculate likelihood of conditions given current observations</p>
-</li>
-<li>
-<p><strong>Logical Validation</strong>:</p>
-</li>
-<li>
-<p>Apply rule-based logic to confirm or exclude conditions</p>
-</li>
-<li>
-<p><strong>Integrated Diagnosis Function</strong>:</p>
-</li>
-<li>
-<p>Combine similarity, logic, and specificity into a final decision score</p>
-</li>
-</ol>
-<hr />
-<h1 id="treatment-optimization-framework">💊 Treatment Optimization Framework<a class="headerlink" href="#treatment-optimization-framework" title="Permanent link">&para;</a></h1>
-<h3 id="decision-making-layers">Decision-making Layers:<a class="headerlink" href="#decision-making-layers" title="Permanent link">&para;</a></h3>
-<ol>
-<li>
-<p><strong>Standardized Protocols</strong>:</p>
-</li>
-<li>
-<p>Predefined intervention pathways modeled as state transitions</p>
-</li>
-<li>
-<p><strong>Cost–Benefit Evaluation</strong>:</p>
-</li>
-<li>
-<p>Quantify expected utility using success rates, durability, and resource consumption</p>
-</li>
-<li>
-<p><strong>Multi-agent Negotiation</strong>:</p>
-</li>
-<li>
-<p>Use game theory to resolve trade-offs among stakeholders (e.g., clinician, patient, system)</p>
-</li>
-<li>
-<p><strong>Adaptive Refinement</strong>:</p>
-</li>
-<li>
-<p>Adjust treatment dynamically based on intra-process feedback</p>
-</li>
-</ol>
-<hr />
-<h1 id="general-clinical-workflow">🏥 General Clinical Workflow<a class="headerlink" href="#general-clinical-workflow" title="Permanent link">&para;</a></h1>
-<ol>
-<li>
-<p><strong>Diagnosis Phase</strong>:</p>
-</li>
-<li>
-<p>Map symptoms and signs to coordinate space and feature sets</p>
-</li>
-<li>
-<p>Apply layered inference (similarity, probability, logic)</p>
-</li>
-<li>
-<p><strong>Treatment Planning</strong>:</p>
-</li>
-<li>
-<p>Choose optimal pathway from protocol database</p>
-</li>
-<li>
-<p>Evaluate and adjust based on cost–benefit and negotiation</p>
-</li>
-<li>
-<p><strong>Outcome Monitoring</strong>:</p>
-</li>
-<li>
-<p>Track state changes over time using quantitative and qualitative feedback</p>
-</li>
-</ol>
-<hr />
-<p>Would you like this saved as a <strong>Markdown</strong>, <strong>PDF</strong>, or <strong>HTML</strong> file?</p>
-<h1 id="tooth-model">tooth-model<a class="headerlink" href="#tooth-model" title="Permanent link">&para;</a></h1>
-<h3 id="1-anatomical-foundation">1. Anatomical Foundation<a class="headerlink" href="#1-anatomical-foundation" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Geometric Modeling</strong>: Teeth represented as primitives (molars as 3×3×3 cubes, incisors as triangular prisms)</li>
-<li><strong>Coordinate System</strong>: </li>
-<li>Origin (0,0,0) at pulp center</li>
-<li>X: Mesial-distal, Y: Occlusal-apical, Z: Buccal-lingual</li>
-<li>Tissue encoding (000=pulp, 001=enamel, 200=gingiva)</li>
-</ul>
-<h3 id="2-physiological-control-systems">2. Physiological Control Systems<a class="headerlink" href="#2-physiological-control-systems" title="Permanent link">&para;</a></h3>
-<p>Each dental structure functions as a control system with:
-- <strong>Inputs</strong>: Mechanical/chemical/thermal stresses
-- <strong>Transfer Functions</strong>: Resistance characteristics
-- <strong>Feedback Loops</strong>: Remineralization (negative), demineralization (positive)
-- <strong>Outputs</strong>: Clinical symptoms</p>
-<p><strong>Key Systems:</strong>
-1. <strong>Enamel Shield</strong>: G(s) = Resistance/Stimulus Intensity
-2. <strong>Pulp Sentinel</strong>: Tertiary dentin formation feedback
-3. <strong>PDL Suspension</strong>: Mechanotransduction dynamics</p>
-<h3 id="3-pathological-progression-modeling">3. Pathological Progression Modeling<a class="headerlink" href="#3-pathological-progression-modeling" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>State Transitions</strong>: Markov chains with 13 disease states (E0-E4, P1-P4)</li>
-<li><strong>Fuzzy Boundaries</strong>: Membership functions for symptom-disease mapping</li>
-<li><strong>Causal Chains</strong>: Lattice logic with AND/OR/NOT operators</li>
-</ul>
-<h2 id="diagnostic-engine_1">Diagnostic Engine<a class="headerlink" href="#diagnostic-engine_1" title="Permanent link">&para;</a></h2>
-<h3 id="multilayer-decision-process">Multilayer Decision Process:<a class="headerlink" href="#multilayer-decision-process" title="Permanent link">&para;</a></h3>
-<ol>
-<li><strong>Feature Encoding</strong>: Patient symptoms → set representation</li>
-<li>
-<p>e.g., {enamel loss, pain} ⊂ Pulpitis set</p>
-</li>
-<li>
-<p><strong>Vector Matching</strong>: Cosine similarity against disease vectors
-   <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>cos(θ) = (A·B)/(||A||·||B||)
-</span></code></pre></div></p>
-</li>
-<li>
-<p><strong>Bayesian Inference</strong>: 
-   <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>P(D|S) = [P(S|D)×P(D)]/P(S)
-</span></code></pre></div></p>
-</li>
-<li>
-<p>Example: Pulpitis posterior = 54%</p>
-</li>
-<li>
-<p><strong>Logical Validation</strong>: Propositional rules
-   <div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>IF (E ∧ P) THEN Pulpitis
-</span></code></pre></div></p>
-</li>
-<li>
-<p><strong>Diagnostic Function</strong>:
-   <div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>D(patient) = argmax[similarity×logic_pass×specificity]
-</span></code></pre></div></p>
-</li>
-</ol>
-<h2 id="treatment-optimization">Treatment Optimization<a class="headerlink" href="#treatment-optimization" title="Permanent link">&para;</a></h2>
-<h3 id="decision-layers">Decision Layers:<a class="headerlink" href="#decision-layers" title="Permanent link">&para;</a></h3>
-<ol>
-<li><strong>Fixed Protocols</strong>: Geometric treatment algorithms</li>
-<li>
-<p>e.g., RCT path: (0,1,0)→(0,0,0)→(0,0,2)</p>
-</li>
-<li>
-<p><strong>Cost-Benefit Analysis</strong>:
-   <div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Utility = (Success × Durability)/Cost
-</span></code></pre></div></p>
-</li>
-<li>
-<p><strong>Game-Theoretic Negotiation</strong>: Nash equilibria between patient/dentist/insurer</p>
-</li>
-<li>
-<p><strong>Dynamic Adjustment</strong>: Reinforcement learning from intra-op findings</p>
-</li>
-</ol>
-<h2 id="clinical-workflow-example">Clinical Workflow Example<a class="headerlink" href="#clinical-workflow-example" title="Permanent link">&para;</a></h2>
-<p><strong>Case: Irreversible Pulpitis</strong>
-1. <strong>Diagnosis</strong>:
-   - Coordinates: Pain at (0,0,0), caries at (0,1,0)
-   - Bayesian: 54% Pulpitis
-   - Logical: E ∧ P → confirms diagnosis</p>
-<ol>
-<li><strong>Treatment</strong>:</li>
-<li>Algorithm: RCT protocol</li>
-<li>Optimization: Onlay chosen (Utility=0.45)</li>
-<li>
-<p>Game Theory: Patient accepts RCT after counseling</p>
-</li>
-<li>
-<p><strong>Outcome Tracking</strong>:</p>
-</li>
-<li>6-month bone fill at (0,0,1)</li>
-</ol>
-<h3 id="diagnosis-from-icd-11">Diagnosis from ICD-11<a class="headerlink" href="#diagnosis-from-icd-11" title="Permanent link">&para;</a></h3>
-<h1 id="there-respective-textbook">There respective textbook<a class="headerlink" href="#there-respective-textbook" title="Permanent link">&para;</a></h1>
-<p>shafers oral pathology  for dental</p>
-<p>Harrison internal medicine for medicine </p>
-<p>KAPLAN &amp; SADOCK’S
-COMPREHENSIVE TEXTBOOK OF PSYCHIATRY  for psychology </p>
-<p>Game theory heruitics Chanikya neeti sastra and constitution for ethics</p>
-<p>For Spirituality </p>
-<h3 id="maths">Maths<a class="headerlink" href="#maths" title="Permanent link">&para;</a></h3>
-<p>(textbook)Kenneth Rosen - Discrete Mathematics and Its Applications (2018, McGraw-Hill Higher Education) - libgen.li.pdf</p>
-<p>N. Chandrasekaran_ M. Umaparvathi - Discrete Mathematics (2022) </p>
-<p>Contains flow from
-1.1 Logic 1
-1.1.1 Connectives 2 1.1.2 Predicates and Quantifiers 4
-1.2 Methods of Proof 6
-1.3 Set Theory 8 1.3.1 Definition and Representation of Sets 8 1.3.2 Operations on Sets 9 1.3.3 Representation by Venn Diagram 11
-1.3.4 Multisets 12
-1.4 Relations 12 1.4.1 Relations and Sets Arising From Relations 13
-1.5 Functions 14 1.5.1 Definition of a Function and Examples 14 1.5.2 One-to-One and ONTO Functions 16 1.5.3 Permutations 17
-1.6 Basics of Counting 17 1.6.1 Addition and Multiplication Principles 18
-1.7 Integers and Induction 19 1.7.1 Well-Ordering Principle 19
-1.7.2 Division in Z 20 1.7.3 Fundamental Theorem of Arithmetic 21 1.7.4 Modular Arithmetic 21 1.7.5 Principle of Mathematical Induction and Pigeonhole Principle 22 vvi
-Contents
-1.8 Pigeonhole Principle 24
-1.9 Tuples, Strings and Matrices 26
-1.9.1 n-Tuples and Strings 26
-1.9.2 Matrices 28
-1.9.3 Boolean Matrices 29
-1.10 Algebraic Structures 30
-1.10.1 Operations on Sets 30
-1.10.2 Properties of Binary Operations 31
-1.10.3 Algebraic Structures 32
-1.10.4 Structure-Preserving Functions 32
-1.11 Graphs 33
-1.11.1 Definition of Graph and Examples 34
-1.11.2 Edge Sequences, Walks, Paths and Circuits 35
-1.11.3 Directed Graphs 37
-1.11.4 Subgraphs and Operations on Graphs 38
-1.11.5 Isomorphisms of Graphs 40
-Supplementary Examples 43
-Self-Test 65
-Exercises 73
-2. Predicate Calculus......................................................................... 101–168
-2.1 Well-Formed Formulas 101
-2.2 Truth Table of Well-Formed Formula 102
-2.3 Tautology, Contradiction and Contingency 103
-2.4 Equivalence of Formulas 105
-2.5 Algebra of Propositions 106
-2.5.1 Quine’s Method 107
-2.6 Functionally Complete Sets 108
-2.7 Normal Forms of Well-Formed Formulas 109
-2.8 Rules of Inference for Propositional Calculus 113
-2.9 Well-Formed Formulas of Predicate Calculus 120
-2.10 Rules of Inference for Predicate Calculus 123
-2.11 Predicate Formulas Involving Two or More Quantifiers 129
-Supplementary Examples 131
-Self-Test 145
-Exercises 148
-3. Combinatorics................................................................................ 169–205
-3.1 Permutations 169
-3.2 Combinations 171
-3.3 Permutations with Repetitions 172
-3.4 Combinations with Repetition 172
-3.5 Permutations of Sets with Indistinguishable Objects 174
-3.6 Miscellaneous Problems on Permutations and Combinations 175
-3.7 Binomial Identities and Binomial Theorem 179
-3.7.1 Binomial Identities 179
-3.7.2 Generating Functions of Permutations and Combinations 184
-Supplementary Examples 185
-Self-Test 191
-Exercises 196Contents
-vii
-4. More on Sets.................................................................................. 206–229
-4.1 Set Identities 206
-4.2 Principle of Inclusion–Exclusion 210
-Supplementary Examples 216
-Self-Test 221
-Exercises 223
-5. Relations and Functions............................................................... 230–282
-5.1 Binary Relations 230
-5.1.1 Operations on Relations 230
-5.2 Properties of Binary Relations in a Set 233
-5.3 Equivalence Relations and Partial Orderings 234
-5.4 Representation of a Relation by a Matrix 237
-5.5 Representation of a Relation by a Digraph 240
-5.6 Closure of Relations 241
-5.7 Warshall’s Algorithm for Transitive Closure 242
-5.8 More on Functions 248
-5.9 Some Important Functions 252
-5.10 Hashing Functions 253
-Supplementary Examples 254
-Self-Test 266
-Exercises 270
-6. Recurrence Relations.................................................................... 283–332
-6.1 Formulation as Recurrence Relations 283
-6.2 Solving Recurrence Relation by Iteration 285
-6.3 Solving Recurrence Relations 285
-6.4 Solving Linear Homogeneous Recurrence Relations of Order Two 287
-6.5 Solving Linear Nonhomogeneous Recurrence Relations 289
-6.6 Generating Functions 295
-6.6.1 Partial Fractions 295
-6.6.2 Generating Function of a Sequence 296
-6.6.3 Solving Recurrence Relations Using Generating Functions 296
-6.7 Divide-and-Conquer Algorithms 306
-6.7.1 Recurrence Relation for Divide-and-Conquer Algorithm 306
-Supplementary Examples 311
-Self-Test 323
-Exercises 327
-7. Algebraic Structures...................................................................... 333–410
-7.1 Semigroups and Monoids 333
-7.1.1 Definition and Examples 333
-7.1.2 Subsemigroups and Submonoids 334
-7.1.3 Homomorphism of Semigroups and Monoids 336
-7.2 Groups 338
-7.2.1 Definitions and Examples 338
-7.2.2 Subgroups 344
-7.2.3 Group Homomorphisms 345
-7.2.4 Cosets and Lagrange’s Theorem 349
-7.2.5 Normal Subgroups and Quotient Groups 352viii
-Contents
-7.2.6 Permutation Groups 355
-7.3 Algebraic Systems with Two Binary Operations 359
-7.3.1 Rings 359
-7.3.2 Some Special Classes of Rings 361
-7.3.3 Subrings and Homomorphisms 362
-Supplementary Examples 365
-Self-Test 381
-Exercises 388
-8. Lattices........................................................................................... 411–439
-8.1 Definition and Examples 411
-8.2 Properties of Lattices 414
-8.3 Lattices as Algebraic Systems 416
-8.4 Sublattices and Lattice Isomorphisms 418
-8.5 Special Classes of Lattice 419
-8.6 Distributive Lattices and Boolean Algebras 421
-Supplementary Examples 423
-Self-Test 428
-Exercises 433
-9. Boolean Algebras.......................................................................... 440–476
-9.1 Boolean Algebra as Lattice 440
-9.2 Boolean Algebra as an Algebraic System 441
-9.3 Properties of a Boolean Algebra 442
-9.4 Subalgebras and Homomorphisms of Boolean Algebras 446
-9.5 Boolean Functions 448
-9.5.1 Boolean Expressions 448
-9.5.2 Sum-of-Products Canonical Form 450
-9.5.3 Values of Boolean Expressions and Boolean Functions 452
-9.5.4 Switching Circuits and Boolean Functions 454
-9.5.5 Half-Adders and Full-Adders 456
-Supplementary Examples 459
-Self-Test 464
-Exercises 468
-10. Graphs............................................................................................ 477–536
-10.1 Connected Graphs 477
-10.2 Examples of Special Graphs 480
-10.3 Euler Graphs 483
-10.4 Hamiltonian Circuits and Paths 486
-10.5 Planar Graphs 494
-10.6 Matrix Representation of Graphs 501
-10.6.1 Incidence Matrix 501
-10.6.2 Adjacency Matrix 503
-Supplementary Examples 505
-Self-Test 516
-Exercises 523Contents ix 11. Trees............................................................................................... 537–590
-11.1 Properties of Trees 537 11.2 Special Classes of Trees 539 11.2.1 Rooted Trees 540
-11.2.2 Binary Trees 543
-11.2.3 Binary Search Trees 546 11.2.4 Decision Trees 549
-11.3 Spanning Trees 550 11.3.1 Definition and Properties of Spanning Trees 550 11.3.2 Algorithms on Spanning Trees 551
-11.4 Minimal Spanning Trees 556 Supplementary Examples 561 Self-Test 573
-Exercises 575
-Question Bank (Additional Exercises</p>
-<p>FUZZY LOGIC WITH ENGINEERING APPLICATIONS
-Timothy J. Ross
-Contains fuzzy logic and control system theory </p>
-<p>LINEAR ALGEBRA AND LEARNING FROM DATA GILBERT STRANG</p>
-<p>See for Input is acid exposure State is demineralization Output is erosion</p>
-<p>input I use fuzzy logic example gastric acid or vomiting or soft drink to give value for input</p>
-<p>I use lattices for erosion, abfraction,caries leads to pulpitis to apical periodontitis</p>
-<p>Am I correct or need to improve</p>
-<p>You're absolutely on the right track — integrating fuzzy logic and lattice structures into modeling dental disease progression is a smart and modern approach. Here's an assessment and suggestion for refinement:</p>
-<hr />
-<p>Your Model Summary</p>
-<p>Input = fuzzy logic
-State= progression 
-Output = threshold
-Progression =  lattices</p>
-<hr />
-<p>Why Your Approach Is Correct</p>
-<p>Fuzzy Logic:
-Perfect for modeling degrees of acid exposure (not just "acid" vs. "no acid"). This captures:</p>
-<p>Frequency of intake</p>
-<p>pH value</p>
-<p>Saliva buffering variability</p>
-<p>Time of exposure</p>
-<p>Lattice Theory:
-Works well for disease hierarchies and dependencies:</p>
-<p>Disease states like caries, erosion, pulpitis, etc., have a partial order (not strictly linear).</p>
-<p>You can model parallel pathways (e.g., caries and erosion both leading to pulpitis).</p>
-<p>Join () and meet () operations help in combining or comparing states.</p>
-<hr />
-<p>Suggestions for Improvement</p>
-<ol>
-<li>Clarify membership function for fuzzy input:
-Define functions for soft drink frequency, pH, exposure time, etc.
-Example:</li>
-</ol>
-<p>\mu_{\text{acid}}(x) = \text{fuzzy degree from 0 to 1 for acidic potential}</p>
-<ol>
-<li>Label lattice nodes with state + severity:
-Example:</li>
-</ol>
-<p>Erosion (mild), Erosion (severe)</p>
-<p>Caries (enamel), Caries (dentin)</p>
-<ol>
-<li>Include feedback loops (if possible):</li>
-</ol>
-<p>For example, erosion may reduce enamel → increase acid penetration → worsen state (feedback).</p>
-<ol>
-<li>Consider integrating time:
-State progression often depends on duration. Use a discrete time step model with state transitions.</li>
-</ol>
-<hr />
-<p>Visual Structure (Suggestion)</p>
-<p>[Erosion]
-            |
-          [Caries]
-           /   \
-   [Attrition]  [Pulpitis]
-                   |
-          [Apical Periodontitis]</p>
-<p>Or with lattice join:</p>
-<p>Caries ∨ Erosion → Pulpitis</p>
-<hr />
-<p>Final Thought</p>
-<p>You’re merging control theory, fuzzy logic, and lattice algebra in a biological context — this is an advanced and insightful modeling approach. You just need to define terms formally, visualize transitions, and possibly simulate state changes for validation.</p>
-<p>Would you like a sample markdown or diagram of this model?</p>
-<p>To represent attrition (occlusal) and abfraction (cervical) in a lattice structure, you can use spatial localization as part of the lattice labeling, and define a poset (partially ordered set) where the tooth structure is broken down by regions: occlusal, cervical, etc.</p>
-<hr />
-<p>Markdown Representation for Lattice with Location</p>
-<h1 id="lattice-representation-of-attrition-and-abfraction">Lattice Representation of Attrition and Abfraction<a class="headerlink" href="#lattice-representation-of-attrition-and-abfraction" title="Permanent link">&para;</a></h1>
-<h2 id="spatial-nodes-tooth-surface-as-poset-elements">Spatial Nodes (Tooth Surface as Poset Elements)<a class="headerlink" href="#spatial-nodes-tooth-surface-as-poset-elements" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code>           [Tooth Surface]
-             /         \
-     [Occlusal]       [Cervical]
-         |                |
- [Attrition]       [Abfraction]
-</code></pre></div>
-<p>Explanation:</p>
-<p>Tooth Surface is the highest element (root).</p>
-<p>It splits into Occlusal and Cervical as anatomical regions (intermediate nodes).</p>
-<p>Then respective conditions like Attrition and Abfraction are meet-irreducible elements under them.</p>
-<hr />
-<p>Optional: Add Join Relationships (if needed)</p>
-<h1 id="join-example-combined-effects">Join Example (Combined Effects)<a class="headerlink" href="#join-example-combined-effects" title="Permanent link">&para;</a></h1>
-<p>Attrition ∨ Abfraction → Enamel Loss</p>
-<p>You can define severity or shared consequences as join operations:</p>
-<p>Attrition ∨ Erosion → Dentin Exposure
-Abfraction ∨ Caries → Cervical Sensitivity</p>
-<hr />
-<p>Would you like a visual diagram of this lattice too?</p>
-<p>Here is a detailed and correct lattice representation that distinguishes attrition and abfraction based on their anatomical location (occlusal vs cervical), using lattice theory with domain-specific hierarchy and clinical meaning.</p>
-<hr />
-<p>Lattice Representation in Markdown</p>
-<h1 id="lattice-representation-of-attrition-and-abfraction-based-on-location">Lattice Representation of Attrition and Abfraction Based on Location<a class="headerlink" href="#lattice-representation-of-attrition-and-abfraction-based-on-location" title="Permanent link">&para;</a></h1>
-<h2 id="partially-ordered-set-poset-structure">Partially Ordered Set (Poset) Structure<a class="headerlink" href="#partially-ordered-set-poset-structure" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code>                        [Tooth Structure]
-                               |
-             ---------------------------------------
-             |                                     |
-      [Occlusal Surface]                  [Cervical Region]
-             |                                     |
-       [Attrition]                           [Abfraction]
-</code></pre></div>
-<hr />
-<p>Explanation of the Lattice Structure</p>
-<p>Top Node: Tooth Structure is the root of the lattice – the general domain.</p>
-<p>Intermediate Nodes:</p>
-<p>Occlusal Surface: location affected by attrition.</p>
-<p>Cervical Region: location affected by abfraction.</p>
-<p>Leaf Nodes:</p>
-<p>Attrition: result of mechanical wear on occlusal surfaces due to axial forces (e.g., chewing, bruxism).</p>
-<p>Abfraction: result of non-axial forces leading to microflexure at the cervical region, causing wedge-shaped defects.</p>
-<hr />
-<p>Join and Meet Operations (Lattice Algebra)</p>
-<p>Join (∨): Represents a union or combined effect.</p>
-<p>Attrition ∨ Abfraction → Enamel Loss</p>
-<p>Both conditions contribute to the breakdown of the enamel, but in different locations.</p>
-<p>Meet (∧): Represents common underlying factor (e.g., enamel).</p>
-<p>Attrition ∧ Abfraction = Enamel Integrity</p>
-<hr />
-<p>Spatial Tagging for Generalization</p>
-<p>You can use labels on each node to encode anatomical location + etiology:</p>
-<hr />
-<p>Summary</p>
-<p>This lattice structure models:</p>
-<p>Hierarchical anatomy of the tooth</p>
-<p>Localized disease process based on region</p>
-<p>Logical relationships between conditions using lattice operations</p>
-<p>You can now build upon this to include other conditions like erosion, caries, and represent their interactions within the same framework.</p>
-<p>Would you like this in visual diagram or LaTeX format as well?</p>
-<p>Class 1
-Class 2</p>
-<p>Anatomical correction</p>
-<p>Until it meets pulpitis </p>
-<p>Classification is based on organ
-Body is made up of organ system is organs so using icd-11 disease of organ</p>
-<p>So,there are </p>
-<p>Oral mucosa 
-Tooth</p>
 
 
 
@@ -8850,15 +7689,27 @@ Tooth</p>
 
                 
   <button onclick="logout()" style="
-    position: fixed; top: 1rem; right: 1rem;
-    padding: 0.4rem 1rem;
-    background: red;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    background: #e53935;
     color: white;
     border: none;
-    border-radius: 4px;
-    font-size: 0.9rem;
+    border-radius: 6px;
     z-index: 9999;
-  ">Logout</button>
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+  ">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17 7L15.59 8.41L18.17 11H8V13H18.17L15.59 15.59L17 17L22 12L17 7ZM4 5H12V3H4C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H12V19H4V5Z" fill="white"/>
+    </svg>
+    Logout
+  </button>
 </div>
 
               </article>
@@ -8885,7 +7736,7 @@ Tooth</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: The Problem">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Index">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -8895,7 +7746,7 @@ Tooth</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                The Problem
+                Index
               </div>
             </div>
           </a>
@@ -8951,9 +7802,81 @@ Tooth</p>
     <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
+
       <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
+<script type="module">
+  window.addEventListener("DOMContentLoaded", async () => {
+    // Dynamically import Firebase modules
+    const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
+    const { 
+      getAuth, 
+      setPersistence, 
+      browserLocalPersistence, 
+      signInWithPopup, 
+      onAuthStateChanged, 
+      GoogleAuthProvider, 
+      signOut 
+    } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
+
+    // Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
+      authDomain: "mkdocs-github.firebaseapp.com",
+      projectId: "mkdocs-github",
+      storageBucket: "mkdocs-github.appspot.com",
+      messagingSenderId: "846124399364",
+      appId: "1:846124399364:web:7164c56ce488ef7a11ae51"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+
+    // Set persistence for login session
+    try {
+      await setPersistence(auth, browserLocalPersistence);
+    } catch (error) {
+      console.error("Error setting persistence:", error);
+    }
+
+    // Login function
+    window.loginWithGoogle = () => {
+      signInWithPopup(auth, provider)
+        .catch(err => {
+          console.error("Login error:", err);
+          alert(`Login failed: ${err.message || "Unknown error"}`);
+        });
+    };
+
+    // Logout function
+    window.logout = () => {
+      signOut(auth)
+        .then(() => console.log("User signed out"))
+        .catch(err => console.error("Logout error:", err));
+    };
+
+    // Get DOM elements
+    const main = document.getElementById("main-content");
+    const login = document.getElementById("login-section");
+
+    // Auth state handler
+    onAuthStateChanged(auth, user => {
+      if (user) {
+        console.log("✅ Authenticated user:", user.email);
+        login.style.display = "none";
+        main.style.display = "block";
+      } else {
+        console.log("🔒 No authenticated user");
+        main.style.display = "none";
+        login.style.display = "flex";
+      }
+    });
+  });
+</script>
+
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>

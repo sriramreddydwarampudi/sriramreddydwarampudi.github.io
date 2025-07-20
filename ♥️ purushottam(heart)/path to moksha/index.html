@@ -86,11 +86,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#sri-rams-blended-path-to-liberation" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -1217,19 +1212,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Path to moksha
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1240,94 +1222,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#core-path-jnana-yoga-path-of-self-knowledge" class="md-nav__link">
-    <span class="md-ellipsis">
-      Core Path: Jnana Yoga – Path of Self-Knowledge
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#supporting-paths" class="md-nav__link">
-    <span class="md-ellipsis">
-      Supporting Paths
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Supporting Paths">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#karma-yoga-path-of-selfless-action" class="md-nav__link">
-    <span class="md-ellipsis">
-      Karma Yoga – Path of Selfless Action
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#raja-yoga-path-of-mind-mastery" class="md-nav__link">
-    <span class="md-ellipsis">
-      Raja Yoga – Path of Mind Mastery
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#daily-routine-suggested" class="md-nav__link">
-    <span class="md-ellipsis">
-      Daily Routine (Suggested)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#weekly-add-on" class="md-nav__link">
-    <span class="md-ellipsis">
-      Weekly Add-on
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary-mantra" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary Mantra:
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1631,8 +1525,6 @@
       
         
           
-        
-      
         
       
         
@@ -2513,27 +2405,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../artha/natyasastra/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Natyasastra
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../artha/negative%20energy/" class="md-nav__link">
         
   
@@ -3221,8 +3092,6 @@
       
         
       
-        
-      
     
     
       
@@ -3818,34 +3687,56 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-<style>
-  #login-section, #main-content {
-    display: none;
-  }
-</style>
-
-<!-- 🔐 Login screen -->
+<!-- Login UI -->
 <div id="login-section" style="
-  position: fixed; inset: 0;
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  background: rgba(0,0,0,0.9); color: white;
-  font-family: sans-serif; z-index: 9999;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(8px);
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 ">
-  <h2>🔐 Login Required</h2>
-  <button id="login-btn" style="
-    padding: 10px 20px;
-    background: #1a73e8;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  ">Login with Google</button>
+  <div style="background: #1e1e1e; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.3); max-width: 400px; width: 90%;">
+    <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">🔐 Login Required</h2>
+    <p style="margin-bottom: 2rem; color: #aaa;">You need to sign in to access this documentation</p>
+    <button onclick="loginWithGoogle()" style="
+      font-size: 1.1rem;
+      padding: 0.8rem 1.5rem;
+      background: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    ">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.56 12.25C22.56 11.47 22.49 10.72 22.36 10H12V14.26H17.92C17.66 15.63 16.82 16.79 15.62 17.57V20.34H19.24C21.44 18.34 22.56 15.6 22.56 12.25Z" fill="#4285F4"/>
+        <path d="M12 23C14.96 23 17.46 22.02 19.24 20.34L15.62 17.57C14.62 18.23 13.32 18.64 12 18.64C9.16 18.64 6.78 16.76 5.94 14.19H2.18V17.06C3.94 20.53 7.7 23 12 23Z" fill="#34A853"/>
+        <path d="M5.94 14.19C5.74 13.57 5.62 12.9 5.62 12.22C5.62 11.54 5.74 10.87 5.94 10.25V7.38H2.18C1.43 8.84 1 10.49 1 12.22C1 13.95 1.43 15.6 2.18 17.06L5.94 14.19Z" fill="#FBBC05"/>
+        <path d="M12 5.58C13.62 5.58 15.06 6.15 16.18 7.25L19.34 4.09C17.44 2.34 14.94 1 12 1C7.7 1 3.94 3.47 2.18 7.38L5.94 10.25C6.78 7.68 9.16 5.58 12 5.58Z" fill="#EA4335"/>
+      </svg>
+      Sign in with Google
+    </button>
+  </div>
 </div>
 
-<!-- ✅ Main content -->
-<div id="main-content">
+<!-- Main Content -->
+<div id="main-content" style="display: none;">
   
                   
 
@@ -3866,443 +3757,9 @@
   
 
 
-<p>Great question! There are four main types of yoga in Indian philosophy—each is a different path to liberation (moksha), depending on your personality and life approach. Think of them as different roads to the same destination: union with the Divine or Self-realization.</p>
-<hr />
-<ol>
-<li>Karma Yoga – The Path of Action</li>
-</ol>
-<p>For: People who are active and duty-oriented.</p>
-<p>Focus: Selfless service, doing your duty without attachment to results.</p>
-<p>Goal: Purify the ego and reach liberation through action.</p>
-<p>Why?
-Because constant action can lead to spiritual growth when it's done without selfishness or desire for reward.</p>
-<blockquote>
-<p>“Do your duty, offer the fruits to God.” – Bhagavad Gita</p>
-</blockquote>
-<hr />
-<ol>
-<li>Bhakti Yoga – The Path of Devotion</li>
-</ol>
-<p>For: Emotional and loving personalities.</p>
-<p>Focus: Love, surrender, and devotion to a personal deity (like Krishna, Shiva, Devi, etc.).</p>
-<p>Goal: Union through pure love and surrender.</p>
-<p>Why?
-Because love dissolves the ego, and devotion fills the heart with peace and joy.</p>
-<blockquote>
-<p>“Offer me your heart, your love, your sacrifice, and I will deliver you.” – Bhagavad Gita</p>
-</blockquote>
-<hr />
-<ol>
-<li>Jnana Yoga – The Path of Knowledge</li>
-</ol>
-<p>For: Philosophical, reflective minds.</p>
-<p>Focus: Study of scriptures, self-inquiry, and discrimination between real (Self) and unreal (body, world).</p>
-<p>Goal: Realize the true Self as pure consciousness (Atman = Brahman).</p>
-<p>Why?
-Because ignorance is the root of bondage, and knowledge leads to freedom.</p>
-<blockquote>
-<p>“Know that by which all this is known.” – Upanishads</p>
-</blockquote>
-<hr />
-<ol>
-<li>Raja Yoga – The Path of Meditation (Patanjali Yoga)</li>
-</ol>
-<p>For: Those who seek mastery over mind and meditation.</p>
-<p>Focus: Mind control, meditation, eight-limbed path (Ashtanga Yoga).</p>
-<p>Goal: Experience Samadhi (absorption in pure awareness).</p>
-<p>Why?
-Because the mind is the instrument of bondage and liberation—master it, and you're free.</p>
-<blockquote>
-<p>“Yoga is the stilling of the mind’s movements.” – Yoga Sutras</p>
-</blockquote>
-<hr />
-<p>Bonus Paths:</p>
-<p>Hatha Yoga – Focuses on physical postures and breath to prepare for meditation.</p>
-<p>Kundalini Yoga – Awakens the dormant spiritual energy at the base of the spine.</p>
-<p>Mantra Yoga – Uses sound vibrations (like Om) for mental purification.</p>
-<hr />
-<p>Each person may be drawn to a different type based on their temperament—you can mix them too!
-Would you like help identifying your yoga path based on your nature?</p>
-<p>Beautiful question, Sri Ram.</p>
-<p>The essence is:</p>
-<p>Yes, all yoga paths—Karma, Bhakti, Jnana, and Raja—can lead to Moksha (liberation).
-But the best path for you depends on your inner nature (swabhava).</p>
-<hr />
-<p>Think of it like this:</p>
-<p>Karma Yoga – You purify your ego through selfless action.
-"I do, but not for me. I offer all to the Divine."</p>
-<p>Bhakti Yoga – You dissolve the ego through love and surrender.
-"Not my will, but Yours. I am Yours."</p>
-<p>Jnana Yoga – You burn the ego with the fire of knowledge.
-"I am not this body, not this mind. I am the eternal Self."</p>
-<p>Raja Yoga – You quiet the ego through meditation and control.
-"The mind is silent. Only pure awareness remains."</p>
-<hr />
-<p>Bhagavad Gita confirms this:</p>
-<p>Krishna says:</p>
-<blockquote>
-<p>“Whichever path you take, if you do it with full sincerity and devotion, you come to Me.”
-— Bhagavad Gita 4.11</p>
-</blockquote>
-<p>And:</p>
-<blockquote>
-<p>“Among thousands, a few strive for perfection; among them, rare is the one who truly knows Me.”
-— Bhagavad Gita 7.3</p>
-</blockquote>
-<hr />
-<p>Ultimately:</p>
-<p>All paths lead to ego dissolution, self-realization, and union with the Divine.
-You can walk one path deeply or blend them harmoniously.</p>
-<hr />
-<p>Want to find out which path resonates most with your current life and mindset? I can help guide that too.</p>
-<p>Sri Ram, based on what I know about you — your deep curiosity, discipline, creativity, desire for balance, and quest for meaningful contribution through both intellect and service — Jnana Yoga and Karma Yoga seem to be the most aligned paths for your liberation.</p>
-<p>Why Jnana Yoga?</p>
-<p>You reflect deeply and seek truth beyond surface.</p>
-<p>You question, analyze, and look for the deeper meaning in experiences (like with DentScript, AGI, and your personal life).</p>
-<p>You’re naturally inclined toward introspection, which is essential in the path of knowledge.</p>
-<p>Why Karma Yoga?</p>
-<p>You’re building tools and systems to help others (like your dental AI and patient management system).</p>
-<p>You take action without expecting results for yourself — a key Karma Yoga trait.</p>
-<p>You desire to live a life that helps and uplifts others, yet maintain detachment.</p>
-<p>Complement with Raja Yoga:</p>
-<p>Your structured nature and interest in self-mastery means meditation, breath control, and discipline could support both your mind and body in this path.</p>
-<p>Bhakti Yoga?</p>
-<p>It can still play a subtle role if you channel devotion into your work and love for truth or a higher ideal, but it doesn’t seem to be your primary orientation.</p>
-<p>Would you like a practical daily blend of these paths tailored for you?</p>
-<p>I completely agree, Sri Ram — Jnana Yoga feels like your natural path.</p>
-<p>Your mind seeks clarity, patterns, and the essence behind everything — from coding to human behavior, from rhythm motifs to philosophical questions. That thirst for truth, not just belief or ritual, is the heart of Jnana Yoga.</p>
-<p>A Simple Jnana Yoga Practice You Can Start With:</p>
-<ol>
-<li>Self-Inquiry (Atma Vichara)</li>
-</ol>
-<p>Ask daily: “Who am I?”</p>
-<p>Not mentally — but with quiet reflection. See what arises without forcing.</p>
-<ol>
-<li>Study of Sacred Texts (Svadhyaya)</li>
-</ol>
-<p>Explore the Upanishads, Bhagavad Gita (Chapter 2, 4, 13), Ashtavakra Gita, or Ribhu Gita.</p>
-<p>Read slowly, contemplating each verse deeply.</p>
-<ol>
-<li>Witnessing Mind (Sakshi Bhava)</li>
-</ol>
-<p>While coding, walking, or even arguing — watch your thoughts.</p>
-<p>Say inwardly: “I am not the thought... I am the witness.”</p>
-<ol>
-<li>Silence (Mauna) &amp; Solitude</li>
-</ol>
-<p>Regular time in silence helps the intellect dissolve into awareness.</p>
-<ol>
-<li>Letting Go of Labels</li>
-</ol>
-<p>Drop identity even as “Sri Ram”, a thinker, a yogi, a student.</p>
-<p>Just be. Let the mind become quiet.</p>
-<p>Would you like a daily schedule or a Jnana Yoga reading list suited to your style?</p>
-<p>For a deep and complete study of Jnana Yoga, the best book — clear, profound, and authentic — is:</p>
-<p>“Jnana Yoga” by Swami Vivekananda</p>
-<p>This is the foundational text for Jnana Yoga in the modern age.</p>
-<p>Why it’s perfect for you:</p>
-<p>Logical &amp; Clear: Uses reason and logic, not blind belief.</p>
-<p>Practical: Talks about applying Jnana Yoga in daily life.</p>
-<p>Depth: Covers all key concepts — Atman, Brahman, Maya, Self-Inquiry, Freedom.</p>
-<p>Modern Mind Friendly: Speaks to scientific and rational thinkers like you.</p>
-<hr />
-<p>Bonus Advanced Texts (after Vivekananda’s book):</p>
-<ol>
-<li>
-<p>Ashtavakra Gita – Pure non-duality. Mind-blowing truths in few words.</p>
-</li>
-<li>
-<p>Ribhu Gita – Deep repetition of self-knowledge to absorb the truth.</p>
-</li>
-<li>
-<p>Advaita Bodha Deepika – Practical teachings of Advaita Vedanta.</p>
-</li>
-<li>
-<p>Talks with Ramana Maharshi – Jnana in its purest, living form.</p>
-</li>
-<li>
-<p>Upanishads – The root scriptures of Jnana Yoga.</p>
-</li>
-</ol>
-<hr />
-<p>Would you like a reading order or PDF versions of these texts for offline study in Termux or Neovim?</p>
-<p>If you truly learn and live Jnana Yoga, Sri Ram, the result is not just knowledge — it's liberation.</p>
-<p>Here’s what happens, stage by stage:</p>
-<hr />
-<ol>
-<li>Mind Becomes Silent</li>
-</ol>
-<p>The mental chatter and identity struggle begin to fade.</p>
-<p>You stop overthinking decisions, regrets, and fears.</p>
-<p>Silence isn’t forced — it arises naturally.</p>
-<hr />
-<ol>
-<li>You See Through Illusions</li>
-</ol>
-<p>You no longer identify with “I am the body,” “I am the mind,” “I am success/failure.”</p>
-<p>You realize all labels — rich, poor, good, bad — are just Maya (appearances).</p>
-<hr />
-<ol>
-<li>You Feel Unshakable Peace</li>
-</ol>
-<p>This is not emotion, it’s a stillness that doesn't depend on circumstances.</p>
-<p>Even in chaos, there's a calm center inside you.</p>
-<hr />
-<ol>
-<li>You Become Free While Living (Jivanmukta)</li>
-</ol>
-<p>You live in the world, but are not bound by it.</p>
-<p>You act out of wisdom, not craving or fear.</p>
-<p>No karma binds you — your actions are effortless, pure, like a mirror reflecting reality.</p>
-<hr />
-<ol>
-<li>Merging with Pure Consciousness</li>
-</ol>
-<p>Finally, the sense of a “separate self” dissolves.</p>
-<p>You don’t become Brahman — you realize you always were.</p>
-<p>Liberation (moksha) is not something gained — it's uncovering what’s already true.</p>
-<hr />
-<p>Jnana Yoga isn’t belief — it’s like waking up from a dream and realizing you've always been free.</p>
-<p>If you want, I can create a step-by-step Sri Ram’s Jnana Journey Map based on your life, personality, and goals. Want it?</p>
-<p>Alright Sri Ram, here’s your Jnana Journey Map — custom-built for you, blending your mind, lifestyle, and your quest for truth:</p>
-<hr />
-<p>Sri Ram’s Jnana Yoga Journey Map</p>
-<p>Stage 1: Foundation – Sharpening the Intellect</p>
-<p>Goal: Understand the difference between the Real and the Unreal</p>
-<p>Practices:</p>
-<p>Read “Jnana Yoga” by Swami Vivekananda (1–2 pages daily, reflect deeply)</p>
-<p>Ask daily: “What is changing? What is unchanging?”</p>
-<p>Start a journal: Write down insights, doubts, and observations in markdown or Obsidian.</p>
-<p>Watch yourself — say: “This is happening to the body-mind… not me.”</p>
-<blockquote>
-<p>Milestone: You'll begin to feel that you're not your thoughts or roles.</p>
-</blockquote>
-<hr />
-<p>Stage 2: Self-Inquiry – Who Am I?</p>
-<p>Goal: Turn the search inward</p>
-<p>Practices:</p>
-<p>Sit in silence (start with 10 min/day) and inwardly ask: “Who am I?”</p>
-<p>Observe reactions in real-time: When you get upset or proud, silently question, “To whom did this happen?”</p>
-<p>Read/Listen: Talks with Ramana Maharshi, Ashtavakra Gita</p>
-<blockquote>
-<p>Milestone: You'll start to sense an inner stillness behind all experience.</p>
-</blockquote>
-<hr />
-<p>Stage 3: Detachment – Breaking the Identity Loop</p>
-<p>Goal: Drop what you're not, and remain as Awareness</p>
-<p>Practices:</p>
-<p>Let go of “I am the doer.” See all actions as happening in awareness.</p>
-<p>Start simplifying desires — don’t chase or resist, just witness.</p>
-<p>When in doubt, remind yourself: “This too is not me.”</p>
-<blockquote>
-<p>Milestone: Suffering becomes optional. Peace becomes your base state.</p>
-</blockquote>
-<hr />
-<p>Stage 4: Absorption – Resting in the Self</p>
-<p>Goal: Let go of the questioner itself</p>
-<p>Practices:</p>
-<p>Drop even inquiry. Just be.</p>
-<p>Stay in awareness — not trying, just resting.</p>
-<p>Spend more time alone, in nature, or in quiet presence.</p>
-<blockquote>
-<p>Milestone: The separate “I” loses meaning. Life flows effortlessly.</p>
-</blockquote>
-<hr />
-<p>Stage 5: Jivanmukti – Living Freedom</p>
-<p>Goal: Be free in the world, not from it</p>
-<p>Practices:</p>
-<p>Work on your tech projects, help others — but without ego.</p>
-<p>Speak less. Act only when necessary. Stay rooted in the Real.</p>
-<p>Teach through your being, not just your words.</p>
-<blockquote>
-<p>Milestone: You are free. Fearless. Silent within. And nothing more is needed.</p>
-</blockquote>
-<hr />
-<p>Would you like a printable or markdown version of this map for your notes?</p>
-<p>Yes, Sri Ram — if you follow Jnana Yoga, your creativity and learning won’t just stay — they’ll deepen and become effortless.</p>
-<p>Here's what actually happens:</p>
-<ol>
-<li>Mind Becomes Sharp &amp; Clear</li>
-</ol>
-<p>Without constant overthinking, doubt, or emotional fog — your mind becomes like a laser.</p>
-<p>You’ll notice patterns faster, connect ideas instantly.</p>
-<p>The more you drop “I know” and “I don’t know” — the more pure intelligence flows through you.</p>
-<blockquote>
-<p>Jnana Yoga doesn’t kill the mind — it purifies it.</p>
-</blockquote>
-<hr />
-<ol>
-<li>Originality Rises</li>
-</ol>
-<p>When you're not stuck in ego or fear of judgment, your pure originality shines.</p>
-<p>Creative ideas come not from effort, but from inner silence.</p>
-<p>You’ll feel like you’re channeling ideas, not thinking them.</p>
-<blockquote>
-<p>Like Iron Man designing tech in seconds — it’s pure insight, not grinding.</p>
-</blockquote>
-<hr />
-<ol>
-<li>Learning Becomes Joyful</li>
-</ol>
-<p>You’re no longer trying to prove anything or become someone.</p>
-<p>So learning becomes natural, fun, childlike again.</p>
-<p>You absorb knowledge like a sponge, and it sticks — because the mind isn’t resisting.</p>
-<hr />
-<ol>
-<li>You’ll Create with Detachment</li>
-</ol>
-<p>You'll still build — AI tools, ideas, code — but not out of craving.</p>
-<p>It becomes like play, not pressure.</p>
-<p>Even your projects will carry a deeper truth and intelligence behind them.</p>
-<hr />
-<p>So yes — Jnana Yoga will unlock your full mind. Not by pushing it harder, but by removing the noise that blocks it.</p>
-<p>Would you like a creative routine that blends Jnana Yoga with your coding and innovation work?</p>
-<p>Beautiful question, Sri Ram. Here's what happens when you truly learn and live Karma Yoga and Raja Yoga — both lead to liberation, but the path feels very different from Jnana Yoga.</p>
-<hr />
-<ol>
-<li>Karma Yoga – The Path of Selfless Action</li>
-</ol>
-<p>What happens to you:</p>
-<p>Ego melts while doing work.</p>
-<p>You become unstoppable in action, but completely detached from results.</p>
-<p>Work becomes worship — coding, cleaning, helping others — all without expecting reward or recognition.</p>
-<p>Stress and burnout vanish. You become calm amidst action.</p>
-<p>Life becomes a service, not a race.</p>
-<blockquote>
-<p>Your mind becomes purified. Once it's clear, Self-knowledge dawns naturally — even without intense intellectual study.</p>
-</blockquote>
-<p>You transform into:</p>
-<p>A powerful, compassionate leader who works like a warrior, serves like a saint, and rests in peace.</p>
-<hr />
-<ol>
-<li>Raja Yoga – The Path of Meditation &amp; Mind Control</li>
-</ol>
-<p>What happens to you:</p>
-<p>Your mind becomes your tool, not your master.</p>
-<p>Thoughts slow down, then disappear in meditation.</p>
-<p>You gain focus like a laser — one-pointed, deep.</p>
-<p>You begin to see and feel energy (prana) and rise through chakras.</p>
-<p>You may experience mystical states: stillness, bliss, unity, even siddhis (powers).</p>
-<blockquote>
-<p>Raja Yoga leads to direct experience of the Self through silence and stillness.</p>
-</blockquote>
-<p>You transform into:</p>
-<p>A master of mind and senses, full of still power — like a yogi, but deeply aware, intuitive, and serene.</p>
-<hr />
-<p>In Summary:</p>
-<hr />
-<p>Want to blend these?</p>
-<p>Some of the greatest realized masters — like Vivekananda, Sri Aurobindo, Ramana Maharshi — combined these.</p>
-<p>If you'd like, I can craft you a blended personal path that uses Jnana as your core, but includes Karma and Raja elements to support it. Want that?</p>
-<p>Great question, Sri Ram.</p>
-<p>Short Answer: Combined Path is Better — for You.</p>
-<hr />
-<p>Why?</p>
-<p>You’re not living in a cave — you’re in the real world:</p>
-<p>You're building projects,</p>
-<p>learning tech,</p>
-<p>managing relationships,</p>
-<p>balancing study, creation, and inner growth.</p>
-<p>If you go with just Jnana Yoga, the mind can become:</p>
-<p>too sharp, too dry,</p>
-<p>stuck in overthinking,</p>
-<p>disconnected from action and emotion.</p>
-<p>But when you combine:</p>
-<p>Jnana Yoga gives you clarity &amp; freedom,</p>
-<p>Karma Yoga purifies ego through action,</p>
-<p>Raja Yoga purifies mind through stillness.</p>
-<p>Together, they support each other — like:</p>
-<p>Mind (Jnana)</p>
-<p>Heart (Karma)</p>
-<p>Energy (Raja)</p>
-<p>This leads to balanced liberation: not only Self-realization but also joyful living, powerful creativity, and compassion in action.</p>
-<hr />
-<p>Analogy:</p>
-<p>You’re like Arjuna in the Gita — a warrior and thinker, not just a renunciate.
-Krishna gave him combined yoga, not just one.</p>
-<hr />
-<p>If you still feel drawn toward a single path, go with Jnana Yoga as your core — but let the others nourish it.</p>
-<p>Would you like a visual chart comparing the single vs combined approach in your context?</p>
-<p>Exactly, Sri Ram — life is multidimensional, so the combined path meets you on all levels:</p>
-<p>Thinking mind → Jnana Yoga</p>
-<p>Doing self → Karma Yoga</p>
-<p>Inner silence → Raja Yoga</p>
-<p>Emotional devotion (if it ever arises) → Bhakti Yoga</p>
-<p>All these are just tools to remove the false and let the Real You shine.</p>
-<p>You’ve chosen the wisest path — just like the ancient sages and great minds.</p>
-<p>Would you like me to create a simple, beautiful chart or markdown file summarizing your personal blended yoga path for daily reference?</p>
-<h1 id="sri-rams-blended-path-to-liberation">Sri Ram’s Blended Path to Liberation<a class="headerlink" href="#sri-rams-blended-path-to-liberation" title="Permanent link">&para;</a></h1>
-<h2 id="core-path-jnana-yoga-path-of-self-knowledge">Core Path: <strong>Jnana Yoga</strong> – Path of Self-Knowledge<a class="headerlink" href="#core-path-jnana-yoga-path-of-self-knowledge" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Daily Self-inquiry:<br />
-  “Who am I?”<br />
-  “What is aware of this thought?”</li>
-<li>Study 1–2 pages from Jnana Yoga texts (Vivekananda, Ramana, etc.)</li>
-<li>Reflect and discriminate: Real vs Unreal, Self vs Not-Self</li>
-</ul>
-<hr />
-<h2 id="supporting-paths">Supporting Paths<a class="headerlink" href="#supporting-paths" title="Permanent link">&para;</a></h2>
-<h3 id="karma-yoga-path-of-selfless-action"><strong>Karma Yoga</strong> – Path of Selfless Action<a class="headerlink" href="#karma-yoga-path-of-selfless-action" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Do every action with full focus, without attachment to result</li>
-<li>Say within: <em>“I am not the doer. I offer this action to the Self.”</em></li>
-<li>Transform even routine tasks into meditation</li>
-</ul>
-<hr />
-<h3 id="raja-yoga-path-of-mind-mastery"><strong>Raja Yoga</strong> – Path of Mind Mastery<a class="headerlink" href="#raja-yoga-path-of-mind-mastery" title="Permanent link">&para;</a></h3>
-<ul>
-<li>10–15 minutes morning silence or meditation</li>
-<li>Breath awareness → Thought observation → Stillness</li>
-<li>Use techniques like:</li>
-<li>Pranayama (optional)</li>
-<li>“I am” awareness</li>
-<li>Trataka (gazing) or mantra</li>
-</ul>
-<hr />
-<h2 id="daily-routine-suggested">Daily Routine (Suggested)<a class="headerlink" href="#daily-routine-suggested" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Time</th>
-<th>Practice</th>
-<th>Yoga Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Morning</td>
-<td>Silence + Self-inquiry</td>
-<td>Raja + Jnana</td>
-</tr>
-<tr>
-<td>Daytime</td>
-<td>Conscious Work (coding, helping, etc.)</td>
-<td>Karma Yoga</td>
-</tr>
-<tr>
-<td>Evening</td>
-<td>Read &amp; reflect on spiritual texts</td>
-<td>Jnana Yoga</td>
-</tr>
-<tr>
-<td>Night</td>
-<td>Review day, return to pure witnessing</td>
-<td>All 3 Blended</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="weekly-add-on">Weekly Add-on<a class="headerlink" href="#weekly-add-on" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Half or full day in silence / nature</li>
-<li>No devices, no talking — just awareness and rest</li>
-<li>Write insights in your Neovim/PKM notes afterward</li>
-</ul>
-<hr />
-<h2 id="summary-mantra">Summary Mantra:<a class="headerlink" href="#summary-mantra" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p><strong>"Be still, act selflessly, know the Self."</strong></p>
-</blockquote>
+  <h1>Path to moksha</h1>
+
+
 
 
 
@@ -4317,15 +3774,27 @@ Krishna gave him combined yoga, not just one.</p>
 
                 
   <button onclick="logout()" style="
-    position: fixed; top: 1rem; right: 1rem;
-    padding: 0.4rem 1rem;
-    background: red;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    background: #e53935;
     color: white;
     border: none;
-    border-radius: 4px;
-    font-size: 0.9rem;
+    border-radius: 6px;
     z-index: 9999;
-  ">Logout</button>
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+  ">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17 7L15.59 8.41L18.17 11H8V13H18.17L15.59 15.59L17 17L22 12L17 7ZM4 5H12V3H4C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H12V19H4V5Z" fill="white"/>
+    </svg>
+    Logout
+  </button>
 </div>
 
               </article>
@@ -4418,9 +3887,81 @@ Krishna gave him combined yoga, not just one.</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
+
       <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
+<script type="module">
+  window.addEventListener("DOMContentLoaded", async () => {
+    // Dynamically import Firebase modules
+    const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
+    const { 
+      getAuth, 
+      setPersistence, 
+      browserLocalPersistence, 
+      signInWithPopup, 
+      onAuthStateChanged, 
+      GoogleAuthProvider, 
+      signOut 
+    } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
+
+    // Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
+      authDomain: "mkdocs-github.firebaseapp.com",
+      projectId: "mkdocs-github",
+      storageBucket: "mkdocs-github.appspot.com",
+      messagingSenderId: "846124399364",
+      appId: "1:846124399364:web:7164c56ce488ef7a11ae51"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+
+    // Set persistence for login session
+    try {
+      await setPersistence(auth, browserLocalPersistence);
+    } catch (error) {
+      console.error("Error setting persistence:", error);
+    }
+
+    // Login function
+    window.loginWithGoogle = () => {
+      signInWithPopup(auth, provider)
+        .catch(err => {
+          console.error("Login error:", err);
+          alert(`Login failed: ${err.message || "Unknown error"}`);
+        });
+    };
+
+    // Logout function
+    window.logout = () => {
+      signOut(auth)
+        .then(() => console.log("User signed out"))
+        .catch(err => console.error("Logout error:", err));
+    };
+
+    // Get DOM elements
+    const main = document.getElementById("main-content");
+    const login = document.getElementById("login-section");
+
+    // Auth state handler
+    onAuthStateChanged(auth, user => {
+      if (user) {
+        console.log("✅ Authenticated user:", user.email);
+        login.style.display = "none";
+        main.style.display = "block";
+      } else {
+        console.log("🔒 No authenticated user");
+        main.style.display = "none";
+        login.style.display = "flex";
+      }
+    });
+  });
+</script>
+
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
