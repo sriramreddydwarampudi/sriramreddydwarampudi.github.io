@@ -5440,7 +5440,6 @@
 <!-- This div is just a placeholder - actual UI elements will be created in JavaScript -->
 <div id="auth-ui-placeholder"></div>
 
-
                   
 
   
@@ -5572,20 +5571,17 @@
       
     
 <script type="module">
-  // Global state to track authentication
   let authState = {
     initialized: false,
     user: null,
     auth: null,
     uiCreated: false
   };
-  
+
   window.addEventListener("DOMContentLoaded", async () => {
-    // Only initialize Firebase once
     if (authState.initialized) return;
-    
+
     try {
-      // Dynamically import Firebase modules
       const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
       const { 
         getAuth, 
@@ -5597,7 +5593,6 @@
         signOut 
       } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
 
-      // Firebase configuration
       const firebaseConfig = {
         apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
         authDomain: "mkdocs-github.firebaseapp.com",
@@ -5607,24 +5602,17 @@
         appId: "1:846124399364:web:7164c56ce488ef7a11ae51"
       };
 
-      // Initialize Firebase
       const app = initializeApp(firebaseConfig);
       const auth = getAuth(app);
       const provider = new GoogleAuthProvider();
-      
-      // Fix for nonce errors
-      provider.setCustomParameters({
-        prompt: 'select_account'
-      });
+      provider.setCustomParameters({ prompt: 'select_account' });
 
-      // Set persistence for login session
       try {
         await setPersistence(auth, browserLocalPersistence);
       } catch (error) {
-        console.error("Error setting persistence:", error);
+        console.error("Persistence error:", error);
       }
 
-      // Update global state
       authState = {
         initialized: true,
         user: auth.currentUser,
@@ -5632,64 +5620,50 @@
         uiCreated: false
       };
 
-      // Create global auth functions
       window.loginWithGoogle = () => {
-        signInWithPopup(auth, provider)
-          .catch(err => {
-            console.error("Login error:", err);
-            if (err.code === 'auth/missing-or-invalid-nonce') {
-              // Force a fresh login attempt
-              window.location.reload();
-            } else {
-              alert(`Login failed: ${err.message || "Unknown error"}`);
-            }
-          });
+        signInWithPopup(auth, provider).catch(err => {
+          console.error("Login error:", err);
+          if (err.code === 'auth/missing-or-invalid-nonce') {
+            window.location.reload();
+          } else {
+            alert(`Login failed: ${err.message || "Unknown error"}`);
+          }
+        });
       };
 
       window.logout = () => {
-        signOut(auth)
-          .then(() => {
-            console.log("User signed out");
-          })
-          .catch(err => console.error("Logout error:", err));
+        signOut(auth).then(() => {
+          console.log("User signed out");
+        }).catch(err => console.error("Logout error:", err));
       };
 
-      // Create or update the authentication UI
       function updateAuthUI() {
-        // Ensure UI exists
         if (!authState.uiCreated) {
           createAuthUI();
           authState.uiCreated = true;
         }
-        
+
         const loginOverlay = document.getElementById('login-overlay');
         const logoutButton = document.getElementById('logout-button');
-        
+
         if (authState.user) {
-          console.log("✅ Authenticated user:", authState.user.email);
-          // Hide login overlay
+          console.log("✅ Authenticated:", authState.user.email);
           if (loginOverlay) loginOverlay.style.display = "none";
-          // Show logout button
-          if (logoutButton) logoutButton.style.display = "block";
+          if (logoutButton) logoutButton.style.display = "flex";
         } else {
           console.log("🔒 Not signed in");
-          // Show login overlay
           if (loginOverlay) loginOverlay.style.display = "flex";
-          // Hide logout button
           if (logoutButton) logoutButton.style.display = "none";
         }
       }
 
-      // Create the authentication UI elements
       function createAuthUI() {
-        // Remove existing UI if it exists
         const existingOverlay = document.getElementById('login-overlay');
         if (existingOverlay) existingOverlay.remove();
-        
+
         const existingLogout = document.getElementById('logout-button');
         if (existingLogout) existingLogout.remove();
 
-        // Create login overlay
         const loginOverlay = document.createElement('div');
         loginOverlay.id = 'login-overlay';
         loginOverlay.style.cssText = `
@@ -5728,7 +5702,7 @@
               justify-content: center;
               gap: 12px;
             ">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M22.56 12.25C22.56 11.47 22.49 10.72 22.36 10H12V14.26H17.92C17.66 15.63 16.82 16.79 15.62 17.57V20.34H19.24C21.44 18.34 22.56 15.6 22.56 12.25Z" fill="#4285F4"/>
                 <path d="M12 23C14.96 23 17.46 22.02 19.24 20.34L15.62 17.57C14.62 18.23 13.32 18.64 12 18.64C9.16 18.64 6.78 16.76 5.94 14.19H2.18V17.06C3.94 20.53 7.7 23 12 23Z" fill="#34A853"/>
                 <path d="M5.94 14.19C5.74 13.57 5.62 12.9 5.62 12.22C5.62 11.54 5.74 10.87 5.94 10.25V7.38H2.18C1.43 8.84 1 10.49 1 12.22C1 13.95 1.43 15.6 2.18 17.06L5.94 14.19Z" fill="#FBBC05"/>
@@ -5740,67 +5714,67 @@
         `;
         document.body.appendChild(loginOverlay);
 
-        // Create logout button
         const logoutButton = document.createElement('button');
         logoutButton.id = 'logout-button';
         logoutButton.style.cssText = `
           position: fixed;
-          top: 1rem;
-          right: 1rem;
-          padding: 0.6rem 1.2rem;
-          font-size: 1rem;
+          bottom: 1.5rem;
+          right: 1.5rem;
+          width: 50px;
+          height: 50px;
           background: #e53935;
           color: white;
           border: none;
-          border-radius: 6px;
-          z-index: 9999;
+          border-radius: 50%;
+          z-index: 9998;
           cursor: pointer;
           display: flex;
           align-items: center;
-          gap: 8px;
+          justify-content: center;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.15);
           transition: all 0.3s ease;
         `;
         logoutButton.innerHTML = `
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M17 7L15.59 8.41L18.17 11H8V13H18.17L15.59 15.59L17 17L22 12L17 7ZM4 5H12V3H4C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H12V19H4V5Z" fill="white"/>
           </svg>
-          Logout
         `;
         document.body.appendChild(logoutButton);
 
-        // Add event listeners
+        logoutButton.addEventListener('mouseenter', () => {
+          logoutButton.style.transform = 'scale(1.1)';
+          logoutButton.style.boxShadow = '0 6px 16px rgba(0,0,0,0.2)';
+        });
+        logoutButton.addEventListener('mouseleave', () => {
+          logoutButton.style.transform = 'scale(1)';
+          logoutButton.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+        });
+
         document.getElementById('google-login-button').onclick = window.loginWithGoogle;
         logoutButton.onclick = window.logout;
       }
 
-      // Create UI elements
       createAuthUI();
       authState.uiCreated = true;
-      
-      // Update UI based on initial state
+
       authState.user = auth.currentUser;
       updateAuthUI();
 
-      // Auth state handler - use a single reliable listener
       onAuthStateChanged(auth, user => {
         console.log("Auth state changed:", user ? "Logged in" : "Logged out");
         authState.user = user;
         updateAuthUI();
       });
 
-      // Listen for page navigation events
       document.addEventListener("mdn-navigate", () => {
         console.log("Page navigation detected");
-        // Ensure UI exists on new page
         createAuthUI();
         authState.uiCreated = true;
-        // Update UI state
         updateAuthUI();
       });
-      
-      // Debug: Log initial state
+
       console.log("Initial auth state:", authState.user ? "Authenticated" : "Not authenticated");
-      
+
     } catch (error) {
       console.error("Firebase initialization error:", error);
       alert("Authentication system failed to initialize. Please try refreshing the page.");
