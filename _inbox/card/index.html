@@ -4736,33 +4736,44 @@
         `;
         document.body.appendChild(loginOverlay);
 
-        // Create logout button
+        // Create circular logout button
         const logoutButton = document.createElement('button');
         logoutButton.id = 'logout-button';
         logoutButton.style.cssText = `
           position: fixed;
-          top: 1rem;
-          right: 1rem;
-          padding: 0.6rem 1.2rem;
-          font-size: 1rem;
+          bottom: 1.5rem;
+          right: 1.5rem;
+          width: 50px;
+          height: 50px;
           background: #e53935;
           color: white;
           border: none;
-          border-radius: 6px;
-          z-index: 9999;
+          border-radius: 50%;
+          z-index: 9998;
           cursor: pointer;
           display: flex;
           align-items: center;
-          gap: 8px;
+          justify-content: center;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.15);
           transition: all 0.3s ease;
         `;
         logoutButton.innerHTML = `
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M17 7L15.59 8.41L18.17 11H8V13H18.17L15.59 15.59L17 17L22 12L17 7ZM4 5H12V3H4C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H12V19H4V5Z" fill="white"/>
           </svg>
-          Logout
         `;
         document.body.appendChild(logoutButton);
+
+        // Add hover effect
+        logoutButton.addEventListener('mouseenter', () => {
+          logoutButton.style.transform = 'scale(1.1)';
+          logoutButton.style.boxShadow = '0 6px 16px rgba(0,0,0,0.2)';
+        });
+        
+        logoutButton.addEventListener('mouseleave', () => {
+          logoutButton.style.transform = 'scale(1)';
+          logoutButton.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+        });
 
         // Add event listeners
         document.getElementById('google-login-button').onclick = window.loginWithGoogle;
@@ -4777,7 +4788,7 @@
       authState.user = auth.currentUser;
       updateAuthUI();
 
-      // Auth state handler - use a single reliable listener
+      // Auth state handler
       onAuthStateChanged(auth, user => {
         console.log("Auth state changed:", user ? "Logged in" : "Logged out");
         authState.user = user;
