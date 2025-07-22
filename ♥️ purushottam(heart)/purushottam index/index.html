@@ -3961,15 +3961,21 @@
         console.error("Error setting persistence:", error);
       }
 
+      // Update global state
+      authState = {
+        initialized: true,
+        user: auth.currentUser,
+        auth: auth,
+        uiCreated: false
+      };
+
       // Create global auth functions
       window.loginWithGoogle = () => {
         signInWithPopup(auth, provider)
-          .then(() => {
-            console.log("Login successful");
-          })
           .catch(err => {
             console.error("Login error:", err);
             if (err.code === 'auth/missing-or-invalid-nonce') {
+              // Force a fresh login attempt
               window.location.reload();
             } else {
               alert(`Login failed: ${err.message || "Unknown error"}`);
@@ -3984,6 +3990,32 @@
           })
           .catch(err => console.error("Logout error:", err));
       };
+
+      // Create or update the authentication UI
+      function updateAuthUI() {
+        // Ensure UI exists
+        if (!authState.uiCreated) {
+          createAuthUI();
+          authState.uiCreated = true;
+        }
+        
+        const loginOverlay = document.getElementById('login-overlay');
+        const logoutButton = document.getElementById('logout-button');
+        
+        if (authState.user) {
+          console.log("✅ Authenticated user:", authState.user.email);
+          // Hide login overlay
+          if (loginOverlay) loginOverlay.style.display = "none";
+          // Show logout button
+          if (logoutButton) logoutButton.style.display = "block";
+        } else {
+          console.log("🔒 Not signed in");
+          // Show login overlay
+          if (loginOverlay) loginOverlay.style.display = "flex";
+          // Hide logout button
+          if (logoutButton) logoutButton.style.display = "none";
+        }
+      }
 
       // Create the authentication UI elements
       function createAuthUI() {
@@ -4009,7 +4041,7 @@
           font-family: sans-serif;
           text-align: center;
           z-index: 9999;
-          display: none;
+          display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
@@ -4045,88 +4077,67 @@
         `;
         document.body.appendChild(loginOverlay);
 
-        // Create circular logout button at bottom
-        const logoutButton = document.createElement('button');
-        logoutButton.id = 'logout-button';
-        logoutButton.style.cssText = `
-          position: fixed;
-          bottom: 1.5rem;
-          right: 1.5rem;
-          width: 50px;
-          height: 50px;
-          background: #e53935;
-          color: white;
-          border: none;
-          border-radius: 50%;
-          z-index: 9998;
-          cursor: pointer;
-          display: none;
-          align-items: center;
-          justify-content: center;
-          box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-          transition: all 0.3s ease;
-        `;
-        logoutButton.innerHTML = `
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17 7L15.59 8.41L18.17 11H8V13H18.17L15.59 15.59L17 17L22 12L17 7ZM4 5H12V3H4C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H12V19H4V5Z" fill="white"/>
-          </svg>
-        `;
-        document.body.appendChild(logoutButton);
-
-        // Add hover effects
-        logoutButton.addEventListener('mouseenter', () => {
-          logoutButton.style.transform = 'scale(1.1)';
-          logoutButton.style.boxShadow = '0 6px 16px rgba(0,0,0,0.2)';
-        });
         
-        logoutButton.addEventListener('mouseleave', () => {
-          logoutButton.style.transform = 'scale(1)';
-          logoutButton.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
-        });
+ // Create circular logout button
+ const logoutButton = document.createElement('button');
+ logoutButton.id = 'logout-button';
+ logoutButton.style.cssText = `
+ position: fixed;
+ bottom: 1.5rem;
+ right: 1.5rem;
+ width: 50px;
+ height: 50px;
+ background: #e53935;
+ color: white;
+ border: none;
+ border-radius: 50%;
+ z-index: 9998;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+ transition: all 0.3s ease;
+ `;
+ logoutButton.innerHTML = `
+ <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <path d="M17 7L15.59 8.41L18.17 11H8V13H18.17L15.59 15.59L17 17L22 12L17 7ZM4 5H12V3H4C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H12V19H4V5Z" fill="white"/>
+ </svg>
+ `;
+ document.body.appendChild(logoutButton);
 
         // Add event listeners
         document.getElementById('google-login-button').onclick = window.loginWithGoogle;
         logoutButton.onclick = window.logout;
-        
-        return { loginOverlay, logoutButton };
       }
 
-      // Create UI elements and get references
-      const uiElements = createAuthUI();
+      // Create UI elements
+      createAuthUI();
       authState.uiCreated = true;
       
-      // Function to update UI based on auth state
-      function updateAuthUI(user) {
-        if (!uiElements) return;
-        
-        const { loginOverlay, logoutButton } = uiElements;
-        
-        if (user) {
-          console.log("✅ Authenticated user:", user.email);
-          if (loginOverlay) loginOverlay.style.display = "none";
-          if (logoutButton) logoutButton.style.display = "flex";
-        } else {
-          console.log("🔒 Not signed in");
-          if (loginOverlay) loginOverlay.style.display = "flex";
-          if (logoutButton) logoutButton.style.display = "none";
-        }
-      }
+      // Update UI based on initial state
+      authState.user = auth.currentUser;
+      updateAuthUI();
 
-      // Auth state handler - the single source of truth
+      // Auth state handler - use a single reliable listener
       onAuthStateChanged(auth, user => {
         console.log("Auth state changed:", user ? "Logged in" : "Logged out");
         authState.user = user;
-        updateAuthUI(user);
+        updateAuthUI();
       });
-
-      // Initial UI update
-      updateAuthUI(auth.currentUser);
 
       // Listen for page navigation events
       document.addEventListener("mdn-navigate", () => {
         console.log("Page navigation detected");
-        updateAuthUI(auth.currentUser);
+        // Ensure UI exists on new page
+        createAuthUI();
+        authState.uiCreated = true;
+        // Update UI state
+        updateAuthUI();
       });
+      
+      // Debug: Log initial state
+      console.log("Initial auth state:", authState.user ? "Authenticated" : "Not authenticated");
       
     } catch (error) {
       console.error("Firebase initialization error:", error);
@@ -4134,27 +4145,6 @@
     }
   });
 </script>
-
-<style>
-  /* Ensure content is readable and doesn't overlap with logout button */
-  .md-content {
-    padding-bottom: 5rem;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    #logout-button {
-      bottom: 1rem;
-      right: 1rem;
-      width: 45px;
-      height: 45px;
-    }
-    
-    .md-content {
-      padding-bottom: 4rem;
-    }
-  }
-</style>
 
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
