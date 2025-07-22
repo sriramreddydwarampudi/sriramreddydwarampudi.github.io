@@ -8210,13 +8210,17 @@ Freedom of Displacement • Limiting the freedom of displacement from torquing a
       
     
 <script type="module">
-  // Global flag to track if we've initialized Firebase
-  let firebaseInitialized = false;
+  // Global state to track authentication
+  let authState = {
+    initialized: false,
+    user: null,
+    auth: null,
+    uiCreated: false
+  };
   
   window.addEventListener("DOMContentLoaded", async () => {
     // Only initialize Firebase once
-    if (firebaseInitialized) return;
-    firebaseInitialized = true;
+    if (authState.initialized) return;
     
     try {
       // Dynamically import Firebase modules
@@ -8251,6 +8255,21 @@ Freedom of Displacement • Limiting the freedom of displacement from torquing a
         prompt: 'select_account'
       });
 
+      // Set persistence for login session
+      try {
+        await setPersistence(auth, browserLocalPersistence);
+      } catch (error) {
+        console.error("Error setting persistence:", error);
+      }
+
+      // Update global state
+      authState = {
+        initialized: true,
+        user: auth.currentUser,
+        auth: auth,
+        uiCreated: false
+      };
+
       // Create global auth functions
       window.loginWithGoogle = () => {
         signInWithPopup(auth, provider)
@@ -8273,11 +8292,30 @@ Freedom of Displacement • Limiting the freedom of displacement from torquing a
           .catch(err => console.error("Logout error:", err));
       };
 
-      // Set persistence for login session
-      try {
-        await setPersistence(auth, browserLocalPersistence);
-      } catch (error) {
-        console.error("Error setting persistence:", error);
+      // Create or update the authentication UI
+      function updateAuthUI() {
+        // Ensure UI exists
+        if (!authState.uiCreated) {
+          createAuthUI();
+          authState.uiCreated = true;
+        }
+        
+        const loginOverlay = document.getElementById('login-overlay');
+        const logoutButton = document.getElementById('logout-button');
+        
+        if (authState.user) {
+          console.log("✅ Authenticated user:", authState.user.email);
+          // Hide login overlay
+          if (loginOverlay) loginOverlay.style.display = "none";
+          // Show logout button
+          if (logoutButton) logoutButton.style.display = "block";
+        } else {
+          console.log("🔒 Not signed in");
+          // Show login overlay
+          if (loginOverlay) loginOverlay.style.display = "flex";
+          // Hide logout button
+          if (logoutButton) logoutButton.style.display = "none";
+        }
       }
 
       // Create the authentication UI elements
@@ -8371,53 +8409,35 @@ Freedom of Displacement • Limiting the freedom of displacement from torquing a
         // Add event listeners
         document.getElementById('google-login-button').onclick = window.loginWithGoogle;
         logoutButton.onclick = window.logout;
-        
-        // Return references to the UI elements
-        return { loginOverlay, logoutButton };
       }
 
-      // Create UI elements and get references
-      const uiElements = createAuthUI();
+      // Create UI elements
+      createAuthUI();
+      authState.uiCreated = true;
       
-      // Function to update UI based on auth state
-      function updateAuthUI(user) {
-        if (!uiElements) return;
-        
-        const { loginOverlay, logoutButton } = uiElements;
-        
-        if (user) {
-          console.log("✅ Authenticated user:", user.email);
-          // Hide login overlay
-          if (loginOverlay) loginOverlay.style.display = "none";
-          // Show logout button
-          if (logoutButton) logoutButton.style.display = "block";
-        } else {
-          console.log("🔒 Not signed in");
-          // Show login overlay
-          if (loginOverlay) loginOverlay.style.display = "flex";
-          // Hide logout button
-          if (logoutButton) logoutButton.style.display = "none";
-        }
-      }
+      // Update UI based on initial state
+      authState.user = auth.currentUser;
+      updateAuthUI();
 
-      // Initial UI update based on current auth state
-      updateAuthUI(auth.currentUser);
-
-      // Auth state handler
+      // Auth state handler - use a single reliable listener
       onAuthStateChanged(auth, user => {
         console.log("Auth state changed:", user ? "Logged in" : "Logged out");
-        updateAuthUI(user);
+        authState.user = user;
+        updateAuthUI();
       });
 
       // Listen for page navigation events
       document.addEventListener("mdn-navigate", () => {
         console.log("Page navigation detected");
-        // Update UI after navigation
-        updateAuthUI(auth.currentUser);
+        // Ensure UI exists on new page
+        createAuthUI();
+        authState.uiCreated = true;
+        // Update UI state
+        updateAuthUI();
       });
       
-      // Debug: Check if user is authenticated on load
-      console.log("Initial auth state:", auth.currentUser ? "Authenticated" : "Not authenticated");
+      // Debug: Log initial state
+      console.log("Initial auth state:", authState.user ? "Authenticated" : "Not authenticated");
       
     } catch (error) {
       console.error("Firebase initialization error:", error);
