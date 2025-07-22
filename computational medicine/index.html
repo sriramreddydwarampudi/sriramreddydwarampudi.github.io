@@ -247,6 +247,23 @@
   
   
     <li class="md-tabs__item">
+      <a href="../arr/" class="md-tabs__link">
+        
+  
+    
+  
+  Arr
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
       <a href="../license/" class="md-tabs__link">
         
   
@@ -539,6 +556,26 @@
   
   <span class="md-ellipsis">
     Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arr
   </span>
   
 
@@ -983,7 +1020,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
           
@@ -999,14 +1036,14 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_7" id="__nav_7_label" tabindex="">
+              <label class="md-nav__link md-nav__link--active" for="__nav_8" id="__nav_8_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Computational medicine
           </label>
@@ -1044,7 +1081,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
         
           
           
@@ -1061,8 +1098,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
             <span class="md-nav__icon md-icon"></span>
             01 infectious
           </label>
@@ -1110,7 +1147,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
         
           
           
@@ -1126,14 +1163,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_7_3" id="__nav_7_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_8_3" id="__nav_8_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
             <span class="md-nav__icon md-icon"></span>
             13 digestive
           </label>
@@ -2142,209 +2179,211 @@ symptoms</p>
     if (firebaseInitialized) return;
     firebaseInitialized = true;
     
-    // Dynamically import Firebase modules
-    const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
-    const { 
-      getAuth, 
-      setPersistence, 
-      browserLocalPersistence, 
-      signInWithPopup, 
-      onAuthStateChanged, 
-      GoogleAuthProvider, 
-      signOut 
-    } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
-
-    // Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
-      authDomain: "mkdocs-github.firebaseapp.com",
-      projectId: "mkdocs-github",
-      storageBucket: "mkdocs-github.appspot.com",
-      messagingSenderId: "846124399364",
-      appId: "1:846124399364:web:7164c56ce488ef7a11ae51"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
-    const provider = new GoogleAuthProvider();
-    
-    // Fix for nonce errors
-    provider.setCustomParameters({
-      prompt: 'select_account'
-    });
-
-    // Create global auth functions
-    window.loginWithGoogle = () => {
-      signInWithPopup(auth, provider)
-        .catch(err => {
-          console.error("Login error:", err);
-          if (err.code === 'auth/missing-or-invalid-nonce') {
-            // Force a fresh login attempt
-            window.location.reload();
-          } else {
-            alert(`Login failed: ${err.message || "Unknown error"}`);
-          }
-        });
-    };
-
-    window.logout = () => {
-      signOut(auth)
-        .then(() => {
-          console.log("User signed out");
-          // Update UI immediately after logout
-          updateAuthUI(null);
-        })
-        .catch(err => console.error("Logout error:", err));
-    };
-
-    // Set persistence for login session
     try {
-      await setPersistence(auth, browserLocalPersistence);
-    } catch (error) {
-      console.error("Error setting persistence:", error);
-    }
+      // Dynamically import Firebase modules
+      const { initializeApp } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js");
+      const { 
+        getAuth, 
+        setPersistence, 
+        browserLocalPersistence, 
+        signInWithPopup, 
+        onAuthStateChanged, 
+        GoogleAuthProvider, 
+        signOut 
+      } = await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js");
 
-    // Create the authentication UI elements
-    function createAuthUI() {
-      // Remove existing UI if it exists
-      const existingOverlay = document.getElementById('login-overlay');
-      if (existingOverlay) existingOverlay.remove();
+      // Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCAQioGcGna2D2rRvk2dz-R5k2OiyX5PBA",
+        authDomain: "mkdocs-github.firebaseapp.com",
+        projectId: "mkdocs-github",
+        storageBucket: "mkdocs-github.appspot.com",
+        messagingSenderId: "846124399364",
+        appId: "1:846124399364:web:7164c56ce488ef7a11ae51"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+      const provider = new GoogleAuthProvider();
       
-      const existingLogout = document.getElementById('logout-button');
-      if (existingLogout) existingLogout.remove();
+      // Fix for nonce errors
+      provider.setCustomParameters({
+        prompt: 'select_account'
+      });
 
-      // Create login overlay
-      const loginOverlay = document.createElement('div');
-      loginOverlay.id = 'login-overlay';
-      loginOverlay.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.85);
-        backdrop-filter: blur(8px);
-        color: white;
-        font-family: sans-serif;
-        text-align: center;
-        z-index: 9999;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      `;
-      loginOverlay.innerHTML = `
-        <div style="background: #1e1e1e; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.3); max-width: 400px; width: 90%;">
-          <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">🔐 Login Required</h2>
-          <p style="margin-bottom: 2rem; color: #aaa;">You need to sign in to access this documentation</p>
-          <button id="google-login-button" style="
-            font-size: 1.1rem;
-            padding: 0.8rem 1.5rem;
-            background: #1a73e8;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            width: 100%;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-          ">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22.56 12.25C22.56 11.47 22.49 10.72 22.36 10H12V14.26H17.92C17.66 15.63 16.82 16.79 15.62 17.57V20.34H19.24C21.44 18.34 22.56 15.6 22.56 12.25Z" fill="#4285F4"/>
-              <path d="M12 23C14.96 23 17.46 22.02 19.24 20.34L15.62 17.57C14.62 18.23 13.32 18.64 12 18.64C9.16 18.64 6.78 16.76 5.94 14.19H2.18V17.06C3.94 20.53 7.7 23 12 23Z" fill="#34A853"/>
-              <path d="M5.94 14.19C5.74 13.57 5.62 12.9 5.62 12.22C5.62 11.54 5.74 10.87 5.94 10.25V7.38H2.18C1.43 8.84 1 10.49 1 12.22C1 13.95 1.43 15.6 2.18 17.06L5.94 14.19Z" fill="#FBBC05"/>
-              <path d="M12 5.58C13.62 5.58 15.06 6.15 16.18 7.25L19.34 4.09C17.44 2.34 14.94 1 12 1C7.7 1 3.94 3.47 2.18 7.38L5.94 10.25C6.78 7.68 9.16 5.58 12 5.58Z" fill="#EA4335"/>
-            </svg>
-            Sign in with Google
-          </button>
-        </div>
-      `;
-      document.body.appendChild(loginOverlay);
+      // Create global auth functions
+      window.loginWithGoogle = () => {
+        signInWithPopup(auth, provider)
+          .catch(err => {
+            console.error("Login error:", err);
+            if (err.code === 'auth/missing-or-invalid-nonce') {
+              // Force a fresh login attempt
+              window.location.reload();
+            } else {
+              alert(`Login failed: ${err.message || "Unknown error"}`);
+            }
+          });
+      };
 
-      // Create logout button
-      const logoutButton = document.createElement('button');
-      logoutButton.id = 'logout-button';
-      logoutButton.style.cssText = `
-        position: fixed;
-        top: 1rem;
-        right: 1rem;
-        padding: 0.6rem 1.2rem;
-        font-size: 1rem;
-        background: #e53935;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        z-index: 9999;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        transition: all 0.3s ease;
-      `;
-      logoutButton.innerHTML = `
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17 7L15.59 8.41L18.17 11H8V13H18.17L15.59 15.59L17 17L22 12L17 7ZM4 5H12V3H4C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H12V19H4V5Z" fill="white"/>
-        </svg>
-        Logout
-      `;
-      document.body.appendChild(logoutButton);
+      window.logout = () => {
+        signOut(auth)
+          .then(() => {
+            console.log("User signed out");
+          })
+          .catch(err => console.error("Logout error:", err));
+      };
 
-      // Add event listeners
-      document.getElementById('google-login-button').onclick = window.loginWithGoogle;
-      logoutButton.onclick = window.logout;
-    }
-
-    // Function to update UI based on auth state
-    function updateAuthUI(user) {
-      const loginOverlay = document.getElementById('login-overlay');
-      const logoutButton = document.getElementById('logout-button');
-      const mainContent = document.querySelector('.md-content');
-      
-      if (user) {
-        console.log("✅ Authenticated user:", user.email);
-        if (loginOverlay) loginOverlay.style.display = "none";
-        if (logoutButton) logoutButton.style.display = "block";
-        if (mainContent) mainContent.style.display = "block";
-      } else {
-        console.log("🔒 Not signed in");
-        if (loginOverlay) loginOverlay.style.display = "flex";
-        if (logoutButton) logoutButton.style.display = "none";
-        if (mainContent) mainContent.style.display = "none";
+      // Set persistence for login session
+      try {
+        await setPersistence(auth, browserLocalPersistence);
+      } catch (error) {
+        console.error("Error setting persistence:", error);
       }
-    }
 
-    // Create the UI elements
-    createAuthUI();
-    
-    // Initial UI update based on current auth state
-    updateAuthUI(auth.currentUser);
+      // Create the authentication UI elements
+      function createAuthUI() {
+        // Remove existing UI if it exists
+        const existingOverlay = document.getElementById('login-overlay');
+        if (existingOverlay) existingOverlay.remove();
+        
+        const existingLogout = document.getElementById('logout-button');
+        if (existingLogout) existingLogout.remove();
 
-    // Auth state handler
-    onAuthStateChanged(auth, user => {
-      updateAuthUI(user);
-    });
+        // Create login overlay
+        const loginOverlay = document.createElement('div');
+        loginOverlay.id = 'login-overlay';
+        loginOverlay.style.cssText = `
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0,0,0,0.85);
+          backdrop-filter: blur(8px);
+          color: white;
+          font-family: sans-serif;
+          text-align: center;
+          z-index: 9999;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        `;
+        loginOverlay.innerHTML = `
+          <div style="background: #1e1e1e; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.3); max-width: 400px; width: 90%;">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">🔐 Login Required</h2>
+            <p style="margin-bottom: 2rem; color: #aaa;">You need to sign in to access this documentation</p>
+            <button id="google-login-button" style="
+              font-size: 1.1rem;
+              padding: 0.8rem 1.5rem;
+              background: #1a73e8;
+              color: white;
+              border: none;
+              border-radius: 8px;
+              cursor: pointer;
+              width: 100%;
+              transition: all 0.3s ease;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 12px;
+            ">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.56 12.25C22.56 11.47 22.49 10.72 22.36 10H12V14.26H17.92C17.66 15.63 16.82 16.79 15.62 17.57V20.34H19.24C21.44 18.34 22.56 15.6 22.56 12.25Z" fill="#4285F4"/>
+                <path d="M12 23C14.96 23 17.46 22.02 19.24 20.34L15.62 17.57C14.62 18.23 13.32 18.64 12 18.64C9.16 18.64 6.78 16.76 5.94 14.19H2.18V17.06C3.94 20.53 7.7 23 12 23Z" fill="#34A853"/>
+                <path d="M5.94 14.19C5.74 13.57 5.62 12.9 5.62 12.22C5.62 11.54 5.74 10.87 5.94 10.25V7.38H2.18C1.43 8.84 1 10.49 1 12.22C1 13.95 1.43 15.6 2.18 17.06L5.94 14.19Z" fill="#FBBC05"/>
+                <path d="M12 5.58C13.62 5.58 15.06 6.15 16.18 7.25L19.34 4.09C17.44 2.34 14.94 1 12 1C7.7 1 3.94 3.47 2.18 7.38L5.94 10.25C6.78 7.68 9.16 5.58 12 5.58Z" fill="#EA4335"/>
+              </svg>
+              Sign in with Google
+            </button>
+          </div>
+        `;
+        document.body.appendChild(loginOverlay);
 
-    // Listen for page navigation events
-    document.addEventListener("mdn-navigate", () => {
-      console.log("Page navigation detected");
-      // Recreate UI elements on navigation
-      createAuthUI();
+        // Create logout button
+        const logoutButton = document.createElement('button');
+        logoutButton.id = 'logout-button';
+        logoutButton.style.cssText = `
+          position: fixed;
+          top: 1rem;
+          right: 1rem;
+          padding: 0.6rem 1.2rem;
+          font-size: 1rem;
+          background: #e53935;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          z-index: 9999;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          transition: all 0.3s ease;
+        `;
+        logoutButton.innerHTML = `
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 7L15.59 8.41L18.17 11H8V13H18.17L15.59 15.59L17 17L22 12L17 7ZM4 5H12V3H4C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H12V19H4V5Z" fill="white"/>
+          </svg>
+          Logout
+        `;
+        document.body.appendChild(logoutButton);
+
+        // Add event listeners
+        document.getElementById('google-login-button').onclick = window.loginWithGoogle;
+        logoutButton.onclick = window.logout;
+        
+        // Return references to the UI elements
+        return { loginOverlay, logoutButton };
+      }
+
+      // Create UI elements and get references
+      const uiElements = createAuthUI();
       
-      // Re-check auth state after a short delay
-      setTimeout(() => {
+      // Function to update UI based on auth state
+      function updateAuthUI(user) {
+        if (!uiElements) return;
+        
+        const { loginOverlay, logoutButton } = uiElements;
+        
+        if (user) {
+          console.log("✅ Authenticated user:", user.email);
+          // Hide login overlay
+          if (loginOverlay) loginOverlay.style.display = "none";
+          // Show logout button
+          if (logoutButton) logoutButton.style.display = "block";
+        } else {
+          console.log("🔒 Not signed in");
+          // Show login overlay
+          if (loginOverlay) loginOverlay.style.display = "flex";
+          // Hide logout button
+          if (logoutButton) logoutButton.style.display = "none";
+        }
+      }
+
+      // Initial UI update based on current auth state
+      updateAuthUI(auth.currentUser);
+
+      // Auth state handler
+      onAuthStateChanged(auth, user => {
+        console.log("Auth state changed:", user ? "Logged in" : "Logged out");
+        updateAuthUI(user);
+      });
+
+      // Listen for page navigation events
+      document.addEventListener("mdn-navigate", () => {
+        console.log("Page navigation detected");
+        // Update UI after navigation
         updateAuthUI(auth.currentUser);
-      }, 100);
-    });
-    
-    // Add this to handle login/logout transitions without page reload
-    auth.onIdTokenChanged((user) => {
-      console.log("Token changed, updating UI");
-      updateAuthUI(user);
-    });
+      });
+      
+      // Debug: Check if user is authenticated on load
+      console.log("Initial auth state:", auth.currentUser ? "Authenticated" : "Not authenticated");
+      
+    } catch (error) {
+      console.error("Firebase initialization error:", error);
+      alert("Authentication system failed to initialize. Please try refreshing the page.");
+    }
   });
 </script>
 
