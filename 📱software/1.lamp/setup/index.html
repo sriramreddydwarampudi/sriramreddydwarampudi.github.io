@@ -5598,57 +5598,7 @@ ln -s ~/storage/shared/htdocs $PREFIX/share/apache2/default-site/htdocs</p>
 <p>The script tells you it's now going to make PHP behave nicely: “I’m setting up PHP to show most errors — but not annoying deprecated or notice-level messages.”</p>
 <hr />
 <p>mkdir -p $PREFIX/etc
-cat &gt; $PREFIX/etc/php.ini &lt;&lt;EOF
-[PHP]
-error_reporting = E_ALL &amp; ~E_DEPRECATED &amp; ~E_NOTICE
-display_errors = On
-EOF</p>
-<p>This creates a basic php.ini configuration file:</p>
-<p>Errors will be shown</p>
-<p>Deprecated/notice messages are hidden to avoid screen clutter</p>
-<p>This is essential for debugging and for phpMyAdmin to run quietly</p>
-<hr />
-<p>echo "[*] Setting MySQL root password to 'root'..."</p>
-<p>This is now preparing your MySQL (MariaDB) server: “Let’s initialize the database system and secure access with a default password.”</p>
-<hr />
-<p>mysql_install_db
-mysqld_safe --skip-networking &amp;
-sleep 5
-mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED BY 'root'; FLUSH PRIVILEGES;"
-pkill mysqld_safe</p>
-<p>Here’s what happens step-by-step:</p>
-<ol>
-<li>
-<p>mysql_install_db sets up MariaDB for first use.</p>
-</li>
-<li>
-<p>mysqld_safe --skip-networking &amp; starts MariaDB without network access, for safe setup.</p>
-</li>
-<li>
-<p>sleep 5 waits a few seconds for the server to initialize.</p>
-</li>
-<li>
-<p>mysql -u root -e ... changes the root password to 'root'.</p>
-</li>
-<li>
-<p>pkill mysqld_safe kills the temporary MariaDB instance.</p>
-</li>
-</ol>
-<hr />
-<p>echo "[*] Ready. To start the server:"</p>
-<p>Finally, it tells you the manual steps to launch the server:</p>
-<p>apachectl start         # Start Apache
-mysqld_safe &amp;           # Start MariaDB</p>
-<p>Once started, you can access your local server and phpMyAdmin at:</p>
-<p><a href="http://localhost:8080">http://localhost:8080</a>
-<a href="http://localhost:8080/phpmyadmin">http://localhost:8080/phpmyadmin</a></p>
-<hr />
-<p>Summary:</p>
-<p>This script automates the entire setup of a local web server environment in Termux — like XAMPP but tailored for Android. It prioritizes:</p>
-<p>Easy access via shared storage</p>
-<p>Lightweight, efficient PHP and database setup</p>
-<p>Clean error handling</p>
-<p>Let me know if you want this made into a GitHub repo, shell package, or to add Python/Node.js support too.</p>
+cat &gt; $PREFIX/etc/php.ini &lt;</p>
 
 
 
